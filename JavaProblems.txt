@@ -1,0 +1,39 @@
+                                              ****  1st Problem   ****
+Given an list of decimal numbers and an desired number, return the twin values in a such that their sum equals the desired number..
+You can make the assumption that every input has exactly one answer, and you can avoid using the same element more than once.
+
+Sample output:
+4
+1 8 11 15
+target:9
+0,1
+
+#include<stdio.h> 
+int main() 
+{ 
+    int i,values,target,n; 
+    int arr[10]; 
+    printf("enter the number of values:\n"); 
+    scanf("%d",&n); 
+    printf("enter the values:\n"); 
+    for(int i=0; i<n; i++) 
+    { 
+        scanf("%d",&arr[i]); 
+    } 
+    printf("enter the target: \n"); 
+    scanf("%d",&target); 
+    for(int i=0; i<n; i++) 
+    { 
+        for(int j=i+1; j<n; j++) 
+        { 
+            if(arr[i] + arr[j]==target) 
+            { 
+                printf("%d,%d",i,j); 
+            } 
+        } 
+    } 
+}
+
+                                                     ***** 2nd problem ******
+
+
