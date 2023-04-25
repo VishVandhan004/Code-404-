@@ -35,5 +35,44 @@ int main()
 }
 
                                                      ***** 2nd problem ******
+/*Take three persons age from the user and print the Oldest Person out of three persons using Nested if. 
+Sample Input: 
+Enter the 1st person age: 25 
+Enter the 2nd person age: 78 
+Enter the 3rd person age: 87 
+Expected Output : 
+The oldest person is: 87 
+*/ 
+import java.util.*; 
+class test{ 
+    public static void main(String args[]) 
+    { 
+        int n,a,b,c; 
+        Scanner sc=new Scanner(System.in); 
+        System.out.print("Enter the 1st person age: "); 
+        a = sc.nextInt(); 
+        System.out.print("Enter the 2nd person age: "); 
+        b=sc.nextInt(); 
+        System.out.print("Enter the 3rd person age: "); 
+        c=sc.nextInt(); 
+        if(a>b) 
+        { 
+            if(a>c) 
+            { 
+                System.out.printf("The oldest person is %d",a); 
+            } 
+            else{ 
+                System.out.printf("The oldest person is %d",c); 
+            } 
+        } 
+        else { 
+            System.out.printf("The oldest person is %d",b); 
+        } 
+         
+             
+        } 
+         
+    }
 
+               ********   3rd Problem ******
 
