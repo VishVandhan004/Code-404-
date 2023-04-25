@@ -1,4 +1,4 @@
-                                              ****  1st Problem   ****
+                                                ****  1st Problem   ****
 Given an list of decimal numbers and an desired number, return the twin values in a such that their sum equals the desired number..
 You can make the assumption that every input has exactly one answer, and you can avoid using the same element more than once.
 
@@ -67,12 +67,178 @@ class test{
         } 
         else { 
             System.out.printf("The oldest person is %d",b); 
-        } 
-         
-             
-        } 
-         
+          } 
+        }  
     }
 
-               ********   3rd Problem ******
+                                        ********   3rd Problem ******
+/*Write a Java program that takes a year from user and print whether that year is a leap year or not.
 
+Test Data
+Enter the year: 2016
+2016 is a leap year
+*/
+
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the year: ");
+        int y = sc.nextInt();
+                if(y%4==0)
+                {
+                    System.out.printf("%d is a leap year",y);
+                }
+    }
+}
+                                            ******** 4th Problem **********
+/*take the different size of balls in array and find the second largest ball in array
+Sample data:
+Enter number of the balls: 5 
+Enter balls with different sizes: 
+2 3 7 6 9
+Second largest ball = 7*/
+
+import java.util.*;
+class test{
+    public static void main(String args[]){
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of the balls: ");
+        n = sc.nextInt();
+        int []arr = new int[n];
+        System.out.println("Enter balls with different sizes:");
+        for(int i=0;i<n;i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<n-1;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                int temp;
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                }
+            }
+        }
+        System.out.printf("Second largest ball = %d",arr[n-2]);
+    }
+}
+                                                    ******* 5th Problem *********
+In a theatre there are M rows and N seats in each row. 
+The seats are numbered in a strange order (No duplicates). 
+You need to find out the total sum of the seat numbers  
+which are maximum in their columns. 
+Input Format: 
+------------- 
+Line-1 -> Two integers M and N 
+Next M lines -> N space separated integers, seat numbers. 
+Output Format: 
+-------------- 
+Print an integer result. 
+Sample Input-1: 
+--------------- 
+3 3 
+3 7 18 
+9 16 13 
+15 11 17 
+Sample Output-1: 
+---------------- 
+49 
+Sample Input-2: 
+--------------- 
+3 4 
+1 10 4 2 
+9 3 18 17 
+15 16 17 12 
+Sample Output-2: 
+---------------- 
+66
+
+#include<stdio.h>
+int main(){
+    int i,j,r,c,sum=0;
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+        scanf("%d",&arr[i][j]);
+        }
+    }
+    for(j=0;j<c;j++)
+    {
+      int max = arr[0][0];
+     for(i=0;i<r;i++)
+        {
+            if(arr[i][j] > max){
+                max = arr[i][j];
+            }
+        }
+            sum = sum+max;
+    }
+    printf("%d",sum);
+}                     
+                         *********** 6th Problem *****************
+/* 
+Given a string S in encoded form, and  an integer array indices[] of string length. 
+You need to find the decoded form of String S,  
+by moving each character at ith position in S, to indices[i] position in decoded string. 
+and then print the decoded string. 
+Input Format: 
+------------- 
+Line-1 -> A String S, enocded string of length L 
+Line-2 -> L space separated integers indices[], where 0 <=indices[i] < L  
+Output Format: 
+-------------- 
+Print a String, decoded string. 
+Sample Input-1: 
+--------------- 
+aeilmmor 
+6 1 5 7 2 0 3 4 
+Sample Output-1: 
+---------------- 
+memorial 
+Explanation: 
+--------------- 
+Given String, aeilmmor 
+6 1 5 7 2 0 3 4 
+after shifting,	memorial 
+Sample Input-2: 
+--------------- 
+aidin 
+4 3 2 0 1 
+Sample Output-2: 
+---------------- 
+india 
+Explanation-2: 
+--------------- 
+Given String, aidin 
+4 3 2 0 1 
+after shifting,	india 
+*/
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[30];
+    char str1[30];
+    int i;
+    scanf("%s",str);
+    int arr[strlen(str)];
+    for(int i=0;i<strlen(str);i++){
+       scanf("%d",&arr[i]);
+    }
+    int j=0;
+    for(int i=0;i<strlen(str);i++){
+        j=arr[i];
+        str1[j]=str[i];
+    }
+    for(i=0;i<strlen(str);i++){
+        printf("%c",str1[i]);
+    }
+}
