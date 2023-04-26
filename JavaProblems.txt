@@ -325,4 +325,87 @@ class test
         
     }
 }
+                              ************************** 10th Problem *************************
+/*read rows and colums of first and second matrix, 
+then read elements into both matrix,perform addition of  
+those two matrix and dispaly first,second and result matrix. 
+input: 
+2 
+2 
+2 
+2 
+1 
+2 
+3 
+4 
+1 
+2 
+3 
+4 
+output: 
+1 2 
+3 4 
+1 2 
+3 4 
+2 4 
+6 8 
+input= 
+2 
+3 
+2 
+2 
+output= 
+Addition would not be possible 
+*/ 
+import java.util.*; 
+class test 
+{ 
+    public static void main(String args[]) 
+    { 
+       Scanner sc = new Scanner(System.in); 
+       int row1 = sc.nextInt(); 
+       int col1 = sc.nextInt(); 
+       int row2 = sc.nextInt(); 
+       int col2 = sc.nextInt(); 
+     if(row1!=row2 || col1!=col2) 
+     { 
+         System.out.println("Addition would not be possible"); 
+         System.exit(0); 
+     } 
+       int a1[][] = new int[row1][col1]; 
+       int a2[][] = new int[row2][col2]; 
+        
+       for(int i=0;i<row1;i++){ 
+           for(int j=0;j<col1;j++){ 
+               a1[i][j] = sc.nextInt(); 
+           } 
+       } 
+       for(int i=0;i<row2;i++){ 
+           for(int j=0;j<col2;j++){ 
+               a2[i][j] = sc.nextInt(); 
+           } 
+       } 
+       for(int i=0;i<row1;i++){ 
+           for(int j=0;j<col1;j++){ 
+               System.out.print(a1[i][j] + " "); 
+           } 
+           System.out.println(); 
+       } 
+       for(int i=0;i<row2;i++){ 
+           for(int j=0;j<col2;j++){ 
+               System.out.print(a2[i][j] + " "); 
+           } 
+               System.out.println(); 
+       } 
+     if(row1 == row2 && col1 == col2) 
+     { 
+       for(int i=0;i<row1;i++){ 
+           for(int j=0;j<col1;j++){ 
+               System.out.println(a2[i][j] + a1[i][j]); 
+           } 
+       } 
+     } 
+        
+   } 
+}                              
                       
