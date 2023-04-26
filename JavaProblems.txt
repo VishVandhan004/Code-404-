@@ -182,7 +182,7 @@ int main(){
     }
     printf("%d",sum);
 }                     
-                         *********** 6th Problem *****************
+                                           *********** 6th Problem *****************
 /* 
 Given a string S in encoded form, and  an integer array indices[] of string length. 
 You need to find the decoded form of String S,  
@@ -243,7 +243,7 @@ int main()
     }
 }
 
-                                            ************* 7th Problem *******************
+                                               ************* 7th Problem *******************
 Given an integer array nums, find the  subarray  with the largest sum, and return its sum.
 Example 1:
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
@@ -295,3 +295,34 @@ int main() {
         }
     }
 }                           
+                      *********************** 9th Problem ************************
+/*
+Java Program To Calculate The Sum Of Array Elements By Taking Input Values from user
+
+Sample Data:
+Enter number of elements: 5
+Enter array elements:
+10 20 30 40 50
+Sum of array elements= 150*/
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements:");
+        int n = sc.nextInt();
+        int sum = 0;
+        System.out.println("Enter array elements: ");
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            sum = sum + arr[i];
+        }
+        System.out.print("Sum of array elements = "+ sum);
+        
+    }
+}
+                      
