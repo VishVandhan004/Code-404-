@@ -664,4 +664,49 @@ class test{
         
     }
 }                      
+                 ************************* 16th Problem ***********************
+ /*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list 
+The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
+sample 1: 
+Input: numberss = 2 9 6 5 12 
+Output: 2 
+Explanation: 
+The smallest number in list is 2. 
+The largest number in list is 12. 
+The highest common factor of 2 and 12 is 2. 
+*/
 
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+       Scanner sc = new Scanner(System.in);
+       try 
+       {
+           
+        String str = sc.nextLine();
+        String[] stArr = str.split(" ");
+        int len = stArr.length;
+        int[] arr = new int[len];
+        for(int i=0;i<len;i++){
+           int n = Integer.parseInt(stArr[i]);
+           arr[i] = n;
+       }
+       Arrays.sort(arr);
+        int min = arr[0];
+        int max = arr[len-1];
+        int HCF = 0;
+        for(int i=1;i<=min || i<= max ;i++){
+            if(min%i == 0 && max%i == 0){
+                HCF = i;
+            }
+        }
+        System.out.println(HCF);
+    }
+       finally {
+           
+           sc.close();
+       }
+   }
+}                
