@@ -860,7 +860,7 @@ class test {
         System.out.print(count);
     }
 }    
-          ****************************** 20th Problem *************           
+          ****************************** 20th Problem ************************        
  /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. 
 read both dates in string format, i.e, year-month-date as given in sample data. 
 sample data1 
@@ -890,4 +890,46 @@ class test{
         long dura = ChronoUnit.DAYS.between(a1,a2);
         System.out.println(dura);
     }
-}                      
+}             
+ ************************************* 21st Problem ************************
+/*Given a word w, rotate other than consonents in the word and print it. 
+The other than consonents are 'i', 'a', 'u', 'e', and 'e', and they can be seen in both lower- and uppercase,More than once. 
+ sample 1: 
+Input: 
+"ravi" 
+Output: 
+"riva" 
+sample 2: 
+Input:  
+"telusuko" 
+Output:  
+"tolusuke" 
+*/
+
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char [] charArr = str.toCharArray();
+        int len = charArr.length;
+        for(int i=0;i<len;i++)
+        {
+          for(int j=i+1; j<len;j++)
+          {
+            char ch = charArr[i];
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+          {
+            char d = charArr[j];
+            if(d =='a'|| d=='e'||d=='i'||d=='o'||d=='u'){
+                char temp = charArr[i];
+                charArr[i] = charArr[j];
+                charArr[j] = temp;
+            }
+          }
+        }
+      }
+      String s1 = new String(charArr);
+      System.out.println(s1);
+   }
+}         
