@@ -1005,3 +1005,69 @@ class Solution{
         in.close(); 
     } 
 }            
+            ************************************** 24th problem *************************************
+Project school exam being conducted
+
+Exam_starttime and exam_endtime of the student is given in two arrays.
+
+pse_strattime[i] indicates the project school exam start time of student i,
+pse_endtime[i] indicates the project school end time of student i.
+Project school incharge wants to know the number of students writing the exam at given time. 
+
+we can say a student is writing exam if given_time is between pse_startTime[i] and pse_endTime[i] inclusive.
+
+
+Example 1:
+
+Input: pse_startTime = [1,2,3], pse_endtime = [3,2,7], queryTime = 4
+Output: 1
+Explanation: We have 3 students where:
+The first student started writing his exam at time 1 and finished at time 3 and wasn't doing anything at time 4.
+The second student started writing his exam at time 2 and finished at time 2 and also wasn't doing anything at time 4.
+The third student started writing his exam at time 3 and finished at time 7 and was the only student doing homework at time 4.
+Example 2:
+
+Input: startTime = [4], endTime = [4], queryTime = 4
+Output: 1
+Explanation: The only student writing his exam at the queryTime.
+
+Test Cases:
+Case=1
+input=1 2 3
+3 2 7
+4
+output=1
+Case=2
+input=4
+4
+4
+output=1
+
+
+import java.util.*;
+class test
+{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String startTime = sc.nextLine();
+        String endTime = sc.nextLine();
+        String arr1[] = startTime.split(" ");
+        String arr2[] = endTime.split(" ");
+        int queryTime = sc.nextInt();
+        int count = 0;
+        int len = arr1.length;
+        int newarr1[] = new int[len];
+        int newarr2[] = new int[len];
+        for(int i=0;i<len;i++)
+        {
+            newarr1[i] = Integer.parseInt(arr1[i]);
+            newarr2[i] = Integer.parseInt(arr2[i]);
+           if(newarr1[i] <= queryTime && newarr2[i] >= queryTime)
+          {
+            count++;
+          }
+          
+        }
+        System.out.println(count);
+    }
+}            
