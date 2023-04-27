@@ -1,25 +1,38 @@
 import java.util.*;
+class A extends Thread {
+    public void run() {
+        try {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("T1");
+                Thread.sleep(100);
+            }
+        } catch (Exception e) {
+        }
+    }
+}
+class B extends Thread {
+    public void run() {
+        try {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("T2");
+                Thread.sleep(100);
+            }
+        } catch (Exception e) {
+        }
+    }
+}
 public class Test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of an array:");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        System.out.println("Enter the no.of students");
-        int m = sc.nextInt();
-        Arrays.sort(arr);
-        int min =Integer.MAX_VALUE;
-        for(int i=0;i<=n-m;i++)
-        {
-            int diff = arr[i+m-1] - arr[i];
-            if(diff<min)
-            {
-                min = diff;
-            }
-        }
-        System.out.printf("Difference is %d",min);
+        A a1 = new A();
+        B b1 = new B();
+        a1.start();
+        b1.start();
+        try {
+            a1.join();
+            b1.join();
+            a1.setName("thread100");
+        } catch (Exception e) {}
+            System.out.println(a1.getName() + " " + b1.getName());
+        
     }
 }
