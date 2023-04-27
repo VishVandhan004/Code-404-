@@ -933,3 +933,37 @@ class test {
       System.out.println(s1);
    }
 }         
+        **************************** 22nd Problem ************************
+/*There is a List L that consists of n only positive numbers. 
+It was converted into another List L i.e, of length n - 1, such that coverted[i] = List[i] XOR List[i + 1]. For example, if List= [1,0,2,1], then converted= [1,2,3]. 
+You are given the converted list. You are also given an start number, i.e. List[0]. 
+Return the original List L. It can be proved that the answer exists and is unique. 
+Sample Data:  
+input: 
+1 2 3 
+1 
+output: 
+1 0 2 1 
+Explanation:  
+If List= 1 0 2 1 then 1 and converted= (1 XOR 0, 0 XOR 2, 2 XOR 1) = 1 2 3*/
+
+import java.util.*;
+class test{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String [] numberString = s.split(" ");
+        int len = numberString.length;
+        int arr[] = new int[len];
+        for(int i=0;i<len;i++){
+            arr[i] = Integer.parseInt(numberString[i]);
+        }
+        System.out.print("start= ");
+        int a = sc.nextInt();
+        System.out.print(a+" ");
+        for(int i=0;i<len;i++){
+            a = a^arr[i];
+            System.out.print(a+" ");
+        }
+    }
+}        
