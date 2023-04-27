@@ -859,4 +859,35 @@ class test {
         }
         System.out.print(count);
     }
-}                            
+}    
+          ****************************** 20th Problem *************           
+ /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. 
+read both dates in string format, i.e, year-month-date as given in sample data. 
+sample data1 
+-------------- 
+input: 
+"2020-06-28" 
+"2020-06-29" 
+output:1 
+sample data2 
+-------------- 
+Input:  
+"2019-01-14" 
+"2018-12-30" 
+Output: 15 
+*/
+
+import java.util.*;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+class test{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+        LocalDate a1 = LocalDate.parse(s1);
+        LocalDate a2 = LocalDate.parse(s2);
+        long dura = ChronoUnit.DAYS.between(a1,a2);
+        System.out.println(dura);
+    }
+}                      
