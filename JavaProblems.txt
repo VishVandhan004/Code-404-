@@ -1191,4 +1191,63 @@ class test {
         }
         System.out.print(count);
     }
-}             
+}    
+                   ******************************* 28th Problem ***************************
+A string is given, find the number of substrings of size 4 without repetitive characters.
+
+if the substring is appearing for multiple times, each one should be counted seperately
+
+A substring is always a contiguous sequence of characters from the string.
+
+
+Example 1:
+
+I/p: s = "aabcdcdbe"
+Output: 2
+Explanation: There are 6 substrings of size 4: "aabc", "abcd", "bcdc", "cdcd","dcdb", and "cdbe". 
+The substrings with given criteria are: "abcd", "cdbe".
+
+Example 2:
+
+I/p: s = "abcdabcd"
+Output: 5
+Explanation: There are 5 substrings of size 4: "abcd","bcda","cdab","dabc", "abcd". 
+The substrings with given criteria are: "abcd","bcda","cdab","dabc", "abcd"
+
+Test cases:
+case=1
+input=aabcdcdbe
+output=2
+
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int length = str.length();
+        int count=0;
+        for(int i=0;i<length-3;i++)
+        {
+            boolean[] visited = new boolean[26];
+            boolean isUnique = true;
+            for(int j=i;j<i+4;j++)
+            {
+                if(visited[str.charAt(j) - 'a' ])
+                {
+                 isUnique = false;
+                 break;
+                }
+                
+              visited[str.charAt(j) - 'a'] = true;
+            }
+            if(isUnique)
+            {
+                System.out.println(str.substring(i,i+4));
+                count++;
+            }
+        }
+        
+        System.out.println(count);
+  }
+}                            
