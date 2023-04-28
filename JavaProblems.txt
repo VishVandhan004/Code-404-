@@ -1110,3 +1110,61 @@ class test
         System.out.print(len/2);
     }
 }                
+               **************************** 26th Problem *************************
+Given a list of non-negative numbers, identify all the sublists of odd size from it, calculate the total of all the elements of sublists. 
+
+
+Example 1:
+
+Input: list = [1,4,2,5,3]
+Output: 58
+Explanation: The odd-size sublists of list and their sums are:
+[1] = 1
+[4] = 4
+[2] = 2
+[5] = 5
+[3] = 3
+[1,4,2] = 7
+[4,2,5] = 11
+[2,5,3] = 10
+[1,4,2,5,3] = 15
+If we add all these together we get 1 + 4 + 2 + 5 + 3 + 7 + 11 + 10 + 15 = 58
+
+Example 2:
+
+Input: list = [1,2]
+Output: 3
+Explanation: There are only 2 sublists of odd size, [1] and [2]. Their sum is 3.
+
+Example 3:
+
+Input: list = [10,11,12]
+Output: 66
+
+Testcases:
+
+Case=1
+input=1 4 2 5 3
+output=58
+
+import java.util.*;
+class test {
+    public static void main(String args[]){
+     Scanner sc = new Scanner(System.in);
+     String arr[] = sc.nextLine().split(" ");
+     int length = arr.length;
+     int[] Nlist = new int[length];
+     int sum1 = 0;
+     for(int i=0;i<length;i++){
+         Nlist[i] = Integer.parseInt(arr[i]);
+     }
+     for(int i=0;i<length;i++){
+         for(int j=i;j<length;j=j+2){
+             for(int k=i;k<=j;k++){
+                 sum1 = sum1 + Nlist[k];
+             }
+         }
+     }
+     System.out.println(sum1);
+    }
+}
