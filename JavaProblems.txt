@@ -1309,4 +1309,29 @@ class test
             System.out.println();
         }
     }
-}                                         
+}                    
+        ********************** 30th Problem *************************
+/*Bob given a date in string form i.e, in the following format YYYY-MM-DD,  
+print the day number int that year. 
+ Sample Input: date = "2018-01-10" 
+Output: 10 
+Explanation: Given date is the 10th day of the year 2018. 
+Sample Input: date = "2018-02-11" 
+Output: 42 
+Note: 
+date from Jan 1st, 1900 to Dec 31th, 2019.*/
+
+import java.util.*;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+class test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        LocalDate a1 = LocalDate.parse(s1);
+        int date = a1.getDayOfYear();
+        System.out.println(date);
+    }
+}                             
