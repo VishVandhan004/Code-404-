@@ -1062,3 +1062,57 @@ class test
         System.out.println(count);
     }
 }            
+                ******************* 25th Problem ***********************
+Komali has n chocolates, where the ith chocolates is of type chocoType[i]. 
+Komali mother noticed that komali started to gain weight, so she restricted Komali to only eat n / 2 of the chocolates she has. 
+Komali likes her candies very much, and she wants to eat the maximum number of different types of chocolates while still following her mother's order.
+
+Given the integer array chocoType of length n, return the maximum number of different types of chocolates she can eat if she only eats n / 2 of them.
+
+Example 1:
+
+Input: chocoType = [1,1,2,2,3,3]
+Output: 3
+Explanation: Alice can only eat 6 / 2 = 3 chocolates. Since there are only 3 types, she can eat one of each type.
+Example 2:
+
+Input: chocoType = [1,1,2,2,3]
+Output: 2
+Explanation: Alice can only eat 5 / 2 = 2(eating half chocolate is not allowed) chocolates. Whether she eats types [1,2], [1,3], or [2,3], she still can only eat 2 different types.
+Example 3:
+
+Input: chocoType = [6,6,6,6]
+Output: 1
+Explanation: Alice can only eat 4 / 2 = 2 chocolates. Even though she can eat 2 candies, she only has 1 type.
+
+Test Cases:
+case=1
+input= 2 2 2 3 3 3
+output=2
+
+import java.util.*;
+class test 
+{
+    public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       String str = sc.nextLine();
+       String arr[] = str.split(" ");
+       int len = arr.length;
+       int nums[] = new int[len+1];
+       int count=0;
+       for(int i=0;i<len;i++){
+           nums[i] = Integer.parseInt(arr[i]);
+       }
+       for(int i=0; i<len; i++)
+       {
+           if(nums[i] != nums[i+1])
+            {
+                 count++;
+             }
+       }
+       if(len/2>= count)
+       System.out.print(count);
+        if(len/2<count)
+        System.out.print(len/2);
+    }
+}                
