@@ -1378,3 +1378,34 @@ class test
         }
     }
 }                            
+                           *********************************** 31st Problem ***************************
+ /*Write a function maxsubstring (str,alpha,theta) str is the source string and 
+have to return maximum sub string which starts with alpha and ends with theta.
+Sample:
+input=computer                                                                                                         
+m                                                                                                                      
+r    	
+output=                                                                                                              
+Max. Substring  is:mputer  
+*/
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char alpha = sc.next().charAt(0);
+        char theta = sc.next().charAt(0);
+        int start = str.indexOf(alpha);
+        int end = str.lastIndexOf(theta);
+        if(start == -1 || end == -1 || start > end)
+        {
+            System.out.println("No substring found");
+        }
+        else
+        {
+        System.out.println("Max. Substring is:" + str.substring(start,end+1));
+        }
+    }
+}                          
