@@ -1631,3 +1631,57 @@ class Solution {
     } 
 }
                     *************************** 37th Problem **************************
+/*A string is given. identify the numbers of instances possible for the word "student"
+
+You can use each character in the string at most once. Return the total number of instances that can be formed.
+
+Explanation1:
+input=escsceca
+output=2
+from the given string, the word "cse" can be formed twice
+Explanation2:
+input=asceasdf
+output=1
+
+Testcases:
+case=1
+input=escsceca
+output=2
+*/
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        char[] st = s.toCharArray();
+        Map<Character,Integer> mp = new HashMap<>();
+        for(int i=0;i<st.length;i++)
+        {
+            if(mp.containsKey(st[i]))
+            {
+                int a = mp.get(st[i]);
+                mp.put(st[i],a+1);
+            }
+            else {
+                mp.put(st[i],1);
+            }
+        }
+        int out=0;
+        int min=0;
+        for(Map.Entry<Character,Integer> me:mp.entrySet())
+        {
+            char d = me.getKey();
+            if(d=='c' || d=='s' || d=='e')
+            {
+                out = me.getValue();
+                if(out<min)
+                {
+                    out = min;
+                }
+            }
+        }
+        System.out.print(out);
+    }
+}
