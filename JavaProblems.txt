@@ -1543,4 +1543,54 @@ class Test
             al.put(c,i); 
         } 
     } 
-}                                              
+}                                           
+                        *************** 35th Problem **********************
+/*Given a string, find size of palindrome with maximum length.
+
+alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
+
+Example 1:
+
+Input: s = "abccccdd"
+Output: 7
+Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+
+Example 2:
+
+Input: s = "a"
+Output: 1
+Explanation: The longest palindrome that can be built is "a", whose length is 1.
+
+
+testcases:
+case=1
+input=abccccdd
+output=7
+
+*/
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+       Scanner sc = new Scanner(System.in);
+       String str = sc.nextLine();
+       int len = 0;
+       Set<Character> set = new HashSet<>();
+       for(char c: str.toCharArray())
+       {
+           if(set.contains(c))
+           {
+               set.remove(c);
+               len+=2;
+           } else {
+               set.add(c);
+           }
+       }
+       if(!set.isEmpty())
+       {
+           len++;
+       }
+       System.out.println(len);
+    }
+}                           
