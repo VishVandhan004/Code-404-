@@ -1588,7 +1588,7 @@ class test
     }
 }                           
                     ************************* 36th Problem ***********************
- Reversing the Arrays
+Reversing the Arrays
 
 import java.util.*; 
 public class Solutions { 
@@ -1615,4 +1615,19 @@ public class Solutions {
         } 
         sc.close(); 
     } 
-}                   
+}        
+CONTAINS DUPLICATE ELEMENTS  IN AN ARRAY OR NOT..
+class Solution { 
+    public boolean containsDuplicate(int[] nums) { 
+       Arrays.sort(nums); 
+       for(int i=0;i<nums.length-1;i++) 
+       { 
+           if(nums[i] == nums[i+1]) 
+           { 
+               return true; 
+           } 
+       } 
+       return false; 
+    } 
+}
+                    *************************** 37th Problem **************************
