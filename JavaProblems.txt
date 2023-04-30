@@ -1587,3 +1587,32 @@ class test
        System.out.println(len);
     }
 }                           
+                    ************************* 36th Problem ***********************
+ Reversing the Arrays
+
+import java.util.*; 
+public class Solutions { 
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in); 
+        System.out.println("Enter the size of the array:\n"); 
+        int len = sc.nextInt(); 
+        int arr[] = new int[len]; 
+        int start = 0; 
+        int end = len-1; 
+        for (int i=0;i<len;i++) { 
+            arr[i] = sc.nextInt(); 
+        } 
+        while(start < end) 
+        { 
+            int temp = arr[start]; 
+            arr[start] = arr[end]; 
+            arr[end] = temp; 
+            start++; 
+            end--; 
+        } 
+        for (int i = 0; i < len; i++) { 
+            System.out.println(arr[i]); 
+        } 
+        sc.close(); 
+    } 
+}                   
