@@ -1865,4 +1865,88 @@ class Test
     } 
 }                                
                                 ********************** 42nd Problem ******************************
+/*You are given an array of numbers. 
+
+the following can be done in single iteration:
+
+    1. select two equal numbers.
+    2. delete both of them from the array.
+    3. repeat steps 1 & 2 until there is no equal numbers available in the array.
+
+return the number of pairs deleted and leftover elements in the array
+
+Example 1:
+
+Input: [1,3,2,1,3,2,2]
+Output: [3,1]
+Explanation:
+first 1,1 will be selected and deleted, resulting array = [3,2,3,2,2].
+then 3,3 will be selected and deleted, resulting array= [2,2,2].
+then 2,2 will be selected and deleted, resulting array= [2].
+No more pairs can be formed. A total of 3 pairs deleted, and there is 1 number leftover in nums.
+
+Example 2:
+
+Input: [1,1]
+Output:[1,0]
+Explanation: first 1,1 will be selected and deleted, resulting array= [].
+No more pairs can be formed. A total of 1 pair deleted, and there are 0 numbers leftover in the array.
+
+Example 3:
+
+Input: [0]
+Output: [0,1]
+Explanation: No pairs can be formed, and there is 1 number leftover in the array.
+
+Testcases:
+case=1
+input=1,3,2,1,3,2,2
+output=3,1
+*/
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String[] arr = sc.nextLine().split(",");
+        int n = arr.length;
+        int[] nums = new int[n];
+        for(int i=0;i<n;i++)
+        {
+            nums[i] = Integer.parseInt(arr[i]);
+        }
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i] == -1)
+            {
+                continue;
+            }
+            for(int j=i+1;j<n;j++)
+            {
+                if(nums[j] == -1)
+                {
+                    continue;
+                }
+                if(nums[i] == nums[j])
+                {
+                    nums[i] = -1;
+                    nums[j] = -1;
+                    count++;
+                    break;
+                }
+            }
+        }
+        int c1=0;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i] != -1)
+            {
+                c1++;
+            }
+        }
+        System.out.println(count+","+c1);
+    }
+}                                
                                 ********************** 43rd Problem ******************************
