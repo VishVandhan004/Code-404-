@@ -1632,9 +1632,7 @@ class Solution {
 }
                     *************************** 37th Problem **************************
 /*A string is given. identify the numbers of instances possible for the word "student"
-
 You can use each character in the string at most once. Return the total number of instances that can be formed.
-
 Explanation1:
 input=escsceca
 output=2
@@ -1642,12 +1640,12 @@ from the given string, the word "cse" can be formed twice
 Explanation2:
 input=asceasdf
 output=1
-
 Testcases:
 case=1
 input=escsceca
 output=2
 */
+
 import java.util.*;
 class test
 {
