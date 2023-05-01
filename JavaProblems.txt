@@ -296,12 +296,12 @@ int main() {
                       *********************** 9th Problem ************************
 /*
 Java Program To Calculate The Sum Of Array Elements By Taking Input Values from user
-
 Sample Data:
 Enter number of elements: 5
 Enter array elements:
 10 20 30 40 50
 Sum of array elements= 150*/
+
 import java.util.*;
 class test
 {
@@ -320,7 +320,6 @@ class test
             sum = sum + arr[i];
         }
         System.out.print("Sum of array elements = "+ sum);
-        
     }
 }
                               ************************** 10th Problem *************************
