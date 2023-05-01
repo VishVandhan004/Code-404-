@@ -261,7 +261,7 @@ class Solution {
        return max_S;
     }
 }
-                           ********************* 8th Problem ******************
+                           ****************** 8th Problem ******************
 /*Bob given a task to Babe, i.e, Babe has to detect unique value in a given set of values by Bob
 Example:
 input=
