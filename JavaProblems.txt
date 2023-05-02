@@ -450,7 +450,6 @@ Cliff Shaw is working on the singly linked list.
 He is given a list of boxes arranged as singly linked list, where each box is 
 printed with a positive number on it and arranged in the list are ascending order.
 and numbers on the boxes may be repeated.
-
 Mr Cliff Shaw is performing an operation on the list.
 	-  To have only the distinct values in the final list,
 	removed all duplicate values.
