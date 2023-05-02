@@ -1408,8 +1408,7 @@ class First
     } 
 } 
                           *************************** 33rd Problem ************************
-/*Bob given two strings to jack, asking jack to comapre s1 and s2 to find are they  
-follwing same sequence of pattern or not. if they are following print true otherwise false. 
+/*Bob given two strings to jack, asking jack to comapre s1 and s2 to find are they following same sequence of pattern or not. if they are following print true otherwise false. 
 Sample Data1: 
 Input:  
 baab 
