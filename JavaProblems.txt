@@ -1300,7 +1300,7 @@ class test
     }
 }                             
                              ************************* 30th Problem ********************
- /*Ngit college decided to announce the toppers of 2nd year students , 
+/*Ngit college decided to announce the toppers of 2nd year students , 
 Here Management following a strategy to identify the toppers, i.e, 
 They have three different set of lists with there roll numbers, 
 first list is PS, second list is CS and third list is OUS.
