@@ -1460,8 +1460,7 @@ class Test
     } 
 }                
                 ************************ 34th Problem *************************     
- /*Given a word consisting of lowercase characters from a to z,  
-your task is to print the first character to emerge twice. 
+ /*Given a word consisting of lowercase characters from a to z, your task is to print the first character to emerge twice. 
 Note: 
 A character a appears twice before another character b if the second occurrence 
 of a is before the second occurrence of b. 
@@ -1508,8 +1507,7 @@ class Test
     } 
 }                                           
                                          *************** 35th Problem **********************
-/*Given a string, find size of palindrome with maximum length.
-alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
+/*Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
 Example 1:
 Input: s = "abccccdd"
 Output: 7
