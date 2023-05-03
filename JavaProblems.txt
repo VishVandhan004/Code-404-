@@ -544,8 +544,7 @@ class test {
 There is a railway route from Vizag to Hyderabad.The stations in the route will be identified by the codes(may be repeated).
 You will be given the list of station codes, using singly linked list implementation find the middle station in the given route.
 If there are even number of stations, print the second middle station. Your task is to find the middle station code in the given train route.
-NOTE: You shoud pass only the head node to the method/function 
-to find the middle station in that route.
+NOTE: You shoud pass only the head node to the method/function to find the middle station in that route.
 Input Format:
 -------------
 Line-1: space separated integers, station codes.
