@@ -125,10 +125,8 @@ class test{
     }
 }
                                                     ******* 5th Problem *********
-In a theatre there are M rows and N seats in each row. 
-The seats are numbered in a strange order (No duplicates). 
-You need to find out the total sum of the seat numbers  
-which are maximum in their columns. 
+In a theatre there are M rows and N seats in each row. The seats are numbered in a strange order (No duplicates). 
+You need to find out the total sum of the seat numbers which are maximum in their columns. 
 Input Format: 
 ------------- 
 Line-1 -> Two integers M and N 
