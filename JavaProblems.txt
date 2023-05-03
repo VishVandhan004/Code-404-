@@ -541,8 +541,7 @@ class test {
 }
                                 ********************** 14th Problem ********************
 /*
-There is a railway route from Vizag to Hyderabad.
-The stations in the route will be identified by the codes(may be repeated).
+There is a railway route from Vizag to Hyderabad.The stations in the route will be identified by the codes(may be repeated).
 You will be given the list of station codes, using singly linked list implementation
 find the middle station in the given route.
 If there are even number of stations, print the second middle station.
