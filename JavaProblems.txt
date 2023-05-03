@@ -90,7 +90,6 @@ class test {
 }
                                             ******** 4th Problem **********
 /*take the different size of balls in array and find the second largest ball in array
-Sample data:
 Enter number of the balls: 5 
 Enter balls with different sizes: 
 2 3 7 6 9
