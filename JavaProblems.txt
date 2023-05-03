@@ -237,7 +237,6 @@ int main()
 
                                     **************** 7th Problem *******************
 Given an integer array nums, find the  subarray  with the largest sum, and return its sum.
-Example 1:
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: The subarray [4,-1,2,1] has the largest sum 6.                    
@@ -290,7 +289,6 @@ int main() {
                       *********************** 9th Problem ************************
 /*
 Java Program To Calculate The Sum Of Array Elements By Taking Input Values from user
-Sample Data:
 Enter number of elements: 5
 Enter array elements:
 10 20 30 40 50
@@ -317,9 +315,7 @@ class test
     }
 }
                               ************************** 10th Problem *************************
-/*read rows and colums of first and second matrix, 
-then read elements into both matrix,perform addition of  
-those two matrix and dispaly first,second and result matrix. 
+/*read rows and colums of first and second matrix, then read elements into both matrix,perform addition of those two matrix and dispaly first,second and result matrix. 
 input: 
 2 
 2 
@@ -400,10 +396,7 @@ class test
 }                   
                                 ****************** 11th Problem ********************
 /* Wrie a Java program  that will test if a string is a valid PIN or not 
-A valid PIN has:
-Exactly 4 or 6 characters.
-Only numeric characters (0-9).
-No whitespace.
+A valid PIN has: Exactly 4 or 6 characters. Only numeric characters (0-9). No whitespace.
 Example1:
 121317
 true
@@ -488,9 +481,7 @@ class test {
 /*
 Cliff Shaw is working on the singly linked list. He is given a list of boxes arranged as singly linked list, where each box is 
 printed with a positive number on it and arranged in the list are ascending order. and numbers on the boxes may be repeated.
-Mr Cliff Shaw is performing an operation on the list.
--  To have only the distinct values in the final list,
-	removed all duplicate values.
+Mr Cliff Shaw is performing an operation on the list. To have only the distinct values in the final list, removed all duplicate values.
 Your task is to help Mr Cliff to perform the operation and return the updated list
 Input Format:
 -------------
@@ -579,9 +570,7 @@ class test
     }
 }                                
                                        **************** 15th Problem ***************
-/*Ram is playing a game of identifying the pairs of numbers from the givenlist of numbers.
-Help Ram to identify the number of pairs which satisfy the following criteria
-list[i]=list[j] and i<j
+/*Ram is playing a game of identifying the pairs of numbers from the givenlist of numbers. Help Ram to identify the number of pairs which satisfy the following criteria list[i]=list[j] and i<j
 Example 1:
 Input:6
 1 2 3 1 1 3
@@ -622,9 +611,7 @@ class test{
     }
 }                      
                                           ************************* 16th Problem ***********************
- /*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list 
-The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
-sample 1: 
+ /*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
 Input: numberss = 2 9 6 5 12 
 Output: 2 
 Explanation: 
@@ -739,15 +726,13 @@ public class Test {
     }
 }
                             ***************** 19th Problem ********************
-/*You have given N bricks. 
-You need to construct a staircase as follows: 
+/*You have given N bricks. You need to construct a staircase as follows: 
 1. = 
 2. == 
 3. === 
 4. ==== 
 Where = indicates one brick. 
-Another condition is row-1 should have 1 brick, row-2 should have 2 bricks and so on. 
-i.e., i-th row should have 'i' bricks. 
+Another condition is row-1 should have 1 brick, row-2 should have 2 bricks and so on.i.e., i-th row should have 'i' bricks. 
 Your task is to findout total number of staircases can be formed with the given condition. 
 Input Format: 
 ------------- 
@@ -818,8 +803,7 @@ class test {
     }
 }    
                                             ****************************** 20th Problem ************************        
- /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. 
-read both dates in string format, i.e, year-month-date as given in sample data. 
+ /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. read both dates in string format, i.e, year-month-date as given in sample data. 
 sample data1 
 -------------- 
 input: 
@@ -851,7 +835,6 @@ class test{
                                     ************************************* 21st Problem ************************
 /*Given a word w, rotate other than consonents in the word and print it. 
 The other than consonents are 'i', 'a', 'u', 'e', and 'e', and they can be seen in both lower- and uppercase,More than once. 
- sample 1: 
 Input: 
 "ravi" 
 Output: 
