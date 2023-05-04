@@ -804,7 +804,6 @@ class test {
 }    
                                             ****************************** 20th Problem ************************        
  /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. read both dates in string format, i.e, year-month-date as given in sample data. 
-sample data1 
 input: 
 "2020-06-28" 
 "2020-06-29" 
