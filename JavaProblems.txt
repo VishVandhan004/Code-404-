@@ -934,10 +934,8 @@ class Solution{
 }             
                       ************************************** 24th problem *************************************
 Project school exam being conducted
-Exam_starttime and exam_endtime of the student is given in two arrays.
-pse_strattime[i] indicates the project school exam start time of student i,
-pse_endtime[i] indicates the project school end time of student i.
-Project school incharge wants to know the number of students writing the exam at given time. 
+Exam_starttime and exam_endtime of the student is given in two arrays. pse_strattime[i] indicates the project school exam start time of student i,
+pse_endtime[i] indicates the project school end time of student i.Project school incharge wants to know the number of students writing the exam at given time. 
 we can say a student is writing exam if given_time is between pse_startTime[i] and pse_endTime[i] inclusive.
 Example 1:
 Input: pse_startTime = [1,2,3], pse_endtime = [3,2,7], queryTime = 4
