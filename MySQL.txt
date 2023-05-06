@@ -4,5 +4,8 @@ Instagram, Netflix, Airbnb, microsoft use SQL as their databases
 if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL..
 Data is in the form of tables and columns..
 Database -  it's a collection of data that are stored together. data stored should be similar. you can't store data of students and teachers together. keep students and teachers separate.
-
+Data can be written on a paper, stored in excel or stored using softwares like SQL..
+2 Types of databases: relational and non-relational
+relational- data is characterized into rows and columns. ex- SQL.
+non relational- data is charcaterized into graphs but not in rows and columns
  
