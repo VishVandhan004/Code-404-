@@ -1,13 +1,24 @@
 MySQL is a programming language used to create databases.. it is very much helpful in creating databases..
+
 SQL - Structured query language.
+
 Instagram, Netflix, Airbnb, microsoft use SQL as their databases
+
 if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL..
+
 Data is in the form of tables and columns..
+
 Database -  it's a collection of data that are stored together. data stored should be similar. you can't store data of students and teachers together. keep students and teachers separate.
+
 Data can be written on a paper, stored in excel or stored using softwares like SQL..
+
 2 Types of databases: relational and non-relational
 relational- data is characterized into rows and columns. ex- SQL.
 non relational- data is charcaterized into graphs but not in rows and columns.
 relational database uses RDBMS..
+
 Key - used to allow the arrangement of different tables in database.. we can access all the details of a particular data easily using keys.
 exp->  for student , student_id, student_name, student_rollno, student_age, etc are some of the keys.
+
+primary key - it's the most important key in database. it can only be one and no duplication and no null value
+ex-> student_id can be the primary key..
