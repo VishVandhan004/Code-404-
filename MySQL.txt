@@ -7,5 +7,7 @@ Database -  it's a collection of data that are stored together. data stored shou
 Data can be written on a paper, stored in excel or stored using softwares like SQL..
 2 Types of databases: relational and non-relational
 relational- data is characterized into rows and columns. ex- SQL.
-non relational- data is charcaterized into graphs but not in rows and columns
+non relational- data is charcaterized into graphs but not in rows and columns.
 relational database uses RDBMS..
+Key - used to allow the arrangement of different tables in database.. we can access all the details of a particular data easily using keys.
+exp->  for student , student_id, student_name, student_rollno, student_age, etc are some of the keys.
