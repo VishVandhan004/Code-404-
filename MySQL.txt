@@ -28,4 +28,10 @@ unique key - it must have unique values
 super key- set of multiple keys used to identify data.
 exp-> student_id and student_name -> will have same name but not same id..
 
+alternate key- it can be an alternate for the primary key. must be a unique value like ID.
+exp-> student_email can work as an alternate.
+
+Candidate key- set of columns which has keys that can replace the primary key. it's somewhat similar to alternate key.
+exp-> student_email and student_phoneno are examples
+
 
