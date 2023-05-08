@@ -47,4 +47,4 @@ foreign key - it's a key that is part of another database and it has been import
 different datatypes in SQL -
 CHAR, VARCHAR, INT, DATE, TIMESTAMP
 
-Creating a database - use the 'CREATE' keyword
+Creating a database - use the 'CREATE DATABASE' keyword
