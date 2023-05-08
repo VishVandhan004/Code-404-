@@ -44,3 +44,5 @@ exp - id and phone number..
 
 foreign key - it's a key that is part of another database and it has been imported..
 
+different datatypes in SQL -
+CHAR, VARCHAR, INT
