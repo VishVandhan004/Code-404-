@@ -65,3 +65,5 @@ exp-> ALTER TABLE clothesline
 after alter, then you can ADD columns into your table.
 exp-> ADD price int, ADD name VARCHAR(200);
 
+
+
