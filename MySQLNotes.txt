@@ -50,7 +50,13 @@ CHAR, VARCHAR, INT, DATE, TIMESTAMP
 Open the MySQL workbench and then we will be creating all these functions and operations-
 Creating a database - use the 'CREATE DATABASE' keyword
 
-If you have multiple databases and you wanna use one, you could type the ' USE "database name" ' // here write the database name like use southwind, etc..
+If you have multiple databases and you wanna use one, you could type the 'USE database name' // here write the database name like use southwind, etc..
 
 if you want to delete any database, simply type -> "DROP DATABASE database name"
+
+if you want to create a table inside the DB to store the values, type-> "CREATE TABLE tablename(
+    // write down what do you want in the table 
+    // exp -> num_column int
+    // write the name of what you want and specify the datatype of it..
+);" this basically creates a lot of columns in the table
 
