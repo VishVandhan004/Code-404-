@@ -73,4 +73,4 @@ Rname VARCHAR(200) NOT NULL,
 Rincome int NOT NULL,
 Raddress VARCHAR(200) NOT NULL
 );
-here rname is compulsory and user has to write it..
+user has to write these values.......
