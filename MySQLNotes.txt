@@ -86,3 +86,4 @@ Rincome int NOT NULL,
 Raddress VARCHAR(200) NOT NULL,
 PRIMARY KEY(RId)
 );
+here, the restaurant address, income, name might be same but the ID of the restaurant will definitely be different. so RId is the primary key..
