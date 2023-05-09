@@ -128,4 +128,5 @@ INSERT INTO flights VALUES(21,'Seoul','Tokyo');
 INSERT INTO flights VALUES(22,'Adelaide','Los Angeles');
 
 SELECT * from flights;
-
+we have basically created a database called travel and in that we have created a table and in that we have created some columns. we have inserted values into the tables by using the "INSERT INTO VALUES" command.
+Finally we would get everything, by using the "SELECT" command..
