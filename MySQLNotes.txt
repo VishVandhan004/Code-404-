@@ -122,11 +122,13 @@ F_num int PRIMARY KEY,
 F_start VARCHAR(20),
 F_end VARCHAR(20)
 );
-
 INSERT INTO flights VALUES(20,'Mumbai','Shanghai');
 INSERT INTO flights VALUES(21,'Seoul','Tokyo');
 INSERT INTO flights VALUES(22,'Adelaide','Los Angeles');
-
 SELECT * from flights;
+SELECT * from flights ORDER BY F_start;
+SELECT * from flights LIMIT 2;
+
 we have basically created a database called travel and in that we have created a table and in that we have created some columns. we have inserted values into the tables by using the "INSERT INTO VALUES" command.
-Finally we would get everything, by using the "SELECT" command..
+Finally we would get everything, by using the "SELECT" command.. In the 2nd SELECT statement, we are basically putting the f_start column in the alphabetical order by using the command("ORDER BY") command..
+In the 3rd select statement, we are getting only 2 column values because of the limit we have set. we can choose the number of columns we want to see by writing the "LIMIT no" command. 
