@@ -66,5 +66,11 @@ after alter, then you can ADD columns into your table.
 exp-> ADD price int, ADD name VARCHAR(200);
 
 if we want the user to write something which is mandatory, we could use NOT NULL keyword..
-
-
+exp-> CREATE DATABASE restaurant;
+USE restaurant;
+CREATE TABLE restuarant_table(
+Rname VARCHAR(200) NOT NULL,
+Rincome int,
+Raddress VARCHAR(200),
+);
+here rname is compulsory and user has to write it..
