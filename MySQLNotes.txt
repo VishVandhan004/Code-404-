@@ -112,3 +112,20 @@ FOREIGN KEY(Rnum) REFERENCES restaurant_details(RId)
 here we have created 2 tables in a single database.
 RId is the primary key in the first table and num is the primary key in the second table. 
 FOREIGN KEY is used to link 2 tables..Rnum is the foreign key which will be referencing to the the RId column in the restaurant_details table..
+
+ANOTHER EXAMPLE ->
+
+CREATE DATABASE Travel;
+USE Travel;
+CREATE TABLE flights(
+F_num int PRIMARY KEY,
+F_start VARCHAR(20),
+F_end VARCHAR(20)
+);
+
+INSERT INTO flights VALUES(20,'Mumbai','Shanghai');
+INSERT INTO flights VALUES(21,'Seoul','Tokyo');
+INSERT INTO flights VALUES(22,'Adelaide','Los Angeles');
+
+SELECT * from flights;
+
