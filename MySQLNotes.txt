@@ -70,7 +70,7 @@ exp-> CREATE DATABASE restaurant;
 USE restaurant;
 CREATE TABLE restuarant_table(
 Rname VARCHAR(200) NOT NULL,
-Rincome int,
-Raddress VARCHAR(200),
+Rincome int NOT NULL,
+Raddress VARCHAR(200) NOT NULL
 );
 here rname is compulsory and user has to write it..
