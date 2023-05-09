@@ -89,3 +89,26 @@ PRIMARY KEY(RId)
 here, the restaurant address, income, name might be same but the ID of the restaurant will definitely be different. so RId is the primary key..
 Note -> we will find the PRIMARY in the indexes section of MYSQL workbench..
 
+LET'S TAKE AN EXAMPLE -->>>
+
+CREATE DATABASE restaurant;
+USE restaurant;
+CREATE TABLE restaurant_details(
+RId int NOT NULL,
+Rname VARCHAR(200) NOT NULL,
+Rincome int NOT NULL,
+Raddress VARCHAR(200) NOT NULL,
+PRIMARY KEY(RId)
+);
+CREATE TABLE menu(
+num int NOT NULL,
+Rmeal_name VARCHAR(200) NOT NULL,
+Rmeal_type VARCHAR(200) NOT NULL,
+Rprice int NOT NULL,
+PRIMARY KEY(num),
+Rnum int NOT NULL,
+FOREIGN KEY(Rnum) REFERENCES restaurant_details(RId)
+);
+here we have created 2 tables in a single database.
+RId is the primary key in the first table and num is the primary key in the second table. 
+FOREIGN KEY is used to link 2 tables..Rnum is the foreign key which will be referencing to the the RId column in the restaurant_details table..
