@@ -74,3 +74,15 @@ Rincome int NOT NULL,
 Raddress VARCHAR(200) NOT NULL
 );
 user has to write these values.......
+
+Primary key - it's a type of key which is unique and separates one type of data with another type of data.
+exp ->
+CREATE DATABASE restaurant;
+USE restaurant;
+CREATE TABLE restuarant_table(
+RId int NOT NULL,
+Rname VARCHAR(200) NOT NULL,
+Rincome int NOT NULL,
+Raddress VARCHAR(200) NOT NULL,
+PRIMARY KEY(RId)
+);
