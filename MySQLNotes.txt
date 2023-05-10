@@ -25,7 +25,7 @@ Key - used to allow the arrangement of different tables in database.. we can acc
 exp->  for student , student_id, student_name, student_rollno, student_age, etc are some of the keys.
 
 primary key - it's the most important key in database. it can only be one and no duplication and no null value
-ex-> student_id can be the primary key..
+ex-> student_id can be the primary key.
  
 unique key - it must have unique values
 exp -> student_phoneno can be the unique key among the data after primary key.
@@ -65,7 +65,7 @@ exp-> ALTER TABLE clothesline
 after alter, then you can ADD columns into your table.
 exp-> ADD price int, ADD name VARCHAR(200);
 
-if we want the user to write something which is mandatory, we could use NOT NULL keyword..
+if we want the user to write something which is mandatory, we could use NOT NULL keyword.
 exp-> CREATE DATABASE restaurant;
 USE restaurant;
 CREATE TABLE restuarant_table(
@@ -73,7 +73,7 @@ Rname VARCHAR(200) NOT NULL,
 Rincome int NOT NULL,
 Raddress VARCHAR(200) NOT NULL
 );
-user has to write these values.......
+user has to write these values.
 
 Primary key - it's a type of key which is unique and separates one type of data with another type of data.
 exp ->
