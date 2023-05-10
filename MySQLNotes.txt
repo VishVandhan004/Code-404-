@@ -1,10 +1,10 @@
-MySQL is a programming language used to create databases.. it is very much helpful in creating databases..
+MySQL is a programming language used to create databases, it is very much helpful in creating databases..
 
 SQL - Structured query language.
 
 Instagram, Netflix, Airbnb, microsoft use SQL as their databases
 
-if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL..
+if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL.
 
 SQL has basic CRUD operations (create, read, update, delete)..it has security, administration, etc.
 
