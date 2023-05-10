@@ -6,7 +6,7 @@ Instagram, Netflix, Airbnb, microsoft use SQL as their databases
 
 if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL..
 
-SQL has basic CRUD operations (create, read, update, delete)..it has security, administration, etc..
+SQL has basic CRUD operations (create, read, update, delete)..it has security, administration, etc.
 
 Query-> instructions given to the RDMS.
 
