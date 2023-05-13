@@ -42,7 +42,7 @@ exp-> student_email and student_phoneno are examples
 composite key - it's a combination of 2 unique keys.
 exp - id and phone number..
 
-foreign key - it's a key that is part of another database and it has been imported..
+foreign key - it's a key that is part of another database and it has been imported.
 
 different datatypes in SQL -
 CHAR, VARCHAR, INT, DATE, TIMESTAMP
