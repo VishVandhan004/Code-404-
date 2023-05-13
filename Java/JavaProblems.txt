@@ -484,7 +484,6 @@ printed with a positive number on it and arranged in the list are ascending orde
 Mr Cliff Shaw is performing an operation on the list. To have only the distinct values in the final list, removed all duplicate values.
 Your task is to help Mr Cliff to perform the operation and return the updated list
 Input Format:
--------------
 Line-1: An integer, N number of boxes in list.
 Line-2: N space separated integers, boxes as list.
 Output Format:
