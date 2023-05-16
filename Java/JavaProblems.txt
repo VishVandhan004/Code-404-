@@ -1284,7 +1284,6 @@ class test
 }                            
                            *********************************** 31st Problem **********************************
 /*Write a function maxsubstring (str,alpha,theta) str is the source string and have to return maximum sub string which starts with alpha and ends with theta.
-Sample:
 input=computer                                                                                                         
 m                                                                                                                      
 r    	
