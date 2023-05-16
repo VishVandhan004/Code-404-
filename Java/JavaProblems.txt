@@ -1188,7 +1188,7 @@ Sample Output-1:
 	first row into first column,second row to second column and so on... 			 
 4. Display the rotated image of the matrix. 
 */
-  // REVERSE ITERATION
+// REVERSE ITERATION
 import java.util.*;
 class test
 {
