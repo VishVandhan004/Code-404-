@@ -1181,7 +1181,6 @@ Sample Output-1:
 14 3 4 1 
 12 6 8 9 
 16 7 10 11 
-===== Hint ===== 
 1. For a NxN matrix,we need to N/2 cycles of swapping... 
 2. In first cycle,Swap the elements of the first row with lastrow,and in the second cycle , 
 	the 2nd  row with the 2nd last row are  to be swapped... and so on... 
