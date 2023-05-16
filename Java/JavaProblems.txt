@@ -1352,7 +1352,6 @@ class First
 baab 
 rat mat mat rat 
 Output: true 
-Sample Data2: 
 Input:  
 abba  
 mat rat rat sat 
