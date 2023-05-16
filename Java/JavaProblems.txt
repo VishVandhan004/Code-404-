@@ -991,7 +991,6 @@ Example 3:
 Input: chocoType = [6,6,6,6]
 Output: 1
 Explanation: Alice can only eat 4 / 2 = 2 chocolates. Even though she can eat 2 candies, she only has 1 type.
-Test Cases:
 case=1
 input= 2 2 2 3 3 3
 output=2
