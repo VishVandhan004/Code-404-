@@ -68,7 +68,7 @@ class test{
         }  
     }
 
-                                        ******** 3rd Problem   ******
+                                 ************* 3rd Problem   ***********
 /*Write a Java program that takes a year from user and print whether that year is a leap year or not.
 Enter the year: 2016
 2016 is a leap year
