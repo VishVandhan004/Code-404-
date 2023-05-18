@@ -123,7 +123,7 @@ class test
         System.out.printf("Second largest ball = %d",arr[n-2]);
     }
 }
-                                                    ******* 5th Problem *********
+                               ************** 5th Problem *****************
 In a theatre there are M rows and N seats in each row. The seats are numbered in a strange order (No duplicates). 
 You need to find out the total sum of the seat numbers which are maximum in their columns. 
 Input Format: 
