@@ -169,7 +169,7 @@ int main(){
     }
     printf("%d",sum);
 }                     
-                                           *********** 6th Problem *****************
+                                  ***************** 6th Problem *****************
 /* 
 Given a string S in encoded form, and  an integer array indices[] of string length. You need to find the decoded form of String S,  
 by moving each character at ith position in S, to indices[i] position in decoded string.and then print the decoded string. 
