@@ -144,7 +144,6 @@ Sample Input-2:
 9 3 18 17 
 15 16 17 12 
 Sample Output-2: 
----------------- 
 66
 
 #include<stdio.h>
