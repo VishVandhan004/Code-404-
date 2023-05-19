@@ -429,7 +429,6 @@ Line-2: N space separated integers, boxes as list.
 Output Format:
 Print the updated list.
 Sample Input-1:
----------------
 8
 1 1 1 2 2 3 3 4
 Sample Output-1:
