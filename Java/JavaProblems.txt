@@ -427,7 +427,6 @@ Input Format:
 Line-1: An integer, N number of boxes in list.
 Line-2: N space separated integers, boxes as list.
 Output Format:
---------------
 Print the updated list.
 Sample Input-1:
 ---------------
