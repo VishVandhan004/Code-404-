@@ -174,7 +174,6 @@ int main(){
 Given a string S in encoded form, and  an integer array indices[] of string length. You need to find the decoded form of String S,  
 by moving each character at ith position in S, to indices[i] position in decoded string.and then print the decoded string. 
 Input Format: 
-------------- 
 Line-1 -> A String S, enocded string of length L 
 Line-2 -> L space separated integers indices[], where 0 <=indices[i] < L  
 Output Format: 
