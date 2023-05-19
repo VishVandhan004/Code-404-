@@ -778,7 +778,8 @@ Output: 15
 import java.util.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-class test{
+class test
+{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         String s1 = sc.nextLine();
