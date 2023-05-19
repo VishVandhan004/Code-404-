@@ -579,7 +579,7 @@ class test{
     }
 }                      
                                           ************************* 16th Problem ***********************
- /*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
+/*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
 Input: numberss = 2 9 6 5 12 
 Output: 2 
 Explanation: 
