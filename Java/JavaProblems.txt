@@ -192,11 +192,10 @@ Sample Input-2:
 aidin 
 4 3 2 0 1 
 Sample Output-2: 
----------------- 
 india 
 Explanation-2: 
---------------- 
-Given String, aidin 
+Given String,
+aidin 
 4 3 2 0 1 
 after shifting,	india 
 */
