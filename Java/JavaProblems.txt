@@ -1676,6 +1676,7 @@ Explanation:
 - The pole labeled 9 holds only a yellow Circle. 
 Thus, the number of poles with all three colors is 1. 
 */ 
+
 import java.util.*; 
 class Test 
 { 
