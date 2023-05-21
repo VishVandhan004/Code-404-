@@ -1505,7 +1505,7 @@ class Solution {
        return false; 
     } 
 }
-                    *************************** 37th Problem **************************
+                             *************************** 37th Problem **************************
 /*A string is given. identify the numbers of instances possible for the word "student"
 You can use each character in the string at most once. Return the total number of instances that can be formed.
 Explanation1:
