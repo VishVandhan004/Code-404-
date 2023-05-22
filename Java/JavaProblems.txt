@@ -1741,7 +1741,7 @@ class Test
          
     } 
 }                                
-                                ********************** 42nd Problem ****************************
+                                ********************** 42nd Problem ***************************
 /*You are given an array of numbers. 
 the following can be done in single iteration:
 1. select two equal numbers.
