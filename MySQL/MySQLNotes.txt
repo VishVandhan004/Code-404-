@@ -141,3 +141,4 @@ In the 4th select statement, we have changed the name of the column. specify the
 In the WHERE statement, we would get only the elements or data which has the words "ca".
 134 to 136, we have changed the value of num 3 of the f_start column.
 
+some examples of SQL queries ->
