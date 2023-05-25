@@ -12,7 +12,7 @@ Query-> instructions given to the RDMS.
 
 Data is in the form of tables and columns.
 
-Database -  it's a collection of data that are stored together. data stored should be similar. you can't store data of students and teachers together. keep students and teachers separate.
+Database -> it's a collection of data that are stored together. data stored should be similar. you can't store data of students and teachers together. keep students and teachers separate.
 
 Data can be written on a paper, stored in excel or stored using softwares like SQL.
 
