@@ -384,10 +384,8 @@ class test
                                 ****************** 11th Problem ********************
 /* Wrie a Java program  that will test if a string is a valid PIN or not 
 A valid PIN has: Exactly 4 or 6 characters. Only numeric characters (0-9). No whitespace.
-Example1:
 121317
 true
-Example2:
 45135
 false
 */
