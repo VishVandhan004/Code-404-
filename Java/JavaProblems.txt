@@ -744,7 +744,7 @@ class test {
         System.out.print(count);
     }
 }
- or 
+or 
 import java.util.*;
 class test 
 {
