@@ -27,7 +27,7 @@ exp->  for student , student_id, student_name, student_rollno, student_age, etc 
 primary key - it's the most important key in database. it can only be one and no duplication and no null value
 ex-> student_id can be the primary key.
  
-unique key - it must have unique values
+unique key -> it must have unique values
 exp -> student_phoneno can be the unique key among the data after primary key.
 
 super key- set of multiple keys used to identify data.
