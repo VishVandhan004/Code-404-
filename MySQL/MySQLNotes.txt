@@ -30,7 +30,7 @@ ex-> student_id can be the primary key.
 unique key -> it must have unique values
 exp -> student_phoneno can be the unique key among the data after primary key.
 
-super key- set of multiple keys used to identify data.
+super key -> set of multiple keys used to identify data.
 exp-> student_id and student_name -> will have same name but not same id.
 
 alternate key- it can be an alternate for the primary key. must be a unique value like ID.
