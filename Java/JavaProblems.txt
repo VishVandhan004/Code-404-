@@ -1557,7 +1557,7 @@ class test
         System.out.print(out);
     }
 }
-                            ************************* 39th Problem ***********************
+                            ************************* 39th Problem **********************
  /*You are given list of numbers. find the sum of numbers that appear exactly once in the list.
 Example 1:
 Input: nums = [1,2,3,2]
