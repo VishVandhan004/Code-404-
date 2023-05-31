@@ -1372,7 +1372,7 @@ class Test
         System.out.println(match); 
     } 
 }                
-                             *********************** 35th Problem **************************     
+                             *********************** 35th Problem ************************    
 /*Given a word consisting of lowercase characters from a to z, your task is to print the first character to emerge twice. 
 A character a appears twice before another character b if the second occurrence 
 of a is before the second occurrence of b. 
