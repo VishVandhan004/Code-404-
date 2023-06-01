@@ -1083,7 +1083,7 @@ class test {
         System.out.print(count);
     }
 }    
-                                    ************************* 28th Problem **************************
+                                    ************************* 28th Problem *************************
 A string is given, find the number of substrings of size 4 without repetitive characters. if the substring is appearing for multiple times, each one should be counted seperately
 A substring is always a contiguous sequence of characters from the string.
 Example 1:
