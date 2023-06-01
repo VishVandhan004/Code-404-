@@ -17,7 +17,7 @@ Database -> it's a collection of data that are stored together. data stored shou
 Data can be written on a paper, stored in excel or stored using softwares like SQL.
 
 2 Types of databases: relational and non-relational
-relational- data is characterized into rows and columns. ex- SQL.
+relational-> data is characterized into rows and columns. ex- SQL.
 non relational- data is charcaterized into graphs but not in rows and columns.
 relational database uses RDBMS..
 
