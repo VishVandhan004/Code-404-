@@ -18,7 +18,7 @@ Data can be written on a paper, stored in excel or stored using softwares like S
 
 2 Types of databases: relational and non-relational
 relational-> data is characterized into rows and columns. ex- SQL.
-non relational- data is charcaterized into graphs but not in rows and columns.
+non relational-> data is charcaterized into graphs but not in rows and columns.
 relational database uses RDBMS..
 
 Key -> used to allow the arrangement of different tables in database.. we can access all the details of a particular data easily using keys.
