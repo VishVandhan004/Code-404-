@@ -159,11 +159,11 @@ course_code nvarchar(10) not null
 );
 insert into students
 (firstname,lastname,DOB)
- values
- ('Joe','Root','1990-03-01'),
- ('Steve','Smith','1987-05-22'),
- ('Virat','Kohli','1989-11-05');
+values
+('Joe','Root','1990-03-01'),
+('Steve','Smith','1987-05-22'),
+('Virat','Kohli','1989-11-05');
  
 
-here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key. not null means it can't be empty and auto_increment means it will be increased automatically.
+here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key. not null means it can't be empty and auto_increment means it will be increased automatically. Here we have inserted the values into our tables
 
