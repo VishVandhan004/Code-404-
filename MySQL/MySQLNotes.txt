@@ -142,3 +142,20 @@ In the WHERE statement, we would get only the elements or data which has the wor
 134 to 136, we have changed the value of num 3 of the f_start column.
 
 some examples of SQL queries ->
+
+create database school;
+use school;
+create table students(
+ id int auto_increment primary key,
+ firstname nvarchar(20) not null,
+ lastname nvarchar(20) not null,
+ DOB date
+);
+create table courses(
+courseid int auto_increment primary key,
+coursename nvarchar(20) not null,
+no_of_credits int,
+course_code nvarchar(10) not null
+);
+
+here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key.
