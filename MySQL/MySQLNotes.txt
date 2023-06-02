@@ -165,5 +165,5 @@ values
 ('Virat','Kohli','1989-11-05');
  
 
-here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key. not null means it can't be empty and auto_increment means it will be increased automatically. Here we have inserted the values into our tables
+here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key. not null means it can't be empty and auto_increment means it will be increased automatically. Here we have inserted the values into our tables.
 
