@@ -1,4 +1,4 @@
-MySQL is a programming language used to create databases, it is very much helpful in creating databases.
+MySQL is a programming language used to create databases, it's very much helpful in creating databases.
 
 SQL -> Structured query language.
 
