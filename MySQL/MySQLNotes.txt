@@ -157,8 +157,6 @@ coursename nvarchar(20) not null,
 no_of_credits int,
 course_code nvarchar(10) not null
 );
-2nd exp->
-use school;
 insert into students
 (firstname,lastname,DOB)
  values
