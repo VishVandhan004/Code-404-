@@ -2,7 +2,7 @@ MySQL is a programming language used to create databases, it's very much helpful
 
 SQL -> Structured query language.
 
-Instagram, Netflix, Airbnb, microsoft use SQL as their databases
+Instagram, Netflix, Airbnb, microsoft use SQL as their databases.
 
 if we are playing around with big amounts of data like creating the database, managing it, etc, we can consider SQL.
 
