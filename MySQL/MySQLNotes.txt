@@ -63,7 +63,7 @@ if you want to create a table inside the DB to store the values, type-> "CREATE 
 ALTER keyword is helpful in writing shit into the table inside of a database
 exp -> ALTER TABLE clothesline
 after alter, then you can ADD columns into your table.
-exp- > ADD price int, ADD name VARCHAR(200);
+exp -> ADD price int, ADD name VARCHAR(200);
 
 if we want the user to write something which is mandatory, we could use NOT NULL keyword.
 exp -> CREATE DATABASE restaurant;
