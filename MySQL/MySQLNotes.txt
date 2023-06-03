@@ -167,5 +167,3 @@ values
 
 here we have created a database and in that we have created 2 tables which has columns and one of it has a primary key. not null means it can't be empty and auto_increment means it will be increased automatically. Here we have inserted the values into our tables.
 If you want to see the values you have given to the tables, go to the table and select the 3rd option which has lightning bolt symbol and click that. here, we need to go to the students table, click the 3rd or last option and we'll see the values.
-
-
