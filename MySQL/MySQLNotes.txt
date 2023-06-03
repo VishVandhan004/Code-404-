@@ -61,7 +61,7 @@ if you want to create a table inside the DB to store the values, type-> "CREATE 
 );" this basically creates a lot of columns in the table
 
 ALTER keyword is helpful in writing shit into the table inside of a database
-exp-> ALTER TABLE clothesline
+exp -> ALTER TABLE clothesline
 after alter, then you can ADD columns into your table.
 exp-> ADD price int, ADD name VARCHAR(200);
 
