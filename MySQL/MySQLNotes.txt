@@ -47,7 +47,7 @@ foreign key -> it's a key that is part of another database and it has been impor
 different datatypes in SQL ->
 CHAR, VARCHAR, INT, DATE, TIMESTAMP
 
-Open the MySQL workbench and then we will be creating all these functions and operations-
+Open the MySQL workbench and then we will be creating all these functions and operations->
 Creating a database - use the 'CREATE DATABASE' keyword
 
 If you have multiple databases and you wanna use one, you could type the 'USE database name' // here write the database name like use southwind, etc..
