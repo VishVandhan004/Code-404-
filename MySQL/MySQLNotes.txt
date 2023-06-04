@@ -22,7 +22,7 @@ non relational -> data is charcaterized into graphs but not in rows and columns.
 relational database uses RDBMS..
 
 Key -> used to allow the arrangement of different tables in database.. we can access all the details of a particular data easily using keys.
-exp->  for student , student_id, student_name, student_rollno, student_age, etc are some of the keys.
+exp ->  for student , student_id, student_name, student_rollno, student_age, etc are some of the keys.
 
 primary key -> it's the most important key in database. it can only be one and no duplication and no null value
 ex-> student_id can be the primary key.
