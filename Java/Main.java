@@ -38,7 +38,7 @@ public class Main
         // lists 
         ArrayList<String> al = new ArrayList<>();
         al.add("kia");
-        al.add("MG");
+        al.add("MG");           
         al.add("hyundai");
         int size = al.size();
         al.set(1,"toyota");
