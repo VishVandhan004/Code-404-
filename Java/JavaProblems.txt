@@ -1863,6 +1863,33 @@ class Main {
         sc.close();
     }
 }
+ other solution (Leetcode)
+ class Solution {
+    public boolean check(int[] nums) {
+        int n = nums.length;
+        int pivot = 0;
+        // Find the pivot point
+        for (int i = 1; i < n; i++) {
+            if (nums[i] < nums[i - 1]) {
+                pivot = i;
+                break;
+            }
+        }
+        // Check if the elements after the pivot are in non-decreasing order
+        for (int i = pivot + 1; i < n; i++) {
+            if (nums[i] < nums[i - 1]) {
+                return false;
+            }
+        }
+        // Check if the elements before the pivot (if any) are in non-decreasing order
+        if (pivot > 0 && nums[n - 1] > nums[0]) {
+            return false;
+        }
+
+        return true;
+    }
+}
+
                                            ********************* 45th Problem ****************************
                                            *********** linear search *************
 import java.util.*;
