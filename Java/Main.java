@@ -9,18 +9,13 @@ class Main {
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
-        boolean isSorted = true;
-        for (int i = 1; i < size; i++) {
-            if (arr[i] < arr[i - 1]) {
-                isSorted = false;
-                break;
-            }
+        System.out.println("enter the target:");
+       int target = sc.nextInt();
+       for (int i = 0; i < size; i++) {
+        if(arr[i] == target){
+            System.out.println(i);
         }
-        if (isSorted) {
-            System.out.println("The array is sorted.");
-        } else {
-            System.out.println("The array is not sorted.");
-        }
+       }
         sc.close();
     }
 }
