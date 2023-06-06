@@ -1816,7 +1816,7 @@ class test
     }
 }                                
                                                ********************** 43rd Problem *************************
-                                               *** Max element of an array  ****
+                                               ************** Max element of an array  *******************
 import java.util.*;
 class Main {
     public static void main(String[] args) {
