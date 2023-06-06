@@ -1815,7 +1815,7 @@ class test
         System.out.println(count+","+c1);
     }
 }                                
-                                               ********************** 43rd Problem *************************
+                                               ********************** 44th Problem *************************
                                                ************** Max element of an array  *******************
 import java.util.*;
 class Main {
@@ -1835,7 +1835,7 @@ class Main {
 }               
 For 2nd largest element in the array, you just need to sort the array and use this ->  System.out.println(arr[arr.length - 2]); 
              
-                                             ******************** 44th Problem *************************
+                                             ******************** 45th Problem *************************
                                              ************ checking if array is sorted or not ***********
 import java.util.*;
 class Main {
