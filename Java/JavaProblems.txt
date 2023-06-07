@@ -955,7 +955,7 @@ class test
         System.out.println(count);
     }
 }            
-                                        ******************* 25th Problem ***********************
+                                        ******************* 25th Problem *********************
 Komali has n chocolates, where the ith chocolates is of type chocoType[i]. 
 Komali mother noticed that komali started to gain weight, so she restricted Komali to only eat n / 2 of the chocolates she has. 
 Komali likes her candies very much, and she wants to eat the maximum number of different types of chocolates while still following her mother's order.
