@@ -691,7 +691,7 @@ public class Test {
         System.out.printf("Difference is %d",min);
     }
 }
-                            ***************** 19th Problem ********************
+                                  ***************** 19th Problem ********************
 /*You have given N bricks. You need to construct a staircase as follows: 
 1. = 
 2. == 
