@@ -788,7 +788,7 @@ class test
         System.out.println(dura);
     }
 }             
-                                    ************************* 21st Problem ************************
+                                    ************************ 21st Problem ************************
 /*Given a word w, rotate other than consonents in the word and print it. 
 The other than consonents are 'i', 'a', 'u', 'e', and 'e', and they can be seen in both lower- and uppercase,More than once. 
 Input: 
