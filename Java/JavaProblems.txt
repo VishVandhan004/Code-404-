@@ -829,7 +829,7 @@ class test {
       System.out.println(s1);
    }
 }         
-                                   ************************ 22nd Problem ************************
+                                   ************************ 22nd Problem ***********************
 /*There is a List L that consists of n only positive numbers. 
 It was converted into another List L i.e, of length n - 1, such that coverted[i] = List[i] XOR List[i + 1]. For example, if List= [1,0,2,1], then converted= [1,2,3]. 
 You are given the converted list. You are also given an start number, i.e. List[0].Return the original List L. It can be proved that the answer exists and is unique. 
