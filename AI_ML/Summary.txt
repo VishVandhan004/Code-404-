@@ -2,5 +2,7 @@ We should be using the jupyter notebooks for the implementation of all the Data-
 
 Numpy -> numpy is a python library which is used for quick mathematical operations like mean, standard deviation, median, etc.
 
-Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science
+Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
+
+Matplotlib and Seaborn are used for data visualization
 
