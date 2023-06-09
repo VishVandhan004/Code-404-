@@ -1,6 +1,7 @@
 We should be using the jupyter notebooks for the implementation of all the Data-science and machine learning projects.
 
 Numpy -> numpy is a python library which is used for quick mathematical operations like mean, standard deviation, median, etc.
+it is used for working with arrays. It stands for numerical python. It is basically 50x faster than the normal python lists.
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
 
