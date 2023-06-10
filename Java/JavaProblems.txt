@@ -1324,7 +1324,7 @@ class First
         System.out.println("Minimum element is: "+ min); 
     } 
 } 
-                                  ************************ 34th Problem *************************
+                                  ************************ 34th Problem ************************
 /*Bob given two strings to jack, asking jack to comapre s1 and s2 to find are they following same sequence of pattern or not. if they are following print true otherwise false. 
 baab 
 rat mat mat rat 
