@@ -5,5 +5,5 @@ it is used for working with arrays. It stands for numerical python. It is basica
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
 
-Matplotlib and Seaborn are used for data visualization
+Matplotlib and Seaborn are used for data visualization.
 
