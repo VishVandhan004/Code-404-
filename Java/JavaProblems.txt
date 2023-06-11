@@ -1815,7 +1815,7 @@ class test
         System.out.println(count+","+c1);
     }
 }                                
-                                            ********************** 44th Problem *************************
+                                            ********************** 44th Problem ***********************
                                             ************** Max element of an array  *******************
 import java.util.*;
 class Main {
