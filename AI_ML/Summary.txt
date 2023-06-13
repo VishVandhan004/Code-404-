@@ -10,6 +10,8 @@ print(arr)
 exp -> arr = np.array(42)
 1-D array -> It contains more than one value in it.
 exp -> arr = np.array([1,2,3,4,5])
+2-D array -> It has 2 arrays in it. has 2-dimensions.
+exp-> arr=np.array([1,2,3],[4,5,6])
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
 
