@@ -7,8 +7,8 @@ import numpy as np
 arr = np.array([1,2,3,4,5])
 print(arr)
 0-D array-> This is basically a scalar quantity with only one value..
- exp -> arr = np.array(42)
- 
+exp -> arr = np.array(42)
+
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
 
