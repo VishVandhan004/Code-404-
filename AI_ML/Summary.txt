@@ -12,6 +12,65 @@ exp -> arr = np.array(42)
 exp -> arr = np.array([1,2,3,4,5])
 2-D array -> It has 2 arrays in it. has 2-dimensions.
 exp-> arr=np.array([1,2,3],[4,5,6])
+3-D array -> it is the collection of 2 different 2-d arrays
+We can find out the dimensions of the arrays also.
+import numpy as np
+a = np.array(42)        ->0-D
+b = np.array([1,2,3,4,5]) -> 1-D
+c = np.array([[1,2,3],[4,5,6]]) ->2-D
+d = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]]) -> 3-D
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
+Shape -> It is the number of elements in each dimension
+Reshaping -> it is to change the shape of the array.
+Flattening -> Converting a multi-dimensional array into a 1-D array.
+Searching in arrays -> we use the where() method to find out stuff in the array
+Sort in arrays -> In numpy, we use sort(), to put elements in an order..
+exp-> Some Array Stuff
+import numpy as np
+a=np.array([1,2,3,4])
+print(a.shape)   #Shape of the Array 'a'
+b = np.array([[1,2,3],[4,5,6]])
+print(b.shape)  # Shape of the Array 'b'
+c = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print(c.shape)  #Shape of the Array 'c'
+new_c = c.reshape(4,3) #reshaping into 4 arrays which has 3 elements in it
+print(new_c)
+new2_c = c.reshape(2,3,2) # For a 3-D array
+print(new2_c)
+f_arr=b.reshape(-1)  # For flattening a multi-dimensional array
+print(f_arr)
+a = np.array([3,4,5,6,7,8,9])
+a[0]    # Accessing the elements in the list..
+a[0] + a[2]
+for i in a:
+    print(i) #Iterating through the 1-D Array
+print(a[1:4]) #last index(3) won't be considered for slicing
+print(a[2:])
+print(a[:5])
+print(a[1:5:2]) #prints from 1st index to 5th index but takes 2 gaps.
+b = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(b)
+print(b[1,4]) # accessing 5th element from 2nd row..
+print(b[0,3]) # accessing 4th element from 1st row..
+for j in b:
+    print(j) #Iterating through the 2-D Array
+for j in b:
+    for k in j:  #Iterating and getting the elements in the 2-D Array
+        print(k)
+print(b[1,1:4]) #prints the elements from 1st to 4th index in the 2nd column.
+print(b[0,0:3])
+d = np.array([2,4,1,6,4,7,9,1])
+x = np.where(d == 1)
+print(x) # shows where is 1 present in the whole array
+ans = np.where(d%2==0) # which index has even numbers and will return the indexes
+print(ans)
+print(np.sort(d)) # sorts the elements in the array.
+g = np.array(['fille','femme','garcon'])
+print(np.sort(g))
+
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
 
