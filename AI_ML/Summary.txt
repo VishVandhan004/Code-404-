@@ -5,6 +5,7 @@ Exp -> one basic example of numpy is ->
 import numpy as np
 arr = np.array([1,2,3,4,5])
 print(arr)
+
 it is used for working with arrays. It stands for numerical python. It is basically 50x faster than the normal python lists.
 
 Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
