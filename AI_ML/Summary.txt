@@ -100,9 +100,18 @@ print(df.loc[1])
 CSV (Comma seperated files) -> It's an easy way to store big data-sets and can easily be read by pandas.
 If the .csv file is in the same location as of the notebook, you can simply put the name of the file. 
 If it's not in the same location, then we need to copy the whole path and then access it.
-head() -> it returns the rows from top.
+head() -> it returns the rows(top-5) from the start.
 tail() -> it returns the last rows.
 info() -> it returns the basic info of the data-set.
 describe() -> it returns the description of the data in df. it gives mean, std, min, 25th,50th,75th percentiles, max, etc..
+corr() -> it describes the relationship between each column in the data-set. (Co-Relation)
+exp->
+import pandas as pd
+df = pd.read_csv('covid_worldwide.csv')
+print(df)
+print(df.head()) #returns top-5 values from the start
+print(df.tail()) #returns last-5 values from the end
+print(df.info()) #gives basic info about data-set.
+print(df.describe()) #gives some values.
 Matplotlib and Seaborn are used for data visualization.
 
