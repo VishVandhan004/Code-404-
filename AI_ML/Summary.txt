@@ -165,3 +165,38 @@ data = sns.load_dataset("mpg")
 data.head()
 sns.regplot(x='mpg',y='acceleration',data = data) # reg-plot
 plt.show()
+
+
+Missing values -> Some values are missing in the table. 
+We can replace the missing values with the mean/mode.
+Replacing it with mode -> 
+exp -> 
+import pandas as pd
+df = pd.read_csv('covid_worldwide.csv')
+print(df)
+print(df.isnull().sum()) # this line shows how many columns have missing data.
+print(df['Population'] = df['Population'].fillna(df['Population'].mode()[0])) # we are basically taking the mode of the data present in the population column and assigning it to itself. 
+print(df.isnull().sum())
+Replacing it with mean -> 
+import numpy as np
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(missing_values = np.nan, strategy='mean')
+data = [[12,np.nan,34],[10,32,np.nan]]
+print("Original Data: \n",data)
+imputer = imputer.fit(data)
+data = imputer.transform(data)
+print("Imputer Data: \n",data)
+
+Encoding -> Storing the values in the data-sets in such a way that the ML-Model can understand.
+1. Nominal -> pen, pencil, eraser,etc (order doesn't matter)
+2. Ordinal -> in ratings -> good, bad, shit (order matters here)
+One-Hot Encoding -> used to get dummy data in a column
+import pandas as pd
+df = pd.read_csv('covid_worldwide.csv')
+df.head()
+df['Country'].value_counts()
+pd.get_dummies(df,columns=['Country'])
+LabelEncoder ->
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder() # this is used for pre-processing the data in a column.If there is a text in a whole column, the Ml-Model wouldn't understand it. Label encoder is used to convert the text into the numbers.
+Feature Scaling -> It is a technique used to standardize the independent features in the data in a fixed range. It's performed during data pre-process
