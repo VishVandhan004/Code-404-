@@ -147,3 +147,21 @@ plt.show()
 
 
 SeaBorn
+Boxplot -> it is used to show the data in the form of quartiles ( 25th, 50th, 75th) and also gives the outliers.. It consists max, min, etc..
+Reg-plot -> used for linear regression models. it gives the best fit-line and scatter-plot.
+exp ->
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+df = sns.load_dataset("tips")
+df
+df.boxplot(by='day', column = ['total_bill'], grid = False) # box-plot
+titanic = sns.load_dataset("titanic")
+titanic.head()
+age1 = titanic['age'].dropna()  # removes all the null values from the age column and stores the new values in age1
+sns.distplot(age1,bins=30,kde=False)
+plt.show()
+data = sns.load_dataset("mpg")
+data.head()
+sns.regplot(x='mpg',y='acceleration',data = data) # reg-plot
+plt.show()
