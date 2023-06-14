@@ -90,5 +90,13 @@ print(s1)
 d1 = {"one":10,"two":20,"three":30}
 s2 = pd.Series(d1)
 print(s2)
+sample_data = {
+    "weekdays":['Monday','Tuesday','Friday'],
+    "test_score":[10,30,50]
+}
+df = pd.DataFrame(sample_data)
+print(df)
+print(df.loc[0])
+print(df.loc[1])
 Matplotlib and Seaborn are used for data visualization.
 
