@@ -72,7 +72,13 @@ g = np.array(['fille','femme','garcon'])
 print(np.sort(g))
 
 
-Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science.
+Pandas -> Pandas are used for data cleaning and preprocessing tasks before data modeling. Very important for Data-Science. we can clean, explore, manipulate the data using pandas. 
+PANDAS -> "Panel data" + "Python Data Analysis"
+It allows us to analyze big data and make conclusions.
+exp-> deleting rows and columns which are empty, NULL, or not relevant.
+To do all the stuff like clean, manipulate, etc you need a .CSV file for pandas which can be read by using df or 'data frame'. It will store the data present in a .CSV file into the df.
+Pandas Series -> It is like a column in a table. it's a 1-D array holding any type of data.
+
 
 Matplotlib and Seaborn are used for data visualization.
 
