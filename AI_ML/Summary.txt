@@ -113,5 +113,10 @@ print(df.head()) #returns top-5 values from the start
 print(df.tail()) #returns last-5 values from the end
 print(df.info()) #gives basic info about data-set.
 print(df.describe()) #gives some values.
+
+
 Matplotlib and Seaborn are used for data visualization.
+Matplotlib is a python library which is used for making various data analysis.
+The matplotlib utilities lie under a sub-plot called 'pyplot'.
+We can make charts and graphs like line, bar etc..
 
