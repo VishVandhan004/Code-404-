@@ -119,4 +119,31 @@ Matplotlib and Seaborn are used for data visualization.
 Matplotlib is a python library which is used for making various data analysis.
 The matplotlib utilities lie under a sub-plot called 'pyplot'.
 We can make charts and graphs like line, bar etc..
+plot() ->used to plot the graphs using both x&y axes.
+show() -> used to show the graph after plotting.
+exp -> 
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array([4,7,2,10,13])
+plt.plot(x)    # line-plot
+plt.show()
+y = np.array([1,2,3,4,5])
+plt.plot(y,linestyle='dashed') # line-plot with dashes
+plt.show()
+a = np.array(['A','B','C','D'])
+b = np.array([10,40,50,20])
+plt.bar(a,b)          # Bar-chart
+plt.show()
+x1 = np.array([20,15,11,7,8,10])
+y1 = np.array([2,7,15,8,10,12])
+plt.scatter(x1,y1)     # Scatter-Plot
+plt.show()
+p = np.array([30,20,25,20])
+plt.pie(p)        # Pie-Chart
+plt.show()
+h1 = np.random.normal(170,10,250)
+plt.hist(h1)     # Histogram
+plt.show()
 
+
+SeaBorn
