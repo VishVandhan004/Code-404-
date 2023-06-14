@@ -86,6 +86,8 @@ print(s1)
 d1 = {"one":10,"two":20,"three":30}
 s2 = pd.Series(d1)
 print(s2)
-
+Pandas Dataframe -> It's a 2-d data structure which has rows and columns.
+It basically converts the data and stores it in the data according to the pandas data frame.
+Locate -> use the 'loc' attribute to return one or more specified rows.
 Matplotlib and Seaborn are used for data visualization.
 
