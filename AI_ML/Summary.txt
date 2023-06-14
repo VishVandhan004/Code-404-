@@ -100,5 +100,9 @@ print(df.loc[1])
 CSV (Comma seperated files) -> It's an easy way to store big data-sets and can easily be read by pandas.
 If the .csv file is in the same location as of the notebook, you can simply put the name of the file. 
 If it's not in the same location, then we need to copy the whole path and then access it.
+head() -> it returns the rows from top.
+tail() -> it returns the last rows.
+info() -> it returns the basic info of the data-set.
+describe() -> it returns the description of the data in df. it gives mean, std, min, 25th,50th,75th percentiles, max, etc..
 Matplotlib and Seaborn are used for data visualization.
 
