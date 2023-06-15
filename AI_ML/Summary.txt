@@ -218,3 +218,11 @@ types -> Clustering and Association.
 Train-Test (Supervised ML) -> It's a procedure that allows you to simulate how a model would perform on new/unseen data.
 
 Regression -> It is the statistical method to model the relationship between a dependent and an independent variable. How the value of dependent variable changes corresponding to the independent variable.
+Overfitting -> Performing well in training but not in testing.
+Underfitting -> Not performing well in both testing and training.
+
+Linear Regression ->
+It shows the linear relationship between the independent(x) and dependent(y) variable.
+It makes predictions for continous/real numeric values. It provides a straight line. y=ax+b( general form of L-R ML)
+Positive LR -> dependent variable increases on Y-axis, independent variable increases on X-axis
+Negative LR -> Dependent decreases on Y-axis, independent increases on X-axis
