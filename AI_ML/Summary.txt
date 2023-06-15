@@ -200,3 +200,9 @@ LabelEncoder ->
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder() # this is used for pre-processing the data in a column.If there is a text in a whole column, the Ml-Model wouldn't understand it. Label encoder is used to convert the text into the numbers.
 Feature Scaling -> It is a technique used to standardize the independent features in the data in a fixed range. It's performed during data pre-process
+
+
+Machine Learning -> It's a subset of Artificial Intelligence which is mainly concerned with the development of algorithms which allow a computer to learn from the data(training data) and past shit and make future predictions without being explicitly programmed. The ML algorithms build a mathematical model using these data.
+types ->
+Supervised, unsupervised, Reinforcement.
+
