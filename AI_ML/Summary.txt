@@ -207,3 +207,5 @@ types ->
 Supervised, unsupervised, Reinforcement.
 
 Supervised -> where the machines are trained using the 'labelled data' and predicts the output. Training/labelled data acts as the superviser.
+exp -> Spam filter, etc.
+types -> Regression and Classifcation
