@@ -207,5 +207,10 @@ types ->
 Supervised, unsupervised, Reinforcement.
 
 Supervised -> where the machines are trained using the 'labelled data' and predicts the output. Training/labelled data acts as the superviser.
+80% data for training, 20% data for testing..
 exp -> Spam filter, etc.
 types -> Regression and Classifcation
+
+Unsupervised -> Models are trained using unlabeled data and are allowed to act on the data without any supervision. It can be compared to human brain , where it learns new things every single time.
+Raw data is given for input, no training, testing will happen like supervised.
+types -> Clustering and Association.
