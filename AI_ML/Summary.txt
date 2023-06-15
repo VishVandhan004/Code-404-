@@ -214,3 +214,7 @@ types -> Regression and Classifcation
 Unsupervised -> Models are trained using unlabeled data and are allowed to act on the data without any supervision. It can be compared to human brain , where it learns new things every single time.
 Raw data is given for input, no training, testing will happen like supervised.
 types -> Clustering and Association.
+
+Train-Test (Supervised ML) -> It's a procedure that allows you to simulate how a model would perform on new/unseen data.
+
+Regression -> It is the statistical method to model the relationship between a dependent and an independent variable. How the value of dependent variable changes corresponding to the independent variable.
