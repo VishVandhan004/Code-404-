@@ -226,3 +226,30 @@ It shows the linear relationship between the independent(x) and dependent(y) var
 It makes predictions for continous/real numeric values. It provides a straight line. y=ax+b( general form of L-R ML)
 Positive LR -> dependent variable increases on Y-axis, independent variable increases on X-axis
 Negative LR -> Dependent decreases on Y-axis, independent increases on X-axis
+exp->
+#LINEAR REGRESSION
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+data_set = pd.read_csv('1000_Companies.csv')
+data_set
+x = data_set.iloc[:,:-1].values
+y = data_set.iloc[:,1].values
+x
+y
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2)
+from sklearn.linear_model import LinearRegression
+reg = LinearRegression()
+reg.fit(x_train,y_train)
+y_pred = reg.predict(x_test)
+x_pred = reg.predict(x_train)
+plt.scatter(x_train,y_train,color="green")
+plt.plot(x_train,x_pred,color="red")
+plt.show()            # TRAINING DATASET
+plt.scatter(x_test,y_test,color='blue')
+plt.plot(x_train,x_pred,color="red")
+plt.show()               # TESTING DATASET
+
+Logisitical Regression ->
+It predicts the output of a categorical dependent variable. it must be a categorical or discrete value. It can be either yes or no , 0 or 1, True or False. It can also give probabilistic values between 0 and 1.
