@@ -252,4 +252,27 @@ plt.plot(x_train,x_pred,color="red")
 plt.show()               # TESTING DATASET
 
 Logisitical Regression ->
-It predicts the output of a categorical dependent variable. it must be a categorical or discrete value. It can be either yes or no , 0 or 1, True or False. It can also give probabilistic values between 0 and 1.
+It predicts the output of a categorical dependent variable. it must be a categorical or discrete value. It can be either yes or no , 0 or 1, True or False. It can also give probabilistic values between 0 and 1. It basically forma a S-curve. The S-form curve is called the sigmoid function.
+exp->
+import pandas as pd
+import numpy as np
+df = pd.read_csv('1000_Companies.csv')
+df.head()
+x = df.iloc[:,2].values
+y = df.iloc[:,4].values
+from sklearn.preprocessing import StandardScaler
+st_x = StandardScaler()
+x_train = st_x.fit_transform(x_train)
+x_test = st.x_transform(x_test)
+from sklearn.linear_model import LogisticRegression
+clf = LogisticRegression()
+clf.fit(x_train,y_train)
+clf.fit(x_train,y_train)
+
+K Nearest Neighbours(K-NN) -> It stores all the available data and classifies a new data point based on the similarity. Mostly used in Classification.
+It's a lazy-leaner algorithm. It doesn't learn quickly from the given data.
+follow the algo for calculation ->
+1. select the no.of.neighbours of k
+2. calculate the ecludian distance of k no.of.neighbours.
+3.count the no.of.data points in each category,
+assign where the no.of.neighbours are max.
