@@ -206,3 +206,4 @@ Machine Learning -> It's a subset of Artificial Intelligence which is mainly con
 types ->
 Supervised, unsupervised, Reinforcement.
 
+Supervised -> where the machines are trained using the 'labelled data' and predicts the output. Training/labelled data acts as the superviser.
