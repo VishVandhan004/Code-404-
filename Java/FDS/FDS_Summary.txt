@@ -1,0 +1,150 @@
+/*Problem Statement-1:
+Arun wants to design a Right Angle Star Pattern.
+Let’s help him by accepting a number.
+
+Example 1
+Input:
+3
+OUTPUT:
+*
+* *
+* * *
+
+*/
+import java.util.*;
+class RightTrianglePattern
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        for(int i=0;i<size;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("* ");
+            }
+                System.out.println();
+        }
+    }
+}
+/*Problem Statement-2:
+Varun wants to design a LeftTrianglePattern.
+Let’s help him by accepting a number.
+
+Input:
+5
+Output: 
+           *
+         * *
+       * * *
+     * * * *
+   * * * * *
+   
+*/
+import java.util.*;
+class LeftTrianglePattern{
+    public static void main(String args[])
+    {
+         Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        for(int i=0;i<size;i++)
+        {
+            for(int j=5;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+3rd Problem
+/*
+Online Shopping Cart: You are developing an online shopping cart 
+system. Identify the classes, objects, and behaviors involved.
+Scenario: Users can add items to their shopping cart, 
+remove items, and proceed to checkout. Each item has properties 
+like name, price, and quantity. 
+The system should calculate the total cost of the items in 
+the cart and apply any applicable discounts or promotions.
+
+input and output:
+Enter your choice: 1
+Enter item name: icecream
+Enter item price: 2
+Enter item quantity: 2
+Item added to the cart.
+
+1. Add item
+2. Remove item
+3. Checkout
+4. Exit
+Enter your choice: 3
+Total cost: $4.0
+Thank you for shopping with us!
+
+*/
+import java.util.*;
+class ShoppingCart
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        
+    }
+}
+4th Problem
+/*
+Banking System: You are building a banking system. Identify the 
+classes, objects, and behaviors involved.
+Scenario: Customers can open bank accounts, deposit money, 
+withdraw money, and check their account balance. 
+Each account has a unique account number, owner name, and 
+balance. The system should handle transactions accurately and update account balances accordingly.
+sample input and output:
+1. Open an account
+2. Deposit money
+3. Withdraw money
+4. Check account balance
+0. Exit
+Enter your choice:
+1
+Enter account number: 12345
+Enter account owner name: Santosh
+Account opened successfully.
+
+1. Open an account
+2. Deposit money
+3. Withdraw money
+4. Check account balance
+0. Exit
+Enter your choice: 2
+Enter account number: 12345
+Enter the amount to deposit: 23450
+Amount deposited successfully.
+
+1. Open an account
+2. Deposit money
+3. Withdraw money
+4. Check account balance
+0. Exit
+Enter your choice: 4
+Enter account number: 12345
+Account balance: 23450.0
+
+1. Open an account
+2. Deposit money
+3. Withdraw money
+4. Check account balance
+0. Exit
+Enter your choice: 0
+Exiting...
+*/
+class BankingSystem
+{
+    
+}
