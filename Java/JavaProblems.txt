@@ -1461,7 +1461,7 @@ class test
        System.out.println(len);
     }
 }                           
-                                   ********************* 37th Problem **************************
+                                   ********************* 37th Problem *************************
 Reversing the Arrays
 
 import java.util.*; 
