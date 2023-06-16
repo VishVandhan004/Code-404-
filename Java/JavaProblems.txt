@@ -1289,7 +1289,7 @@ class Test
         }
     }
 }                          
-                                ************************** 33rd Problem **************************
+                                 ************************* 33rd Problem *************************
  Maximum and minimum of an array using minimum number of comparisons
 
 import java.util.*; 
