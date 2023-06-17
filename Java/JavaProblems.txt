@@ -1193,7 +1193,7 @@ class test
         }
     }
 }                    
-                                      ********************** 30th Problem ************************
+                                      ********************** 30th Problem ***********************
 /*Bob given a date in string form i.e, in the following format YYYY-MM-DD,  
 print the day number int that year. 
 Sample Input: date = "2018-01-10" 
