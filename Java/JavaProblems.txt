@@ -1609,7 +1609,7 @@ class test
         System.out.println(sum);
     }
 }                        
-                                ********************** 40th Problem ************************
+                                ********************** 40th Problem ***********************
 /*You are given the array of routes, where route[i] = [stateAi, stateBi] means there exists a direct path 
 going from stateAi to stateBi. Return the destination state, that is, the state without any route outgoing 
 to another state.
