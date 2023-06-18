@@ -1740,7 +1740,7 @@ class Test
          
     } 
 }                                
-                                    ********************* 43rd Problem ***********************
+                                  ********************* 43rd Problem ***********************
 /*You are given an array of numbers. the following can be done in single iteration:
 1. select two equal numbers.
 2. delete both of them from the array.
