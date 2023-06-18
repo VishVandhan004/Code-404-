@@ -1699,7 +1699,7 @@ class Test
         System.out.println(count); 
     } 
 }                     
-                                   *********************** 42nd Problem ************************
+                                      *********************** 42nd Problem ************************
 /*Given set of nodes like [2,1,1,2] , using them form a singly linked list,  
 left node in the linked list represents MSB and right node  in the linked list represents LSB, 
 where 2 is MSB and 2 is LSB. 
