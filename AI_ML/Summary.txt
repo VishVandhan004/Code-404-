@@ -277,7 +277,6 @@ follow the algo for calculation ->
 3.count the no.of.data points in each category,
 assign where the no.of.neighbours are max.
 
-
 SVM (Support Vector machine) -> it is used for classification and regression problems. the goal is to create the best line so that the new data point will be present in the best or correct category in the future. All these can be represented by vectors, so its called SVM. it has 2 types. they are ->
 Linear SVM -> it used for linearly separable data, dataset is classified into 2 classes by using a straight line.
 Non-Linear SVM -> it is used for non-linearly separable data, no straight line.
