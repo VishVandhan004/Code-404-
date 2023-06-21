@@ -150,7 +150,6 @@ class BankingSystem
 }
 
 /* Ravi wants to insert an element into given list of numbers for a given position . 
-sample input and output
 Enter the size of the array: 5
 Enter the elements of the array:
 1
