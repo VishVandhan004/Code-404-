@@ -280,10 +280,7 @@ class test {
     }
 }
 
-/* Rithika wants to find 3rd largest element from a 
-given group of numbers. lets help her by writing a java
-program
-sample input and output
+/* Rithika wants to find 3rd largest element from a given group of numbers. lets help her by writing a java program
 1.Enter the size of the array: 5
 Enter the array elements:
 1
