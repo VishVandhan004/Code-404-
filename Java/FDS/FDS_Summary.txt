@@ -354,7 +354,6 @@ Enter the array elements:
 3 6 9 12 15
 Enter the index: 4
 The number at index 4 (which is a multiple of 3) is 12, and its index squared is 16.
-
 Case 2:
 Enter the size of the array: 3
 Enter the array elements:8 9 2
