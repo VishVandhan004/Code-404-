@@ -1,61 +1,42 @@
-class Beauty
-{
-    String name;
-    String SID;
-    int cost;
-    Beauty(String name,String SID,int cost)
+/* Write a Java program that takes an input array, finds a number
+in the array which is a multiple of three, squares its index, 
+and displays the result. 
+The program takes the input array and index from the user
+Sample input  output
+Case 1:
+Enter the size of the array: 5
+Enter the array elements:
+3 6 9 12 15
+Enter the index: 4
+The number at index 4 (which is a multiple of 3) is 12, and its index squared is 16.
+
+Case 2:
+Enter the size of the array: 3
+Enter the array elements:8 9 2
+Enter the index: 3
+No number found at index 3 that is a multiple of 3.
+*/
+import java.util.*;
+class test {
+    public static void main(String args[])
     {
-        this.name=name;
-        this.SID=SID;
-        this.cost=cost;
-    }
-    double sell()
-    {
-        double tot=(18/100)*cost+cost;
-        return tot;
-    }
-}
-class products
-{
-    String name;
-    String ID;
-    int cost;
-    products(String name,String ID,int cost)
-    {
-        this.name=name;
-        this.ID=ID;
-        this.cost=cost;
-    }
-    double sell()
-    {
-        double total=(5/100)*cost+cost;
-        return total;
-    }
-}
-public class Main
-{
-    public static void main(String[] args) 
-    {
-        Beauty b1=new Beauty("FacePack","A12",200);
-        Beauty b2=new Beauty("Perfume","B12",300);
-        Beauty b3=new Beauty("Powder","C12",400);
-        products p1=new products("Atta","D12",100);
-        products p2=new products("Sugar","E12",50);
-        System.out.println("NAME"+"      "+"ID"+"    "+"COST");
-        System.out.println(b1.name+"  "+b1.SID+"   "+b1.cost);
-        System.out.println(b2.name+"   "+b2.SID+"   "+b2.cost);
-        System.out.println(b3.name+"    "+b3.SID+"   "+b3.cost);
-        System.out.println(p1.name+"      "+p1.ID+"   "+p1.cost);
-        System.out.println(p2.name+"     "+p2.ID+"   "+p2.cost);
-        b1.sell();
-        b2.sell();
-        b3.sell();
-        p1.sell();
-        p2.sell();
-        double total=(b1.sell()+b2.sell()+b3.sell()+p1.sell()+p2.sell());
-        System.out.println("Total bill before discount:"+total);
-        double discount=(2.00/100.00)*total;
-        double tot=total-discount;
-        System.out.println("Total bill after discount:"+tot);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        System.out.print("Enter the array elements: ");
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the index: ");
+        int ind = sc.nextInt();
+        if(arr[ind-1]%3 == 0)
+        {
+            System.out.print("The number at index "+ ind +" (which is a multiple of 3) is "+ ind*3 +", and its index squared is "+ ind*ind +" ");
+        }
+        else {
+            System.out.print("No number found at index "+ ind +" that is a multiple of 3");
+        }
     }
 }
