@@ -246,9 +246,9 @@ class Remove{
         }
     }
 }
+
 /*find the sum of elements available at the square position of given 
 indices in the array 
-
 sample output1:
 Enter the size of the array: 5                                                                                          
 Enter the elements of the array:                                                                                        
@@ -282,10 +282,10 @@ class test {
         System.out.print(i3);
     }
 }
+
 /* Rithika wants to find 3rd largest element from a 
 given group of numbers. lets help her by writing a java
 program
-
 sample input and output
 1.Enter the size of the array: 5
 Enter the array elements:
@@ -295,7 +295,6 @@ Enter the array elements:
 4
 5
 The third largest element is: 3
-
 2.Enter the size of the array: 5
 Enter the array elements:
 9
