@@ -299,3 +299,15 @@ working ->
 5. repeat third steps, reassigning each datapoint to the new closest centroid of cluster.
 6. Model is ready
 
+Grid-Search CV -> 
+Parametres are the variables that an algorithm itself produces to produce a prediction.
+Hyper-Parametres are the variables that you specify while building a ML model.
+Hyper-parameter tuning refers to the process of finding hyper-parametres that yield the best result. One type is using Grid-search CV.
+
+Machine-Learning Workflow
+1.Ingestion -> load the dataset in the form of .CSV files , etc.
+2. Cleaning.
+3. preprocessing.
+4. Modeling.
+5. Deployment. (AWS or cloud)
+ML Pipeline is a process of automating the workflow of a complete ML task.
