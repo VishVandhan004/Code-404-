@@ -298,3 +298,4 @@ working ->
 4. calculate the variance and place a new centroid.
 5. repeat third steps, reassigning each datapoint to the new closest centroid of cluster.
 6. Model is ready
+
