@@ -282,3 +282,19 @@ Linear SVM -> it used for linearly separable data, dataset is classified into 2 
 Non-Linear SVM -> it is used for non-linearly separable data, no straight line.
 Hyperplane -> there can be multiple lines to segregate the classes in the n-dimensional plane, but the best line for classification of data points must be found. This best line is hyperplane.
 Support Vectors -> the data points that are closest to the hyperplane and affect the position of the hyperplane is called support vectors.
+
+Decision Tree -> It is used for both classification and regression. it's a tree structured classifier, internal nodes represent features of a dataset,branches represent decision rules, leaf nodes is for outcome.
+it has 2 nodes, decision(has multiple branches) and leaf nodes(no further branches). we use CART algorithm -> classification and regression tree algorithm.
+ex-> whether the person will accept the job offer or not or whether he'll buy it or not.
+
+Random-Forest -> It is a supervised ML. it's a process of combining multiple classifiers to solve a complex problem and to improve performance of model. it combines no.of.decision trees on various subsets of given dataset and takes the average to predictive accuracy of the dataset. 
+exp-> identifying an apple in a bunch of fruits accurately.
+
+K-Means Clustering -> It is the first Unsupervised ML algo. It groups un-labeled data into clusters. It divides the unlabeled data into k different clusters in such a way that one group has similar properties. we don't have training, testing here.
+working ->
+1.select number K to decide the clusters.
+2. select random k points or centroids.
+3.assign each data point to closest centroid.
+4. calculate the variance and place a new centroid.
+5. repeat third steps, reassigning each datapoint to the new closest centroid of cluster.
+6. Model is ready
