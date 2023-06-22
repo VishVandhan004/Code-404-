@@ -1050,7 +1050,7 @@ class test {
      System.out.println(sum1);
     }
 }
-                                    ************************ 27th Problem *************************
+                                    *********************** 27th Problem *************************
 There are n_coke bottles that are initially full of coke. You can exchange n_exchange empty coke bottles from the market with one full coke bottle.
 The operation of drinking a full coke bottle turns it into an empty bottle.
 Given the two integers n_coke and n_exchange, return the maximum number of coke bottles you can drink.
