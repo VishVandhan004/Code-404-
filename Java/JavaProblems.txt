@@ -1002,7 +1002,7 @@ class test
         System.out.print(len/2);
     }
 }                
-                                   *********************** 26th Problem *************************
+                                   *********************** 26th Problem ************************
 Given a list of non-negative numbers, identify all the sublists of odd size from it, calculate the total of all the elements of sublists. 
 Example 1:
 Input: list = [1,4,2,5,3]
