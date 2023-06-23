@@ -91,6 +91,7 @@ class ShoppingCart
         
     }
 }
+
 4th Problem
 /*
 Banking System: You are building a banking system. Identify the 
@@ -110,7 +111,6 @@ Enter your choice:
 Enter account number: 12345
 Enter account owner name: Santosh
 Account opened successfully.
-
 1. Open an account
 2. Deposit money
 3. Withdraw money
@@ -120,7 +120,6 @@ Enter your choice: 2
 Enter account number: 12345
 Enter the amount to deposit: 23450
 Amount deposited successfully.
-
 1. Open an account
 2. Deposit money
 3. Withdraw money
@@ -129,7 +128,6 @@ Amount deposited successfully.
 Enter your choice: 4
 Enter account number: 12345
 Account balance: 23450.0
-
 1. Open an account
 2. Deposit money
 3. Withdraw money
