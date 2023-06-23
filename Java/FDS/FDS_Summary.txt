@@ -64,21 +64,15 @@ class LeftTrianglePattern{
 
 3rd Problem
 /*
-Online Shopping Cart: You are developing an online shopping cart 
-system. Identify the classes, objects, and behaviors involved.
-Scenario: Users can add items to their shopping cart, 
-remove items, and proceed to checkout. Each item has properties 
-like name, price, and quantity. 
-The system should calculate the total cost of the items in 
-the cart and apply any applicable discounts or promotions.
-
+Online Shopping Cart: You are developing an online shopping cart system. Identify the classes, objects, and behaviors involved.
+Scenario: Users can add items to their shopping cart,remove items, and proceed to checkout. Each item has properties like name, price, and quantity. 
+The system should calculate the total cost of the items in the cart and apply any applicable discounts or promotions.
 input and output:
 Enter your choice: 1
 Enter item name: icecream
 Enter item price: 2
 Enter item quantity: 2
 Item added to the cart.
-
 1. Add item
 2. Remove item
 3. Checkout
@@ -86,8 +80,8 @@ Item added to the cart.
 Enter your choice: 3
 Total cost: $4.0
 Thank you for shopping with us!
-
 */
+
 import java.util.*;
 class ShoppingCart
 {
