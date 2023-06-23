@@ -144,9 +144,44 @@ Account balance: 23450.0
 Enter your choice: 0
 Exiting...
 */
-class BankingSystem
-{
-    
+
+import java.util.*;
+class BankAcc {
+    double Accno;
+    String name;
+    double balance;
+    BankAcc(double Accno, String name, double balance)
+    {
+        this.Accno = Accno;
+        this.name = name;
+        this. balance = balance;
+    }
+    void deposit(double amt){
+        balance = balance + amt;
+        System.out.print("Amount deposited successfully.");
+    }
+    void withdraw(double amt){
+        if(amt > balance){
+            System.out.print("No Balance");
+        }
+        else {
+            balance = balance - amt;
+            // return amt;
+            System.out.print("Amount withdrawn successfully");
+        }
+    }
+}
+class BankSystem {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" 1. Open an account \n 2.Deposit money \n 3. Withdraw money \n 4. Check account balance\n 0. Exit");
+        int choice = sc.nextInt();
+        switch(choice){
+            case 1:
+                System.out.print("Enter account balance: ")
+        }
+    }
 }
 
 /* Ravi wants to insert an element into given list of numbers for a given position . 
@@ -376,6 +411,189 @@ class test {
         }
         else {
             System.out.printf("No number found at index "+ ind +" that is a multiple of 3");
+        }
+    }
+}
+
+/*Write a Java program to calculate Sum and Average values of 
+an array.
+sample outpu1:
+Enter the number of elements in the array: 4
+Enter the elements of the array:
+23
+45
+67
+89
+Sum: 224
+Average: 56.0
+sample output2:
+Enter the number of elements in the array: 5
+Enter the elements of the array:
+1 2 3 4 5
+Sum: 15
+Average: 3.0 */
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int sum = 0;
+        int num = sc.nextInt();
+        System.out.print("Enter the elements of the array: ");
+        int arr[] = new int[num];
+        for(int i=0;i<num;i++)
+        {
+            arr[i] = sc.nextInt();
+            sum = sum + arr[i];
+        }
+        System.out.println("Sum: " + sum);
+        float avg = sum/num;
+        System.out.print("Average: " + avg);
+    }
+}
+
+/*Write a Java program to reverse an array of integer values.
+sample output:
+Enter the size of the array: 4
+Enter the elements of the array:
+Element 1: 34
+Element 2: 56
+Element 3: 78
+Element 4: 90
+Reversed array:
+90 78 56 34 */
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        System.out.print("Enter the elements of the array: ");
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Element "+(i+1)+": ");
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Reversed array: ");
+        for(int i = size-1; i>=0; i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+/*Write a Java program to input an array Of N elements and display all even index elements
+sampleoutput:
+Enter the size of the array: 3
+Enter the elements of the array:
+Element at index 0: -2
+Element at index 1: 56
+Element at index 2: 78
+Elements at even indices:
+Element at index 0: -2
+Element at index 2: 78*/
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        System.out.println("Enter the elements of the array: ");
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++)
+        {
+            System.out.print("Element at index "+i+": ");
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Elements at even indices: ");
+        for(int i=0;i<size;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println("Element at index "+(i)+": " + arr[i]);
+            }
+        }
+    }
+}
+
+/*sum of elements present at even and odd indices
+
+Sample output:
+
+Enter the number of elements in the array: 5
+Enter the elements of the array:
+2 3 4 5 6
+Sum of elements at even indices: 12
+Sum of elements at odd indices: 8
+*/
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int size = sc.nextInt();
+        System.out.print("Enter the elements of the array: ");
+        int arr[] = new int[size];
+        int sum1 = 0,sum2 = 0;
+        for(int i=0;i<size;i++){
+            arr[i] = sc.nextInt();
+            if(i%2 == 0){
+                sum1 = sum1+arr[i];
+            }
+            else{
+                sum2 = sum2+arr[i];
+            }
+        }
+        System.out.println("Sum of elements at even indices: "+ sum1);
+        System.out.println("Sum of elements at odd indices: "+ sum2);
+    }
+}
+
+/*Write a Java program to test if an array contains a specific value.
+sample output1:
+Enter the size of the array: 4
+Enter the elements of the array:
+Element 0: 1
+Element 1: 2
+Element 2: 3
+Element 3: 4
+Enter the value to search for: 1
+The array contains the value 1 at index 0.
+sample output2:
+Enter the size of the array: 3
+Enter the elements of the array:
+Element 0: 23
+Element 1: 45
+Element 2: 89
+Enter the value to search for: 9
+The array does not contain the value 9.
+*/
+import java.util.*;
+class test {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        System.out.println("Enter the elements of the array: ");
+        for(int i=0;i<size;i++){
+            System.out.print("Element "+i+": ");
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the value to search for: ");
+        int search = sc.nextInt();
+        for(int i=0;i<size;i++){
+            if(arr[i] == search){
+                System.out.print("The array contains the value "+search+" at index "+i+".");
+            }
+            else{
+                System.out.print("The array does not contain the value "+search+"");            }
         }
     }
 }
