@@ -61,6 +61,7 @@ class LeftTrianglePattern{
         }
     }
 }
+
 3rd Problem
 /*
 Online Shopping Cart: You are developing an online shopping cart 
