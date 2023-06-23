@@ -8,8 +8,8 @@ OUTPUT:
 *
 * *
 * * *
-
 */
+
 import java.util.*;
 class RightTrianglePattern
 {
@@ -27,6 +27,7 @@ class RightTrianglePattern
         }
     }
 }
+
 /*Problem Statement-2:
 Varun wants to design a LeftTrianglePattern.
 Let’s help him by accepting a number.
