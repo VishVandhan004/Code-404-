@@ -273,6 +273,7 @@ class Remove{
     }
 }
 
+7th Problem
 /*find the sum of elements available at the square position of given 
 indices in the array 
 sample output1:
