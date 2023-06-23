@@ -216,6 +216,7 @@ class Array1{
     }
 }
 
+6th Problem
 /*
 Write a java Program to remove an element in a given 
 position in an array.
