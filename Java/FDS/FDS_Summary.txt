@@ -486,6 +486,7 @@ class test {
     }
 }
 
+12th Problem
 /*Write a Java program to input an array Of N elements and display all even index elements
 sampleoutput:
 Enter the size of the array: 3
@@ -521,10 +522,9 @@ class test {
     }
 }
 
+13th Problem
 /*sum of elements present at even and odd indices
-
 Sample output:
-
 Enter the number of elements in the array: 5
 Enter the elements of the array:
 2 3 4 5 6
