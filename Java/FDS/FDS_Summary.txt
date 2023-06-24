@@ -387,6 +387,7 @@ Enter the array elements:8 9 2
 Enter the index: 3
 No number found at index 3 that is a multiple of 3.
 */
+
 import java.util.*;
 class test {
     public static void main(String args[])
