@@ -369,6 +369,7 @@ class Test{
     }
 }
 
+9th Problem
 /* Write a Java program that takes an input array, finds a number
 in the array which is a multiple of three, squares its index, 
 and displays the result. 
