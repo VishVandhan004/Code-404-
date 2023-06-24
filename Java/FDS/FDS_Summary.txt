@@ -414,6 +414,7 @@ class test {
     }
 }
 
+10th Problem
 /*Write a Java program to calculate Sum and Average values of 
 an array.
 sample outpu1:
