@@ -415,8 +415,7 @@ class test {
 }
 
 10th Problem
-/*Write a Java program to calculate Sum and Average values of 
-an array.
+/*Write a Java program to calculate Sum and Average values of an array.
 sample outpu1:
 Enter the number of elements in the array: 4
 Enter the elements of the array:
@@ -432,6 +431,7 @@ Enter the elements of the array:
 1 2 3 4 5
 Sum: 15
 Average: 3.0 */
+
 import java.util.*;
 class test {
     public static void main(String args[])
