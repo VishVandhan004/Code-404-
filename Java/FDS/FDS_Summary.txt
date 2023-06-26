@@ -566,7 +566,6 @@ Element 2: 3
 Element 3: 4
 Enter the value to search for: 1
 The array contains the value 1 at index 0.
-sample output2:
 Enter the size of the array: 3
 Enter the elements of the array:
 Element 0: 23
