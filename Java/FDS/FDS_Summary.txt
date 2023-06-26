@@ -558,7 +558,6 @@ class test {
 
 14th Problem
 /*Write a Java program to test if an array contains a specific value.
-sample output1:
 Enter the size of the array: 4
 Enter the elements of the array:
 Element 0: 1
