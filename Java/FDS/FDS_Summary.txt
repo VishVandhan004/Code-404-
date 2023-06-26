@@ -531,6 +531,7 @@ Enter the elements of the array:
 Sum of elements at even indices: 12
 Sum of elements at odd indices: 8
 */
+
 import java.util.*;
 class test {
     public static void main(String args[])
