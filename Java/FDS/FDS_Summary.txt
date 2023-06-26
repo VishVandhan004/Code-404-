@@ -523,7 +523,7 @@ class test {
 }
 
 13th Problem
-/*sum of elements present at even and odd indices
+/* sum of elements present at even and odd indices
 Sample output:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
