@@ -415,8 +415,7 @@ class test {
 }
 
 10th Problem
-/*Write a Java program to calculate Sum and Average values of an array.
-sample outpu1:
+/* Write a Java program to calculate Sum and Average values of an array.
 Enter the number of elements in the array: 4
 Enter the elements of the array:
 23
@@ -425,7 +424,6 @@ Enter the elements of the array:
 89
 Sum: 224
 Average: 56.0
-sample output2:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 3 4 5
@@ -455,7 +453,6 @@ class test {
 
 11th Problem
 /* Write a Java program to reverse an array of integer values.
-sample output:
 Enter the size of the array: 4
 Enter the elements of the array:
 Element 1: 34
