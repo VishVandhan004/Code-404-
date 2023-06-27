@@ -237,6 +237,7 @@ Enter the position of the element to be removed: 0
 Array after removing the element:
 123 34 3 22 1 4 6
 */
+
 import java.util.*;
 class Remove{
     public static void main(String args[])
