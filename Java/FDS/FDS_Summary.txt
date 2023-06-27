@@ -29,11 +29,8 @@ class RightTrianglePattern
 }
 
 /*Problem Statement-2:
-Varun wants to design a LeftTrianglePattern.
-Let’s help him by accepting a number.
-Input:
+Varun wants to design a LeftTrianglePattern. Let’s help him by accepting a number.
 5
-Output: 
            *
          * *
        * * *
