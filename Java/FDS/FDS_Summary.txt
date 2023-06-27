@@ -1,10 +1,6 @@
 /*Problem Statement-1:
-Arun wants to design a Right Angle Star Pattern.
-Let’s help him by accepting a number.
-Example 1
-Input:
+Arun wants to design a Right Angle Star Pattern. Let’s help him by accepting a number.
 3
-OUTPUT:
 *
 * *
 * * *
