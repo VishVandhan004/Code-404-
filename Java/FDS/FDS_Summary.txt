@@ -268,13 +268,11 @@ class Remove{
 7th Problem
 /*find the sum of elements available at the square position of given 
 indices in the array 
-sample output1:
 Enter the size of the array: 5                                                                                          
 Enter the elements of the array:                                                                                        
 1 2 3 4 5                                                                                                               
 Enter the indices: 0 1                                                                                                      
 sum is:3  
-sample output2:
 Enter the size of the array: 5                                                                                          
 Enter the elements of the array:                                                                                        
 1 2 3 4 5                                                                                                               
