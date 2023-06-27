@@ -322,7 +322,7 @@ The third largest element is: 3
 */
 
 import java.util.*;
-class Test{
+class Test {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
