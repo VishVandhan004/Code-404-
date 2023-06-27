@@ -319,8 +319,8 @@ Enter the array elements:
 6
 2
 The third largest element is: 3
-
 */
+
 import java.util.*;
 class Test{
     public static void main(String args[])
@@ -512,7 +512,6 @@ class test {
 
 13th Problem
 /* sum of elements present at even and odd indices
-Sample output:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
 2 3 4 5 6
