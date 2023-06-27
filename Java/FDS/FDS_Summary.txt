@@ -182,6 +182,7 @@ Enter the element to insert: 7
 Enter the index to insert the element at: 1
 Modified array: [1, 7, 2, 3, 4, 5]
 */
+
 import java.util.*;
 class Array1{
     public static void main(String args[])
@@ -211,9 +212,7 @@ class Array1{
 
 6th Problem
 /*
-Write a java Program to remove an element in a given 
-position in an array.
-sample output1:
+Write a java Program to remove an element in a given position in an array.
 Enter the size of the array: 5
 Enter the elements of the array:
 1
@@ -224,7 +223,6 @@ Enter the elements of the array:
 Enter the position of the element to be removed: 1
 Array after removing the element:
 1 3 4 5
-sample output2:
 Enter the size of the array: 8
 Enter the elements of the array:
 200
