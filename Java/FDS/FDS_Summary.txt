@@ -590,16 +590,10 @@ class test {
 
 15th Problem/*
 1.Write a Program to input N integers in an array,print the greatest and smallest integers from the array
-
-sample input output
-
-Enter Size of Array:3                                                                                                  
-                                                                                                                       
- Enter the elements:10 20 30                                                                                            
-                                                                                                                       
- Maximum Number: 30                                                                                                    
-                                                                                                                       
- Minimum Number: 10    */      
+Enter Size of Array:3                                                                                                                                                                                                                
+Enter the elements:10 20 30                                                                                                                                                                                                                   
+Maximum Number: 30                                                                                                                                                                                                                           
+Minimum Number: 10    */      
  import java.util.*;
  class test {
      public static void main(String args[]){
