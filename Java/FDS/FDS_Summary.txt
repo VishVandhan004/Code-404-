@@ -631,9 +631,7 @@ Enter Size of Array:3
 
 16th Problem
 /*
-Write a program to input N elements in an array. Print the count of single digit and double
-digit numbers.
-sample input output
+Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
 Enter the number of elements in the array: 3                                                                            
 Enter element 1: 10                                                                                                    
 Enter element 2: 11                                                                                                    
@@ -641,6 +639,7 @@ Enter element 3: 100
 Count of single-digit numbers: 0                                                                                        
 Count of double-digit numbers: 2                                                                                        
 */
+
 import java.util.*;
 class test {
     public static void main(String args[]){
@@ -736,7 +735,7 @@ Average Marks   Number of Students
 71-85           0                                                                                                      
 86-100          1                                                                                                      
 */      
-                                                                       
+
 import java.util.*;
 class test {
     public static void main(String args[]){
