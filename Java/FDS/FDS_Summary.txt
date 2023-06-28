@@ -593,7 +593,8 @@ class test {
 Enter Size of Array:3                                                                                                                                                                                                                
 Enter the elements:10 20 30                                                                                                                                                                                                                   
 Maximum Number: 30                                                                                                                                                                                                                           
-Minimum Number: 10    */      
+Minimum Number: 10    */    
+  
  import java.util.*;
  class test {
      public static void main(String args[]){
