@@ -589,8 +589,7 @@ class test {
 }
 
 15th Problem/*
-1.Write a Program to input N integers in an array,print the greatest and smallest integers from the
-array
+1.Write a Program to input N integers in an array,print the greatest and smallest integers from the array
 
 sample input output
 
