@@ -77,24 +77,110 @@ Thank you for shopping with us!
 */
 
 import java.util.*;
-class ShoppingCart
-{
-    public static void main(String args[])
-    {
+class ShoppingCart {
+    private List<Item> items;
+    public ShoppingCart() {
+        items = new ArrayList<>();
+    }
+    public void addItem(String name, double price, int quantity) {
+        Item item = new Item(name, price, quantity);
+        items.add(item);
+        System.out.println("Item added to the cart.");
+    }
+    public void removeItem(String name) {
+        for (Item item : items) {
+            if (item.getName().equalsIgnoreCase(name)) {
+                items.remove(item);
+                System.out.println("Item removed from the cart.");
+                return;
+            }
+        }
+        System.out.println("Item not found in the cart.");
+    }
+    public double calculateTotalCost() {
+        double totalCost = 0.0;
+        for (Item item : items) {
+            totalCost += item.getPrice() * item.getQuantity();
+        }
+        return totalCost;
+    }
+    public void checkout() {
+        double totalCost = calculateTotalCost();
+        System.out.println("Total cost: $" + totalCost);
+        System.out.println("Thank you for shopping with us!");
+    }
+}
+
+class Item {
+    private String name;
+    private double price;
+    private int quantity;
+
+    public Item(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        ShoppingCart cart = new ShoppingCart();
+
+        while (true) {
+            System.out.println("1. Add item");
+            System.out.println("2. Remove item");
+            System.out.println("3. Checkout");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter item name: ");
+                    String name = sc.next();
+                    System.out.print("Enter item price: ");
+                    double price = sc.nextDouble();
+                    System.out.print("Enter item quantity: ");
+                    int quantity = sc.nextInt();
+                    cart.addItem(name, price, quantity);
+                    break;
+                case 2:
+                    System.out.print("Enter item name to remove: ");
+                    String itemName = sc.next();
+                    cart.removeItem(itemName);
+                    break;
+                case 3:
+                    cart.checkout();
+                    System.exit(0);
+                case 4:
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
     }
 }
 
 4th Problem
 /*
-Banking System: You are building a banking system. Identify the 
-classes, objects, and behaviors involved.
-Scenario: Customers can open bank accounts, deposit money, 
-withdraw money, and check their account balance. 
+Banking System: You are building a banking system. Identify the classes, objects, and behaviors involved.
+Scenario: Customers can open bank accounts, deposit money,withdraw money, and check their account balance. 
 Each account has a unique account number, owner name, and 
 balance. The system should handle transactions accurately and update account balances accordingly.
-sample input and output:
 1. Open an account
 2. Deposit money
 3. Withdraw money
@@ -136,36 +222,89 @@ class BankAcc {
     double Accno;
     String name;
     double balance;
-    BankAcc(double Accno, String name, double balance)
-    {
+
+    BankAcc(double Accno, String name, double balance) {
         this.Accno = Accno;
         this.name = name;
-        this. balance = balance;
+        this.balance = balance;
     }
-    void deposit(double amt){
+
+    void deposit(double amt) {
         balance = balance + amt;
         System.out.print("Amount deposited successfully.");
     }
-    void withdraw(double amt){
-        if(amt > balance){
+
+    void withdraw(double amt) {
+        if (amt > balance) {
             System.out.print("No Balance");
-        }
-        else {
+        } else {
             balance = balance - amt;
-            // return amt;
-            System.out.print("Amount withdrawn successfully");
+            System.out.print("Amount withdrawn successfully.");
         }
     }
+
+    double getBalance() {
+        return balance;
+    }
 }
+
 class BankSystem {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println(" 1. Open an account \n 2.Deposit money \n 3. Withdraw money \n 4. Check account balance\n 0. Exit");
-        int choice = sc.nextInt();
-        switch(choice){
-            case 1:
-                System.out.print("Enter account balance: ")
+        BankAcc account = null;
+
+        while (true) {
+            System.out.println("1. Open an account");
+            System.out.println("2. Deposit money");
+            System.out.println("3. Withdraw money");
+            System.out.println("4. Check account balance");
+            System.out.println("0. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter account number: ");
+                    double accNo = sc.nextDouble();
+                    sc.nextLine();
+                    System.out.print("Enter account owner name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter initial balance: ");
+                    double initialBalance = sc.nextDouble();
+                    account = new BankAcc(accNo, name, initialBalance);
+                    System.out.println("Account opened successfully.");
+                    break;
+                case 2:
+                    if (account != null) {
+                        System.out.print("Enter the amount to deposit: ");
+                        double depositAmt = sc.nextDouble();
+                        account.deposit(depositAmt);
+                    } else {
+                        System.out.println("No account opened. Please open an account first.");
+                    }
+                    break;
+                case 3:
+                    if (account != null) {
+                        System.out.print("Enter the amount to withdraw: ");
+                        double withdrawAmt = sc.nextDouble();
+                        account.withdraw(withdrawAmt);
+                    } else {
+                        System.out.println("No account opened. Please open an account first.");
+                    }
+                    break;
+                case 4:
+                    if (account != null) {
+                        System.out.println("Account balance: " + account.getBalance());
+                    } else {
+                        System.out.println("No account opened. Please open an account first.");
+                    }
+                    break;
+                case 0:
+                    System.out.println("Exiting...");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
         }
     }
 }
