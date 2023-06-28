@@ -680,6 +680,7 @@ Common elements:
 2                                                                                                                      
 3    
 */
+
 import java.util.*;
 class test {
     public static void main(String args[]){
@@ -734,7 +735,8 @@ Average Marks   Number of Students
 51-70           3                                                                                                      
 71-85           0                                                                                                      
 86-100          1                                                                                                      
-*/                                                                             
+*/      
+                                                                       
 import java.util.*;
 class test {
     public static void main(String args[]){
