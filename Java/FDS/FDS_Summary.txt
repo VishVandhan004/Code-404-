@@ -366,7 +366,6 @@ in the array which is a multiple of three, squares its index,
 and displays the result. 
 The program takes the input array and index from the user
 Sample input  output
-Case 1:
 Enter the size of the array: 5
 Enter the array elements:
 3 6 9 12 15
@@ -594,7 +593,7 @@ Enter Size of Array:3
 Enter the elements:10 20 30                                                                                                                                                                                                                   
 Maximum Number: 30                                                                                                                                                                                                                           
 Minimum Number: 10    */    
-  
+
  import java.util.*;
  class test {
      public static void main(String args[]){
