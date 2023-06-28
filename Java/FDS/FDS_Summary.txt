@@ -670,7 +670,6 @@ class test {
 17th Problem
 /*
 Write a Java program to find common elements between two integer arrays.
-sample input and output
 Enter the number of elements in the first array: 3                                                                      
 Enter the elements of the first array:                                                                                  
 1 2 3                                                                                                                  
