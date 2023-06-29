@@ -1098,6 +1098,7 @@ public class test {
     }
 }
 
+23rd Problem
 /* find the unique elements from the given array
 
 sample output:
