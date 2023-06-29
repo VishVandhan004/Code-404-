@@ -1020,15 +1020,14 @@ class test {
 
 21st Problem
 /*find sum of even numbers and odd numbers of an input array
-
 sample output:
-
 Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 3 4 5
 Sum of even integers: 6
 Sum of odd integers: 9
 */
+
 import java.util.*;
 class test{
     public static void main(String args[]){
