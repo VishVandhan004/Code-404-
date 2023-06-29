@@ -1052,6 +1052,7 @@ class test{
     }
 }
 
+22nd Problem
 /* find the duplicate elements from the given array
 sample output:
 Enter the number of elements in the array: 6                                                                            
