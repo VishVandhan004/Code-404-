@@ -874,8 +874,7 @@ class test {
 
 18th Problem
 /*
-Write a program to store average marks of N students in a single subscripted variables and
-print the students falling in the following categories in two columns
+Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
 Average Marks Number of Students
 1-30 xx
 31-50 xx
