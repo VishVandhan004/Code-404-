@@ -699,6 +699,26 @@ Enter the value to search for: 9
 The array does not contain the value 9.
 */
 
+i/*Write a Java program to test if an array contains a specific value.
+sample output1:
+Enter the size of the array: 4
+Enter the elements of the array:
+Element 0: 1
+Element 1: 2
+Element 2: 3
+Element 3: 4
+Enter the value to search for: 1
+The array contains the value 1 at index 0.
+sample output2:
+Enter the size of the array: 3
+Enter the elements of the array:
+Element 0: 23
+Element 1: 45
+Element 2: 89
+Enter the value to search for: 9
+The array does not contain the value 9.
+*/
+
 import java.util.*;
 class test {
     public static void main(String args[])
@@ -707,6 +727,7 @@ class test {
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
         int arr[] = new int[size];
+        int flag = -1;
         System.out.println("Enter the elements of the array: ");
         for(int i=0;i<size;i++){
             System.out.print("Element "+i+": ");
@@ -716,11 +737,22 @@ class test {
         int search = sc.nextInt();
         for(int i=0;i<size;i++){
             if(arr[i] == search){
-                System.out.print("The array contains the value "+search+" at index "+i+".");
+                flag = i;
+                break;
             }
             else{
-                System.out.print("The array does not contain the value "+search+"");            }
-        }
+                flag = -1;
+            }
+    }
+            
+if(flag != -1)
+    {
+        System.out.print("The array contains the value "+search+" at index "+flag+".");
+    }
+    else 
+    {
+      System.out.print("The array does not contain the value "+search+""); 
+    }
     }
 }
 
@@ -949,5 +981,207 @@ class test
         double area = c.getArea();
         System.out.println("Perimeter of the circle: "+perimeter);
         System.out.println("Area of the circle: "+area);
+    }
+}
+
+20th Problem
+/*java program to input array of numbers that contains positive 
+and negative numbers. print count of positive and negative numbers
+
+sample output:
+Enter the number of elements in the array: 5
+Enter the elements of the array:
+1 2 -1 -2 3
+Positive Count: 3
+Negative Count: 2
+*/
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int n = sc.nextInt();
+        int pc = 0;
+        int nc = 0;
+        System.out.println("Enter the elements of the array: ");
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        if(arr[i]<0){
+            nc++;
+        }
+        else{
+            pc++;
+        }
+    }
+        System.out.println("Positive Count: "+pc);
+        System.out.print("Negative Count: "+nc);
+    }
+}
+
+21st Problem
+/*find sum of even numbers and odd numbers of an input array
+
+sample output:
+
+Enter the number of elements in the array: 5
+Enter the elements of the array:
+1 2 3 4 5
+Sum of even integers: 6
+Sum of odd integers: 9
+*/
+import java.util.*;
+class test{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int n = sc.nextInt();
+        int esum = 0;
+        int osum = 0;
+        System.out.println("Enter the elements of the array: ");
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+            if(arr[i]%2==0){
+                esum=esum+arr[i];
+            }
+            else{
+                osum = osum + arr[i];
+            }
+        }
+        System.out.println("Sum of even integers: "+esum);
+        System.out.print("Sum of odd integers: "+osum);
+    }
+}
+
+/* find the duplicate elements from the given array
+sample output:
+Enter the number of elements in the array: 6                                                                            
+Enter the elements of the array:                                                                                        
+5 5 3 3 2 1                                                                                                             
+Duplicate elements:                                                                                                        
+5 3                                                                                                                     
+*/
+
+import java.util.Scanner;
+public class test {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int length = scanner.nextInt();
+        int[] array = new int[length];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < length; i++) {
+            array[i] = scanner.nextInt();
+        }
+        int found = 0;
+        System.out.println("Duplicate elements: ");
+        //write your code here
+        for(int i=0;i<array.length;i++)
+        {
+            if(array[i] == -1)
+            {
+                i++;
+            }
+            for(int j=i+1;j<array.length;j++)
+            {
+                if(array[i]==array[j])
+                {
+                  array[j] = -1;
+                  found++;   
+                }
+            }
+            if(found!=0 && array[i]!=-1){
+                System.out.print(array[i]+" ");
+            }
+            found = 0;
+        }
+    }
+}
+
+/* find the unique elements from the given array
+
+sample output:
+
+Enter the number of elements in the array: 6                                                                            
+Enter the elements of the array:                                                                                        
+5 5 3 3 2 1                                                                                                             
+Unique elements:                                                                                                        
+2 1                                                                                                                     
+    
+*/
+import java.util.Scanner;
+public class test {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the array: ");
+        int length = scanner.nextInt();
+        int[] array = new int[length];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < length; i++)
+        {
+            array[i] = scanner.nextInt();
+        }
+       System.out.println("Unique elements: ");
+       int count = 0;
+        //write your code here
+        for(int i=0;i<array.length;i++)
+        {
+            for(int j=i+1;j<array.length;j++)
+            {
+                if(array[i] == array[j])
+                {
+                    array[j] = -1;
+                    count++;
+                }
+            }
+           if(array[i]!=-1 && count == 0){
+               System.out.print(array[i]+" ");
+           }
+           count = 0;
+        }
+    }
+}
+/* find the frequency of each element in the given array
+sample output:
+5
+1 2 2 3 4
+1-1
+2-2
+3-1
+4-1
+sample output2:
+6
+3 3 3 4 4 4
+3-3
+4-3
+*/
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        int freq = 1;
+        for(int i=0;i<n;i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+             if(arr[i] == arr[j])
+             {
+                 arr[j] = -1;
+                 freq++;
+             }
+           }
+             if(arr[i]!=-1)
+             {
+                 System.out.println(arr[i]+ "-"+freq);
+             }
+             freq = 1;
+        }
     }
 }
