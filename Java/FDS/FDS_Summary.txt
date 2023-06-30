@@ -792,7 +792,7 @@ Minimum Number: 10    */
  }
 
 16th Problem
-/* Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
+/*Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
 Enter the number of elements in the array: 3                                                                            
 Enter element 1: 10                                                                                                    
 Enter element 2: 11                                                                                                    
