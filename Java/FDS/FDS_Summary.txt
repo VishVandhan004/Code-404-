@@ -1023,7 +1023,7 @@ Sum of even integers: 6
 Sum of odd integers: 9 */
 
 import java.util.*;
-class test{
+class test {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of elements in the array: ");
