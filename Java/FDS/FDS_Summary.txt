@@ -980,7 +980,7 @@ class test
 }
 
 20th Problem
-/*java program to input array of numbers that contains positive and negative numbers. print count of positive and negative numbers
+/* java program to input array of numbers that contains positive and negative numbers. print count of positive and negative numbers
 sample output:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
