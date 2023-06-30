@@ -1014,7 +1014,7 @@ class test {
 }
 
 21st Problem
-/*find sum of even numbers and odd numbers of an input array
+/* find sum of even numbers and odd numbers of an input array
 sample output:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
