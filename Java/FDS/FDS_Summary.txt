@@ -1020,8 +1020,7 @@ Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 3 4 5
 Sum of even integers: 6
-Sum of odd integers: 9
-*/
+Sum of odd integers: 9 */
 
 import java.util.*;
 class test{
