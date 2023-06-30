@@ -837,8 +837,7 @@ Enter the elements of the second array:
 2 4 3                                                                                                                  
 Common elements:                                                                                                        
 2                                                                                                                      
-3    
-*/
+3    */
 
 import java.util.*;
 class test {
