@@ -1036,7 +1036,7 @@ class test {
             if(arr[i]%2==0) {
                 esum=esum+arr[i];
             }
-            else{
+            else {
                 osum = osum + arr[i];
             }
         }
