@@ -1788,9 +1788,8 @@ class test
             {
                 continue;
             }
-            for(int j=i+1;j<n;j++)
-            {
-                if(nums[j] == -1){
+            for(int j=i+1;j<n;j++) {
+                if(nums[j] == -1) {
                     continue;
                 }
                 if(nums[i] == nums[j]) {
