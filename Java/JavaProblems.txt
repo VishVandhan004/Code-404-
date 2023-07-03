@@ -1790,12 +1790,10 @@ class test
             }
             for(int j=i+1;j<n;j++)
             {
-                if(nums[j] == -1)
-                {
+                if(nums[j] == -1){
                     continue;
                 }
-                if(nums[i] == nums[j])
-                {
+                if(nums[i] == nums[j]) {
                     nums[i] = -1;
                     nums[j] = -1;
                     count++;
