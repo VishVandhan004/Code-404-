@@ -1264,7 +1264,6 @@ Enter a string:
 welcome to ngit college
 Smallest word: to
 Largest word: welcome  
-
 sample output1
 Enter a string:                                                                                                         
 hi welcome to fds j1 batch                                                                                               
