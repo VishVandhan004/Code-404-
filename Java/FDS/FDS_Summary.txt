@@ -1189,7 +1189,6 @@ sample output:
 Enter the string                                                                                                        
 ava is great C++ is also great                                                                                          
 Total number of unique words in "ava is great C++ is also great" are 3                                                  
-
 sample output1:
 Enter the string                                                                                                        
 good morning                                                                                                            
