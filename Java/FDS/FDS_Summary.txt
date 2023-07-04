@@ -1192,8 +1192,8 @@ Total number of unique words in "ava is great C++ is also great" are 3
 sample output1:
 Enter the string                                                                                                        
 good morning                                                                                                            
-Total number of unique words in "good morning" are 2  
-*/
+Total number of unique words in "good morning" are 2  */
+
 import java.util.*;
 class test {
     public static void main(String[] args) {
