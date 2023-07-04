@@ -1178,3 +1178,48 @@ class test {
         }
     }
 }
+
+25th Problem
+/*write a Java Program to Count the Number of Unique Words
+
+Problem Description
+Given a string, in which various words are separated by whitespace. Print the count of the unique words 
+present in it, that is the words whose frequency is 1.
+sample output:
+Enter the string                                                                                                        
+ava is great C++ is also great                                                                                          
+Total number of unique words in "ava is great C++ is also great" are 3                                                  
+
+sample output1:
+Enter the string                                                                                                        
+good morning                                                                                                            
+Total number of unique words in "good morning" are 2  
+*/
+import java.util.*;
+class test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string:");
+        String input = sc.nextLine();
+        sc.close();
+        int uniqueWordCount = 0;
+        String[] words = input.split(" ");
+        Map<String, Integer> wordCountMap = new HashMap<>();
+        // Count the frequency of each word
+        for (String word : words) {
+            if (!wordCountMap.containsKey(word)) {
+                wordCountMap.put(word, 1);
+            } else {
+                int count = wordCountMap.get(word);
+                wordCountMap.put(word, count + 1);
+            }
+        }
+        // Count the number of unique words with frequency 1
+        for (String word : wordCountMap.keySet()) {
+            if (wordCountMap.get(word) == 1) {
+                uniqueWordCount++;
+            }
+        }
+        System.out.println("Total number of unique words in \"" + input + "\" are " + uniqueWordCount);
+    }
+}
