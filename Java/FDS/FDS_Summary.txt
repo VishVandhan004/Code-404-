@@ -1303,3 +1303,39 @@ class test {
         return largestWord;
     }
 }
+
+28th Problem
+/*Given a string, find and remove all the adjacent pairs of repeated characters
+sample output:
+ABBCCCD
+string after removing adjacent pairs of repeated characters: ACD
+sample output2:
+AAABBBCCDD
+string after removing adjacent pairs of repeated characters: AB
+sample output3:
+AABBBCCDDAXYYZZZZZB
+string after removing adjacent pairs of repeated characters: BAXZB
+*/
+
+import java.util.*;
+class test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        String result = removeAdjacentPairs(input);
+        System.out.println("String after removing adjacent pairs of repeated characters: " + result);
+    }
+    public static String removeAdjacentPairs(String input) {
+        StringBuilder sb = new StringBuilder();
+        int i = 0;
+        while (i < input.length()) {
+            if (i < input.length() - 1 && input.charAt(i) == input.charAt(i + 1)) {
+                i += 2;
+            } else {
+                sb.append(input.charAt(i));
+                i++;
+            }
+        }
+        return sb.toString();
+    }
+}
