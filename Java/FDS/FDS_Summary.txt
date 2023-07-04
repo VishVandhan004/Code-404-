@@ -1258,7 +1258,6 @@ class test {
 
 27th Problem
 /*Java Program tond the largest and smallest word in a string.
-
 sample output
 Enter a string:
 welcome to ngit college
