@@ -251,7 +251,6 @@ class BankSystem {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         BankAcc account = null;
-
         while (true) {
             System.out.println("1. Open an account");
             System.out.println("2. Deposit money");
