@@ -348,8 +348,7 @@ class Array1 {
 }
 
 6th Problem
-/*
-Write a java Program to remove an element in a given position in an array.
+/* Write a java Program to remove an element in a given position in an array.
 Enter the size of the array: 5
 Enter the elements of the array:
 1
