@@ -739,7 +739,6 @@ class test {
                 flag = -1;
             }
     }
-            
 if(flag != -1)
     {
         System.out.print("The array contains the value "+search+" at index "+flag+".");
@@ -748,7 +747,7 @@ if(flag != -1)
     {
       System.out.print("The array does not contain the value "+search+""); 
     }
-    }
+  }
 }
 
 15th Problem/*
