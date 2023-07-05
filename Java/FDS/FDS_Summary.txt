@@ -750,8 +750,8 @@ if(flag != -1)
   }
 }
 
-15th Problem/*
-1.Write a Program to input N integers in an array,print the greatest and smallest integers from the array
+15th Problem
+/* Write a Program to input N integers in an array,print the greatest and smallest integers from the array
 Enter Size of Array:3                                                                                                                                                                                                                
 Enter the elements:10 20 30                                                                                                                                                                                                                   
 Maximum Number: 30                                                                                                                                                                                                                           
