@@ -321,7 +321,7 @@ Modified array: [1, 7, 2, 3, 4, 5]
 */
 
 import java.util.*;
-class Array1{
+class Array1 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
