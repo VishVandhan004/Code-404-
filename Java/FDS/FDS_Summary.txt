@@ -401,7 +401,7 @@ class Remove {
 }
 
 7th Problem
-/*find the sum of elements available at the square position of given 
+/* find the sum of elements available at the square position of given 
 indices in the array 
 Enter the size of the array: 5                                                                                          
 Enter the elements of the array:                                                                                        
