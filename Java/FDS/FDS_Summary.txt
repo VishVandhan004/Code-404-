@@ -1359,6 +1359,11 @@ class test
 }
 
 30th Problem
+write a function that given an array of N integers, shall return the biggest value X, which occurs in A exactly X times.
+exp-> A=[3,1,4,1,5] shall return 0. no value in the array meeting the function.
+exp -> A=[5,5,5,5,5] shall return 5.
+exp-> A=[3,8,2,3,3,2] shall return 3. the value 2 occurs 2 times and the value 3 occurs 3 times. they meet the conditions. the value 8 occurs only once.
+so, it doesn't meet the conditions. the max of 2 and 3 is 3. so, return 3.
 
 import java.util.*;
 public class opentextone {
