@@ -1,21 +1,18 @@
-import java.util.*;
-class Main {
+import java.io.FileInputStream;
+import java.io.IOException;
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array: ");
-        int size = sc.nextInt();
-        System.out.println("Enter the elements:");
-        int arr[] = new int[size];
-        for (int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
+        try {
+            FileInputStream file = new FileInputStream("abc.txt");
+            int size = file.available();
+            byte[] data = new byte[size];
+            file.read(data);
+            file.close();
+            String fileContent = new String(data);
+            System.out.println("Contents of the file:");
+            System.out.println(fileContent);
+        } catch (IOException e) {
+            System.out.println("Exception occurred: " + e.getMessage());
         }
-        System.out.println("enter the target:");
-       int target = sc.nextInt();
-       for (int i = 0; i < size; i++) {
-        if(arr[i] == target){
-            System.out.println(i);
-        }
-       }
-        sc.close();
     }
 }

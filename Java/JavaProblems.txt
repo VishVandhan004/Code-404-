@@ -1929,3 +1929,243 @@ class Solution {
         return uniqueCount;
     }
 }                                     
+
+                              ************************  48th Problem **********************
+                              ******************** Collections ***************************
+Array List
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        ArrayList<Integer> cs = new ArrayList<Integer>();
+        cs.add(1);
+        cs.add(2);
+        cs.add(3);
+        cs.add(4);
+        cs.add(5);
+        System.out.println("Get"+cs.get(1));     // gets the element at index  
+        cs.remove(2);  // removes element at index 
+        Iterator<Integer> it = cs.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        ArrayList<String> cs1 = new ArrayList<String>();
+        cs1.add("xyz");
+        cs1.add("abc");
+        cs1.add("def");
+        
+    }
+}                              
+
+LinkedList
+import java.util.*;
+class Test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        LinkedList<Integer> ll=new LinkedList<Integer>();
+        for(int i=0;i<n;i++)
+        {
+            ll.add(sc.nextInt());
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(ll.get(i)+" ");
+        }
+        System.out.println();
+        System.out.println(ll.size());
+        System.out.println(ll.contains(2));
+        System.out.println(ll.remove(1));
+        System.out.println(ll.indexOf(1));
+        ll.set(0,6);
+        Iterator<Integer> it=ll.iterator();
+        while(it.hasNext())
+        {
+            System.out.print(it.next()+" ");
+        }
+    }
+}     
+
+TreeMap
+import java.util.*;
+class Test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        TreeMap<Integer,String> t=new TreeMap<Integer,String>();
+        for(int i=0;i<n;i++)
+        {
+            t.put(sc.nextInt(),sc.nextLine());
+        }
+        System.out.println(t.containsKey(1));
+        System.out.println(t.containsValue("A"));
+        System.out.println(t.get(2));
+        System.out.println(t.remove(3));
+        System.out.println(t.size());
+        System.out.println(t.values()+" ");
+        for(Map.Entry<Integer,String> me:t.entrySet())
+        {
+            System.out.println(me.getKey()+"-"+me.getValue());
+        }
+        
+    }
+}     
+
+HashMap
+import java.util.*;
+class Test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        TreeMap<Integer,String> t=new TreeMap<Integer,String>();
+        for(int i=0;i<size;i++)
+        {
+            t.put(sc.nextInt(),sc.nextLine());
+        }
+        System.out.println(t.containsKey(1));
+        System.out.println(t.containsValue("A"));
+        System.out.println(t.get(2));
+        System.out.println(t.remove(3));
+        System.out.println(t.size());
+        System.out.println(t.values()+" ");
+        for(Map.Entry<Integer,String> me:t.entrySet())
+        {
+            System.out.println(me.getKey()+"-"+me.getValue());
+        }
+        
+    }
+}     
+
+Legacy Vector
+import java.util.*;
+class Test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        Vector<Integer> v=new Vector<Integer>();
+        for(int i=0;i<size;i++)
+        {
+            v.add(sc.nextInt());
+        }
+        System.out.println(v.size());
+        System.out.println(v.contains(1));
+        System.out.println(v.elementAt(2));
+        System.out.println(v.firstElement());
+        System.out.println(v.get(4));
+        System.out.println(v.indexOf(3));
+        System.out.println(v.remove(1));
+        System.out.println(v.set(1,2));
+        Iterator<Integer> it=v.iterator();
+        while(it.hasNext())
+        {
+            System.out.print(it.next()+" ");
+        }
+    }
+}     
+
+Legacy HashTable
+import java.util.*;
+class Test {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        Hashtable<Integer, Integer> ht = new Hashtable<>();
+        for (int i = 0; i < size; i++) {
+            int key = sc.nextInt();
+            int value = sc.nextInt();
+            ht.put(key, value);
+        }
+        System.out.println(ht.size());
+        System.out.println(ht.containsKey(1));
+        System.out.println(ht.get(2));
+        System.out.println(ht.keySet().iterator().next());
+        System.out.println(ht.get(4));
+        System.out.println(ht.containsValue(3));
+        System.out.println(ht.remove(1));
+        ht.put(1, 2);
+        Enumeration<Integer> keys = ht.keys();
+        while (keys.hasMoreElements()) {
+            int key = keys.nextElement();
+            System.out.print(ht.get(key) + " ");
+        }
+    }
+}
+ 
+
+Legacy Dictionary
+import java.util.*;
+class Test 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        Hashtable<Integer, Integer> dictionary = new Hashtable<>();
+        for (int i = 0; i < size; i++) {
+            int key = sc.nextInt();
+            int value = sc.nextInt();
+            dictionary.put(key, value);
+        }
+        System.out.println(dictionary.size());
+        System.out.println(dictionary.containsKey(1));
+        System.out.println(dictionary.get(2));
+        System.out.println(dictionary.get(0));
+        System.out.println(dictionary.get(4));
+        System.out.println(dictionary.containsValue(3));
+        System.out.println(dictionary.remove(1));
+        dictionary.put(1, 2);
+        Enumeration<Integer> keys = dictionary.keys();
+        while (keys.hasMoreElements()) {
+            int key = keys.nextElement();
+            System.out.print(dictionary.get(key) + " ");
+        }
+    }
+}  
+
+Iterator
+import java.util.*;
+class Test
+{
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("ab");
+        a.add("bc");
+        a.add("cd");
+        a.add("de");
+        Iterator<String> it = a.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
+    }
+}
+
+List Iterator
+import java.util.*;
+class Test
+{
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("ab");
+        a.add("bc");
+        a.add("cd");
+        a.add("de");
+        ListIterator<String> litr = a.listIterator();
+        while (litr.hasNext()) {
+            System.out.print(litr.next() + " ");
+        }
+        while (litr.hasPrevious()) {
+            System.out.print(litr.previous() + " ");
+        }
+    }
+}
+ 

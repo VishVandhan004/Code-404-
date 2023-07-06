@@ -1,5 +1,5 @@
 import java.util.*;
-class Main {
+class FDS {
     public static void main(String args[]) {
         // HASHSET COLLECTION FRAMEWORK
         HashSet<String> s = new HashSet<>();
@@ -15,12 +15,12 @@ class Main {
         boolean contains = s.contains("Mia");
         System.out.println(contains);
         // iterating over elements
-        for(String e: s){
+        for (String e : s) {
             System.out.println(e);
         }
         // remove element
         s.remove("Mia");
         // clear the whole set
         s.clear();
-        }
     }
+}
