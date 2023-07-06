@@ -1437,6 +1437,7 @@ public class opentexttwo {
 write a function solution that, given integer N, returns the smallest non-negative integer whose individual digits sum to N.
 exp-> n = 16, the function should return 79. there are many numbers whose sum is 16 but the smallest such number must be 79.
 exp-> n = 19, function should return 199. many numbers sum can be 19 but the smallest such number is 199.
+
 import java.util.*;
 public class opentextthree {
     public static void main(String[] args) {
@@ -1470,6 +1471,7 @@ public class opentextthree {
 Write a function that given an integer N, returns the smallest integer greater than N, the sum of whose digits is twice as big as the sum of digits of N.
 exp-> N = 14, function should return 19. the sum of digits of 19(1+9=10) is twice as big as the sum of 14(1+4=5).
 exp-> N = 10, function should return 11. the sum of digits of 11(1+1=2) is twice as big as the sum of 10(1+0=1). 
+
 import java.util.*;
 public class opentextfour {
     public static void main(String[] args) {
