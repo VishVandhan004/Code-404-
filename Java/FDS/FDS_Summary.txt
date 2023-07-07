@@ -1335,5 +1335,3 @@ class test
         System.out.println("The longest Common Prefix is: "+c);
     }
 }
-
-33rd Problem
