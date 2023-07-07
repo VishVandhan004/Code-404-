@@ -693,26 +693,6 @@ Enter the value to search for: 9
 The array does not contain the value 9.
 */
 
-i/*Write a Java program to test if an array contains a specific value.
-sample output1:
-Enter the size of the array: 4
-Enter the elements of the array:
-Element 0: 1
-Element 1: 2
-Element 2: 3
-Element 3: 4
-Enter the value to search for: 1
-The array contains the value 1 at index 0.
-sample output2:
-Enter the size of the array: 3
-Enter the elements of the array:
-Element 0: 23
-Element 1: 45
-Element 2: 89
-Enter the value to search for: 9
-The array does not contain the value 9.
-*/
-
 import java.util.*;
 class test {
     public static void main(String args[])
