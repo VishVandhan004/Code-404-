@@ -1336,9 +1336,6 @@ class test
     }
 }
 
-31st Problem
-
-
 32nd Problem
 write a function solution that, given integer N, returns the smallest non-negative integer whose individual digits sum to N.
 exp-> n = 16, the function should return 79. there are many numbers whose sum is 16 but the smallest such number must be 79.
