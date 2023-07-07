@@ -2169,4 +2169,50 @@ class Test
     }
 }
                             ************************** 49th Problem *****************************
+write a function that given an array of N integers, shall return the biggest value X, which occurs in A exactly X times.
+exp-> A=[3,1,4,1,5] shall return 0. no value in the array meeting the function.
+exp -> A=[5,5,5,5,5] shall return 5.
+exp-> A=[3,8,2,3,3,2] shall return 3. the value 2 occurs 2 times and the value 3 occurs 3 times. they meet the conditions. the value 8 occurs only once.
+so, it doesn't meet the conditions. the max of 2 and 3 is 3. so, return 3.
+
+import java.util.*;
+public class opentextone {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String [] sa = s.split(" ");
+        int arr [] = new int [sa.length];
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=Integer.valueOf(sa[i]);
+        }
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int i=0;i<arr.length;i++)
+        {
+            if(map.get(arr[i])!=null)//map.containsKey()
+            {
+                map.put(arr[i],map.get(arr[i])+1);
+            }
+            else
+            {
+                map.put(arr[i],1);
+            }
+        }
+         System.out.println(map);
+        int max =0;
+        for(HashMap.Entry<Integer,Integer> entry  : map.entrySet())
+        {
+            int k = entry.getKey();
+            int v = entry.getValue();
+            if(k==v && v>1 )
+            {
+                if(k>max)
+                {
+                    max=k;
+                }
+            }
+        }
+        System.out.println(max);
+    }
+}
                            
