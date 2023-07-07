@@ -2215,5 +2215,44 @@ public class opentextone {
         System.out.println(max);
     }
 }
+                            ************************** 50th Problem *****************************
+You are given an array of integers. you have to create pairs of them such that every pair consist of equal numbers. each array element may belong to one pair only.
+write a function that given an array returns whether it splits all integers into pairs.
+exp-> A=[1,2,2,1], your function should return true, as the pairs are (A[0],A[3]) i.e 1 and (A[1],A[2]) i.e 2
+exp -> A=[7,7,7], your function shall return false, as only 1 pair is formed and the other one is left out.
+
+import java.util.*;
+public class opentexttwo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String sa [] = s.split(" ");
+        int arr [] = new int [sa.length];
+        for(int i=0;i<sa.length;i++)
+        {
+            arr[i]=Integer.valueOf(sa[i]);
+        }
+        System.out.println(task(arr));
+    }
+    public static boolean task(int arr[])
+    {
+        if(arr.length%2!=0)
+        {
+            return false;
+        }
+        int n= arr.length-1;
+        for(int i=0;i<arr.length/2;i++,n--)
+        {
+            if(arr[i]!=arr[n])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}                           
+                            ************************** 51st Problem *****************************
+                            ************************** 52nd Problem *****************************
+
 
                            
