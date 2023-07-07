@@ -1041,7 +1041,6 @@ public class test {
         }
         int found = 0;
         System.out.println("Duplicate elements: ");
-        //write your code here
         for(int i=0;i<array.length;i++)
         {
             if(array[i] == -1)
