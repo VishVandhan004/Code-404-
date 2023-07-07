@@ -1336,8 +1336,6 @@ class test
     }
 }
 
-30th Problem
-
 31st Problem
 You are given an array of integers. you have to create pairs of them such that every pair consist of equal numbers. each array element may belong to one pair only.
 write a function that given an array returns whether it splits all integers into pairs.
