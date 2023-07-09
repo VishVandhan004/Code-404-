@@ -2215,7 +2215,7 @@ public class opentextone {
         System.out.println(max);
     }
 }
-                            ************************** 50th Problem *****************************
+                                 ************************** 50th Problem *****************************
 You are given an array of integers. you have to create pairs of them such that every pair consist of equal numbers. each array element may belong to one pair only.
 write a function that given an array returns whether it splits all integers into pairs.
 exp-> A=[1,2,2,1], your function should return true, as the pairs are (A[0],A[3]) i.e 1 and (A[1],A[2]) i.e 2
