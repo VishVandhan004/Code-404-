@@ -2251,7 +2251,7 @@ public class opentexttwo {
         return true;
     }
 }                           
-                            ************************** 51st Problem *****************************
+                              ************************** 51st Problem *****************************
 write a function solution that, given integer N, returns the smallest non-negative integer whose individual digits sum to N.
 exp-> n = 16, the function should return 79. there are many numbers whose sum is 16 but the smallest such number must be 79.
 exp-> n = 19, function should return 199. many numbers sum can be 19 but the smallest such number is 199.
