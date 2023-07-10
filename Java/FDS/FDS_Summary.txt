@@ -1335,3 +1335,70 @@ class test
         System.out.println("The longest Common Prefix is: "+c);
     }
 }
+/* program to find first non repeating character in the string
+sample output:
+aabbcdef
+c
+sample output2:
+abcdeffeda
+b
+*/
+import java.util.*;
+class test 
+{
+    public static void main(String args[])
+    {
+    Scanner sc = new Scanner(System.in);
+    String str = sc.nextLine();
+    char arr[] = str.toCharArray();  
+    int len = str.length();
+    for(int i=0;i<len;i++)
+    {
+     int dup=0;
+        for(int j=i+1;j<len;j++)
+        {
+            if(str.charAt(i) == str.charAt(j) && arr[j]!='1')
+            {
+                arr[j] = '1';
+                dup++;
+                break;
+            }
+        }
+    if(dup == 0)
+    {
+        System.out.print(str.charAt(i));
+        break;
+    }
+    }
+  }
+}
+/* find smallest and longest word in the string
+sample output:
+string programs in java
+in
+programs
+*/
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        String arr [] = str.split(" ");
+        int min = arr[0].length();
+        int max = arr[0].length();
+        int sindex=0;
+        int mindex=0;
+        for(int i=0;i<str.length();i++){
+            if(arr[i].length()<min){
+                min = arr[i].length();
+                sindex = i;
+            }
+            if(arr[i].length()>max){
+                max = arr[i].length();
+                mindex = i;
+            }
+        }
+        System.out.println(arr[sindex]);
+        System.out.println(arr[mindex]);
+    }
+}
