@@ -1335,6 +1335,8 @@ class test
         System.out.println("The longest Common Prefix is: "+c);
     }
 }
+
+30th Problem
 /* program to find first non repeating character in the string
 sample output:
 aabbcdef
