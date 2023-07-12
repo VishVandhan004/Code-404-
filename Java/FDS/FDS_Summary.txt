@@ -1562,7 +1562,6 @@ class test
 
 /*Java program that reverses a given word without using the 
 split
-
 sample output
 Enter a word: hello
 Reversed word: olleh
