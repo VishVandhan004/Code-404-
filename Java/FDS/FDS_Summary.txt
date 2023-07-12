@@ -1569,6 +1569,7 @@ sample output
 Enter a word: hello
 Reversed word: olleh
 */
+
 import java.util.*;
 class test 
 {
