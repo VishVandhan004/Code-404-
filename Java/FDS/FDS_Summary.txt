@@ -1407,3 +1407,179 @@ class test {
         System.out.println(arr[mindex]);
     }
 }
+/*Write a Java program to check whether a string is a Palindrome or not using pointers
+
+Sample output
+Enter a string: madam
+The string is a palindrome.
+
+Sample output1:
+Enter a string: hello
+The string is not a palindrome.
+*/
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        boolean p = false;
+        String str = sc.nextLine();
+        for(int i=0,j=str.length()-1;i<j;i++,j--)
+        {
+            if(str.charAt(i) == str.charAt(j)){
+                p = true;
+                break;
+            }
+        }
+        if(p == true){
+            System.out.print("The string is a palindrome.");
+        }
+        else {
+            System.out.print("The string is not a palindrome.");
+        }
+    }
+}
+/*Write a java program to check weather two strings are
+anagram or not
+ 
+Anagram
+The dictionary meaning of the word anagram is a word or phrase 
+formed by rearranging the letters.
+Two strings are said to be anagrams if they make a meaningful
+word by rearranging or shuffling the letters of the string. 
+
+LISTEN - > SILENT
+HEART - > EARTH
+LIVES - > ELVIS
+KEEP -> PEEK
+TABLE - >BLEAT
+ 
+Sample output:
+Enter the first string: HEART
+Enter the second string: EARTH
+HEART and EARTH are anagrams
+
+sample Output:
+Enter the first string: TOSS
+Enter the second string: SHOT
+TOSS and SHOT are not anagrams
+*/
+import java.util.*;
+class test {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first string: ");
+        String str1 = sc.next();
+        System.out.print("Enter the second string: ");
+        String str2 = sc.next();
+        int len1 = str1.length();
+        int len2 = str2.length();
+        int count = 0;
+        char[] s1 = str1.toCharArray();
+        char[] s2 = str2.toCharArray();
+        if(len1 == len2){
+            Arrays.sort(s1);
+            Arrays.sort(s2);
+            for(int i=0;i<len1;i++){
+            if(s1[i] == s2[i]){
+                count++;
+            }
+            else {
+                System.out.print(""+(str1)+" and "+(str2)+" are not anagrams");
+                break;
+            }
+         }
+        if(count!=0){
+            System.out.print(""+(str1)+" and "+(str2)+" are anagrams");
+        }
+        }
+        else{
+                System.out.print(""+(str1)+" and "+(str2)+" are not anagrams");
+        }
+    }
+}
+/*Write a Java program that finds the number of vowels and consonants in a given sentence
+
+Sample output:
+Enter a sentence: welcome to ngit college
+Number of vowels: 8
+Number of consonants: 12
+
+Sample output1:
+Enter a sentence: Good Morning
+Number of vowels: 4
+Number of consonants: 7 */
+
+import java.util.*;
+class test
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String str = sc.nextLine();
+        int v = 0;
+        int c = 0;
+        for(int i=0;i<str.length();i++)
+        {
+            char ch = str.charAt(i);
+            if(ch =='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+            {
+                v++;
+            }
+            else if(ch!=' ')
+            {
+                c++;
+            }
+        }
+        System.out.println("Number of vowels: "+v);
+        System.out.print("Number of consonants: "+c);
+    }
+}
+/*Java program that reverses a given word without using the 
+split
+
+sample output
+Enter a word: how are you
+Reversed word: you are how
+*/
+import java.util.*;
+class test 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String str = sc.nextLine();
+        String arr [] = str.split(" ");
+        System.out.print("Reversed word: ");
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+/*Java program that reverses a given word without using the 
+split
+
+sample output
+Enter a word: hello
+Reversed word: olleh
+*/
+import java.util.*;
+class test 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String str = sc.nextLine();
+        System.out.print("Reversed word: ");
+        for(int i=str.length()-1;i>=0;i--)
+        {
+            System.out.print(str.charAt(i));
+        }
+    }
+}
+

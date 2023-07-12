@@ -1,3 +1,4 @@
+package FDS;
 import java.io.*;
 class FDS {
     public static void main(String args[]) throws IOException {
