@@ -1536,13 +1536,15 @@ class test
         System.out.print("Number of consonants: "+c);
     }
 }
+
+35th Problem
 /*Java program that reverses a given word without using the 
 split
-
 sample output
 Enter a word: how are you
 Reversed word: you are how
 */
+
 import java.util.*;
 class test 
 {
