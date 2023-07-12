@@ -1440,31 +1440,30 @@ class test {
         }
     }
 }
+
+33rd Problem
 /*Write a java program to check weather two strings are
 anagram or not
- 
 Anagram
 The dictionary meaning of the word anagram is a word or phrase 
 formed by rearranging the letters.
 Two strings are said to be anagrams if they make a meaningful
 word by rearranging or shuffling the letters of the string. 
-
 LISTEN - > SILENT
 HEART - > EARTH
 LIVES - > ELVIS
 KEEP -> PEEK
 TABLE - >BLEAT
- 
 Sample output:
 Enter the first string: HEART
 Enter the second string: EARTH
 HEART and EARTH are anagrams
-
 sample Output:
 Enter the first string: TOSS
 Enter the second string: SHOT
 TOSS and SHOT are not anagrams
 */
+
 import java.util.*;
 class test {
     public static void main(String args[]){
