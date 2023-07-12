@@ -1498,6 +1498,8 @@ class test {
         }
     }
 }
+
+34th Problem
 /*Write a Java program that finds the number of vowels and consonants in a given sentence
 
 Sample output:
