@@ -1407,6 +1407,8 @@ class test {
         System.out.println(arr[mindex]);
     }
 }
+
+32nd Problem
 /*Write a Java program to check whether a string is a Palindrome or not using pointers
 
 Sample output
