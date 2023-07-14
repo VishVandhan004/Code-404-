@@ -1538,7 +1538,7 @@ class test
 }
 
 35th Problem
-/*Java program that reverses a given word without using the split
+/* Java program that reverses a given word without using the split
 sample output
 Enter a word: how are you
 Reversed word: you are how
