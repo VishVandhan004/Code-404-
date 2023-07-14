@@ -1563,8 +1563,7 @@ class test
 }
 
 36th Problem
-/*Java program that reverses a given word without using the 
-split
+/*Java program that reverses a given word without using the split
 sample output
 Enter a word: hello
 Reversed word: olleh
