@@ -5,7 +5,7 @@ class test {
     private Frame frame;
     private TextField displayField;
 
-    public open() {
+    public test() {
         frame = new Frame("Calculator");
         displayField = new TextField(20);
     }
