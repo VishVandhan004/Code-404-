@@ -116,7 +116,7 @@ class test {
     }
 
     public static void main(String[] args) {
-        open calculator = new open();
+        test calculator = new open();
         calculator.createUI();
     }
 }
