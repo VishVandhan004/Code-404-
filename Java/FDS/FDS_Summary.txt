@@ -1613,6 +1613,8 @@ public class SwapArrayListElements {
         }
     }
 }
+
+38th Problem
 /*Write a java program to read an arraylist of numbers and insert an element 
 At the given position
 sample output
@@ -1629,25 +1631,27 @@ inserted: 1
 Updated ArrayList:
 10 23 20 50 70 90
 */
-import java.util.*;
-class test {
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> al = new ArrayList<>();
-        System.out.print("Enter the numbers of elements in the ArrayList: ");
-        int n = sc.nextInt();
-        System.out.print("Enter "+(n)+" elements:");
-        for(int i=0;i<n;i++){
-           al = sc.nextInt();
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class InsertArrayListElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        System.out.print("Enter the number of elements in the ArrayList: ");
+        int n = scanner.nextInt();
+        System.out.print("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arrayList.add(scanner.nextInt());
         }
         System.out.print("Enter the element to be inserted: ");
-        int ele = sc.nextInt();
+        int ele = scanner.nextInt();
         System.out.print("Enter the position (0-based) where the element should be inserted: ");
-        int ind = sc.nextInt();
+        int ind = scanner.nextInt();
+        arrayList.add(ind, ele);
         System.out.print("Updated ArrayList: ");
-        al.add(ind,ele);
-        for(int i=0;i<n;i++){
-            System.out.println(al);
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.print(arrayList.get(i) + " ");
         }
     }
 }
