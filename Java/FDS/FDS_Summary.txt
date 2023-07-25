@@ -1763,6 +1763,7 @@ public class IterateLinkedListFromPosition {
     }
 }
 
+42nd Problem
 /*Write a Java program to insert the specified element at the specified position 
 in the linked list.
 sample output
@@ -1777,6 +1778,28 @@ Enter 6 elements:
 Enter the element to be inserted: 567
 Enter the position (0-based) where the element should be inserted: 1
 Updated Linked List: [100, 567, 200, 300, 560, 345, 123]*/
+
+import java.util.LinkedList;
+import java.util.Scanner;
+public class InsertLinkedListElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements in the linked list: ");
+        int n = scanner.nextInt();
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            linkedList.add(scanner.nextInt());
+        }
+        System.out.print("Enter the element to be inserted: ");
+        int ele = scanner.nextInt();
+        System.out.print("Enter the position (0-based) where the element should be inserted: ");
+        int ind = scanner.nextInt();
+        linkedList.add(ind, ele);
+        System.out.println("Updated Linked List: " + linkedList);
+    }
+}
+
 /*Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
 Open brackets must be closed by the same type of brackets.
