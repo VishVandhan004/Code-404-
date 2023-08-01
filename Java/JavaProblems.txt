@@ -1987,10 +1987,8 @@ class Test {
 
 TreeMap
 import java.util.*;
-class Test
-{
-    public static void main (String[] args) 
-    {
+class Test {
+    public static void main (String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         TreeMap<Integer,String> t=new TreeMap<Integer,String>();
