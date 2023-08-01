@@ -1934,8 +1934,7 @@ class Solution {
                               ******************** Collections ***************************
 Array List
 import java.util.*;
-class Test
-{
+class Test {
     public static void main(String args[])
     {
         ArrayList<Integer> cs = new ArrayList<Integer>();
