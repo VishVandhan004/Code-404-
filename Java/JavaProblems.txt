@@ -2355,7 +2355,7 @@ public class Solution {
     }
 }
 
-                            **************************54th Problem (Datatypes and range)************************
+                             ************************54th Problem (Datatypes and range)************************
 import java.util.*;
 import java.io.*;
 class Solution{
