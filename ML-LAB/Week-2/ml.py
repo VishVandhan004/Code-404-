@@ -1,13 +1,10 @@
 import numpy as np
+
 # A
-
-
 def expectedvalue(values, weights):
     values = np.asarray(values)
     weights = np.asarray(weights)
     return (values*weights).sum()
-
-
 values = [0, 1, 2, 3, 4]
 probs = [.18, .34, .35, .11, .02]
 print(expectedvalue(values, probs))
@@ -19,7 +16,6 @@ print(np.mean(x))
 # median
 y = np.sort(x)
 print(np.median(y))
-
 
 # mode
 # from scipy import stats
