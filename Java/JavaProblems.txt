@@ -1515,8 +1515,7 @@ output=1
 Testcases:
 case=1
 input=escsceca
-output=2
-*/
+output=2 */
 
 import java.util.*;
 class test
