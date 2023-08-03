@@ -1433,8 +1433,7 @@ Explanation: The longest palindrome that can be built is "a", whose length is 1.
 testcases:
 case=1
 input=abccccdd
-output=7
-*/
+output=7 */
 
 import java.util.*;
 class test {
