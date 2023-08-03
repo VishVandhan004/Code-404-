@@ -1421,7 +1421,7 @@ class Test
     } 
 }                                           
                                         ********************** 36th Problem ***********************
-/*Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
+/* Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
 Example 1:
 Input: s = "abccccdd"
 Output: 7
