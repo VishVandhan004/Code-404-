@@ -2119,8 +2119,7 @@ class Test
 
 Iterator
 import java.util.*;
-class Test
-{
+class Test {
     public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<String>();
         a.add("ab");
@@ -2136,8 +2135,7 @@ class Test
 
 List Iterator
 import java.util.*;
-class Test
-{
+class Test {
     public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<String>();
         a.add("ab");
@@ -2376,7 +2374,7 @@ class Solution {
 }                            
 
                        ******************************* 55th Problem ************************************ 
-/*Given two strings of lowercase English letters,  and , perform the following operations:
+/* Given two strings of lowercase English letters,  and , perform the following operations:
 Sum the lengths of A and B. Determine if  is lexicographically larger than  (i.e.: does  come before  in the dictionary?).
 Capitalize the first letter in  and  and print them on a single line, separated by a space. */                  
    
