@@ -2436,9 +2436,8 @@ class LeftTrianglePattern{
     }
 }
 
-54th Problem
-/*
-Online Shopping Cart: You are developing an online shopping cart system. Identify the classes, objects, and behaviors involved.
+58th Problem
+/* Online Shopping Cart: You are developing an online shopping cart system. Identify the classes, objects, and behaviors involved.
 Scenario: Users can add items to their shopping cart,remove items, and proceed to checkout. Each item has properties like name, price, and quantity. 
 The system should calculate the total cost of the items in the cart and apply any applicable discounts or promotions.
 input and output:
@@ -2453,8 +2452,7 @@ Item added to the cart.
 4. Exit
 Enter your choice: 3
 Total cost: $4.0
-Thank you for shopping with us!
-*/
+Thank you for shopping with us!   */
 
 import java.util.*;
 class ShoppingCart {
