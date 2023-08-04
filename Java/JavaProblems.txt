@@ -2381,13 +2381,12 @@ class test {
     }
 }                 
 
-/*Problem Statement-1:
+56th Problem
 Arun wants to design a Right Angle Star Pattern. Let’s help him by accepting a number.
 3
 *
 * *
 * * *
-*/
 
 import java.util.*;
 class RightTrianglePattern
