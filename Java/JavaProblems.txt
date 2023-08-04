@@ -2546,9 +2546,8 @@ public class Main {
     }
 }
 
-4th Problem
-/*
-Banking System: You are building a banking system. Identify the classes, objects, and behaviors involved.
+59th Problem
+/* Banking System: You are building a banking system. Identify the classes, objects, and behaviors involved.
 Scenario: Customers can open bank accounts, deposit money,withdraw money, and check their account balance. 
 Each account has a unique account number, owner name, and 
 balance. The system should handle transactions accurately and update account balances accordingly.
@@ -2585,26 +2584,22 @@ Account balance: 23450.0
 4. Check account balance
 0. Exit
 Enter your choice: 0
-Exiting...
-*/
+Exiting...   */
 
 import java.util.*;
 class BankAcc {
     double Accno;
     String name;
     double balance;
-
     BankAcc(double Accno, String name, double balance) {
         this.Accno = Accno;
         this.name = name;
         this.balance = balance;
     }
-
     void deposit(double amt) {
         balance = balance + amt;
         System.out.print("Amount deposited successfully.");
     }
-
     void withdraw(double amt) {
         if (amt > balance) {
             System.out.print("No Balance");
@@ -2613,12 +2608,10 @@ class BankAcc {
             System.out.print("Amount withdrawn successfully.");
         }
     }
-
     double getBalance() {
         return balance;
     }
 }
-
 class BankSystem {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -2678,7 +2671,7 @@ class BankSystem {
     }
 }
 
-5th Problem
+60th Problem
 /* Ravi wants to insert an element into given list of numbers for a given position . 
 Enter the size of the array: 5
 Enter the elements of the array:
