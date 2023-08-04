@@ -2682,8 +2682,7 @@ Enter the elements of the array:
 5
 Enter the element to insert: 7
 Enter the index to insert the element at: 1
-Modified array: [1, 7, 2, 3, 4, 5]
-*/
+Modified array: [1, 7, 2, 3, 4, 5] */
 
 import java.util.*;
 class Array1 {
@@ -2712,7 +2711,7 @@ class Array1 {
     }
 }
 
-6th Problem
+61st Problem
 /* Write a java Program to remove an element in a given position in an array.
 Enter the size of the array: 5
 Enter the elements of the array:
@@ -2736,8 +2735,7 @@ Enter the elements of the array:
 6
 Enter the position of the element to be removed: 0
 Array after removing the element:
-123 34 3 22 1 4 6
-*/
+123 34 3 22 1 4 6  */
 
 import java.util.*;
 class Remove {
@@ -2765,7 +2763,7 @@ class Remove {
     }
 }
 
-7th Problem
+62nd Problem
 /* find the sum of elements available at the square position of given 
 indices in the array 
 Enter the size of the array: 5                                                                                          
@@ -2777,8 +2775,7 @@ Enter the size of the array: 5
 Enter the elements of the array:                                                                                        
 1 2 3 4 5                                                                                                               
 Enter the indices: 1 2                                                                                                      
-sum is:5  
-*/
+sum is:5  */
 
 import java.util.*;
 class test {
