@@ -2060,8 +2060,7 @@ class Test
 Legacy HashTable
 import java.util.*;
 class Test {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         Hashtable<Integer, Integer> ht = new Hashtable<>();
