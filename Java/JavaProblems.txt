@@ -1394,16 +1394,12 @@ Output: "e"
 Explanation: 
 The only character that emerged twice is 'e' so we print 'e'. 
 w consists of lowercase characters. 
-w has at least one repeated character. 
-*/ 
+w has at least one repeated character. */ 
 
 import java.util.*; 
 import java.util.HashMap; 
-class Test 
-{ 
-    public static void main(String args[]) 
-    { 
-         
+class Test { 
+    public static void main(String args[]) {  
         Scanner sc = new Scanner(System.in); 
         String s1 = sc.nextLine(); 
         char arr[] = s1.toCharArray(); 
