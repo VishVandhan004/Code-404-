@@ -1732,7 +1732,7 @@ class Test
     } 
 }                                
                                   ********************* 43rd Problem ***********************
-/*You are given an array of numbers. the following can be done in single iteration:
+/* You are given an array of numbers. the following can be done in single iteration:
 1. select two equal numbers.
 2. delete both of them from the array.
 3. repeat steps 1 & 2 until there is no equal numbers available in the array.
@@ -2003,10 +2003,8 @@ class Test {
 
 HashMap
 import java.util.*;
-class Test
-{
-    public static void main (String[] args) 
-    {
+class Test {
+    public static void main (String[] args) {
         Scanner sc=new Scanner(System.in);
         int size=sc.nextInt();
         TreeMap<Integer,String> t=new TreeMap<Integer,String>();
@@ -2030,10 +2028,8 @@ class Test
 
 Legacy Vector
 import java.util.*;
-class Test
-{
-    public static void main (String[] args) 
-    {
+class Test {
+    public static void main (String[] args) {
         Scanner sc=new Scanner(System.in);
         int size=sc.nextInt();
         Vector<Integer> v=new Vector<Integer>();
