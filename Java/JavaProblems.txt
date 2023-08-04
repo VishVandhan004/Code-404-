@@ -2488,7 +2488,6 @@ class ShoppingCart {
         System.out.println("Thank you for shopping with us!");
     }
 }
-
 class Item {
     private String name;
     private double price;
@@ -2499,25 +2498,20 @@ class Item {
         this.price = price;
         this.quantity = quantity;
     }
-
     public String getName() {
         return name;
     }
-
     public double getPrice() {
         return price;
     }
-
     public int getQuantity() {
         return quantity;
     }
 }
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ShoppingCart cart = new ShoppingCart();
-
         while (true) {
             System.out.println("1. Add item");
             System.out.println("2. Remove item");
@@ -2525,7 +2519,6 @@ public class Main {
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
-
             switch (choice) {
                 case 1:
                     System.out.print("Enter item name: ");
