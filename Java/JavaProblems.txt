@@ -2913,8 +2913,7 @@ Average: 3.0    */
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of elements in the array: ");
         int sum = 0;
@@ -2932,7 +2931,7 @@ class test {
     }
 }
 
-11th Problem
+66th Problem
 /* Write a Java program to reverse an array of integer values.
 Enter the size of the array: 4
 Enter the elements of the array:
@@ -2941,12 +2940,11 @@ Element 2: 56
 Element 3: 78
 Element 4: 90
 Reversed array:
-90 78 56 34 */
+90 78 56 34  */
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
@@ -2965,7 +2963,7 @@ class test {
     }
 }
 
-12th Problem
+67th Problem
 /* Write a Java program to input an array Of N elements and display all even index elements
 Enter the size of the array: 3
 Enter the elements of the array:
@@ -2974,12 +2972,11 @@ Element at index 1: 56
 Element at index 2: 78
 Elements at even indices:
 Element at index 0: -2
-Element at index 2: 78 */
+Element at index 2: 78  */
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
@@ -3001,7 +2998,7 @@ class test {
     }
 }
 
-13th Problem
+68th Problem
 /* sum of elements present at even and odd indices
 Enter the number of elements in the array: 5
 Enter the elements of the array:
@@ -3012,8 +3009,7 @@ Sum of elements at odd indices: 8
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of elements in the array: ");
         int size = sc.nextInt();
@@ -3034,7 +3030,7 @@ class test {
     }
 }
 
-14th Problem
+69th Problem
 /* Write a Java program to test if an array contains a specific value.
 Enter the size of the array: 4
 Enter the elements of the array:
@@ -3050,13 +3046,11 @@ Element 0: 23
 Element 1: 45
 Element 2: 89
 Enter the value to search for: 9
-The array does not contain the value 9.
-*/
+The array does not contain the value 9. */
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
@@ -3089,7 +3083,7 @@ if(flag != -1)
   }
 }
 
-15th Problem
+70th Problem
 /* Write a Program to input N integers in an array,print the greatest and smallest integers from the array
 Enter Size of Array:3                                                                                                                                                                                                                
 Enter the elements:10 20 30                                                                                                                                                                                                                   
