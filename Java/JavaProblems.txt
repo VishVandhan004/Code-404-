@@ -2798,7 +2798,7 @@ class test {
     }
 }
 
-8th Problem
+63rd Problem
 /* Rithika wants to find 3rd largest element from a given group of numbers. lets help her by writing a java program
 1.Enter the size of the array: 5
 Enter the array elements:
@@ -2815,8 +2815,7 @@ Enter the array elements:
 1
 6
 2
-The third largest element is: 3
-*/
+The third largest element is: 3  */
 
 import java.util.*;
 class Test {
@@ -2856,7 +2855,7 @@ class Test {
     }
 }
 
-9th Problem
+64th Problem
 /* Write a Java program that takes an input array, finds a number
 in the array which is a multiple of three, squares its index, 
 and displays the result. 
@@ -2869,8 +2868,7 @@ The number at index 4 (which is a multiple of 3) is 12, and its index squared is
 Enter the size of the array: 3
 Enter the array elements:8 9 2
 Enter the index: 3
-No number found at index 3 that is a multiple of 3.
-*/
+No number found at index 3 that is a multiple of 3.  */
 
 import java.util.*;
 class test {
