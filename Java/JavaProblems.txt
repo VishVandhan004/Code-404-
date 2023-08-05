@@ -2895,7 +2895,7 @@ class test {
     }
 }
 
-10th Problem
+65th Problem
 /* Write a Java program to calculate Sum and Average values of an array.
 Enter the number of elements in the array: 4
 Enter the elements of the array:
@@ -2909,7 +2909,7 @@ Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 3 4 5
 Sum: 15
-Average: 3.0 */
+Average: 3.0    */
 
 import java.util.*;
 class test {
