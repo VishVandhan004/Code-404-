@@ -4106,7 +4106,7 @@ public class ExtractArrayListPortion {
     }
 }
 
-41st Problem
+96th Problem
 /*Write a Java program to iterate through all elements in a linked list starting 
 at the specified position.
 sample output:
