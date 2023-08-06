@@ -1789,9 +1789,9 @@ class test {
         }
         System.out.println(count+","+c1);
     }
-}                                
-                                        ********************** 44th Problem ***********************
-                                        ************** Max element of an array  *******************
+}
+                                
+44th Problem (Max element of an array)
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -1810,8 +1810,7 @@ class Main {
 }               
 For 2nd largest element in the array, you just need to sort the array and use this ->  System.out.println(arr[arr.length - 2]); 
              
-                                        ******************** 45th Problem *************************
-                                        ************ checking if array is sorted or not ***********
+45th Problem (checking if array is sorted or not) 
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -1865,9 +1864,7 @@ class Main {
     }
 }
 
-                                           ********************* 46th Problem **************************
-                                           ******************* linear search ***************************
-import java.util.*;
+46th Problem (linear search)
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -1888,8 +1885,8 @@ class Main {
         sc.close();
     }
 }
-                                     ******************** 47th problem ************************
-                                     ************** removing the duplicate elements from the array ************
+
+47th problem (removing the duplicate elements from the array)
 class Solution {
     public int removeDuplicates(int[] nums) {
         int n = nums.length;
@@ -1911,8 +1908,7 @@ class Solution {
     }
 }                                     
 
-                              ************************  48th Problem **********************
-                              ******************** Collections ***************************
+48th Problem (Collections)
 Array List
 import java.util.*;
 class Test {
@@ -2133,7 +2129,8 @@ class Test {
         }
     }
 }
-                            ************************** 49th Problem *****************************
+
+49th Problem 
 write a function that given an array of N integers, shall return the biggest value X, which occurs in A exactly X times.
 exp-> A=[3,1,4,1,5] shall return 0. no value in the array meeting the function.
 exp -> A=[5,5,5,5,5] shall return 5.
@@ -2180,7 +2177,8 @@ public class opentextone {
         System.out.println(max);
     }
 }
-                                  ************************** 50th Problem *****************************
+
+50th Problem 
 You are given an array of integers. you have to create pairs of them such that every pair consist of equal numbers. each array element may belong to one pair only.
 write a function that given an array returns whether it splits all integers into pairs.
 exp-> A=[1,2,2,1], your function should return true, as the pairs are (A[0],A[3]) i.e 1 and (A[1],A[2]) i.e 2
@@ -2215,8 +2213,9 @@ public class opentexttwo {
         }
         return true;
     }
-}                           
-                                 ************************** 51st Problem *****************************
+}                  
+
+51st Problem
 write a function solution that, given integer N, returns the smallest non-negative integer whose individual digits sum to N.
 exp-> n = 16, the function should return 79. there are many numbers whose sum is 16 but the smallest such number must be 79.
 exp-> n = 19, function should return 199. many numbers sum can be 19 but the smallest such number is 199.
@@ -2250,7 +2249,7 @@ public class opentextthree {
     }
 }
 
-                             ************************** 52nd Problem *****************************
+52nd Problem
 Write a function that given an integer N, returns the smallest integer greater than N, the sum of whose digits is twice as big as the sum of digits of N.
 exp-> N = 14, function should return 19. the sum of digits of 19(1+9=10) is twice as big as the sum of 14(1+4=5).
 exp-> N = 10, function should return 11. the sum of digits of 11(1+1=2) is twice as big as the sum of 10(1+0=1). 
@@ -2294,8 +2293,9 @@ public class opentextfour {
         }
         return Integer.valueOf(s);
     }
-}                            
-                                  **************** 53rd Problem (String reverse) *************** 
+}                         
+
+53rd Problem (String reverse) 
 import java.io.*;
 import java.util.*;
 public class Solution {
