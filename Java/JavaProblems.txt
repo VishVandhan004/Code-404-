@@ -761,7 +761,8 @@ class test
         System.out.print(count);
     }
 }    
-                                      ********************** 20th Problem ************************     
+
+20th Problem   
 /*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. read both dates in string format, i.e, year-month-date as given in sample data. 
 input: 
 "2020-06-28" 
@@ -787,8 +788,9 @@ class test
         long dura = ChronoUnit.DAYS.between(a1,a2);
         System.out.println(dura);
     }
-}             
-                                    ************************ 21st Problem ************************
+}    
+
+21st Problem 
 /*Given a word w, rotate other than consonents in the word and print it. 
 The other than consonents are 'i', 'a', 'u', 'e', and 'e', and they can be seen in both lower- and uppercase,More than once. 
 Input: 
@@ -828,8 +830,9 @@ class test {
       String s1 = new String(charArr);
       System.out.println(s1);
    }
-}         
-                                   ************************ 22nd Problem ***********************
+}    
+
+22nd Problem 
 /*There is a List L that consists of n only positive numbers. 
 It was converted into another List L i.e, of length n - 1, such that coverted[i] = List[i] XOR List[i + 1]. For example, if List= [1,0,2,1], then converted= [1,2,3]. 
 You are given the converted list. You are also given an start number, i.e. List[0].Return the original List L. It can be proved that the answer exists and is unique. 
@@ -861,8 +864,9 @@ class test{
             System.out.print(a+" ");
         }
     }
-}        
-                                   ************************ 23rd Problem *************************
+}       
+
+23rd Problem 
 We use the integers , , and  to create the following series:
 (a+ 2°*b),(a+2°*b+2^1*b),...,(a+2°*b4+2)-b+...+277 -b)
 You are given queries. For each query, print the series corresponding to the given , , and  values as a single line of  space-separated integers. 
@@ -899,10 +903,10 @@ class Solution{
         } 
         in.close(); 
     } 
-}             
-                                       ************************ 24th problem ***************************
-Project school exam being conducted
-Exam_starttime and exam_endtime of the student is given in two arrays. pse_strattime[i] indicates the project school exam start time of student i,
+}            
+
+24th problem 
+Project school exam being conducted. Exam_starttime and exam_endtime of the student is given in two arrays. pse_strattime[i] indicates the project school exam start time of student i,
 pse_endtime[i] indicates the project school end time of student i.Project school incharge wants to know the number of students writing the exam at given time. 
 we can say a student is writing exam if given_time is between pse_startTime[i] and pse_endTime[i] inclusive.
 Example 1:
@@ -954,8 +958,9 @@ class test
         }
         System.out.println(count);
     }
-}            
-                                        ******************* 25th Problem ********************
+}           
+
+25th Problem 
 Komali has n chocolates, where the ith chocolates is of type chocoType[i]. 
 Komali mother noticed that komali started to gain weight, so she restricted Komali to only eat n / 2 of the chocolates she has. 
 Komali likes her candies very much, and she wants to eat the maximum number of different types of chocolates while still following her mother's order.
@@ -1002,7 +1007,7 @@ class test
         System.out.print(len/2);
     }
 }       
-         
+
 26th Problem 
 Given a list of non-negative numbers, identify all the sublists of odd size from it, calculate the total of all the elements of sublists. 
 Example 1:
