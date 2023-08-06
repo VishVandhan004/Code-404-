@@ -3933,7 +3933,7 @@ class test {
     }
 }
 
-36th Problem
+91st Problem
 /*Java program that reverses a given word without using the split
 Enter a word: hello
 Reversed word: olleh
@@ -3952,7 +3952,7 @@ class test {
     }
 }
 
-37th Problem
+92nd Problem
 /*Write a Java program that swaps two elements in an array list
 sample output
 Enter the number of elements in the ArrayList: 3
@@ -3992,7 +3992,7 @@ public class SwapArrayListElements {
     }
 }
 
-38th Problem
+93rd Problem
 /*Write a java program to read an arraylist of numbers and insert an element 
 At the given position
 sample output
@@ -4034,7 +4034,7 @@ public class InsertArrayListElement {
     }
 }
 
-39th Problem
+94th Problem
 /*Write a Java program to update an array element by the given element.
 sample output
 Enter the size of the array: 5
@@ -4069,7 +4069,7 @@ public class UpdateArrayElement {
     }
 }
 
-40th Problem
+95th Problem
 /*Write a Java program to extract a portion of an array list.
 sample output
 Enter the number of elements in the ArrayList: 6
