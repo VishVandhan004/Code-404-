@@ -1770,8 +1770,7 @@ Explanation: No pairs can be formed, and there is 1 number leftover in the array
 Testcases:
 case=1
 input=1,3,2,1,3,2,2
-output=3,1
-*/
+output=3,1 */
 
 import java.util.*;
 class test {
@@ -1835,6 +1834,7 @@ class Main {
 For 2nd largest element in the array, you just need to sort the array and use this ->  System.out.println(arr[arr.length - 2]); 
              
 45th Problem (checking if array is sorted or not) 
+
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -1889,6 +1889,7 @@ class Main {
 }
 
 46th Problem (linear search)
+
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -1911,6 +1912,7 @@ class Main {
 }
 
 47th problem (removing the duplicate elements from the array)
+
 class Solution {
     public int removeDuplicates(int[] nums) {
         int n = nums.length;
@@ -1933,6 +1935,7 @@ class Solution {
 }                                     
 
 48th Problem (Collections)
+
 Array List
 import java.util.*;
 class Test {
@@ -3109,7 +3112,7 @@ if(flag != -1)
 
 70th Problem
 /* Write a Program to input N integers in an array,print the greatest and smallest integers from the array
-Enter Size of Array:3                                                                                                                                                                                                                
+Enter Size of Array:3                                                                                                                                                                                                             
 Enter the elements:10 20 30                                                                                                                                                                                                                   
 Maximum Number: 30                                                                                                                                                                                                                           
 Minimum Number: 10    */    
@@ -3142,7 +3145,7 @@ Minimum Number: 10    */
      }
  }
 
-16th Problem
+71st Problem
 /* Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
 Enter the number of elements in the array: 3                                                                            
 Enter element 1: 10                                                                                                    
@@ -3178,7 +3181,7 @@ class test {
     }
 }
 
-17th Problem
+72nd Problem
 /* Write a Java program to find common elements between two integer arrays.
 Enter the number of elements in the first array: 3                                                                      
 Enter the elements of the first array:                                                                                  
@@ -3220,7 +3223,7 @@ class test {
     }
 }
 
-18th Problem
+73rd Problem
 /*
 Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
 Average Marks Number of Students
