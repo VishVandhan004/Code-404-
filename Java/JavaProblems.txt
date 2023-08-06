@@ -416,8 +416,7 @@ class test
     }
 }
 
-                              ********************** 12th Problem *********************
-/*
+12th Problem
 Cliff Shaw is working on the singly linked list. He is given a list of boxes arranged as singly linked list, where each box is printed with a positive number on it and arranged in the list are ascending order. and numbers on the boxes may be repeated.
 Mr Cliff Shaw is performing an operation on the list. To have only the distinct values in the final list, removed all duplicate values.
 Your task is to help Mr Cliff to perform the operation and return the updated list
@@ -456,8 +455,8 @@ class test {
         System.out.print(newlist);
     }
 }
-                               ********************* 13th Problem *********************
-/*
+
+13th Problem 
 Cliff Shaw is working on the singly linked list. He is given a list of boxes arranged as singly linked list, where each box is 
 printed with a positive number on it and arranged in the list are ascending order. and numbers on the boxes may be repeated.
 Mr Cliff Shaw is performing an operation on the list. To have only the distinct values in the final list, removed all duplicate values.
@@ -497,8 +496,8 @@ class test {
         System.out.print(newlist);
     }
 }
-                                ********************** 14th Problem ********************
-/*
+
+14th Problem 
 There is a railway route from Vizag to Hyderabad.The stations in the route will be identified by the codes(may be repeated).
 You will be given the list of station codes, using singly linked list implementation find the middle station in the given route.
 If there are even number of stations, print the second middle station. Your task is to find the middle station code in the given train route.
@@ -534,8 +533,9 @@ class test
         int half = a/2;
         System.out.println(ll.get(half));
     }
-}                                
-                                       **************** 15th Problem ***************
+}      
+
+15th Problem
 /*Ram is playing a game of identifying the pairs of numbers from the givenlist of numbers. Help Ram to identify the number of pairs which satisfy the following criteria list[i]=list[j] and i<j
 Example 1:
 Input:6
@@ -575,8 +575,9 @@ class test{
         System.out.println(count);
         
     }
-}                      
-                                          ************************* 16th Problem ***********************
+}     
+
+16th Problem 
 /*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
 Input: numberss = 2 9 6 5 12 
 Output: 2 
@@ -619,8 +620,9 @@ class test
            sc.close();
        }
    }
-}                
-                                         *********************** 17th problem ***********************
+}     
+
+17th problem 
 There is an integer array nums sorted in ascending order (with distinct values).
 Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
 Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
@@ -653,7 +655,8 @@ class Solution {
         return -1;
     }
 }
-                                            ************* 18th Problem  ************
+
+18th Problem 
 Given an array of N integers where each value represents the number of chocolates in a packet. Each packet can have a variable number of chocolates. There are m students, the task is to distribute chocolate packets such that: 
 Each student gets one packet.
 The difference between the number of chocolates in the packet with maximum chocolates and the packet with minimum chocolates given to the students is minimum.
@@ -691,7 +694,8 @@ public class Test {
         System.out.printf("Difference is %d",min);
     }
 }
-                                      ***************** 19th Problem ********************
+
+19th Problem 
 /*You have given N bricks. You need to construct a staircase as follows: 
 1. = 
 2. == 
