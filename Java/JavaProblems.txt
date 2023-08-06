@@ -4107,7 +4107,7 @@ public class ExtractArrayListPortion {
 }
 
 96th Problem
-/*Write a Java program to iterate through all elements in a linked list starting 
+/* Write a Java program to iterate through all elements in a linked list starting 
 at the specified position.
 sample output:
 Enter the number of elements in the linked list: 4
@@ -4117,8 +4117,7 @@ Enter the starting position (0-based): 1
 Elements in the linked list starting from position 1:
 90
 87
-675
-*/
+675 */
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -4141,7 +4140,7 @@ public class IterateLinkedListFromPosition {
     }
 }
 
-42nd Problem
+97th Problem
 /*Write a Java program to insert the specified element at the specified position 
 in the linked list.
 sample output
@@ -4178,7 +4177,7 @@ public class InsertLinkedListElement {
     }
 }
 
-43rd Problem
+98th Problem
 /*Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
 Open brackets must be closed by the same type of brackets.
