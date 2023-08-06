@@ -3224,8 +3224,7 @@ class test {
 }
 
 73rd Problem
-/*
-Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
+/* Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
 Average Marks Number of Students
 1-30 xx
 31-50 xx
@@ -3289,7 +3288,7 @@ class test {
     }
 }
 
-19th Problem
+74th Problem
 /* Write a Java program to create a class called Shape with methods called getPerimeter() and
 getArea(). Create a subclass called Circle that overrides the getPerimeter() and getArea()
 methods to calculate the area and perimeter of a circle.
@@ -3333,7 +3332,7 @@ class test
     }
 }
 
-20th Problem
+75th Problem
 /* java program to input array of numbers that contains positive and negative numbers. print count of positive and negative numbers
 sample output:
 Enter the number of elements in the array: 5
@@ -3367,7 +3366,7 @@ class test {
     }
 }
 
-21st Problem
+76th Problem
 /* find sum of even numbers and odd numbers of an input array
 Enter the number of elements in the array: 5
 Enter the elements of the array:
@@ -3399,7 +3398,7 @@ class test {
     }
 }
 
-22nd Problem
+77th Problem
 /* find the duplicate elements from the given array
 sample output:
 Enter the number of elements in the array: 6                                                                            
@@ -3444,7 +3443,7 @@ public class test {
     }
 }
 
-23rd Problem
+78th Problem
 /* find the unique elements from the given array
 sample output:
 Enter the number of elements in the array: 6                                                                            
@@ -3487,7 +3486,7 @@ public class test {
     }
 }
 
-24th Problem
+79th Problem
 /* find the frequency of each element in the given array
 sample output:
 5
@@ -3532,7 +3531,7 @@ class test {
     }
 }
 
-25th Problem
+80th Problem
 /* write a Java Program to Count the Number of Unique Words
 Problem 
 Given a string, in which various words are separated by whitespace. Print the count of the unique words 
@@ -3575,7 +3574,7 @@ class test {
     }
 }
 
-26th Problem
+81st Problem
 /* write a java program Remove vowels from a string
 sample output:
 Enter a string:
@@ -3607,7 +3606,7 @@ class test {
     }
 }
 
-27th Problem
+82nd Problem
 /*Java Program tond the largest and smallest word in a string.
 sample output
 Enter a string:
@@ -3653,7 +3652,7 @@ class test {
     }
 }
 
-28th Problem
+83rd Problem
 /*Given a string, find and remove all the adjacent pairs of repeated characters
 sample output:
 ABBCCCD
@@ -3689,7 +3688,7 @@ class test {
     }
 }
 
-29th Problem
+84th Problem
 /* Write a  Java program to find longest common prefix of given array of strings.
 sample output:
 kiran kiranmai kireeti                                                                                                  
@@ -3717,15 +3716,14 @@ class test
     }
 }
 
-30th Problem
+85th Problem
 /* program to find first non repeating character in the string
 sample output:
 aabbcdef
 c
 sample output2:
 abcdeffeda
-b
-*/
+b */
 
 import java.util.*;
 class Test {
@@ -3756,7 +3754,7 @@ class Test {
     }
 }
 
-31st Problem
+86th Problem
 /* find smallest and longest word in the string
 sample output:
 string programs in java
@@ -3789,15 +3787,14 @@ class test {
     }
 }
 
-32nd Problem
+87th Problem
 /*Write a Java program to check whether a string is a Palindrome or not using pointers
 Sample output
 Enter a string: madam
 The string is a palindrome.
 Sample output1:
 Enter a string: hello
-The string is not a palindrome.
-*/
+The string is not a palindrome. */
 
 import java.util.*;
 class test {
@@ -3822,7 +3819,7 @@ class test {
     }
 }
 
-33rd Problem
+88th Problem
 /*Write a java program to check weather two strings are
 anagram or not
 Anagram
@@ -3880,7 +3877,7 @@ class test {
     }
 }
 
-34th Problem
+89th Problem
 /* Write a Java program that finds the number of vowels and consonants in a given sentence
 Enter a sentence: welcome to ngit college
 Number of vowels: 8
@@ -3916,7 +3913,7 @@ class test {
     }
 }
 
-35th Problem
+90th Problem
 /* Java program that reverses a given word without using the split
 Enter a word: how are you
 Reversed word: you are how
