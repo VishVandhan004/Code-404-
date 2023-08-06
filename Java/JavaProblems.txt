@@ -1288,9 +1288,9 @@ class Test
         System.out.println("Max. Substring is:" + str.substring(start,end+1));
         }
     }
-}                          
-                                ************************* 33rd Problem *************************
- Maximum and minimum of an array using minimum number of comparisons
+}
+
+33rd Problem -> Maximum and minimum of an array using minimum number of comparisons
 
 import java.util.*; 
 class First 
@@ -1324,7 +1324,8 @@ class First
         System.out.println("Minimum element is: "+ min); 
     } 
 } 
-                                    *********************** 34th Problem ************************
+
+34th Problem 
 /*Bob given two strings to jack, asking jack to comapre s1 and s2 to find are they following same sequence of pattern or not. if they are following print true otherwise false. 
 baab 
 rat mat mat rat 
@@ -1373,7 +1374,8 @@ class Test
         System.out.println(match); 
     } 
 }                
-                                   *********************** 35th Problem ************************    
+
+35th Problem 
 /*Given a word consisting of lowercase characters from a to z, your task is to print the first character to emerge twice. 
 A character a appears twice before another character b if the second occurrence 
 of a is before the second occurrence of b. 
@@ -1415,8 +1417,9 @@ class Test {
             al.put(c,i); 
         } 
     } 
-}                                           
-                                        ********************** 36th Problem ***********************
+}                
+
+36th Problem 
 /* Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
 Example 1:
 Input: s = "abccccdd"
@@ -1455,8 +1458,8 @@ class test {
        System.out.println(len);
     }
 }                           
-                                      ********************* 37th Problem **********************
-Reversing the Arrays
+
+37th Problem -> Reversing the Arrays
 
 import java.util.*; 
 public class Solutions { 
@@ -1498,7 +1501,8 @@ class Solution {
        return false; 
     } 
 }
-                                     ********************** 38th Problem *************************
+
+38th Problem 
 /* A string is given. identify the numbers of instances possible for the word "student"
 You can use each character in the string at most once. Return the total number of instances that can be formed.
 Explanation1:
