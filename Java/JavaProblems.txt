@@ -1001,8 +1001,9 @@ class test
         if(len/2<count)
         System.out.print(len/2);
     }
-}                
-                                   *********************** 26th Problem ************************
+}       
+         
+26th Problem 
 Given a list of non-negative numbers, identify all the sublists of odd size from it, calculate the total of all the elements of sublists. 
 Example 1:
 Input: list = [1,4,2,5,3]
@@ -1050,7 +1051,8 @@ class test {
      System.out.println(sum1);
     }
 }
-                                    *********************** 27th Problem *************************
+
+27th Problem 
 There are n_coke bottles that are initially full of coke. You can exchange n_exchange empty coke bottles from the market with one full coke bottle.
 The operation of drinking a full coke bottle turns it into an empty bottle.
 Given the two integers n_coke and n_exchange, return the maximum number of coke bottles you can drink.
@@ -1083,7 +1085,8 @@ class test {
         System.out.print(count);
     }
 }    
-                                    ************************* 28th Problem ************************
+
+28th Problem 
 A string is given, find the number of substrings of size 4 without repetitive characters. if the substring is appearing for multiple times, each one should be counted seperately
 A substring is always a contiguous sequence of characters from the string.
 Example 1:
@@ -1131,9 +1134,9 @@ class test {
         System.out.println(count);
   }
 }      
-                                       ********************* 29th Problem *********************
-/* 
-Jelly is working on matrices, She likes to transform the matrices. This time, She is given a square matrix size n*n,and transforming the given matrix by rotating clockwise. 
+
+29th Problem 
+/* Jelly is working on matrices, She likes to transform the matrices. This time, She is given a square matrix size n*n,and transforming the given matrix by rotating clockwise. 
 For Example: 
 	Given matrix size=3,  
 	1 2 3 
@@ -1192,8 +1195,9 @@ class test
             System.out.println();
         }
     }
-}                    
-                                      ********************** 30th Problem **********************
+}         
+
+30th Problem
 /*Bob given a date in string form i.e, in the following format YYYY-MM-DD,  
 print the day number int that year. 
 Sample Input: date = "2018-01-10" 
@@ -1217,8 +1221,9 @@ class test
         int date = a1.getDayOfYear();
         System.out.println(date);
     }
-}                             
-                                      ******************** 31st Problem **********************
+}                 
+
+31st Problem
 /*Ngit college decided to announce the toppers of 2nd year students , 
 Here Management following a strategy to identify the toppers, i.e, 
 They have three different set of lists with there roll numbers, 
@@ -1259,8 +1264,9 @@ class test
             }
         }
     }
-}                            
-                                       ********************** 32nd Problem ************************
+}       
+
+32nd Problem 
 /*Write a function maxsubstring (str,alpha,theta) str is the source string and have to return maximum sub string which starts with alpha and ends with theta.
 input=computer                                                                                                         
 m                                                                                                                      
