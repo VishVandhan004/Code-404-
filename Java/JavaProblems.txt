@@ -4158,7 +4158,7 @@ Updated Linked List: [100, 567, 200, 300, 560, 345, 123]*/
 
 import java.util.LinkedList;
 import java.util.Scanner;
-public class InsertLinkedListElement {
+public class InsertLinkedListElement{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the linked list: ");
