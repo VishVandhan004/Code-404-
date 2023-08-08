@@ -3934,10 +3934,9 @@ class test {
 }
 
 91st Problem
-/*Java program that reverses a given word without using the split
+/* Java program that reverses a given word without using the split
 Enter a word: hello
-Reversed word: olleh
-*/
+Reversed word: olleh */
 
 import java.util.*;
 class test {
