@@ -4070,7 +4070,7 @@ public class UpdateArrayElement {
 }
 
 95th Problem
-/*Write a Java program to extract a portion of an array list.
+/* Write a Java program to extract a portion of an array list.
 sample output
 Enter the number of elements in the ArrayList: 6
 Enter 6 elements:
@@ -4087,8 +4087,8 @@ Extracted Portion: [56, 78, 99, 76] */
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class ExtractArrayListPortion {
-    public static void main(String[] args) {
+public class ExtractArrayListPortion{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the ArrayList: ");
         int n = scanner.nextInt();
