@@ -4141,9 +4141,7 @@ public class IterateLinkedListFromPosition {
 }
 
 97th Problem
-/*Write a Java program to insert the specified element at the specified position 
-in the linked list.
-sample output
+/* Write a Java program to insert the specified element at the specified position in the linked list.
 Enter the number of elements in the linked list: 6
 Enter 6 elements:
 100
