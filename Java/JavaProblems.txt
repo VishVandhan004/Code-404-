@@ -4211,7 +4211,7 @@ public class ValidParentheses {
         }
         return stack.isEmpty();
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         String input1 = "()[]{}";
         String input2 = "([)]";
         System.out.println("Sample 1: " + isValid(input1));
