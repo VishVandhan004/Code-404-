@@ -4193,7 +4193,7 @@ Constraints:
 s consists of parentheses only '()[]{}'. */
 
 import java.util.Stack;
-public class ValidParentheses {
+public class ValidParentheses{
     public static boolean isValid(String s){
         Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
