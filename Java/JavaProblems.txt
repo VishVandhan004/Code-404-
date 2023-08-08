@@ -3993,9 +3993,8 @@ public class SwapArrayListElements {
 }
 
 93rd Problem
-/*Write a java program to read an arraylist of numbers and insert an element 
+/* Write a java program to read an arraylist of numbers and insert an element 
 At the given position
-sample output
 Enter the number of elements in the ArrayList: 5
 Enter 5 elements:
 10
@@ -4007,8 +4006,7 @@ Enter the element to be inserted: 23
 Enter the position (0-based) where the element should be 
 inserted: 1
 Updated ArrayList:
-10 23 20 50 70 90
-*/
+10 23 20 50 70 90 */
 
 import java.util.ArrayList;
 import java.util.Scanner;
