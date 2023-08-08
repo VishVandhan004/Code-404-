@@ -4121,8 +4121,8 @@ Elements in the linked list starting from position 1:
 
 import java.util.LinkedList;
 import java.util.Scanner;
-public class IterateLinkedListFromPosition {
-    public static void main(String[] args) {
+public class IterateLinkedListFromPosition{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the linked list: ");
         int n = scanner.nextInt();
@@ -4134,7 +4134,7 @@ public class IterateLinkedListFromPosition {
         System.out.print("Enter the starting position (0-based): ");
         int startIndex = scanner.nextInt();
         System.out.println("Elements in the linked list starting from position " + startIndex + ":");
-        for (int i = startIndex; i < linkedList.size(); i++) {
+        for (int i = startIndex; i < linkedList.size(); i++){
             System.out.println(linkedList.get(i));
         }
     }
