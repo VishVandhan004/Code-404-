@@ -4035,8 +4035,7 @@ public class InsertArrayListElement {
 }
 
 94th Problem
-/*Write a Java program to update an array element by the given element.
-sample output
+/* Write a Java program to update an array element by the given element.
 Enter the size of the array: 5
 Enter 5 elements:
 12
