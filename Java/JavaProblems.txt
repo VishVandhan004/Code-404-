@@ -4046,12 +4046,11 @@ Enter 5 elements:
 89
 Enter the index of the element to be updated (0-based): 3
 Enter the new element value: 890
-Updated Array: [12, 13, 45, 890, 89]
-*/
+Updated Array: [12, 13, 45, 890, 89] */
 
 import java.util.Scanner;
-public class UpdateArrayElement {
-    public static void main(String[] args) {
+public class UpdateArrayElement{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int n = scanner.nextInt();
@@ -4094,7 +4093,7 @@ public class ExtractArrayListPortion{
         int n = scanner.nextInt();
         ArrayList<Integer> arrayList = new ArrayList<>();
         System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++){
             arrayList.add(scanner.nextInt());
         }
         System.out.print("Enter the starting index of the portion (0-based): ");
