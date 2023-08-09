@@ -3964,7 +3964,7 @@ Updated ArrayList:
 
 import java.util.ArrayList;
 import java.util.Scanner;
-public class SwapArrayListElements{
+public class SwapArrayListElements {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the ArrayList: ");
