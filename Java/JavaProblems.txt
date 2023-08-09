@@ -3839,8 +3839,7 @@ HEART and EARTH are anagrams
 sample Output:
 Enter the first string: TOSS
 Enter the second string: SHOT
-TOSS and SHOT are not anagrams
-*/
+TOSS and SHOT are not anagrams */
 
 import java.util.*;
 class test {
