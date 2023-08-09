@@ -3788,7 +3788,7 @@ class test {
 }
 
 87th Problem
-/*Write a Java program to check whether a string is a Palindrome or not using pointers
+/* Write a Java program to check whether a string is a Palindrome or not using pointers
 Sample output
 Enter a string: madam
 The string is a palindrome.
