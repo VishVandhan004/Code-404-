@@ -3820,7 +3820,7 @@ class test {
 }
 
 88th Problem
-/*Write a java program to check weather two strings are
+/* Write a java program to check weather two strings are
 anagram or not
 Anagram
 The dictionary meaning of the word anagram is a word or phrase 
