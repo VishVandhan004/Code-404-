@@ -3450,8 +3450,7 @@ Enter the number of elements in the array: 6
 Enter the elements of the array:                                                                                        
 5 5 3 3 2 1                                                                                                             
 Unique elements:                                                                                                        
-2 1                                                                                                                     
-*/
+2 1  */
 
 import java.util.Scanner;
 public class test {
