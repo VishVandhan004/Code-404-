@@ -3339,8 +3339,7 @@ Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 -1 -2 3
 Positive Count: 3
-Negative Count: 2
-*/
+Negative Count: 2 */
 
 import java.util.*;
 class test {
