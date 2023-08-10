@@ -3533,7 +3533,6 @@ class test {
 
 80th Problem
 /* write a Java Program to Count the Number of Unique Words
-Problem 
 Given a string, in which various words are separated by whitespace. Print the count of the unique words 
 present in it, that is the words whose frequency is 1.
 sample output:
