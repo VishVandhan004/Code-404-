@@ -3662,8 +3662,7 @@ AAABBBCCDD
 string after removing adjacent pairs of repeated characters: AB
 sample output3:
 AABBBCCDDAXYYZZZZZB
-string after removing adjacent pairs of repeated characters: BAXZB
-*/
+string after removing adjacent pairs of repeated characters: BAXZB */
 
 import java.util.*;
 class test {
