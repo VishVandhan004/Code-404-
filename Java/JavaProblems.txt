@@ -2899,8 +2899,7 @@ No number found at index 3 that is a multiple of 3.  */
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
