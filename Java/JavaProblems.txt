@@ -3244,8 +3244,7 @@ Average Marks   Number of Students
 31-50           1                                                                                                      
 51-70           3                                                                                                      
 71-85           0                                                                                                      
-86-100          1                                                                                                      
-*/      
+86-100          1   */      
 
 import java.util.*;
 class test {
