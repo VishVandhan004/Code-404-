@@ -3152,8 +3152,7 @@ Enter element 1: 10
 Enter element 2: 11                                                                                                    
 Enter element 3: 100                                                                                                    
 Count of single-digit numbers: 0                                                                                        
-Count of double-digit numbers: 2                                                                                        
-*/
+Count of double-digit numbers: 2   */
 
 import java.util.*;
 class test {
