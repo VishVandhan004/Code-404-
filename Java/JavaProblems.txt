@@ -3031,8 +3031,7 @@ Enter the number of elements in the array: 5
 Enter the elements of the array:
 2 3 4 5 6
 Sum of elements at even indices: 12
-Sum of elements at odd indices: 8
-*/
+Sum of elements at odd indices: 8 */
 
 import java.util.*;
 class test {
