@@ -1706,7 +1706,7 @@ class Test {
 }        
 
 42nd Problem 
-/* Given set of nodes like [2,1,1,2] , using them form a singly linked list,  
+Given set of nodes like [2,1,1,2] , using them form a singly linked list,  
 left node in the linked list represents MSB and right node  in the linked list represents LSB, 
 where 2 is MSB and 2 is LSB. 
 by using above nodes you can form singly linked list like 2-->1-->1-->2. 
@@ -1715,7 +1715,7 @@ Examples:
 input=2,1,1,2 
 output=yes 
 input=2,1 
-output=no  */ 
+output=no 
 
 import java.util.*; 
 class Test { 
