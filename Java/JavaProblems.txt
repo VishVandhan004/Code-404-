@@ -2564,7 +2564,7 @@ public class Main {
 }
 
 59th Problem
-/* Banking System: You are building a banking system. Identify the classes, objects, and behaviors involved.
+Banking System: You are building a banking system. Identify the classes, objects, and behaviors involved.
 Scenario: Customers can open bank accounts, deposit money,withdraw money, and check their account balance. 
 Each account has a unique account number, owner name, and 
 balance. The system should handle transactions accurately and update account balances accordingly.
@@ -2601,7 +2601,7 @@ Account balance: 23450.0
 4. Check account balance
 0. Exit
 Enter your choice: 0
-Exiting...   */
+Exiting... 
 
 import java.util.*;
 class BankAcc {
