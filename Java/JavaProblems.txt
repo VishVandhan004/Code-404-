@@ -1908,7 +1908,6 @@ class Main {
 }
 
 47th problem (removing the duplicate elements from the array)
-
 class Solution {
     public int removeDuplicates(int[] nums) {
         int n = nums.length;
