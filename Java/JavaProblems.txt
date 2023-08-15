@@ -2246,8 +2246,7 @@ public class opentextthree {
         int n = sc.nextInt();
         System.out.println(task(n));
     }
-    public static int task(int n)
-    {
+    public static int task(int n) {
         if(n<10)
         {
             return n;
