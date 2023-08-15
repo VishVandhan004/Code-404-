@@ -2728,7 +2728,7 @@ class Array1 {
 }
 
 61st Problem
-/* Write a java Program to remove an element in a given position in an array.
+Write a java Program to remove an element in a given position in an array.
 Enter the size of the array: 5
 Enter the elements of the array:
 1
@@ -2751,7 +2751,7 @@ Enter the elements of the array:
 6
 Enter the position of the element to be removed: 0
 Array after removing the element:
-123 34 3 22 1 4 6  */
+123 34 3 22 1 4 6 
 
 import java.util.*;
 class Remove {
