@@ -1931,7 +1931,6 @@ class Solution {
 }                                     
 
 48th Problem (Collections)
-
 Array List
 import java.util.*;
 class Test {
