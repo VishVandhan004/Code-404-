@@ -1858,7 +1858,7 @@ class Main {
         sc.close();
     }
 }
- other solution (Leetcode)
+other solution (Leetcode)
  class Solution {
     public boolean check(int[] nums) {
         int n = nums.length;
