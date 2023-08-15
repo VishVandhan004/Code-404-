@@ -2279,8 +2279,7 @@ public class opentextfour {
         int n = sc.nextInt();
         System.out.println(task(n));
     }
-    public static int task(int n)
-    {
+    public static int task(int n) {
         int sum=0;
         while(n!=0)
         {
