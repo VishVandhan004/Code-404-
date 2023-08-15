@@ -2689,7 +2689,7 @@ class BankSystem {
 }
 
 60th Problem
-/* Ravi wants to insert an element into given list of numbers for a given position . 
+Ravi wants to insert an element into given list of numbers for a given position . 
 Enter the size of the array: 5
 Enter the elements of the array:
 1
@@ -2699,7 +2699,7 @@ Enter the elements of the array:
 5
 Enter the element to insert: 7
 Enter the index to insert the element at: 1
-Modified array: [1, 7, 2, 3, 4, 5] */
+Modified array: [1, 7, 2, 3, 4, 5] 
 
 import java.util.*;
 class Array1 {
