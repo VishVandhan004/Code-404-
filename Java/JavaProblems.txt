@@ -1885,7 +1885,6 @@ other solution (Leetcode)
 }
 
 46th Problem (linear search)
-
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
