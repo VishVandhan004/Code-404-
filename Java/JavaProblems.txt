@@ -1880,7 +1880,6 @@ other solution (Leetcode)
         if (pivot > 0 && nums[n - 1] > nums[0]) {
             return false;
         }
-
         return true;
     }
 }
