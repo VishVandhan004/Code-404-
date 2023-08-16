@@ -2945,7 +2945,7 @@ class test {
 }
 
 66th Problem
-/* Write a Java program to reverse an array of integer values.
+Write a Java program to reverse an array of integer values.
 Enter the size of the array: 4
 Enter the elements of the array:
 Element 1: 34
@@ -2953,7 +2953,7 @@ Element 2: 56
 Element 3: 78
 Element 4: 90
 Reversed array:
-90 78 56 34  */
+90 78 56 34
 
 import java.util.*;
 class test {
