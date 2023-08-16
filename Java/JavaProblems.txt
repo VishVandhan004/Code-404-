@@ -2977,7 +2977,7 @@ class test {
 }
 
 67th Problem
-/* Write a Java program to input an array Of N elements and display all even index elements
+Write a Java program to input an array Of N elements and display all even index elements
 Enter the size of the array: 3
 Enter the elements of the array:
 Element at index 0: -2
@@ -2985,7 +2985,7 @@ Element at index 1: 56
 Element at index 2: 78
 Elements at even indices:
 Element at index 0: -2
-Element at index 2: 78  */
+Element at index 2: 78 
 
 import java.util.*;
 class test {
