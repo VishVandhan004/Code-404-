@@ -2791,7 +2791,7 @@ Enter the size of the array: 5
 Enter the elements of the array:                                                                                        
 1 2 3 4 5                                                                                                               
 Enter the indices: 1 2                                                                                                      
-sum is:5  */
+sum is:5 
 
 import java.util.*;
 class test {
