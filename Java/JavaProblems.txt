@@ -2870,7 +2870,7 @@ class Test {
 }
 
 64th Problem
-/* Write a Java program that takes an input array, finds a number
+Write a Java program that takes an input array, finds a number
 in the array which is a multiple of three, squares its index, 
 and displays the result. 
 The program takes the input array and index from the user
@@ -2882,7 +2882,7 @@ The number at index 4 (which is a multiple of 3) is 12, and its index squared is
 Enter the size of the array: 3
 Enter the array elements:8 9 2
 Enter the index: 3
-No number found at index 3 that is a multiple of 3.  */
+No number found at index 3 that is a multiple of 3.
 
 import java.util.*;
 class test {
