@@ -3043,7 +3043,7 @@ class test {
 }
 
 69th Problem
-/* Write a Java program to test if an array contains a specific value.
+Write a Java program to test if an array contains a specific value.
 Enter the size of the array: 4
 Enter the elements of the array:
 Element 0: 1
@@ -3058,7 +3058,7 @@ Element 0: 23
 Element 1: 45
 Element 2: 89
 Enter the value to search for: 9
-The array does not contain the value 9. */
+The array does not contain the value 9.
 
 import java.util.*;
 class test {
