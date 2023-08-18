@@ -4067,7 +4067,7 @@ public class ExtractArrayListPortion{
 }
 
 96th Problem
-/* Write a Java program to iterate through all elements in a linked list starting 
+Write a Java program to iterate through all elements in a linked list starting 
 at the specified position.
 sample output:
 Enter the number of elements in the linked list: 4
@@ -4077,7 +4077,7 @@ Enter the starting position (0-based): 1
 Elements in the linked list starting from position 1:
 90
 87
-675 */
+675 
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -4101,7 +4101,7 @@ public class IterateLinkedListFromPosition{
 }
 
 97th Problem
-/* Write a Java program to insert the specified element at the specified position in the linked list.
+Write a Java program to insert the specified element at the specified position in the linked list.
 Enter the number of elements in the linked list: 6
 Enter 6 elements:
 100
@@ -4112,7 +4112,7 @@ Enter 6 elements:
 123
 Enter the element to be inserted: 567
 Enter the position (0-based) where the element should be inserted: 1
-Updated Linked List: [100, 567, 200, 300, 560, 345, 123]*/
+Updated Linked List: [100, 567, 200, 300, 560, 345, 123]
 
 import java.util.LinkedList;
 import java.util.Scanner;
