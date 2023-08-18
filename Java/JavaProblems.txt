@@ -577,14 +577,13 @@ class test{
 }     
 
 16th Problem 
-/*Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
+Given an list of numbers, return the highest common factor of the smallest number and bigest number in list. The highest common factor of two numbers is the biggest positive number that evenly divides both numbers. 
 Input: numberss = 2 9 6 5 12 
 Output: 2 
 Explanation: 
 The smallest number in list is 2. 
 The largest number in list is 12. 
 The highest common factor of 2 and 12 is 2. 
-*/
 
 import java.util.*;
 class test
@@ -695,7 +694,7 @@ public class Test {
 }
 
 19th Problem 
-/*You have given N bricks. You need to construct a staircase as follows: 
+You have given N bricks. You need to construct a staircase as follows: 
 1. = 
 2. == 
 3. === 
@@ -726,7 +725,6 @@ row-2:	==
 row-3:	=== 
 row-4:	== 
 Only 3 rows satisfies the condition. 
-*/
 
 import java.util.*;
 class test {
@@ -766,7 +764,7 @@ class test
 }    
 
 20th Problem   
-/*Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. read both dates in string format, i.e, year-month-date as given in sample data. 
+Ranga rao sir asked a student to find duration among Mid1 and Mid2 exam dates. read both dates in string format, i.e, year-month-date as given in sample data. 
 input: 
 "2020-06-28" 
 "2020-06-29" 
@@ -775,7 +773,6 @@ Input:
 "2019-01-14" 
 "2018-12-30" 
 Output: 15 
-*/
 
 import java.util.*;
 import java.time.LocalDate;
