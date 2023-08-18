@@ -302,7 +302,7 @@ class test
 }
 
 10th Problem 
-/*read rows and colums of first and second matrix, then read elements into both matrix,perform addition of those two matrix and dispaly first,second and result matrix. 
+read rows and colums of first and second matrix, then read elements into both matrix,perform addition of those two matrix and dispaly first,second and result matrix. 
 input: 
 2 
 2 
@@ -329,7 +329,7 @@ input=
 2 
 2 
 output= 
-Addition would not be possible */ 
+Addition would not be possible 
 
 import java.util.*; 
 class test 
@@ -383,12 +383,12 @@ class test
 }     
 
 11th Problem 
-/* Wrie a Java program  that will test if a string is a valid PIN or not 
+Wrie a Java program  that will test if a string is a valid PIN or not 
 A valid PIN has: Exactly 4 or 6 characters. Only numeric characters (0-9). No whitespace.
 121317
 true
 45135
-false */
+false 
 
 import java.util.*;
 class test
