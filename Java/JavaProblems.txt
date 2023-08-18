@@ -3997,7 +3997,7 @@ public class InsertArrayListElement {
 }
 
 94th Problem
-/* Write a Java program to update an array element by the given element.
+Write a Java program to update an array element by the given element.
 Enter the size of the array: 5
 Enter 5 elements:
 12
@@ -4007,7 +4007,7 @@ Enter 5 elements:
 89
 Enter the index of the element to be updated (0-based): 3
 Enter the new element value: 890
-Updated Array: [12, 13, 45, 890, 89] */
+Updated Array: [12, 13, 45, 890, 89]
 
 import java.util.Scanner;
 public class UpdateArrayElement{
