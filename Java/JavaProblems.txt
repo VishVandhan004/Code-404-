@@ -87,11 +87,11 @@ class test {
 }
 
 4th Problem 
-/*take the different size of balls in array and find the second largest ball in array
+take the different size of balls in array and find the second largest ball in array
 Enter number of the balls: 5 
 Enter balls with different sizes: 
 2 3 7 6 9
-Second largest ball = 7*/
+Second largest ball = 7
 
 import java.util.*;
 class test
