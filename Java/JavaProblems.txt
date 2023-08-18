@@ -791,7 +791,7 @@ class test
 }    
 
 21st Problem 
-/*Given a word w, rotate other than consonents in the word and print it. 
+Given a word w, rotate other than consonents in the word and print it. 
 The other than consonents are 'i', 'a', 'u', 'e', and 'e', and they can be seen in both lower- and uppercase,More than once. 
 Input: 
 "ravi" 
@@ -802,7 +802,6 @@ Input:
 "telusuko" 
 Output:  
 "tolusuke" 
-*/
 
 import java.util.*;
 class test {
@@ -833,7 +832,7 @@ class test {
 }    
 
 22nd Problem 
-/*There is a List L that consists of n only positive numbers. 
+There is a List L that consists of n only positive numbers. 
 It was converted into another List L i.e, of length n - 1, such that coverted[i] = List[i] XOR List[i + 1]. For example, if List= [1,0,2,1], then converted= [1,2,3]. 
 You are given the converted list. You are also given an start number, i.e. List[0].Return the original List L. It can be proved that the answer exists and is unique. 
 Sample Data:  
@@ -843,7 +842,7 @@ input:
 output: 
 1 0 2 1 
 Explanation:  
-If List= 1 0 2 1 then 1 and converted= (1 XOR 0, 0 XOR 2, 2 XOR 1) = 1 2 3*/
+If List= 1 0 2 1 then 1 and converted= (1 XOR 0, 0 XOR 2, 2 XOR 1) = 1 2 3
 
 import java.util.*;
 class test{
@@ -4137,7 +4136,7 @@ public class InsertLinkedListElement{
 }
 
 98th Problem
-/* Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
 Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
@@ -4149,7 +4148,7 @@ Input:([)]
 Output: false
 Constraints:
 1 <= s.length <= 104
-s consists of parentheses only '()[]{}'. */
+s consists of parentheses only '()[]{}'.
 
 import java.util.Stack;
 public class ValidParentheses{
