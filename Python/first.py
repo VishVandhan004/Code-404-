@@ -47,7 +47,7 @@ print(type(v))
 
 # LISTS
 # Lists are like arrays in C. ordered sequence. store many types of data. Objects are in square bracket.
-numbers = [1, 2, 3, 4, 'hi']  # List
+numbers = [1, 2, 3, 4, 'hi']  # List # type: ignore
 print(numbers[0], numbers[4])
 print(numbers[1:])
 print(numbers[0:3])
