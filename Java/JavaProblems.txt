@@ -172,7 +172,7 @@ int main(){
 }
 
 6th Problem 
-/* Given a string S in encoded form, and  an integer array indices[] of string length. You need to find the decoded form of String S,  
+Given a string S in encoded form, and  an integer array indices[] of string length. You need to find the decoded form of String S,  
 by moving each character at ith position in S, to indices[i] position in decoded string.and then print the decoded string. 
 Input Format: 
 Line-1 -> A String S, enocded string of length L 
@@ -198,7 +198,7 @@ Explanation-2:
 Given String,
 aidin 
 4 3 2 0 1 
-after shifting,	india */
+after shifting,	india 
 
 #include<stdio.h>
 #include<string.h>
@@ -243,12 +243,12 @@ class Solution {
 }
 
 8th Problem 
-/* Bob given a task to Babe, i.e, Babe has to detect unique value in a given set of values by Bob
+Bob given a task to Babe, i.e, Babe has to detect unique value in a given set of values by Bob
 input=
 8
 12 25 8 12 43 5 8 43
 output=
-25 5 */
+25 5 
 
 #include<stdio.h>
 int main() {
