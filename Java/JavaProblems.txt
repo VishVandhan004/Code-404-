@@ -3881,9 +3881,9 @@ class test {
 }
 
 90th Problem
-/* Java program that reverses a given word without using the split
+Java program that reverses a given word without using the split
 Enter a word: how are you
-Reversed word: you are how */
+Reversed word: you are how
 
 import java.util.*;
 class test {
