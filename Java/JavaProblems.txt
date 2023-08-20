@@ -3549,11 +3549,11 @@ class test {
 }
 
 81st Problem
-/* write a java program Remove vowels from a string
+write a java program Remove vowels from a string
 sample output:
 Enter a string:
 welcome
-String after removing vowels: wlcm */ 
+String after removing vowels: wlcm
 
 import java.util.*;
 class test {
