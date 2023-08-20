@@ -3725,11 +3725,11 @@ class Test {
 }
 
 86th Problem
-/* find smallest and longest word in the string
+find smallest and longest word in the string
 sample output:
 string programs in java
 in
-programs */
+programs 
 
 import java.util.*;
 class test {
