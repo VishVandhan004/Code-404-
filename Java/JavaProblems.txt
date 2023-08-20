@@ -3757,13 +3757,13 @@ class test {
 }
 
 87th Problem
-/* Write a Java program to check whether a string is a Palindrome or not using pointers
+Write a Java program to check whether a string is a Palindrome or not using pointers
 Sample output
 Enter a string: madam
 The string is a palindrome.
 Sample output1:
 Enter a string: hello
-The string is not a palindrome. */
+The string is not a palindrome.
 
 import java.util.*;
 class test {
