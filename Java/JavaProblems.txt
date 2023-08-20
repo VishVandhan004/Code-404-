@@ -3507,7 +3507,7 @@ class test {
 }
 
 80th Problem
-/* write a Java Program to Count the Number of Unique Words
+write a Java Program to Count the Number of Unique Words
 Given a string, in which various words are separated by whitespace. Print the count of the unique words 
 present in it, that is the words whose frequency is 1.
 sample output:
@@ -3517,7 +3517,7 @@ Total number of unique words in "ava is great C++ is also great" are 3
 sample output1:
 Enter the string                                                                                                        
 good morning                                                                                                            
-Total number of unique words in "good morning" are 2  */
+Total number of unique words in "good morning" are 2
 
 import java.util.*;
 class test {
