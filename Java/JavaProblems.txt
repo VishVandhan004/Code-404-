@@ -3462,7 +3462,7 @@ public class test {
 }
 
 79th Problem
-/* find the frequency of each element in the given array
+find the frequency of each element in the given array
 sample output:
 5
 1 2 2 3 4
@@ -3474,7 +3474,7 @@ sample output2:
 6
 3 3 3 4 4 4
 3-3
-4-3 */
+4-3 
 
 import java.util.*;
 class test {
