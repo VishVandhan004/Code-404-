@@ -3627,7 +3627,7 @@ class test {
 }
 
 83rd Problem
-/* Given a string, find and remove all the adjacent pairs of repeated characters
+Given a string, find and remove all the adjacent pairs of repeated characters
 sample output:
 ABBCCCD
 string after removing adjacent pairs of repeated characters: ACD
@@ -3636,7 +3636,7 @@ AAABBBCCDD
 string after removing adjacent pairs of repeated characters: AB
 sample output3:
 AABBBCCDDAXYYZZZZZB
-string after removing adjacent pairs of repeated characters: BAXZB */
+string after removing adjacent pairs of repeated characters: BAXZB
 
 import java.util.*;
 class test {
@@ -3687,13 +3687,13 @@ class test {
 }
 
 85th Problem
-/* program to find first non repeating character in the string
+program to find first non repeating character in the string
 sample output:
 aabbcdef
 c
 sample output2:
 abcdeffeda
-b */
+b 
 
 import java.util.*;
 class Test {
