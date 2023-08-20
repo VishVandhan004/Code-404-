@@ -3581,7 +3581,7 @@ class test {
 }
 
 82nd Problem
-/* Java Program tond the largest and smallest word in a string.
+Java Program tond the largest and smallest word in a string.
 sample output
 Enter a string:
 welcome to ngit college
@@ -3591,7 +3591,7 @@ sample output1
 Enter a string:                                                                                                         
 hi welcome to fds j1 batch                                                                                               
 Smallest word: hi                                                                                                       
-Largest word: welcome  */ 
+Largest word: welcome
 
 import java.util.*;
 class test {
