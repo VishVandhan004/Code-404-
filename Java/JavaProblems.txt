@@ -3091,11 +3091,11 @@ if(flag != -1)
 }
 
 70th Problem
-/* Write a Program to input N integers in an array,print the greatest and smallest integers from the array
+Write a Program to input N integers in an array,print the greatest and smallest integers from the array
 Enter Size of Array:3                                                                                                                                                                                                             
 Enter the elements:10 20 30                                                                                                                                                                                                                   
-Maximum Number: 30                                                                                                                                                                                                                           
-Minimum Number: 10    */    
+Maximum Number: 30                                                                                                                                                                                                                          
+Minimum Number: 10    
 
  import java.util.*;
  class test {
@@ -3126,13 +3126,13 @@ Minimum Number: 10    */
  }
 
 71st Problem
-/* Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
+Write a program to input N elements in an array. Print the count of single digit and double digit numbers.
 Enter the number of elements in the array: 3                                                                            
 Enter element 1: 10                                                                                                    
 Enter element 2: 11                                                                                                    
 Enter element 3: 100                                                                                                    
 Count of single-digit numbers: 0                                                                                        
-Count of double-digit numbers: 2   */
+Count of double-digit numbers: 2 
 
 import java.util.*;
 class test {
