@@ -3276,7 +3276,7 @@ Perimeter of the circle: 18.84955592153876
 Area of the circle: 28.274333882308138
 
 import java.util.*;
-class Shape{
+class Shape {
     public double getPerimeter(){
         return 0.0;
     }
