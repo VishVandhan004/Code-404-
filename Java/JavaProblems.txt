@@ -3420,13 +3420,13 @@ public class test {
 }
 
 78th Problem
-/* find the unique elements from the given array
+find the unique elements from the given array
 sample output:
 Enter the number of elements in the array: 6                                                                            
 Enter the elements of the array:                                                                                        
 5 5 3 3 2 1                                                                                                             
 Unique elements:                                                                                                        
-2 1  */
+2 1 
 
 import java.util.Scanner;
 public class test {
