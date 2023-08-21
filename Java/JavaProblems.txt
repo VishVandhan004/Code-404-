@@ -3267,13 +3267,13 @@ class test {
 }
 
 74th Problem
-/* Write a Java program to create a class called Shape with methods called getPerimeter() and
+Write a Java program to create a class called Shape with methods called getPerimeter() and
 getArea(). Create a subclass called Circle that overrides the getPerimeter() and getArea()
 methods to calculate the area and perimeter of a circle.
 sample input and output
 Enter the radius of the circle: 3                                                                                      
 Perimeter of the circle: 18.84955592153876                                                                              
-Area of the circle: 28.274333882308138 */
+Area of the circle: 28.274333882308138
 
 import java.util.*;
 class Shape{
@@ -3311,13 +3311,13 @@ class test
 }
 
 75th Problem
-/* java program to input array of numbers that contains positive and negative numbers. print count of positive and negative numbers
+java program to input array of numbers that contains positive and negative numbers. print count of positive and negative numbers
 sample output:
 Enter the number of elements in the array: 5
 Enter the elements of the array:
 1 2 -1 -2 3
 Positive Count: 3
-Negative Count: 2 */
+Negative Count: 2 
 
 import java.util.*;
 class test {
