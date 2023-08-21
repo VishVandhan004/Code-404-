@@ -3161,7 +3161,7 @@ class test {
 }
 
 72nd Problem
-/* Write a Java program to find common elements between two integer arrays.
+Write a Java program to find common elements between two integer arrays.
 Enter the number of elements in the first array: 3                                                                      
 Enter the elements of the first array:                                                                                  
 1 2 3                                                                                                                  
@@ -3169,8 +3169,8 @@ Enter the number of elements in the second array: 3
 Enter the elements of the second array:                                                                                
 2 4 3                                                                                                                  
 Common elements:                                                                                                        
-2                                                                                                                      
-3    */
+2                                                                                                                  
+3   
 
 import java.util.*;
 class test {
@@ -3203,7 +3203,7 @@ class test {
 }
 
 73rd Problem
-/* Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
+Write a program to store average marks of N students in a single subscripted variables and print the students falling in the following categories in two columns
 Average Marks Number of Students
 1-30 xx
 31-50 xx
@@ -3223,7 +3223,7 @@ Average Marks   Number of Students
 31-50           1                                                                                                      
 51-70           3                                                                                                      
 71-85           0                                                                                                      
-86-100          1   */      
+86-100          1      
 
 import java.util.*;
 class test {
