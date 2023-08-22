@@ -438,7 +438,7 @@ Sample Output-2:
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         LinkedList<Integer> ll = new LinkedList<Integer>();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
