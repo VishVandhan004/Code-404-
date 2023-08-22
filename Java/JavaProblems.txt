@@ -520,9 +520,8 @@ Explanation:
 We have even number of stations, so the second middle station is 4
 
 import java.util.*;
-class test
-{
-    public static void main(String args[]){
+class test {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         LinkedList<Integer> ll = new LinkedList <Integer> ();
