@@ -38,7 +38,7 @@ Enter the 1st person age: 25
 Enter the 2nd person age: 78 
 Enter the 3rd person age: 87 
 Expected Output : 
-The oldest person is: 87  */ 
+The oldest person is: 87
 
 import java.util.*; 
 class test{ 
