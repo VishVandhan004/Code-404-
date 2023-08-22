@@ -41,7 +41,7 @@ Expected Output :
 The oldest person is: 87
 
 import java.util.*; 
-class test{ 
+class test { 
     public static void main(String args[]) 
     { 
         int n,a,b,c; 
