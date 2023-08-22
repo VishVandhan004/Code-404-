@@ -33,7 +33,7 @@ int main()
 }
 
 2nd problem 
-/*Take three persons age from the user and print the Oldest Person out of three persons using Nested if. 
+Take three persons age from the user and print the Oldest Person out of three persons using Nested if. 
 Enter the 1st person age: 25 
 Enter the 2nd person age: 78 
 Enter the 3rd person age: 87 
