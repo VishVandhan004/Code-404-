@@ -584,8 +584,7 @@ The largest number in list is 12.
 The highest common factor of 2 and 12 is 2. 
 
 import java.util.*;
-class test
-{
+class test {
     public static void main(String args[]) {
        Scanner sc = new Scanner(System.in);
        try {  
@@ -609,7 +608,6 @@ class test
         System.out.println(HCF);
     }
        finally {
-           
            sc.close();
        }
    }
