@@ -553,7 +553,7 @@ Output: 0
 Explanation: The array does not have any element that are equal to each other.
 
 import java.util.*;
-class test{
+class test {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
