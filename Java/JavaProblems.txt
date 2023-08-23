@@ -554,7 +554,7 @@ Explanation: The array does not have any element that are equal to each other.
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int a,b;
@@ -586,12 +586,9 @@ The highest common factor of 2 and 12 is 2.
 import java.util.*;
 class test
 {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
        Scanner sc = new Scanner(System.in);
-       try 
-       {
-           
+       try {  
         String str = sc.nextLine();
         String[] stArr = str.split(" ");
         int len = stArr.length;
