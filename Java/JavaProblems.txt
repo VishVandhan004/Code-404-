@@ -1254,13 +1254,13 @@ class test {
 }       
 
 32nd Problem 
-/*Write a function maxsubstring (str,alpha,theta) str is the source string and have to return maximum sub string which starts with alpha and ends with theta.
+Write a function maxsubstring (str,alpha,theta) str is the source string and have to return maximum sub string which starts with alpha and ends with theta.
 input=computer                                                                                                         
 m                                                                                                                      
 r    	
 output=                                                                                                              
 Max. Substring  is:mputer  
-*/
+
 import java.util.*;
 class Test
 {
