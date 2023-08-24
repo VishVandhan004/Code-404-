@@ -1262,10 +1262,8 @@ output=
 Max. Substring  is:mputer  
 
 import java.util.*;
-class Test
-{
-    public static void main(String args[])
-    {
+class Test {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         char alpha = sc.next().charAt(0);
@@ -1286,10 +1284,8 @@ class Test
 33rd Problem -> Maximum and minimum of an array using minimum number of comparisons
 
 import java.util.*; 
-class First 
-{ 
-    public static void main(String args[]) 
-    { 
+class First  { 
+    public static void main(String args[]) { 
         Scanner sc = new Scanner(System.in); 
         System.out.println("Enter the size: "); 
         int n = sc.nextInt(); 
