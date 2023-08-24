@@ -1406,7 +1406,7 @@ class Test {
 }                
 
 36th Problem 
-/* Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
+Given a string, find size of palindrome with maximum length. alphabets are case sensitive, for example, "bB" is not considered a palindrome here.
 Example 1:
 Input: s = "abccccdd"
 Output: 7
@@ -1418,7 +1418,7 @@ Explanation: The longest palindrome that can be built is "a", whose length is 1.
 testcases:
 case=1
 input=abccccdd
-output=7 */
+output=7 
 
 import java.util.*;
 class test {
