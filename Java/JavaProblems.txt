@@ -1027,7 +1027,7 @@ output=58
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
      Scanner sc = new Scanner(System.in);
      String arr[] = sc.nextLine().split(" ");
      int length = arr.length;
@@ -1068,7 +1068,7 @@ input=15
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int total = sc.nextInt();
         int exchange = sc.nextInt();
@@ -1101,8 +1101,7 @@ output=2
 
 import java.util.*;
 class test {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         int length = str.length();
