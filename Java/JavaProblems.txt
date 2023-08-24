@@ -1214,7 +1214,7 @@ class test {
 }                 
 
 31st Problem
-/*Ngit college decided to announce the toppers of 2nd year students , 
+Ngit college decided to announce the toppers of 2nd year students , 
 Here Management following a strategy to identify the toppers, i.e, 
 They have three different set of lists with there roll numbers, 
 first list is PS, second list is CS and third list is OUS.
@@ -1226,13 +1226,10 @@ Input:
 1 2 4 5 8 11
 Output:
 2 5
-*/
 
 import java.util.*;
-class test
-{
-    public static void main(String args[])
-    {
+class test {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.nextLine();
         String arr1[] = str1.split(" ");
