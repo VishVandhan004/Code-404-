@@ -74,7 +74,7 @@ Enter the year: 2016
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the year: ");
         int y = sc.nextInt();
@@ -93,9 +93,8 @@ Enter balls with different sizes:
 Second largest ball = 7
 
 import java.util.*;
-class test
-{
-    public static void main(String args[]){
+class test {
+    public static void main(String args[]) {
         int n;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of the balls: ");
