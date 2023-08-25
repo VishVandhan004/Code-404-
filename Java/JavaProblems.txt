@@ -200,8 +200,7 @@ after shifting,	india
 
 #include<stdio.h>
 #include<string.h>
-int main()
-{
+int main() {
     char str[30];
     char str1[30];
     int i;
@@ -279,10 +278,8 @@ Enter array elements:
 Sum of array elements= 150
 
 import java.util.*;
-class test
-{
-    public static void main(String args[])
-    {
+class test {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of elements:");
         int n = sc.nextInt();
@@ -330,10 +327,8 @@ output=
 Addition would not be possible 
 
 import java.util.*; 
-class test 
-{ 
-    public static void main(String args[]) 
-    { 
+class test { 
+    public static void main(String args[]) { 
        Scanner sc = new Scanner(System.in); 
        int row1 = sc.nextInt(); 
        int col1 = sc.nextInt(); 
