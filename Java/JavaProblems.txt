@@ -384,10 +384,8 @@ true
 false 
 
 import java.util.*;
-class test
-{
-    public static void main(String args[])
-    {
+class test {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String PIN = sc.nextLine();
         int len = PIN.length();
