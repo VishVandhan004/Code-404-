@@ -42,8 +42,7 @@ The oldest person is: 87
 
 import java.util.*; 
 class test { 
-    public static void main(String args[]) 
-    { 
+    public static void main(String args[]) { 
         int n,a,b,c; 
         Scanner sc=new Scanner(System.in); 
         System.out.print("Enter the 1st person age: "); 
