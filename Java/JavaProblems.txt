@@ -3189,7 +3189,7 @@ Average Marks   Number of Students
 
 import java.util.*;
 class test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of students: ");
         int n = sc.nextInt();
