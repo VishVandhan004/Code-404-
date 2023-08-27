@@ -4042,7 +4042,7 @@ Elements in the linked list starting from position 1:
 
 import java.util.LinkedList;
 import java.util.Scanner;
-public class IterateLinkedListFromPosition{
+public class IterateLinkedListFromPosition {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the linked list: ");
@@ -4077,8 +4077,8 @@ Updated Linked List: [100, 567, 200, 300, 560, 345, 123]
 
 import java.util.LinkedList;
 import java.util.Scanner;
-public class InsertLinkedListElement{
-    public static void main(String[] args){
+public class InsertLinkedListElement {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements in the linked list: ");
         int n = scanner.nextInt();
@@ -4112,8 +4112,8 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 
 import java.util.Stack;
-public class ValidParentheses{
-    public static boolean isValid(String s){
+public class ValidParentheses {
+    public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
