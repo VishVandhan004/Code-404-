@@ -4015,7 +4015,7 @@ public class ExtractArrayListPortion {
         int n = scanner.nextInt();
         ArrayList<Integer> arrayList = new ArrayList<>();
         System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             arrayList.add(scanner.nextInt());
         }
         System.out.print("Enter the starting index of the portion (0-based): ");
