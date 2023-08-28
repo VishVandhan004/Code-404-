@@ -4055,7 +4055,7 @@ public class IterateLinkedListFromPosition {
         System.out.print("Enter the starting position (0-based): ");
         int startIndex = scanner.nextInt();
         System.out.println("Elements in the linked list starting from position " + startIndex + ":");
-        for (int i = startIndex; i < linkedList.size(); i++){
+        for (int i = startIndex; i < linkedList.size(); i++) {
             System.out.println(linkedList.get(i));
         }
     }
