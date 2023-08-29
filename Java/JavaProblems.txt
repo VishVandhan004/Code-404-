@@ -3733,8 +3733,7 @@ class test {
         System.out.print("Enter a string: ");
         boolean p = false;
         String str = sc.nextLine();
-        for(int i=0,j=str.length()-1;i<j;i++,j--)
-        {
+        for(int i=0,j=str.length()-1;i<j;i++,j--) {
             if(str.charAt(i) == str.charAt(j)) {
                 p = true;
                 break;
