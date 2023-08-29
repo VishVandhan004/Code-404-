@@ -3740,7 +3740,7 @@ class test {
                 break;
             }
         }
-        if(p == true){
+        if(p == true) {
             System.out.print("The string is a palindrome.");
         }
         else {
