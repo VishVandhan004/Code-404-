@@ -3490,7 +3490,7 @@ class test {
         int uniqueWordCount = 0;
         String[] words = input.split(" ");
         Map<String, Integer> wordCountMap = new HashMap<>();
-        // Count the frequency of each word
+        //Count the frequency of each word
         for (String word : words) {
             if (!wordCountMap.containsKey(word)) {
                 wordCountMap.put(word, 1);
