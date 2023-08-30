@@ -3636,8 +3636,7 @@ class test {
         String s [] = str.split(" ");
         Arrays.sort(s);
         String c = "";
-        for(int i=0;i<s[0].length();i++)
-        {
+        for(int i=0;i<s[0].length();i++) {
             if(s[0].charAt(i)==s[s.length-1].charAt(i))
             {
                 c=c+s[0].charAt(i);
