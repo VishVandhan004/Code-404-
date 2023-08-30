@@ -3499,7 +3499,7 @@ class test {
                 wordCountMap.put(word, count + 1);
             }
         }
-        // Count the number of unique words with frequency 1
+        //Count the number of unique words with frequency 1
         for (String word : wordCountMap.keySet()) {
             if (wordCountMap.get(word) == 1) {
                 uniqueWordCount++;
