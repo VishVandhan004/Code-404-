@@ -3372,7 +3372,7 @@ public class test {
                   found++;   
                 }
             }
-            if(found!=0 && array[i]!=-1){
+            if(found!=0 && array[i]!=-1) {
                 System.out.print(array[i]+" ");
             }
             found = 0;
