@@ -3403,7 +3403,6 @@ public class test {
         }
        System.out.println("Unique elements: ");
        int count = 0;
-        //write your code here
         for(int i=0;i<array.length;i++)
         {
             for(int j=i+1;j<array.length;j++)
