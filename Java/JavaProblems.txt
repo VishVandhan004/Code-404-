@@ -3362,8 +3362,7 @@ public class test {
             if(array[i] == -1) {
                 i++;
             }
-            for(int j=i+1;j<array.length;j++)
-            {
+            for(int j=i+1;j<array.length;j++) {
                 if(array[i]==array[j])
                 {
                   array[j] = -1;
