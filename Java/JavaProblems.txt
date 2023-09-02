@@ -3195,7 +3195,7 @@ class test {
         int n = sc.nextInt();
         System.out.println("Enter the average marks for each student: ");
         int arr[] = new int[n];
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++) {
             System.out.print("Student "+(i+1)+": ");
             arr[i] = sc.nextInt();
         }
