@@ -3205,10 +3205,10 @@ class test {
         if(marks>=1 && marks<=30) {
             count[0]++;
         }
-        else if(marks>=31 && marks<=50){
+        else if(marks>=31 && marks<=50) {
             count[1]++;
         }
-        else if(marks>=51 && marks<=70){
+        else if(marks>=51 && marks<=70) {
             count[2]++;
         }
         else if(marks>=71 && marks<=85){
