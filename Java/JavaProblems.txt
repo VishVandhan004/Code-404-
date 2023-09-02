@@ -3200,10 +3200,9 @@ class test {
             arr[i] = sc.nextInt();
         }
         int[] count = new int[5];
-        for(int i=0;i<n;i++){
-            
+        for(int i=0;i<n;i++) {
         int marks = arr[i];
-        if(marks>=1 && marks<=30){
+        if(marks>=1 && marks<=30) {
             count[0]++;
         }
         else if(marks>=31 && marks<=50){
