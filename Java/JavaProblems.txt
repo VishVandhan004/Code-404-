@@ -3250,10 +3250,10 @@ class Circle extends Shape {
     public Circle(double radius) {
         this.radius = radius;
     }
-    public double getPerimeter(){
+    public double getPerimeter() {
         return 2*Math.PI*radius;
     }
-    public double getArea(){
+    public double getArea() {
         return Math.PI*radius*radius;
     }
 }
@@ -3289,7 +3289,7 @@ class test {
         int nc = 0;
         System.out.println("Enter the elements of the array: ");
         int arr[] = new int[n];
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++) {
             arr[i] = sc.nextInt();
         if(arr[i]<0) {
             nc++;
