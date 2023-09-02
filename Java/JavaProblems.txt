@@ -3211,10 +3211,10 @@ class test {
         else if(marks>=51 && marks<=70) {
             count[2]++;
         }
-        else if(marks>=71 && marks<=85){
+        else if(marks>=71 && marks<=85) {
             count[3]++;
         }
-        else if(marks>=86 && marks<=100){
+        else if(marks>=86 && marks<=100) {
             count[4]++;
         }
     }
