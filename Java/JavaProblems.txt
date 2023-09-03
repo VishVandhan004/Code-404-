@@ -3069,7 +3069,7 @@ Minimum Number: 10
          int min = 0;
          System.out.print("Enter the elements: ");
          int arr[] = new int[size];
-         for(int i=0;i<size;i++){
+         for(int i=0;i<size;i++) {
              arr[i] = sc.nextInt();
          }
          min = arr[0];
