@@ -3040,13 +3040,13 @@ class test {
             else {
                 flag = -1;
             }
-    }
-if(flag != -1) {
+        }
+        if(flag != -1) {
         System.out.print("The array contains the value "+search+" at index "+flag+".");
-    }
-    else {
+           }
+        else {
       System.out.print("The array does not contain the value "+search+""); 
-    }
+        }
   }
 }
 
