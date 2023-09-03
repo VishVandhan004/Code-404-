@@ -3033,20 +3033,18 @@ class test {
         System.out.print("Enter the value to search for: ");
         int search = sc.nextInt();
         for(int i=0;i<size;i++){
-            if(arr[i] == search){
+            if(arr[i] == search) {
                 flag = i;
                 break;
             }
-            else{
+            else {
                 flag = -1;
             }
     }
-if(flag != -1)
-    {
+if(flag != -1) {
         System.out.print("The array contains the value "+search+" at index "+flag+".");
     }
-    else 
-    {
+    else {
       System.out.print("The array does not contain the value "+search+""); 
     }
   }
