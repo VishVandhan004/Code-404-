@@ -2987,7 +2987,7 @@ class test {
         int sum1 = 0,sum2 = 0;
         for(int i=0;i<size;i++){
             arr[i] = sc.nextInt();
-            if(i%2 == 0){
+            if(i%2 == 0) {
                 sum1 = sum1+arr[i];
             }
             else {
