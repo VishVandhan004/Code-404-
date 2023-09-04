@@ -2990,7 +2990,7 @@ class test {
             if(i%2 == 0){
                 sum1 = sum1+arr[i];
             }
-            else{
+            else {
                 sum2 = sum2+arr[i];
             }
         }
