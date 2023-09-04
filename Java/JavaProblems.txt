@@ -2952,16 +2952,13 @@ class test {
         int size = sc.nextInt();
         System.out.println("Enter the elements of the array: ");
         int arr[] = new int[size];
-        for(int i=0;i<size;i++)
-        {
+        for(int i=0;i<size;i++) {
             System.out.print("Element at index "+i+": ");
             arr[i] = sc.nextInt();
         }
         System.out.println("Elements at even indices: ");
-        for(int i=0;i<size;i++)
-        {
-            if(i%2==0)
-            {
+        for(int i=0;i<size;i++) {
+            if(i%2==0) {
                 System.out.println("Element at index "+(i)+": " + arr[i]);
             }
         }
