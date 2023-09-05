@@ -2724,8 +2724,7 @@ class Remove {
         }
         System.out.print("Enter the position of the element to be removed: ");
         int pos = sc.nextInt();
-        for(int i=pos;i<size-1;i++)
-        {
+        for(int i=pos;i<size-1;i++) {
             arr[i]=arr[i+1];
         }
         System.out.println("Array after removing the element: ");
