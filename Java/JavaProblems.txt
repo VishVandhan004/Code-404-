@@ -2729,8 +2729,7 @@ class Remove {
             arr[i]=arr[i+1];
         }
         System.out.println("Array after removing the element: ");
-        for(int i=0;i<size-1;i++)
-        {
+        for(int i=0;i<size-1;i++) {
             System.out.print(arr[i]+ " ");
         }
     }
