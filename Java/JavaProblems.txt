@@ -2674,8 +2674,7 @@ class Array1 {
         int ele = sc.nextInt();
         System.out.println("Enter the index to insert the element at: ");
         int ind = sc.nextInt();
-        for(int i=n;i>ind;i--)
-        {
+        for(int i=n;i>ind;i--) {
             arr[i] = arr[i-1];
         }
         arr[ind] = ele;
