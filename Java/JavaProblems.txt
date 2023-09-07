@@ -2553,7 +2553,7 @@ Account balance: 23450.0
 4. Check account balance
 0. Exit
 Enter your choice: 0
-Exiting... 
+Exiting...
 
 import java.util.*;
 class BankAcc {
