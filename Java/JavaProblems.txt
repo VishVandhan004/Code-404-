@@ -2288,7 +2288,7 @@ public class Solution {
                 break;
             } 
         }
-        if(isPalindrome){
+        if(isPalindrome) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
