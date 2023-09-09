@@ -2247,8 +2247,7 @@ public class opentextfour {
         }
         int x = 2*sum;
         String s ="";
-        if(x<10)
-        {
+        if(x<10) {
             x=x-1;
             s='1'+Integer.toString(x);
         }
