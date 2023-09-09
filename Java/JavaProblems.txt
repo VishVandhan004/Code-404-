@@ -2283,7 +2283,7 @@ public class Solution {
         int len = A.length();
         boolean isPalindrome = true;
         for(int i=0;i<len/2;i++){
-            if(A.charAt(i) != A.charAt(len-i-1)){
+            if(A.charAt(i) != A.charAt(len-i-1)) {
                 isPalindrome = false;
                 break;
             } 
