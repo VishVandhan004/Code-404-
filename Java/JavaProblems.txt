@@ -2251,8 +2251,7 @@ public class opentextfour {
             x=x-1;
             s='1'+Integer.toString(x);
         }
-        else
-        {
+        else {
             while(x>9)
             {
                 x=x-9;
