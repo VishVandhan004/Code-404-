@@ -2170,8 +2170,7 @@ public class opentexttwo {
         String s = sc.nextLine();
         String sa [] = s.split(" ");
         int arr [] = new int [sa.length];
-        for(int i=0;i<sa.length;i++)
-        {
+        for(int i=0;i<sa.length;i++) {
             arr[i]=Integer.valueOf(sa[i]);
         }
         System.out.println(task(arr));
