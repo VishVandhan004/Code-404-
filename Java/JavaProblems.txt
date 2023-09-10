@@ -2176,8 +2176,7 @@ public class opentexttwo {
         System.out.println(task(arr));
     }
     public static boolean task(int arr[]) {
-        if(arr.length%2!=0)
-        {
+        if(arr.length%2!=0) {
             return false;
         }
         int n= arr.length-1;
