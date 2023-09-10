@@ -2212,8 +2212,7 @@ public class opentextthree {
             return n;
         }
         String s="";
-        while(n>9)
-        {
+        while(n>9) {
             n=n-9; 
             s=s+'9';
         }
