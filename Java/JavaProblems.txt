@@ -2207,8 +2207,7 @@ public class opentextthree {
         System.out.println(task(n));
     }
     public static int task(int n) {
-        if(n<10)
-        {
+        if(n<10) {
             return n;
         }
         String s="";
