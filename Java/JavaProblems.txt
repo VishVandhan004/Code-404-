@@ -2141,8 +2141,7 @@ public class opentextone {
         }
          System.out.println(map);
         int max =0;
-        for(HashMap.Entry<Integer,Integer> entry  : map.entrySet())
-        {
+        for(HashMap.Entry<Integer,Integer> entry  : map.entrySet()) {
             int k = entry.getKey();
             int v = entry.getValue();
             if(k==v && v>1 ) {
