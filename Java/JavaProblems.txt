@@ -2134,8 +2134,7 @@ public class opentextone {
             {
                 map.put(arr[i],map.get(arr[i])+1);
             }
-            else
-            {
+            else {
                 map.put(arr[i],1);
             }
         }
