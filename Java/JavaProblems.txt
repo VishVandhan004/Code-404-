@@ -2145,8 +2145,7 @@ public class opentextone {
         {
             int k = entry.getKey();
             int v = entry.getValue();
-            if(k==v && v>1 )
-            {
+            if(k==v && v>1 ) {
                 if(k>max) {
                     max=k;
                 }
