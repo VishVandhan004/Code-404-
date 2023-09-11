@@ -2128,8 +2128,7 @@ public class opentextone {
             arr[i]=Integer.valueOf(sa[i]);
         }
         HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i=0;i<arr.length;i++)
-        {
+        for(int i=0;i<arr.length;i++) {
             if(map.get(arr[i])!=null)//map.containsKey() {
                 map.put(arr[i],map.get(arr[i])+1);
             }
