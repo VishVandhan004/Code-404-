@@ -2011,8 +2011,7 @@ class Test {
         System.out.println(v.remove(1));
         System.out.println(v.set(1,2));
         Iterator<Integer> it=v.iterator();
-        while(it.hasNext())
-        {
+        while(it.hasNext()) {
             System.out.print(it.next()+" ");
         }
     }
