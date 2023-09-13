@@ -1935,8 +1935,7 @@ class Test {
         System.out.println(ll.indexOf(1));
         ll.set(0,6);
         Iterator<Integer> it=ll.iterator();
-        while(it.hasNext())
-        {
+        while(it.hasNext()) {
             System.out.print(it.next()+" ");
         }
     }
