@@ -1959,8 +1959,7 @@ class Test {
         System.out.println(t.remove(3));
         System.out.println(t.size());
         System.out.println(t.values()+" ");
-        for(Map.Entry<Integer,String> me:t.entrySet())
-        {
+        for(Map.Entry<Integer,String> me:t.entrySet()) {
             System.out.println(me.getKey()+"-"+me.getValue());
         }
     }
