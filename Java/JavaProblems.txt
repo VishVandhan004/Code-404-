@@ -1902,14 +1902,13 @@ class Test {
         System.out.println("Get"+cs.get(1));     // gets the element at index  
         cs.remove(2);  // removes element at index 
         Iterator<Integer> it = cs.iterator();
-        while(it.hasNext()){
+        while(it.hasNext()) {
             System.out.println(it.next());
         }
         ArrayList<String> cs1 = new ArrayList<String>();
         cs1.add("xyz");
         cs1.add("abc");
         cs1.add("def");
-        
     }
 }                              
 
