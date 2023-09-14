@@ -1742,8 +1742,7 @@ class test {
             nums[i] = Integer.parseInt(arr[i]);
         }
         int count=0;
-        for(int i=0;i<n;i++)
-        {
+        for(int i=0;i<n;i++) {
             if(nums[i] == -1) {
                 continue;
             }
