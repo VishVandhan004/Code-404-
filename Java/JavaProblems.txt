@@ -1899,7 +1899,7 @@ class Test {
         cs.add(3);
         cs.add(4);
         cs.add(5);
-        System.out.println("Get"+cs.get(1));     // gets the element at index  
+        System.out.println("Get"+cs.get(1));     
         cs.remove(2);  // removes element at index 
         Iterator<Integer> it = cs.iterator();
         while(it.hasNext()) {
