@@ -1744,8 +1744,7 @@ class test {
         int count=0;
         for(int i=0;i<n;i++)
         {
-            if(nums[i] == -1)
-            {
+            if(nums[i] == -1) {
                 continue;
             }
             for(int j=i+1;j<n;j++) {
