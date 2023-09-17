@@ -1651,8 +1651,7 @@ class Test {
         HashSet<Character> hs = new HashSet<>(); 
         for(int i=0;i<=9;i++) 
         { 
-            for(int j=0;j<str.length();j++) 
-            { 
+            for(int j=0;j<str.length();j++) { 
                 if((str.charAt(j)-48)==i) 
                     hs.add(str.charAt(j-1)); 
             } 
