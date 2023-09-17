@@ -1692,8 +1692,7 @@ class Test {
         { 
             ll1.add(Integer.parseInt(str[i])); 
         } 
-        if(ll.equals(ll1)) 
-        { 
+        if(ll.equals(ll1)) { 
             System.out.println("yes"); 
         } 
         else { 
