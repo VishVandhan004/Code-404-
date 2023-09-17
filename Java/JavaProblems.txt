@@ -1683,8 +1683,7 @@ class Test {
         String s = sc.nextLine(); 
         String str[] = s.split(","); 
         LinkedList <Integer> ll = new LinkedList<Integer>(); 
-        for(int i=0;i<str.length;i++) 
-        { 
+        for(int i=0;i<str.length;i++) { 
             ll.add(Integer.parseInt(str[i])); 
         } 
         LinkedList<Integer> ll1 = new LinkedList<Integer> (); 
