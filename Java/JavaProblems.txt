@@ -1616,8 +1616,7 @@ class test {
         for(int i=1;i<routes.length;i+=2) {
             destinations.add(routes[i]);
         }
-        for(int i=0;i<routes.length;i+=2)
-        {
+        for(int i=0;i<routes.length;i+=2) {
             destinations.remove(routes[i]);
         }
         String destinationState = destinations.get(0);
