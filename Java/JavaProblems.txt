@@ -1688,8 +1688,7 @@ class Test {
             ll.add(Integer.parseInt(str[i])); 
         } 
         LinkedList<Integer> ll1 = new LinkedList<Integer> (); 
-        for(int i=str.length-1;i>=0;i--) 
-        { 
+        for(int i=str.length-1;i>=0;i--) { 
             ll1.add(Integer.parseInt(str[i])); 
         } 
         if(ll.equals(ll1)) { 
