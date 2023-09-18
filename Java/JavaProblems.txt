@@ -1567,8 +1567,7 @@ class test {
         }
         int sum = 0;
         for(Map.Entry<String, Integer> me:mp.entrySet()) {
-            if(me.getValue() == 1)
-            {
+            if(me.getValue() == 1) {
                 int d = Integer.parseInt(me.getKey());
                 sum = sum+d;
             }
