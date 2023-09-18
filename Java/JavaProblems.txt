@@ -1554,8 +1554,7 @@ class test {
         String s = sc.nextLine();
         String[] sa = s.split(" ");
         Map<String, Integer> mp = new HashMap<>();
-        for(int i=0;i<sa.length;i++)
-        {
+        for(int i=0;i<sa.length;i++) {
             if(mp.containsKey(sa[i])) {
                 int a = mp.get(sa[i]);
                 mp.put(sa[i],a+1);
