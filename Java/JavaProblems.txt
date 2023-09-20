@@ -1426,8 +1426,7 @@ class test {
                set.add(c);
            }
        }
-       if(!set.isEmpty())
-       {
+       if(!set.isEmpty()) {
            len++;
        }
        System.out.println(len);
