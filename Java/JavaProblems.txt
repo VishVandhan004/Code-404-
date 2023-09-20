@@ -1501,8 +1501,7 @@ class test {
         Map<Character,Integer> mp = new HashMap<>();
         for(int i=0;i<st.length;i++)
         {
-            if(mp.containsKey(st[i]))
-            {
+            if(mp.containsKey(st[i])) {
                 int a = mp.get(st[i]);
                 mp.put(st[i],a+1);
             }
