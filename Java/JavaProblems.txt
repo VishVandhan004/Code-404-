@@ -1512,8 +1512,7 @@ class test {
         }
         int out=0;
         int min=0;
-        for(Map.Entry<Character,Integer> me:mp.entrySet())
-        {
+        for(Map.Entry<Character,Integer> me:mp.entrySet()) {
             char d = me.getKey();
             if(d=='c' || d=='s' || d=='e') {
                 out = me.getValue();
