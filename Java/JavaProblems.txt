@@ -1418,8 +1418,7 @@ class test {
        Set<Character> set = new HashSet<>();
        for(char c: str.toCharArray())
        {
-           if(set.contains(c))
-           {
+           if(set.contains(c)) {
                set.remove(c);
                len+=2;
            } else {
