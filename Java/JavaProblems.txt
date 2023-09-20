@@ -1416,8 +1416,7 @@ class test {
        String str = sc.nextLine();
        int len = 0;
        Set<Character> set = new HashSet<>();
-       for(char c: str.toCharArray())
-       {
+       for(char c: str.toCharArray()) {
            if(set.contains(c)) {
                set.remove(c);
                len+=2;
