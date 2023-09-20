@@ -1518,8 +1518,7 @@ class test {
             if(d=='c' || d=='s' || d=='e')
             {
                 out = me.getValue();
-                if(out<min)
-                {
+                if(out<min) {
                     out = min;
                 }
             }
