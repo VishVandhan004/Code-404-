@@ -1499,8 +1499,7 @@ class test {
         String s = sc.nextLine();
         char[] st = s.toCharArray();
         Map<Character,Integer> mp = new HashMap<>();
-        for(int i=0;i<st.length;i++)
-        {
+        for(int i=0;i<st.length;i++) {
             if(mp.containsKey(st[i])) {
                 int a = mp.get(st[i]);
                 mp.put(st[i],a+1);
