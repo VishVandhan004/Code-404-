@@ -1338,8 +1338,7 @@ class Test {
             } 
             else  
             { 
-                if(map.containsValue(s)) 
-                { 
+                if(map.containsValue(s)) { 
                     match = false; 
                     break; 
                 } 
