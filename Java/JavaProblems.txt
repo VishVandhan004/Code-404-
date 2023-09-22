@@ -1336,8 +1336,7 @@ class Test {
                     break; 
                 } 
             } 
-            else  
-            { 
+            else  { 
                 if(map.containsValue(s)) { 
                     match = false; 
                     break; 
