@@ -1328,8 +1328,7 @@ class Test {
         { 
             char c = str1.charAt(i); 
             String s = str2arr[i]; 
-            if(map.containsKey(c)) 
-            { 
+            if(map.containsKey(c)) { 
                 if(!map.get(c).equals(s)) { 
                     match = false; 
                     break; 
