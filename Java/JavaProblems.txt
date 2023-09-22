@@ -1330,8 +1330,7 @@ class Test {
             String s = str2arr[i]; 
             if(map.containsKey(c)) 
             { 
-                if(!map.get(c).equals(s)) 
-                { 
+                if(!map.get(c).equals(s)) { 
                     match = false; 
                     break; 
                 } 
