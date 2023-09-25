@@ -1262,8 +1262,7 @@ class Test {
         if(start == -1 || end == -1 || start > end) {
             System.out.println("No substring found");
         }
-        else
-        {
+        else {
         System.out.println("Max. Substring is:" + str.substring(start,end+1));
         }
     }
