@@ -1099,7 +1099,7 @@ class test {
         {
             boolean[] visited = new boolean[26];
             boolean isUnique = true;
-            for(int j=i;j<i+4;j++){
+            for(int j=i;j<i+4;j++) {
                 if(visited[str.charAt(j)-'a']) {
                  isUnique = false;
                  break;
