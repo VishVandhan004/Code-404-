@@ -1095,7 +1095,7 @@ class test {
         String str = sc.nextLine();
         int length = str.length();
         int count=0;
-        for(int i=0;i<length-3;i++){
+        for(int i=0;i<length-3;i++) {
             boolean[] visited = new boolean[26];
             boolean isUnique = true;
             for(int j=i;j<i+4;j++) {
