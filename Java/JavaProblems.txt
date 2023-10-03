@@ -1108,8 +1108,7 @@ class test {
                 }
               visited[str.charAt(j) - 'a'] = true;
             }
-            if(isUnique)
-            {
+            if(isUnique){
                 System.out.println(str.substring(i,i+4));
                 count++;
             }
