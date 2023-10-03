@@ -1101,8 +1101,7 @@ class test {
             boolean isUnique = true;
             for(int j=i;j<i+4;j++)
             {
-                if(visited[str.charAt(j)-'a'])
-                {
+                if(visited[str.charAt(j)-'a']){
                  isUnique = false;
                  break;
                 }
