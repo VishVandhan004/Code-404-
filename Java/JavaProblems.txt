@@ -1022,7 +1022,7 @@ class test {
      int length = arr.length;
      int[] Nlist = new int[length];
      int sum1 = 0;
-     for(int i=0;i<length;i++){
+     for(int i=0;i<length;i++) {
          Nlist[i] = Integer.parseInt(arr[i]);
      }
      for(int i=0;i<length;i++) {
