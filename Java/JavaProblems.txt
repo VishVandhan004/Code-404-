@@ -1062,9 +1062,9 @@ class test {
         int total = sc.nextInt();
         int exchange = sc.nextInt();
         int count = total;
-        while(total >= exchange){
+        while(total >= exchange) {
             count = count+total/exchange;
-            total = total/exchange + total%exchange;
+            total = total/exchange + total % exchange;
         }
         System.out.print(count);
     }
