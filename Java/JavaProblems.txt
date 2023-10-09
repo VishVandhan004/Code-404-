@@ -1026,7 +1026,7 @@ class test {
          Nlist[i] = Integer.parseInt(arr[i]);
      }
      for(int i=0;i<length;i++){
-         for(int j=i;j<length;j=j+2){
+         for(int j=i;j<length;j=j+2) {
              for(int k=i;k<=j;k++) {
                  sum1 = sum1 + Nlist[k];
              }
