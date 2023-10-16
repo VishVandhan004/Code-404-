@@ -970,7 +970,7 @@ class test {
        int len = arr.length;
        int nums[] = new int[len+1];
        int count=0;
-       for(int i=0;i<len;i++){
+       for(int i=0;i<len;i++) {
            nums[i] = Integer.parseInt(arr[i]);
        }
        for(int i=0; i<len; i++) {
