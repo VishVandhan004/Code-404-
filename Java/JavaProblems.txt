@@ -931,8 +931,7 @@ class test {
         {
             newarr1[i] = Integer.parseInt(arr1[i]);
             newarr2[i] = Integer.parseInt(arr2[i]);
-           if(newarr1[i] <= queryTime && newarr2[i] >= queryTime)
-          {
+           if(newarr1[i] <= queryTime && newarr2[i] >= queryTime) {
             count++;
           }
         }
