@@ -1,3 +1,0 @@
-Hi,
-welcome to the demo.txt file
-thanks.
