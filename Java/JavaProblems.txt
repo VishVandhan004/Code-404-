@@ -52,7 +52,7 @@ class test {
             { 
                 System.out.printf("The oldest person is %d",a); 
             } 
-            else{ 
+            else { 
                 System.out.printf("The oldest person is %d",c); 
             } 
         } 
