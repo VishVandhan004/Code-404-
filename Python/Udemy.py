@@ -1,5 +1,6 @@
 # String Slicing, Indexing and Methods
 ch = "ENGINEERING"
+a = 'hello world'
 print(ch[0])
 print(ch[-1])
 print(ch[4])
@@ -7,7 +8,9 @@ print(ch[1:12:2])
 print(ch[2:])
 print(ch[:3])
 print(ch[3:6])
-print(ch.upper())
+print(ch.lower())
+print(a.split())
+print(a.split('o'))
 
 #String Concatenation
 name = 'sam'
