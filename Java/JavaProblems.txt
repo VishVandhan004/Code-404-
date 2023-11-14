@@ -4192,26 +4192,17 @@ public class Solution{
 Sony, a student has given a date by his teacher. 
 The teacher taught him the Dates and Calenders in the class today. 
 The teacher wants to test the Sony whether he understood or not.
-
 She gives a date to sony and ask to print the following date. 
-
 Help Sony to print the next date. 
-
 Note - If the Date is invalid, Sony has to print -1 
 Dont Use Any Pre Defined Date and Time API 
-
 Input - The Input contains the following format "DD-MM-YYYY"
 Output - Print the output int the following format "DD-MM-YYYY"
-
 input = 30-11-2000
 output = 01-12-2000
-
 input = 31-09-2000
 output = -1 
-
 There will be only 30 days in the September month. So prints -1 
-
-
 
 import java.util.*;
 class test
