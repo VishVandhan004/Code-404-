@@ -4366,36 +4366,26 @@ class test
     }
 }
 
-
-
+105th Problem
 Suman is given two words first word and second word 
 he is playing a game to create second word from first word. 
-
 He has to follow the below rules 
         - Replace all the occurrences of a character in first word with any other letter.
 	- Repeat the above rule to create secondword from firstword.
-	
 	NO two characters in first world should map to same character 
 	 Assume both words have same length.
-
 If he is able to do, print "hurray" else print "oh no" 
-
 input = 
 paper 
 title
 output = hurray
-
 Explanation:
 ----------------
 'p' is replaced with 't', 'a' is with 'i', 'e' is with 'l', and 'r' with 'e'.
-
-
 input = 
 memo 
 demo
 output = ohno
-
-
 
 import java.util.*;
 class test
