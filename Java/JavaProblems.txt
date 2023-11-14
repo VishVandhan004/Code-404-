@@ -3992,3 +3992,58 @@ public class ValidParentheses {
         System.out.println("Sample 2: " + isValid(input2));
     }
 }
+
+99th Problem
+Imagine you have a basket of apples, each apple representing a number stored in an array called "nums." We want to create another basket called "runningSum" to keep track of the cumulative total of apples as we pick them one by one from the original basket.
+To clarify, the runningSum at a specific position 'i' is like counting the total number of apples you have picked from the original basket up to that point, including the apple at position 'i.'
+Your task is to determine the number of apples in the runningSum basket at each position 'i' and return the runningSum basket as the final result.
+Input Format:
+-------------------
+Line-1: A number, size of the array
+Line-2: N line separated integers, number of apples
+Output Format:
+-------------------
+Line-1: Space separated two numbers, indices
+
+
+Sample Input:
+--------------
+4
+1 2 3 4
+
+Sample Output:
+---------------
+1 3 6 10
+
+
+Sample Input:
+--------------
+5
+1 1 1 1 1
+
+Sample Output:
+--------------
+1 2 3 4 5
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] nums = new int[size];
+        for(int i=0;i<size;i++){
+            nums[i] = sc.nextInt();
+        }
+        int[] runningsum = new int[size];
+        int sum = 0;
+        for(int i=0;i<size;i++){
+            sum +=nums[i];
+            runningsum[i] = sum;
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(runningsum[i] + " ");
+        }
+    }
+}
+
+100th Problem
