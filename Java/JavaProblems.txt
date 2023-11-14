@@ -4087,29 +4087,24 @@ Sample Output:
 
 import java.util.*;
 public class Solution {
-    public static int[] findtwo(int[] nums, int target){
-        Map<Integer,Integer> num = new HashMap<>();
-        for(int i=0;i<nums.length;i++){
-            int c = target - nums[i];
-            if(num.containsKey(c)){
-                return new int[]{num.get(c), i};
-            }
-            num.put(nums[i],i);
-        }
-        return new int[]{-1,-1};
-    }
-    public static void main(String[] args){
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int[] coins = new int[size];
-        for(int i=0;i<size;i++){
-            coins[i] = sc.nextInt();
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
         }
-        int targetsum = sc.nextInt();
-        int[] result = findtwo(coins,targetsum);
-        System.out.println(result[0] + " "+result[1]);
+        int sum = sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i] + arr[j] ==sum){
+                    System.out.print(i+" "+j);
+                    System.exit(0);
+                }
+            }
+        }
     }
-}
+  }
 
 101st Problem
 A English teacher, would like to present a language challenge. Imagine you have a sentence written with words and spaces. Your task is to determine the length of the final word in this sentence. A word, in this context, is defined as a group of characters without any spaces in between. Your goal is to find the length of the very last word in this sentence.
@@ -4138,3 +4133,2012 @@ public class Solution{
 }
 
 102nd Problem
+Christina has given a task to break his friends code 
+he will given all lower case alphabets  and code as the input 
+Christina has to figure the text from the code and display the text 
+
+Input - The first line of input consists of lower case alphabets and code 
+The first alphabet letter will given 01, second alphabet will be given 02, and so on 
+Output - Break the code and display the string 
+
+
+Sample Test Case - 1 
+input =
+abcdefghijklmnopqrstuvwxyz
+110525
+
+Explantion - 
+From the above test case we have 'a' has '01', 'b' has '02', and finally 'z' has '26' 
+where each alphabet will be assigned a two digit number 
+and for the code 110525 the characters will be 11 as 'k', 05 as 'e' and 25 as 'y' 
+so the output is "key" 
+
+Sample Test Case - 2
+input =
+qpwoeirutyalskdjfhgzmxncbv
+131013090521
+output = system
+
+
+Explantion - From the above test case we have 'q' as '01' , 'p' as '02' and finally 'v' as '26'
+and for the code 131013090521 we have the following code 
+13-s
+10-y
+13-s
+09-t
+05-e
+21-m
+
+so the output is system
+
+import java.util.*;
+public class Solution{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String word = sc.next();
+        String code = sc.next();
+        StringBuilder sb = new StringBuilder();
+        char str[] = word.toCharArray();
+        HashMap<Integer,Character> hm = new HashMap<>();
+        for(int i=0;i<str.length;i++){
+            hm.put(i+1,str[i]);
+        }
+        int arr[] = new int[code.length()/2];
+        for(int i=0;i<arr.length;i++){
+            arr[i] = Integer.parseInt(code.substring(2*i,2*i+2));
+        }
+        for(int key:arr){
+            if(hm.containsKey(key)){
+                sb.append(hm.get(key));
+            }
+        }
+        System.out.println(sb);
+    }
+}
+
+103rd Problem
+Sony, a student has given a date by his teacher. 
+The teacher taught him the Dates and Calenders in the class today. 
+The teacher wants to test the Sony whether he understood or not.
+
+She gives a date to sony and ask to print the following date. 
+
+Help Sony to print the next date. 
+
+Note - If the Date is invalid, Sony has to print -1 
+Dont Use Any Pre Defined Date and Time API 
+
+Input - The Input contains the following format "DD-MM-YYYY"
+Output - Print the output int the following format "DD-MM-YYYY"
+
+input = 30-11-2000
+output = 01-12-2000
+
+input = 31-09-2000
+output = -1 
+
+There will be only 30 days in the September month. So prints -1 
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String str[]=s.split("-");
+        int day=Integer.parseInt(str[0]);
+        int month=Integer.parseInt(str[1]);
+        int year=Integer.parseInt(str[2]);
+        if(day<0 || day>31 || month<0 || month>12 || year<0)
+        {
+            System.out.println("-1");
+            System.exit(0);
+        }
+        else
+        {
+            if(month==2)//feb month
+            {
+                if(year%4==0)//leap year
+                {
+                    if(day==29)//29 days
+                    {
+                        day=1;
+                        month=3;
+                    }
+                    else if(day>29)
+                    {
+                        System.out.println("-1");
+                        System.exit(0);
+                    }
+                    else//not 29 days
+                    {
+                        day=day+1;
+                    }
+                }
+                else//not a leap year
+                {
+                    if(day==28)//28 days
+                    {
+                        day=1;
+                        month=3;
+                    }
+                    else if(day>28)
+                    {
+                        System.out.println("-1");
+                        System.exit(0);
+                    }
+                    else//not 28 days
+                    {
+                        day=day+1;
+                    }
+                }
+            }
+            else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)//31 days
+            {
+                if(day==31)//31 day
+                {
+                    if(month==12)//last day of the year
+                    {
+                        day=1;
+                        month=1;
+                        year=year+1;
+                    }
+                    else//other months
+                    {
+                        day=1;
+                        month=month+1;
+                    }
+                }
+                else//not a 31 day
+                {
+                    day=day+1;
+                }
+            }
+            else
+            {
+                if(day==30)//30 days
+                {
+                    day=1;
+                    month=month+1;
+                }
+                else if(day>30)
+                {
+                    System.out.println("-1");
+                    System.exit(0);
+                }
+                else
+                {
+                    day=day+1;
+                }
+            }
+            System.out.printf("%02d-%02d-%04d",day,month,year);
+        }
+    }
+}
+
+
+
+Ramu is playing a game on a 2D Plane, 
+he has given n points with co-ordinates p[i]=(x,y);
+
+He has to visit all the points in the order given by points in minimum time. 
+
+His moves can be as follows.
+
+In 1 second, he can go  vertically by 1 unit,go horizontally by 1 unit, or
+go diagonally sqrt(2) units (in other words, go one 1 unit vertically then 1 unit horizontally in 1 second).
+
+he has to visit the points in the same given order as they appear in the given list.
+He is also allowed to pass through points that appear later in the order, but these do not count as visits.
+
+Input - The First line of input consists of the Number of Points(n) followed by n points
+
+Sample Test Case - 1
+Input = 3
+1 1
+3 4
+-1 0
+output = 7
+
+Explanation: One optimal path is [1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]   
+Time from [1,1] to [3,4] = 3 seconds 
+Time from [3,4] to [-1,0] = 4 seconds
+Total time = 7 seconds
+
+
+Sample Test Case - 2
+Input = 2
+3 2
+-2 2
+output = 5
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[][]=new int[n][2];
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<2;j++)
+            {
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        int x=0,y=0,sum=0,count=0;
+        for(int i=0;i<n-1;i++)
+        {
+            x=arr[i][0]-arr[i+1][0];
+            y=arr[i][1]-arr[i+1][1];
+            if(x==0 || y==0)
+            {
+                sum=x+y;
+                sum=Math.abs(sum);
+            }
+            else
+            {
+                sum=x+y;
+                sum=(sum/2)+(sum%2);
+                sum=Math.abs(sum);
+            }
+            count=count+sum;
+        }
+        System.out.println(count);
+    }
+}
+
+
+
+Suman is given two words first word and second word 
+he is playing a game to create second word from first word. 
+
+He has to follow the below rules 
+        - Replace all the occurrences of a character in first word with any other letter.
+	- Repeat the above rule to create secondword from firstword.
+	
+	NO two characters in first world should map to same character 
+	 Assume both words have same length.
+
+If he is able to do, print "hurray" else print "oh no" 
+
+input = 
+paper 
+title
+output = hurray
+
+Explanation:
+----------------
+'p' is replaced with 't', 'a' is with 'i', 'e' is with 'l', and 'r' with 'e'.
+
+
+input = 
+memo 
+demo
+output = ohno
+
+
+
+import java.util.*;
+class test
+{
+    public static String check(String s1,String s2)
+    {
+        if(s1.length()!=s2.length())
+        {
+            return "ohno";
+        }
+        else
+        {
+            HashMap<Character,Character> hm=new HashMap<>();
+            for(int i=0;i<s1.length();i++)
+            {
+                char c1=s1.charAt(i);
+                char c2=s2.charAt(i);
+                if(hm.containsKey(c1))
+                {
+                    if(hm.get(c1)!=c2)
+                    {
+                        return "ohno";
+                    }
+                }
+                else
+                {
+                    hm.put(c1,c2);
+                }
+            }
+            return "hurray";
+        }
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        String s2=sc.next();
+        System.out.println(check(s1,s2));
+    }
+}
+
+
+
+Open AI is working on the below task. 
+The task is as follows 
+++i
+i++
+--i
+i--
+
+By Default i value is given as '0'
+
+The Open AI has to design the code to give the result for this operations  
+ 
+
+Example 1:
+
+Input = --i i++ i++ i++
+Output = 1
+Explanation: The operations are performed as follows:
+Initially, i = 0.
+--i: i is decremented by 1, i =  0 - 1 = -1.
+i++: i is incremented by 1, i = -1 + 1 =  0.
+i++: i is incremented by 1, i =  0 + 1 =  1.
+i++: i is incremented by 1, i =  1 + 1 =  2.
+
+
+import java.util.*;
+class test
+{
+    public static int sum(String s)
+    {
+        String str[]=s.split(" ");
+        int i=0;
+        for(int j=0;j<str.length;j++)
+        {
+            if(str[j].charAt(1)=='+')
+            {
+                i=i+1;
+            }
+            else
+            {
+                i=i-1;
+            }
+        }
+        return i;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        System.out.println(sum(s));
+    }
+}
+
+
+
+Dolu has given a Mobile.
+His mobile has a special keypad with all alphabets in a same row. 
+Initially, Dolus finger is at index 0. 
+To type a character, he has to move his finger to the index of the desired character. 
+The time taken to move his finger from index i to index j is |i - j|.
+
+Your task is to calculate the time taken for typing the characters on the keypad
+
+The First line of input contains the alphabets(a-z) arranged in random order followed by the word to be typed.
+
+Input = abcdefghijklmnopqrstuvwxyz
+cba
+Output = 4
+Explanation: The index moves from 0 to 2 to write 'c' then to 1 to write 'b' then to 0 again to write 'a'.
+Total time = 2 + 1 + 1 = 4. 
+
+input = pqrstuvwxyzabcdefghijklmno 
+word = spt
+output = 10
+
+
+import java.util.*;
+class test
+{
+    public static int tsum(String s,String str)
+    {
+        String word[]=str.split("");
+        int sum=0;
+        int initial=0;
+        for(String a:word)
+        {
+            int len=s.indexOf(a);
+            sum=sum+Math.abs(initial-len);
+            initial=len;
+        }
+        return sum;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String str=sc.next();
+        System.out.println(tsum(s,str));
+    }
+}
+
+
+
+Shyam a third class student is a given and date
+His teacher asked him to find out the day of the date in the given year.
+Help Shyam to solve this problem 
+
+The Input Date Contains DD MM YYYY Format
+Assume the Input Date is valid date
+
+
+input = 31 12 2010
+output = 365
+
+input = 01 02 1995
+output = 32
+
+1st Feb is 32 Day in the year.
+
+Note - Dont Use Pre Defined Date and Time Class
+
+
+
+import java.util.*;
+class test
+{
+    public static int count(int day,int month,int year)
+    {
+        int days=0;
+        int months[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+        if(year%4==0)
+        {
+            if(year%100==0)
+            {
+                if(year%400==0)
+                {
+                    months[2]=29;
+                }
+                else
+                {
+                    months[2]=28;
+                }
+            }
+            else
+            {
+                months[2]=29;
+            }
+        }
+        for(int i=1;i<=month;i++)
+        {
+            days=days+months[i-1];
+        }
+        return days+day;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int day=sc.nextInt();
+        int month=sc.nextInt();
+        int year=sc.nextInt();
+        System.out.println(count(day,month,year));
+    }
+}
+
+
+
+You are given two strings s1 and s2 of equal length. 
+A string swap is an operation where you choose two indices in a string(not necessarily different) and 
+swap the characters at these indices.
+
+Return true if it is possible to make both strings equal by performing at most one string swap on exactly one of the strings. 
+Otherwise, return false.
+
+ 
+
+Sample Input1:
+-------------
+bank
+kanb
+Sample Output1: 
+--------------
+true
+
+Explanation: For example, swap the first character with the last character of s2 to make "bank".
+
+Sample Input2:
+-------------
+hyderabad
+secunderabad
+
+Sample Output2: 
+--------------
+false
+
+Explanation: It is impossible to make them equal with one string swap.
+
+Sample Input3:
+-------------
+kmit
+kmit
+
+Sample Output3: 
+--------------
+true
+
+Explanation: The two strings are already equal, so no string swap operation is required.
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        String str1[]=s1.split("");
+        String str2[]=s2.split("");
+        Arrays.sort(str1);
+        Arrays.sort(str2);
+        int count=0;
+        if(str1.length==str2.length)
+        {
+            for(int i=0;i<str1.length;i++)
+            {
+                if(str1[i].equals(str2[i]))
+                {
+                    count=count+1;;
+                }
+            }
+            if(count==str1.length)
+            {
+                System.out.println("true");    
+            }
+            else
+            {
+                System.out.println("false");
+            }
+        }
+        else
+        {
+            System.out.println("false");
+        }
+    }
+}
+
+
+Arjun is playing a word game in his tab. When he start the game , It displays a
+word and he has to check for any two adjacent characters which are same.If found 
+he has to select those two characters by tapping, so that both characters will
+be deleted from the word and the word size shrinks by 2. This process to be 
+repeated until the word has no two adjacent characters are same.
+You task is to help Arjun to perform the above task and Return the final word
+obtained.
+
+Input Format:
+-------------
+Line-1: A string represents the word.
+
+Output Format:
+--------------
+Return a string or empty string.
+
+Constraints:
+------------   
+    1 <= word.length <= 10^5   
+    word consists only lower case letters.
+
+Sample Input-1:
+---------------
+pqqprs
+
+Sample Output-1:
+----------------
+rs
+
+Explanation:
+-------------
+Initially , Delete two 'q's then the word will be 'pprs'. Now Delete two 'p's 
+then the word will be rs.
+
+Sample Input-2:
+---------------
+pqqqprrs
+
+Sample Output-2:
+----------------
+pqps
+
+Explanation:
+-------------
+Initially , Delete two 'q's then the word will be 'pqprrs'. Now Delete two 'r's
+then the word will be pqps.
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toLowerCase();
+        Stack<Character> st=new Stack<>();
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            if(st.isEmpty())
+            {
+                st.push(a);
+            }
+            else if(st.peek()!=a)
+            {
+                st.push(a);
+            }
+            else
+            {
+                st.pop();
+            }
+        }
+        for(int i=0;i<st.size();i++)
+        {
+            System.out.print(st.get(i));
+        }
+    }
+}
+
+
+
+Mr Somanath is a math teacher. He is given a problem to his students.
+The students are given a number N, and the student has to perform following step:
+   - Add each digit of the number and add the result to N
+Repeat this procedure until N becomes a single digit number.
+
+Your task is to help the students to perform the above steps and 
+print the resultant single digit number N.
+
+Input Format:
+-------------
+An integer, number N.
+
+Output Format:
+--------------
+Print an integer result.
+
+
+Sample Input-1:
+---------------
+95
+
+Sample Output-1:
+----------------
+5
+
+Explanation: 
+------------
+95 => 9 + 5 = 14
+14 => 1 + 4 = 5
+Answer is 5
+
+
+Sample Input-2:
+---------------
+765
+
+Sample Output-2:
+----------------
+9
+
+
+import java.util.*;
+class test
+{
+    static int rsum(int n)
+    {
+        int sum=0;
+        if(n<10)
+        {
+            return n;
+        }
+        while(n>0)
+        {
+            int temp=n%10;
+            sum=sum+temp;
+            n=n/10;
+        }
+        return rsum(sum);
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(rsum(n));
+    }
+}
+
+
+
+You are given two strings word1 and word2. Merge the strings by
+adding letters in alternating order, starting with word1. 
+If a string is longer than the other, append the additional letters onto the 
+end of the merged string.
+
+Return the merged string.
+
+
+
+Input: word1 = "abc", word2 = "pqr"
+Output: "apbqcr"
+Explanation: The merged string will be merged as so:
+word1:  a   b   c
+word2:    p   q   r
+merged: a p b q c r
+
+
+Input: word1 = "ab", word2 = "pqrs"
+Output: "apbqrs"
+Explanation: Notice that as word2 is longer, "rs" is appended to the end.
+word1:  a   b 
+word2:    p   q   r   s
+merged: a p b q   r   s
+Example 3:
+
+Input: word1 = "abcd", word2 = "pq"
+Output: "apbqcd"
+Explanation: Notice that as word1 is longer, "cd" is appended to the end.
+word1:  a   b   c   d
+word2:    p   q 
+merged: a p b q c   d
+
+
+
+import java.util.*;
+class test
+{
+    public static StringBuilder merge(String s1,String s2)
+    {
+        StringBuilder sb=new StringBuilder();
+        int len=Math.min(s1.length(),s2.length());
+        for(int i=0;i<len;i++)
+        {
+            sb.append(s1.charAt(i));
+            sb.append(s2.charAt(i));
+        }
+        if(s1.length()>s2.length())
+        {
+            for(int i=len;i<s1.length();i++)
+            {
+                sb.append(s1.charAt(i));
+            }
+        }
+        else
+        {
+            for(int i=len;i<s2.length();i++)
+            {
+                sb.append(s2.charAt(i));
+            }
+        }
+        return sb;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        String s2=sc.next();
+        System.out.println(merge(s1,s2));
+    }
+}
+
+
+Given a string num which represents an integer, return true if num is a strobogrammatic number.
+strobogrammatic number is a number that looks the same when rotated 180 degrees 
+(looked at upside down).
+
+
+Input: num = "69"
+Output: true
+Example 2:
+
+Input: num = "88"
+Output: true
+Example 3:
+
+Input: num = "962"
+Output: false
+ 
+
+
+
+import java.util.*;
+class test
+{
+    public static boolean num(String s)
+    {
+        ArrayList<Integer> arr=new ArrayList<>();
+        arr.add(0);
+        arr.add(1);
+        arr.add(6);
+        arr.add(8);
+        arr.add(9);
+        StringBuilder sb=new StringBuilder();
+        for(int i=s.length()-1;i>=0;i--)
+        {
+            char c=s.charAt(i);
+            if(c=='0' || c=='1' || c=='8')
+            {
+                sb.append(c);
+            }
+            else if(c=='6')
+            {
+                sb.append('9');
+            }
+            else if(c=='9')
+            {
+                sb.append('6');
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(s.equals(sb.toString()))
+        {
+            return true;
+        }
+        return false;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        System.out.println(num(s));
+    }
+}
+
+
+
+case =1
+input =3
+3 2 3
+output =3
+
+case =2
+input =7
+2 2 1 1 1 2 2
+output =2
+
+case =3
+input =11
+2 2 1 1 1 2 2 2 2 2 2
+output =2
+
+case =3
+input =11
+3 3 3 3 3 3 2 2 2 2 2 
+output =3
+
+case =4
+input =3
+7 7 7
+output =7
+
+
+
+
+import java.util.*;
+class test
+{
+    public static int max(int n,HashMap<Integer,Integer> hm)
+    {
+        int max=0;
+        for(Map.Entry<Integer,Integer> me:hm.entrySet())
+        {
+            if(me.getKey()>max)
+            {
+                max=me.getKey();
+            }
+        }
+        return max;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        HashMap<Integer,Integer> hm=new HashMap<>();
+        for(int i=0;i<n;i++)
+        {
+            int a=sc.nextInt();
+            if(!hm.containsKey(a))
+            {
+                hm.put(a,1);
+            }
+            else
+            {
+                int b=hm.get(a);
+                hm.put(a,b+1);
+            }
+        }
+        System.out.println(max(n,hm));
+    }
+}
+
+
+
+Given line, print the string in reverse(use recursion)
+Note: don't use reverse() method in stringbuilder)
+
+ex:
+input =keshav memorial
+output =lairomem vahsek
+
+
+import java.util.*;
+class test
+{
+    static String rev(String s)
+    {
+        if(s.isEmpty())
+        {
+            return s;
+        }
+        else
+        {
+            return rev(s.substring(1))+s.charAt(0);
+        }
+        
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        System.out.println(rev(s));
+    }
+}
+
+
+
+You are a teacher managing an examination with a set of student IDs 
+attending within a specific range [start, end]. 
+The list of attending students is sorted and contains unique IDs within this range.
+
+A student ID is considered absent if it falls within the range [start, end] 
+but is not present in the attendance list.
+
+Your task is to generate the most concise and organized list of ranges 
+that accurately identifies all the absent student IDs. 
+These ranges should cover every missing ID within the given range 
+and should not include any of the present student IDs in the ranges.
+
+Input Format:
+-------------
+Line 1: start range
+Line 2: end range
+Line 3: Space separated id's
+
+Output Format:
+-------------
+Ranges of missing id's, refer sample output
+
+Sample Input1:
+--------------
+0
+99
+0 1 3 50 75
+
+Sample Output1:
+--------------
+[2,2]
+[4,49]
+[51,74]
+[76,99]
+
+Sample Input2:
+--------------
+-1
+-1
+-1
+
+Sample Output1:
+--------------
+-1
+
+Explanation: There are no missing ranges since there are no missing numbers.
+
+NOTE: Print -1 for boundary conditions
+
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int start=sc.nextInt();
+        int end=sc.nextInt();
+        sc.nextLine();
+        String s=sc.nextLine();
+        String str[]=s.split(" ");
+        int arr[]=new int[str.length];
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=Integer.parseInt(str[i]);
+        }
+        int res[]=new int[2];
+        if(arr.length==1 || arr[0]==-1)
+        {
+            System.out.println("-1");
+        }
+        else
+        {
+            for(int i=0;i<arr.length;i++)
+            {
+                if(i==0 && arr[0]>start)
+                {
+                    res[0]=start;
+                    res[1]=arr[i]-1;
+                    System.out.println(Arrays.toString(res));
+                }
+                else if(i>0 && arr[i]-arr[i-1]>1)
+                {
+                    res[0]=arr[i-1]+1;
+                    res[1]=arr[i]-1;
+                    System.out.println(Arrays.toString(res));
+                }
+            }
+            if(arr[arr.length-1]<end)
+            {
+                res[0]=arr[arr.length-1]+1;
+                res[1]=end;
+                System.out.println(Arrays.toString(res));
+            }
+            if(arr.length-1==end-start)
+            {
+                System.out.println("-1");
+            }
+        }
+    }
+}
+
+
+
+Given an integer num, return the number of steps to reduce it to zero.
+
+In one step, if the current number is even, you have to divide it by 2, 
+otherwise, you have to subtract 1 from it.
+
+Input Format:
+-------------
+Line 1: A number
+
+Output Format:
+--------------
+Line 1: A number
+
+Sample Input 1:
+---------------
+14
+
+Sample Output 1:
+----------------
+6
+
+Explanation: 
+Step 1) 14 is even; divide by 2 and obtain 7. 
+Step 2) 7 is odd; subtract 1 and obtain 6.
+Step 3) 6 is even; divide by 2 and obtain 3. 
+Step 4) 3 is odd; subtract 1 and obtain 2. 
+Step 5) 2 is even; divide by 2 and obtain 1. 
+Step 6) 1 is odd; subtract 1 and obtain 0.
+
+
+Sample Input 2:
+---------------
+8
+
+Sample Output 2: 
+----------------
+4
+
+Explanation: 
+Step 1) 8 is even; divide by 2 and obtain 4. 
+Step 2) 4 is even; divide by 2 and obtain 2. 
+Step 3) 2 is even; divide by 2 and obtain 1. 
+Step 4) 1 is odd; subtract 1 and obtain 0.
+
+
+
+import java.util.*;
+class test
+{
+    public static int count(int n)
+    {
+        // int count=0;
+        // while(n!=0)
+        // {
+        //     if(n%2==0)
+        //     {
+        //         n=n/2;
+        //     }
+        //     else
+        //     {
+        //         n=n-1;
+        //     }
+        //     count++;
+        // }
+        // return count;
+        if(n==0)
+        {
+            return 0;
+        }
+        else if(n%2==0)
+        {
+            return 1+count(n/2);
+        }
+        else
+        {
+            return 1+count(n-1);
+        }
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(count(n));
+    }
+}
+
+
+There is a switch-board made by an electrician,
+If you turn on any two adjacent switches, it will cause short-circuit
+and damage the switch-board.
+
+You are given N integers(only 0's and 1's), Indiactes current status of the switch board with N switches,
+where 1 indiactes switch is ON and 0 indiactes switch is OFF. 
+And an integer K, more number of switches to be turned ON.
+
+Return true if and only if you can turn ON all the K switches, without causing any damage to switch-board.
+Otherwise return fasle.
+
+Input Format:
+-------------
+Line-1: Two integers N and K, number of switches, and more number of switches to be ON
+Line-2: N space separated integers, only 0's and 1's.
+
+Output Format:
+--------------
+Print a boolean value.
+
+
+Sample Input-1:
+---------------
+5 1
+1 0 0 0 1
+
+Sample Output-1:
+----------------
+true
+
+Sample Input-2:
+---------------
+5 2	
+1 0 0 0 1
+
+Sample Output-2:
+----------------
+false
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        for(int i=1;i<n-1;i++)
+        {
+            if(arr[i-1]==0 && arr[i]==0 && arr[i+1]==0)
+            {
+                arr[i]=1;
+                count++;
+            }
+        }
+        if(count>=a)
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
+    }
+}
+
+
+write a program to check, the given string is palindrome or not
+Note: write the logic using recrusion only
+
+ex:
+input =liril
+output =true
+
+input =lirrli
+output =false
+
+import java.util.*;
+class test
+{
+    public static boolean palindrome(String s)
+    {
+        StringBuilder sb=new StringBuilder(s);
+        if(s.length()==1 || s.length()==0)
+        {
+            return true;
+        }
+        if(s.charAt(0)==s.charAt(s.length()-1))
+        {
+            return palindrome(s.substring(1,s.length()-1));
+        }
+        return false;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        System.out.println(palindrome(s));
+    }
+}
+
+
+
+Write an algorithm to determine if a number n is magic number or not
+
+A Magic number is a number defined by the following process:
+
+1) Starting with any positive integer, replace the number by the sum of the squares of 
+its digits.
+2) Repeat the process until the number equals 1 (where it will stay), or 
+it loops endlessly in a cycle which does not include 1.
+3) Those numbers for which this process ends in 1 are magic number.
+Return true if n is a Magic number, and false if not.
+
+
+Input: n = 19
+Output: true
+
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1
+
+
+Input: n = 2
+Output: false
+
+
+import java.util.*;
+class test
+{
+    public static boolean magic(int n)
+    {
+        int sum=0;
+        if(n==1 || n==7)
+        {
+            return true;
+        }
+        else if(n<10)
+        {
+            return false;
+        }
+        else
+        {
+            while(n!=0)
+            {
+                int temp=n%10;
+                sum=sum+(temp*temp);
+                n=n/10;
+            }
+            return magic(sum);
+        }
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(magic(n));
+    }
+}
+
+
+You are provided with a string composed of binary digits, and 
+your task is to write a method that calculates the count of set bits within it. 
+
+Input Format:
+-------------------
+A string, consists of 0's and 1's.
+
+Output Format:
+-------------------
+Print an integer result.
+
+
+Sample Input:
+--------------
+01001100001111101101010101111000
+
+Sample Output:
+---------------
+17
+
+
+Sample Input:
+--------------
+11110010111011011011011111100110
+
+Sample Output:
+--------------
+22
+
+
+
+
+
+import java.util.*;
+class test
+{
+    public static int count(String s)
+    {
+        int c=0;
+        if(s.length()==0)
+        {
+            return 0;
+        }
+        if(s.charAt(0)=='1')
+        {
+            c++;
+        }
+        return c+count(s.substring(1));
+        
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        System.out.println(count(s));
+    }
+}
+
+
+
+Keshav Memorial University has the following grading policy:
+
+Every student receives a  in the inclusive range from  0 to 100.
+Any grade less than 40 is a failing grade.
+Sam is a professor at the university and likes to round each student's grade according to these rules:
+
+If the difference between the grade and the next multiple of  5 is less than 3, round grade up to the next multiple of 5.
+If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade.
+
+Examples
+grade = 84 round to 85 (85 - 84 is less than 3)
+grade = 29 do not round (result is less than 40)
+grade = 57 do not round (60 - 57 is 3 or higher)
+
+Given the initial value of  for each of Sam's  students, write code to automate the rounding process.
+
+Input Format:
+-------------
+Line 1: The number of students.
+Line 2: Each line  of the  subsequent lines contains a single integer, grades[i].
+
+Sample Input:
+-------------
+4
+73
+67
+38
+33
+
+Sample Output:
+--------------
+75
+67
+40
+33
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>=38)
+            {
+                if((arr[i]+1)%5==0)
+                {
+                    arr[i]=arr[i]+1;
+                }
+                else if((arr[i]+2)%5==0)
+                {
+                    arr[i]=arr[i]+2;
+                }
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+
+
+A space explorer's ship crashed on Mars! They send a series of SOS messages to Earth for help.
+
+Letters in some of the SOS messages are altered by cosmic radiation during transmission. 
+Given the signal received by Earth as a string, S , determine how many letters of the SOS message have been changed by radiation.
+
+Example
+S = SOSTOT
+The original message was SOSSOS. Two of the message's characters were changed in transit.
+
+Input Format:
+-------------
+Line 1: A single string, S.
+
+Output Format:
+-------------
+Line 1: An integer.
+
+Sample Input 1:
+---------------
+SOSSPSSQSSOR
+
+Sample Output 1:
+---------------
+3
+
+Explanation:
+------------
+S = SOSSPSSQSSOR, and signal length is 12. They sent 4 SOS messages (i.e.:12/3 = 4).
+
+Expected signal: SOSSOSSOSSOS
+Recieved signal: SOSSPSSQSSOR
+Difference:          X  X   X
+
+Sample Input 2:
+---------------
+SOSSOT
+
+Sample Output 2:
+----------------
+1
+
+
+Sample Input 3:
+---------------
+SOSSOSSOS
+
+Sample Output 3:
+---------------
+0
+
+Explanation:
+-------------
+Since no character is altered, return 0.
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toUpperCase();
+        int len=s.length()/3;
+        int count=0;
+        String a="SOS".repeat(len);
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)!=a.charAt(i))
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+
+In a shopping mall, there is a Lift with a capacity of 500kgs only.
+There are N persons waiting for the lift, and their weights (weights[]) are given.
+If The Lift is overloaded, it will not move.
+ 
+Your task is to find out the maximum number of persons can use the Lift,
+without any overloading issue.
+
+Input Format:
+-------------
+Line-1: An integer N, number of persons
+Line-2: N space separated integers, weights of the persons.
+
+Output Format:
+--------------
+Print an integer, max num of persons canuse the lift.
+
+Sample Input-1:
+---------------
+6
+98 121 76 135 142 65
+
+Sample Output-1:
+----------------
+5
+
+Sample Input-2:
+---------------
+7
+85 67 69 83 54 61 50
+
+Sample Output-2:
+----------------
+7
+
+
+
+import java.util.*;
+class test
+{
+    public static int max(int arr[],int n)
+    {
+        Arrays.sort(arr);
+        int sum=0;
+        int c=0;
+        for(int i=0;i<n;i++)
+        {
+            if(sum+arr[i]<500)
+            {
+                sum=sum+arr[i];
+                c++;
+            }
+        }
+        return c;
+    }
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.println(max(arr,n));
+    }
+}
+
+
+
+MotorSport Ltd hosting a Racing Championship. Mr. Ajith is participating 
+in car races. Each race start and end in perticular time intervals.
+
+You are given an array of racing time intervals consisting of
+start and end times [[s1,e1],[s2,e2],...] (s < e ) of N races, in which 
+Ajith has to participate. Your task is to determine whether Ajith can 
+in all the races or not.
+
+NOTE: If a race starts at time 'a' ends at time 'b', 
+another race can start at 'b'.
+
+Input Format:
+-------------
+Line-1: An integer N, number of races Ajith has to participate.
+Next N lines: Two space separated integers, start and end time of each race.
+
+Output Format:
+--------------
+Print a boolean value.
+
+
+Sample Input-1:
+---------------
+3
+0 30
+5 10
+15 20
+
+Sample Output-1:
+----------------
+false
+
+Sample Input-2:
+---------------
+3
+0 10
+15 25
+30 35
+
+Sample Output-2:
+----------------
+true
+
+
+
+import java.util.*;
+class test
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[][]=new int[n][2];
+        for(int i=0;i<n;i++)
+        {
+            arr[i][0]=sc.nextInt();
+            arr[i][1]=sc.nextInt();
+        }
+        Arrays.sort(arr,(a,b)->a[1]-b[1]);
+        boolean win=true;
+        int end=arr[0][1];
+        for(int i=1;i<n;i++)
+        {
+            if(arr[i][0]<end)
+            {
+                win=false;
+                break;
+            }
+            else
+            {
+                end=arr[i][1];
+            }
+        } 
+        System.out.println(win);
+    }
+}
+
+
+
+You are reading an array called "numbers" with values.
+
+Find the first duplicate value in "numbers" and 
+print out the INDEX of that value as well as the INDEX of where it was first found in "numbers".
+
+If no duplicate value found print -1.
+
+Input Format:
+-------------
+Line 1: Size of array
+Line 2-n : N line-separated numbers.
+
+Output Format:
+--------------
+Line 1 : one space-separated numbers.
+
+Sample Input 1:
+---------------
+9
+10 20 15 30 15 20 35 60 10
+
+Sample Output 1:
+----------------
+4 2
+
+Explanation:
+------------
+4 is where the duplicate index was and 2 is where the first pair of that duplicate was, as an index.
+
+Sample Input 2:
+---------------
+5
+1 2 3 4 5
+
+Sample Output 2:
+----------------
+-1
+
+
+
+Mark is a class 9 student. His class teacher Betty, gives him a match box 
+containing match sticks of variable lengths. Betty asks Mark to form an object 
+in the form of a triangle and return the maximum perimeter that can be formed 
+from those match sticks. If he cannot form the given object, he has to 
+communicate back to Betty by sending a value 0.
+
+Sample test case
+case=1
+input=5
+7 2 3 4 12
+output=9
+
+Explanation:
+Input: line1 is number of elements, followed by value for the elements in line2
+Output: 9
+
+case=2
+input=5
+8 1 2 3 5
+output=0
+
+case=3
+input=6
+1 3 2 4 7 14
+output=9
+
+case=4
+input=5
+5 3 15 8 4
+output=17
+
+case=5
+input=7
+4 3 6 5 2 8 7 
+output=21
+
+
+
+import java.util.*;
+class test
+{
+    public static int triangle(int arr[],int n)
+    {
+        Arrays.sort(arr);
+        if(n<3)
+        {
+            return 0;
+        }
+        else
+        {
+            for(int i=n-1;i>1;i--)
+            {
+                if(arr[i-2]+arr[i-1]>arr[i])
+                {
+                    return arr[i-2]+arr[i-1]+arr[i];
+                }
+            }
+        }
+        return 0;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.println(triangle(arr,n));
+    }
+}
+
+
+King Arthur is stuck in the battlefield and sends message to his general David 
+to rescue him. The message has the king’s location “base” (x,y) on a map which 
+is in the form of cartesian coordinate system. King’s army units are placed at 
+different location (x1, y1), (x2, y2) … (xn, yn) on the map. His general David 
+has to figure out the minimum distance between the “base” and the army units 
+and accordingly dispatch the unit which is the closest. The distance between 
+the “base” and any army unit is calculated as absolute distance between the 
+army unit location and base location, i.e. for first army unit (x1,y1), the 
+absolute distance is |x1-x| + |y1-y\, for second unit (x2,y2), 
+it is |x2-x| + |y2-y\ and so on.
+
+The army unit has to be on the same line (horizontal or vertical) with that of 
+the “base” location for the dispatch. Given a list of location of army units 
+and the kings location (base), David has to provide the index of the unit he 
+plans to dispatch. If two units have the same distance from the “base”, he has 
+to provide the index of the unit that comes first in the list. If there are no 
+units that can be dispatched then return -1. Your task is to help David in his 
+task.
+
+Input: 6
+1 1
+2 3
+3 1
+2 4
+1 2
+4 4
+3 4 (base)
+Output: 3
+
+
+Explanation:
+Input: line1 is number of points, followed by value for those points, followed 
+by base point (x,y)
+Output: 3
+
+In the given points, only [3,1], [2,4] and [4,4] are valid. Of the valid points, 
+[2,4] and [4,4] have the smallest valid distance from base location, with a 
+distance of 1. [2,4] has the smallest index, so return 3.
+
+case=2
+input=5
+2 3
+3 1
+2 4
+1 2
+4 4
+3 4
+output=2
+
+case=3
+input=1
+2 5
+2 5
+output=0
+
+case=4
+input=1
+3 4
+4 5
+output=-1
+
+case=5
+input=6
+4 4
+1 1
+2 3
+3 1
+2 4
+1 2
+3 4
+output=0
+
+
+
+
+import java.util.*;
+class test
+{
+    public static int find(int arr[][],int x,int y)
+    {
+        int index=-1;
+        int min=Integer.MAX_VALUE;
+        for(int i=0;i<arr.length;i++)
+        {
+            int xd=arr[i][0];
+            int yd=arr[i][1];
+            int dis=Math.abs(xd-x)+Math.abs(yd-y);
+            if((xd==x || yd==y) && dis<min)
+            {
+                min=dis;
+                index=i;
+            }
+        }
+        return index;
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[][]=new int[n][2];
+        for(int i=0;i<n;i++)
+        {
+            arr[i][0]=sc.nextInt();
+            arr[i][1]=sc.nextInt();
+        }
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int close=find(arr,x,y);
+        System.out.println(close);
+    }
+}
+
+
+John loves shopping. He has some money in his purse and wants to buy few items. 
+He is given a list of prices for the items and the amount to buy the items. The 
+prices are arranged in non-decreasing order. With the amount he has, he can 
+either buy any two items with no money left or no item at all. When he is able 
+to buy two items, he wants to know the index of the selected items. If no items 
+are purchased, return empty list. Your task is to help John in her task.
+
+Sample test case
+case=1
+input=5
+2 5 7 11 15
+9
+output=[0, 2]
+
+case=2
+input=5
+2 5 7 11 15
+14
+output=[]
+
+case=3
+input=10
+1 2 3 4 5 6 7 8 9 10
+11
+output=[0, 9]
+
+case=4
+input=6
+2 3 4 4 5 6
+8
+output=[0, 5]
+
+
+
+
+import java.util.*;
+class test
+{
+    public static String sum(int arr[],int n,int target)
+    {
+        // HashMap<Integer,Integer> hm=new HashMap<>();
+        ArrayList<Integer> res=new ArrayList<>();
+        // for(int i=n-1;i>=0;i--)
+        // {
+        //     if(!hm.containsKey(target-arr[i]))
+        //     {
+        //         hm.put(arr[i],i);
+        //     }
+        //     else
+        //     {
+        //         res.add(0,i);
+        //         res.add(1,hm.get(target-arr[i]));
+        //         return res.toString();
+        //     }
+        // }
+        // return res.toString();
+        for(int i=0;i<n;i++)
+        {
+            for(int j=n-1;j>=0;j--)
+            {
+                if(arr[i]+arr[j]==target)
+                {
+                    res.add(i);
+                    res.add(j);
+                    return res.toString();
+                }
+            }
+        }
+        return res.toString();
+    }
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int target=sc.nextInt();
+        System.out.println(sum(arr,n,target));
+    }
+}
+
+
+
+
+
+
+
+
