@@ -1,49 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
     <script type="text/JavaScript">
-var a = 33;
-var b = 10;
-var c = "Test";
-var linebreak = "<br />";
-document.write("a+b= ");
-result = a+b;
-document.write(result);
-document.write(linebreak);
-document.write("a-b= ");
-result = a-b;
-document.write(result);
-document.write(linebreak);
-document.write("a*b= ");
-result = a*b;
-document.write(result);
-document.write(linebreak);
-document.write("a/b= ");
-result = a/b;
-document.write(result);
-document.write(linebreak);
-document.write("a%b= ");
-result = a%b;
-document.write(result);
-document.write(linebreak);
-a=++a;
-document.write("++a=");
-result = ++a;
-document.write(result);
-document.write(linebreak);
-b=--b;
-document.write("--b=");
-result = --b;
-document.write(result);
-document.write(linebreak);
-</script>    
-</body>
+        function sayhello(){
+           alert("Hello world");
+        }
+    </script>
+  </head>
+  <body>
+    <h2>My First JAVASCRIPT</h2>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML=Date()"
+    >
+      Click me to display date and time..
+    </button>
+    <p id="demo"></p>
+    <script type="text/JavaScript">
+          // ARTHIMETIC OPERATORS
+        var a = 33;
+        var b = 10;
+        var c = "Test";
+        var linebreak = "<br />";
+        document.write("a+b= ");
+        result = a+b;
+        document.write(result);
+        document.write(linebreak);
+        document.write("a-b= ");
+        result = a-b;
+        document.write(result);
+        document.write(linebreak);
+        document.write("a*b= ");
+        result = a*b;
+        document.write(result);
+        document.write(linebreak);
+        document.write("a/b= ");
+        result = a/b;
+        document.write(result);
+        document.write(linebreak);
+        document.write("a%b= ");
+        result = a%b;
+        document.write(result);
+        document.write(linebreak);
+        a=++a;
+        document.write("++a=");
+        result = ++a;
+        document.write(result);
+        document.write(linebreak);
+        b=--b;
+        document.write("--b=");
+        result = --b;
+        document.write(result);
+        document.write(linebreak);
+      // BIT-WISE OPERATORS
+              var a=2;
+              var b=3;
+              var linebreak="<br />";
+              document.write("a&b= ");
+              result=(a&b);
+              document.write(result);
+              document.write(linebreak);
+              document.write("a|b= ");
+              result=(a|b);
+              document.write(result);
+              document.write(linebreak);
+              document.write("a^b= ");
+              result=(a^b);
+              document.write(result);
+              document.write(linebreak);
+              document.write("a>>2= ");
+              result=(a>>2);
+              document.write(result);
+              document.write(linebreak);
+              document.write("a<<2= ");
+              result=(a<<2);
+              document.write(result);
+              document.write(linebreak);
+              document.write("a>>>2= ");
+              result=(a>>>2);
+              document.write(result);
+              document.write(linebreak);
+              // LOOPS
+              var count;
+              document.write("Starting Loop"+"<br />");
+              for( count = 0;count<10;count++){
+                  document.write("Current count : "+ count);
+                  document.write("<br />");
+              }
+              document.write("Loop Stopped!!");
+              document.write("<br />");
+              // EVEN NUMBERS
+              document.write("Even Numbers");
+              document.write("<br />");
+              for( count = 0;count<30;count++){
+                  if(count%2==0){
+                      document.write("Current count : "+ count);
+                      document.write("<br />");
+                  }
+              }
+              document.write("Loop Stopped!!");
+              document.write("<br />");
+              // IF CONDITIONS
+              var age = 20;
+              document.write("The age is: "+age);
+              document.write("<br />");
+              if(age>18){
+              document.write("<b>QUALIFIES FOR DRIVING</b>");
+              }
+              // FIBONACCI SERIES (Using for loop)
+              document.write("<br />");
+              document.write("FIBONACCI SERIES");
+              document.write("<br />");
+              var i;
+              var n1=0;
+              var n2=1;
+              document.write(n1+" ");
+              document.write(n2+" ");
+              for(i=0;i<=10;i++){
+                n3 = n1+n2;
+                document.write(n3 + " ");
+                n1=n2;
+                n2=n3;
+              }
+              // FIBONACCI SERIES (using while loop)
+              document.write("<br />");
+              document.write("FIBONACCI SERIES USING WHIE LOOP");
+              document.write("<br />");
+              var n=0;
+              var c1=0;
+              var c2=1;
+              document.write(c1+" ");
+              document.write(c2+" ");
+             while(n<10){
+                c3 = c1+c2;
+                document.write(c3 + " ");
+                c1=c2;
+                c2=c3;
+                n++;
+             }
+    </script>
+    <input type="button" onclick="sayhello()" value="Say Hello">
+  </body>
 </html>
-
-

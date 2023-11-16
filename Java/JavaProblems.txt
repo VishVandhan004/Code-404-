@@ -6097,6 +6097,316 @@ class test
     }
 }
 
+/*
+The school management has planned few games for students to improve their 
+mathematical skills,one such game is group of students are placed in a row, 
+first student holds a number 0, second student holds a number 1, and 
+the task is remaining students have to hold the number which is equal to 
+the addition of previous two student's numbers. With your programming skills 
+can you print the numbers to be hold by students for a given group contains 
+n students. 
+Example 1:
+input:3
+Output: 0 1 1
+Example 2:
+Input:7
+Output: 0 1 1 2 3 5 8
+*/
+
+import java.util.*;
+class Game {
+    public static int fibonacci(int n){
+        if(n==0)
+        {
+            return 0;
+        }
+        else if(n==1)
+        {
+            return 1;
+        } 
+        else 
+        {
+            return fibonacci(n-1)+fibonacci(n-2);
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            System.out.print(fibonacci(i)+" ");
+        }
+    }
+}
+
+/*  
+In a primary school mathematics teacher has given a task to students, i.e multiply all the integers between 1 to n and give the final product.With a pen and paper, this process has taken much more time,and you are thier computer teacher can you help students by giving a program to solve this task.
+
+input format = integer
+output format = integer
+    
+	Example 1:
+	input=5
+	output=120
+
+	Example 2:
+	input=6
+	output=720
+	
+	Example 3:
+	input=8
+	output=40320
+*/
+import java.util.*;
+class Product {
+    public static int fact(int n){
+        if(n==0){
+            return 1;
+        }
+        else if(n==1){
+            return 1;
+        }
+        else {
+            return n*fact(n-1);
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int result = fact(n);
+        System.out.print(result);
+    }
+}
+/*You are attending an interview interviewer asked you to print 1 to n numbers 
+without using loops when given an integer N.
+input format : an integer n
+Examples:
+Input: N = 5
+Output: 1 2 3 4 5
+Explanation: We have to print numbers from 1 to 5.
+Input: N = 10
+Output: 1 2 3 4 5 6 7 8 9 10
+Explanation: We have to print numbers from 1 to 10.
+*/
+
+import java.util.*;
+class PrintNumbers{
+    public static int print(int a){
+        if(a==1){
+            return 1;
+        }
+        else if(a==0){
+            return 0;
+        }
+        else {
+            return 1+print(a-1);
+        }
+    }
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++){
+            System.out.print(print(i)+" ");
+        }
+    }
+}
+
+/* you are solving a puzzle, which is to find product of two integers without 
+using multiplication operator and without using any loops.
+Using your programming skills can you solve this with a java program.
+Example1 :
+input =4 5
+output=20
+Example 2:
+input=6 15
+output=90 */
+
+import java.util.*;
+class ProductOfTwo{
+    public static int mul(int a, int b){
+        if(a==0 || b==0){
+            return 0;
+        }
+        else {
+            return a+mul(a,b-1);
+        }
+    }
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(mul(a,b));
+    }
+}
+
+/*
+you are writing an exam, the question is to test a given string is palindrome or not, but the constraints are,  should not use builtin functions like reverse and any loops. 
+
+Example 1:
+input=abcdedcba
+output=true
+
+Example 2:
+input=abcdefdcba
+output=false
+*/
+
+import java.util.*;
+class StringPalindrome {
+    public static boolean pal(String s){
+        if(s.length()==1){
+            return true;
+        }
+        else {
+            if(s.charAt(0) == s.charAt(s.length()-1)){
+                return pal(s.substring(1,s.length()-1));
+            }
+        }
+        return false;
+    }
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.print(pal(s));
+    }
+}
+
+/*
+Given a string s and a character letter, return the percentage of characters 
+in s that equal letter rounded down to the nearest whole percent.
+
+input format : string 
+               single character
+output format : integer number
+
+Example 1:
+Input:foobar
+o
+Output: 33
+Explanation:
+The percentage of characters in s that equal the letter 'o' is 2 / 6 * 100% = 33% when rounded down, so we return 33.
+
+Example 2:
+Input:jjjj
+k
+Output: 0
+Explanation:
+The percentage of characters in s that equal the letter 'k' is 0%, so we return 0.
+*/
+
+import java.util.*;
+class Percentage{
+    public static int percentage(String s, char letter){
+        int cnt = 0;
+        int n = s.length();
+        for(int i=0;i<n;i++){
+            char a = s.charAt(i);
+            if(a==letter){
+                cnt++;
+            }
+        }
+            int pcnt = (cnt*100)/n;
+            return pcnt;
+    }
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char c = sc.next().charAt(0);
+        System.out.println(new Percentage().percentage(str,c));
+    }
+}
+
+import java.util.*;
+
+class Solution 
+{
+    public String reformatNumber(String number) 
+	{
+		System.out.println("String length before removal is   "+number.length());
+        number = number.replace("-", "").replace(" ", "");
+		System.out.println("String length after removal is   "+number.length());
+        int length = number.length();
+
+        if (length < 4) {
+            return number;
+        }
+
+        StringBuilder formatted = new StringBuilder(number);
+        int index = 3;
+        while (length > 4) 
+		{
+            formatted.insert(index, "-");
+            index += 4;
+            length -= 3;
+        }
+        if (length == 4) 
+		{
+            index -= 1;
+            formatted.insert(index, "-");
+        }
+        return formatted.toString();
+    }
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		String str=sc.nextLine();
+		System.out.println(new Solution().reformatNumber(str));
+	}
+}
+
+Given two arrays Aand B, B is an anagram of A. B is an anagram of A means B is made by randomizing the order of the elements in A.
+We want to find an index mapping P, from A to B. 
+A mapping P[i] = j means the ith element in A appears in B at index j.
+Note:  The lists A and B doesn't contain duplicates. 
+       A, B have equal lengths in range [1, 100].
+       If the array doesnt contains the elements print -1 in the place of index 
+input = 5
+12 28 46 32 50
+50 12 32 46 28
+output =
+1 4 3 2 0
+Explanation
+as res[0] = 1 because the 0th element of A appears at B[1], 
+and res[1] = 4 because the 1st element of A appears at B[4], 
+and so on.
+
+import java.util.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] A = new int[n];
+        int[] B = new int[n];
+        for (int i = 0; i < n; i++) {
+            A[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            B[i] = sc.nextInt();
+        }
+        sc.close();
+        int[] P = findIndexMapping(A, B);
+        for (int i = 0; i < n; i++) {
+            System.out.print(P[i] + " ");
+        }
+        System.out.println();
+    }
+    public static int[] findIndexMapping(int[] A, int[] B) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < B.length; i++) {
+            map.put(B[i], i);
+        }
+        int[] P = new int[A.length];
+        for (int i = 0; i < A.length; i++) {
+            if (map.containsKey(A[i])) {
+                P[i] = map.get(A[i]);
+            } else {
+                P[i] = -1;
+            }
+        }
+        return P;
+    }
+}
+
 
 
 
