@@ -4517,27 +4517,18 @@ class test
     }
 }
 
-
-
+108th Problem
 Shyam a third class student is a given and date
 His teacher asked him to find out the day of the date in the given year.
 Help Shyam to solve this problem 
-
 The Input Date Contains DD MM YYYY Format
 Assume the Input Date is valid date
-
-
 input = 31 12 2010
 output = 365
-
 input = 01 02 1995
 output = 32
-
 1st Feb is 32 Day in the year.
-
 Note - Dont Use Pre Defined Date and Time Class
-
-
 
 import java.util.*;
 class test
