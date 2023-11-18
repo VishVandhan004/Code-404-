@@ -4475,28 +4475,22 @@ class test
     }
 }
 
-
-
+107th Problem
 Dolu has given a Mobile.
 His mobile has a special keypad with all alphabets in a same row. 
 Initially, Dolus finger is at index 0. 
 To type a character, he has to move his finger to the index of the desired character. 
 The time taken to move his finger from index i to index j is |i - j|.
-
 Your task is to calculate the time taken for typing the characters on the keypad
-
 The First line of input contains the alphabets(a-z) arranged in random order followed by the word to be typed.
-
 Input = abcdefghijklmnopqrstuvwxyz
 cba
 Output = 4
 Explanation: The index moves from 0 to 2 to write 'c' then to 1 to write 'b' then to 0 again to write 'a'.
 Total time = 2 + 1 + 1 = 4. 
-
 input = pqrstuvwxyzabcdefghijklmno 
 word = spt
 output = 10
-
 
 import java.util.*;
 class test
