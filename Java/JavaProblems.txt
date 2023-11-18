@@ -4428,21 +4428,16 @@ class test
 }
 
 
-
+106th Problem
 Open AI is working on the below task. 
 The task is as follows 
 ++i
 i++
 --i
 i--
-
 By Default i value is given as '0'
-
 The Open AI has to design the code to give the result for this operations  
- 
-
 Example 1:
-
 Input = --i i++ i++ i++
 Output = 1
 Explanation: The operations are performed as follows:
