@@ -6434,6 +6434,175 @@ public class Solution{
 }
 
 
+BINARY SEARCH
+import java.util.*;
+class File {
+    public static boolean bs(int arr[], int target) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (target == arr[mid]) {
+                return true;
+            } else if (target < arr[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Size: ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter Array elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Enter Target: ");
+        int target = sc.nextInt();
+        System.out.println(bs(arr, target));
+    }
+}
+
+/*
+Given a m x n matrix grid which is sorted in non-increasing order 
+both row-wise and column-wise, return the number of negative numbers in grid.
+ 
+Example 1:
+Input: 4 4
+4 3 2 -1 
+3 2 1 -1
+1 1 -1 -2
+-1 -1 -2 -3
+Output: 8
+Explanation: There are 8 negatives number in the matrix.
+
+Example 2:
+Input: 2 2
+3 2 
+1 0
+Output: 0
+
+*/
+
+import java.util.*;
+class CountNegative 
+{
+    public static int bs(int arr[]) {
+	    int low = 0;
+	    int high = arr.length-1;
+	    while(low<=high){
+	        int mid = (low+high)/2;
+	        if(arr[mid]>=0){
+	            low = mid+1;
+	        }
+	        else {
+	            high = mid-1;
+	        }
+        }
+	        return arr.length-low;
+    }
+    public int countNegatives(int[][] grid) {
+        int cnt = 0;
+        for(int arr[] :grid){
+            cnt = cnt+bs(arr);
+        }
+            return cnt;
+    }
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] arr = new int[m][n];
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++)
+                arr[i][j] = sc.nextInt();
+		System.out.println(new CountNegative().countNegatives(arr));
+
+	}
+}
+
+/*Mr. Ram is working in a manufacturing industry where items with different weights are manufactured.
+His duty is to pick pairs of items whose weight difference is equal to 'k'. 
+Can you help him with a program? The condition is not to use extra space.
+
+input format:an integer number n
+			 n number of positive integers
+			 an integer number k
+output format : pairs of integers
+
+Example 1:
+input = 8
+1 2 3 4 5 6 7 8
+3
+output =
+1 4
+2 5
+3 6
+4 7
+5 8
+Example 2:
+input = 10
+5 10 15 20 25 30 35 40 45 50
+5
+output =5 10
+10 15
+15 20
+20 25
+25 30
+30 35
+35 40
+40 45
+45 50
+*/
+
+import java.util.*;
+public class FindPairsWithDifference 
+{
+	private static void findPairsWithDifference(int[] array, int k) 
+	{
+        for(int i=0;i<array.length;i++)
+        {
+                int ans = bs(array,i+1,array.length-1,array[i]+k);
+                if(ans != -1)
+                {
+                System.out.println(array[i]+" "+ans);
+            }
+        }
+    }
+    private static int bs(int[] array, int low, int high, int target) 
+	{
+	    Arrays.sort(array);
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(target == array[mid]){
+                return array[mid];
+            }
+            else if(array[mid] < target){
+                low = mid+1;
+            }
+            else{
+                high = mid-1;
+            }
+        }
+        return -1;
+    }
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] array = new int[n];
+		for(int i=0;i<n;i++)
+			array[i]=sc.nextInt();
+        int k = sc.nextInt();
+        findPairsWithDifference(array, k);
+    }
+}
 
 
 
