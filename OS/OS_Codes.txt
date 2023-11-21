@@ -1,0 +1,122 @@
+1st Problem
+/* write a programme to print the reverse of a number
+sample input 
+Enter an integer: 123                                                                                                   
+Reversed number = 321   */      
+
+#include <stdio.h>
+int main() {
+  int n;
+  printf("Enter an integer: ");
+  scanf("%d",&n);
+  int rev=0;
+  while(n>0)
+  {
+      int temp=n%10;
+      rev=(rev*10)+temp;
+      n=n/10;
+  }
+  printf("Reversed number = %d",rev);
+}
+
+2nd Problem
+/* wrire a program to find factorial of a given number
+input=
+Enter an integer: 5    
+output=
+Factorial of 5 = 120 */
+
+#include<stdio.h>
+int fact(int n)
+{
+    if(n==1 || n==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n*fact(n-1);
+    }
+}
+int main()
+{
+    int n;
+    printf("Enter an integer: ");
+    scanf("%d",&n);
+    printf("Factorial of %d = %d",n,fact(n));
+}
+
+3rd Problem
+/* Assume all the processes arrive at the same time.
+FCFS CPU SCHEDULING ALGORITHM
+Read the number of processes/jobs in the system, their CPU burst times.
+The scheduling is performed on the basis of arrival time of the processes
+irrespective of their other parameters. Each process will be executed according to its arrival time. 
+Calculate the waiting time and turnaround time of each of the processes accordingly.
+Hint: use this printf statements to match with the test cases:
+printf("\t PROCESS \tBURST TIME \t WAITING TIME\t TURNAROUND TIME\n"); 
+for(i=0;i<n;i++)
+printf("\n\t P%d \t\t %d \t\t %d \t\t %d", i, bt[i], wt[i], tat[i]);
+printf("\nAverage Waiting Time -- %f", wtavg/n); 
+printf("\nAverage Turnaround Time -- %f", tatavg/n); 
+sample output:
+Enter the number of processes -- 4                                                                                      
+Enter Burst Time for Process 0 --2                                                                                      
+Enter Burst Time for Process 1 --5                                                                                     
+Enter Burst Time for Process 2 --6                                                                                    
+Enter Burst Time for Process 3 --8                                                                                      
+PROCESS        BURST TIME       WAITING TIME    TURNAROUND TIME                                                
+                                                                                                                                
+P0              2               0               2                                                              
+P1              5               2               7                                                              
+P2              6               7               13                                                             
+P3              8               13              21                                                             
+Average Waiting Time -- 5.500000                                                                                        
+Average Turnaround Time -- 10.750000 */
+
+#include<stdio.h>
+double avg(int arr[],int n)
+{
+    double sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    return sum/n;
+}
+int main()
+{
+    int n;
+    printf("Enter the number of processes -- ");
+    scanf("%d",&n);
+    printf("\n");
+    int arrival[]={0,0,0,0};
+    int burst[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("Enter Burst Time for Process %d --",i);
+        scanf("%d",&burst[i]);
+        printf("\n");
+    }
+    int turnaroundtime[n];
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+burst[i];
+        turnaroundtime[i]=sum;
+    }
+    int waitingtime[n];
+    for(int i=0;i<n;i++)
+    {
+        waitingtime[i]=turnaroundtime[i]-burst[i];
+    }
+    printf("PROCESS \t BURST TIME \t WAITING TIME \t TURNAROUND TIME \n");
+    for(int i=0;i<n;i++)
+    {
+        printf("\nP%d \t\t %d \t\t %d \t\t %d",i,burst[i],waitingtime[i],turnaroundtime[i]);
+    }
+    printf("\n");
+    printf("Average Waiting Time -- %f",avg(waitingtime,n));
+    printf("\n");
+    printf("Average Turnaround Time -- %f",avg(turnaroundtime,n));
+}

@@ -29,5 +29,6 @@ class File {
         System.out.println("Enter Target: ");
         int target = sc.nextInt();
         System.out.println(bs(arr, target));
+        sc.close();
     }
 }
