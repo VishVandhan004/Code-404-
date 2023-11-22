@@ -5074,29 +5074,22 @@ class test
     }
 }
 
-
-
+117th Problem
 Given an integer num, return the number of steps to reduce it to zero.
-
 In one step, if the current number is even, you have to divide it by 2, 
 otherwise, you have to subtract 1 from it.
-
 Input Format:
 -------------
 Line 1: A number
-
 Output Format:
 --------------
 Line 1: A number
-
 Sample Input 1:
 ---------------
 14
-
 Sample Output 1:
 ----------------
 6
-
 Explanation: 
 Step 1) 14 is even; divide by 2 and obtain 7. 
 Step 2) 7 is odd; subtract 1 and obtain 6.
@@ -5104,43 +5097,23 @@ Step 3) 6 is even; divide by 2 and obtain 3.
 Step 4) 3 is odd; subtract 1 and obtain 2. 
 Step 5) 2 is even; divide by 2 and obtain 1. 
 Step 6) 1 is odd; subtract 1 and obtain 0.
-
-
 Sample Input 2:
 ---------------
 8
-
 Sample Output 2: 
 ----------------
 4
-
 Explanation: 
 Step 1) 8 is even; divide by 2 and obtain 4. 
 Step 2) 4 is even; divide by 2 and obtain 2. 
 Step 3) 2 is even; divide by 2 and obtain 1. 
 Step 4) 1 is odd; subtract 1 and obtain 0.
 
-
-
 import java.util.*;
 class test
 {
     public static int count(int n)
     {
-        // int count=0;
-        // while(n!=0)
-        // {
-        //     if(n%2==0)
-        //     {
-        //         n=n/2;
-        //     }
-        //     else
-        //     {
-        //         n=n-1;
-        //     }
-        //     count++;
-        // }
-        // return count;
         if(n==0)
         {
             return 0;
@@ -5162,47 +5135,36 @@ class test
     }
 }
 
-
+118th Problem
 There is a switch-board made by an electrician,
 If you turn on any two adjacent switches, it will cause short-circuit
 and damage the switch-board.
-
 You are given N integers(only 0's and 1's), Indiactes current status of the switch board with N switches,
 where 1 indiactes switch is ON and 0 indiactes switch is OFF. 
 And an integer K, more number of switches to be turned ON.
-
 Return true if and only if you can turn ON all the K switches, without causing any damage to switch-board.
 Otherwise return fasle.
-
 Input Format:
 -------------
 Line-1: Two integers N and K, number of switches, and more number of switches to be ON
 Line-2: N space separated integers, only 0's and 1's.
-
 Output Format:
 --------------
 Print a boolean value.
-
-
 Sample Input-1:
 ---------------
 5 1
 1 0 0 0 1
-
 Sample Output-1:
 ----------------
 true
-
 Sample Input-2:
 ---------------
 5 2	
 1 0 0 0 1
-
 Sample Output-2:
 ----------------
 false
-
-
 
 import java.util.*;
 class test
@@ -5237,14 +5199,12 @@ class test
     }
 }
 
-
+119th Problem
 write a program to check, the given string is palindrome or not
 Note: write the logic using recrusion only
-
 ex:
 input =liril
 output =true
-
 input =lirrli
 output =false
 
@@ -5272,32 +5232,23 @@ class test
     }
 }
 
-
-
+120th Problem
 Write an algorithm to determine if a number n is magic number or not
-
 A Magic number is a number defined by the following process:
-
 1) Starting with any positive integer, replace the number by the sum of the squares of 
 its digits.
 2) Repeat the process until the number equals 1 (where it will stay), or 
 it loops endlessly in a cycle which does not include 1.
 3) Those numbers for which this process ends in 1 are magic number.
 Return true if n is a Magic number, and false if not.
-
-
 Input: n = 19
 Output: true
-
 12 + 92 = 82
 82 + 22 = 68
 62 + 82 = 100
 12 + 02 + 02 = 1
-
-
 Input: n = 2
 Output: false
-
 
 import java.util.*;
 class test
