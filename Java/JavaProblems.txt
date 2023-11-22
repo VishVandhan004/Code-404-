@@ -6018,8 +6018,8 @@ class Percentage{
     }
 }
 
+135th Problem
 import java.util.*;
-
 class Solution 
 {
     public String reformatNumber(String number) 
@@ -6028,11 +6028,9 @@ class Solution
         number = number.replace("-", "").replace(" ", "");
 		System.out.println("String length after removal is   "+number.length());
         int length = number.length();
-
         if (length < 4) {
             return number;
         }
-
         StringBuilder formatted = new StringBuilder(number);
         int index = 3;
         while (length > 4) 
@@ -6048,7 +6046,6 @@ class Solution
         }
         return formatted.toString();
     }
-
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
@@ -6057,6 +6054,7 @@ class Solution
 	}
 }
 
+136th Problem
 Given two arrays Aand B, B is an anagram of A. B is an anagram of A means B is made by randomizing the order of the elements in A.
 We want to find an index mapping P, from A to B. 
 A mapping P[i] = j means the ith element in A appears in B at index j.
@@ -6110,6 +6108,7 @@ public class Solution{
     }
 }
 
+137th Problem
 You are given a 0-indexed integer array nums.
 In one operation, you may do the following:
 1) Choose two integers in nums that are equal.
@@ -6157,7 +6156,7 @@ public class Solution{
     }
 }
 
-
+138th Problem
 BINARY SEARCH
 import java.util.*;
 class File {
@@ -6176,7 +6175,6 @@ class File {
         }
         return false;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Size: ");
@@ -6192,10 +6190,9 @@ class File {
     }
 }
 
-/*
-Given a m x n matrix grid which is sorted in non-increasing order 
+139th Problem
+/* Given a m x n matrix grid which is sorted in non-increasing order 
 both row-wise and column-wise, return the number of negative numbers in grid.
- 
 Example 1:
 Input: 4 4
 4 3 2 -1 
@@ -6204,14 +6201,11 @@ Input: 4 4
 -1 -1 -2 -3
 Output: 8
 Explanation: There are 8 negatives number in the matrix.
-
 Example 2:
 Input: 2 2
 3 2 
 1 0
-Output: 0
-
-*/
+Output: 0 */
 
 import java.util.*;
 class CountNegative 
@@ -6251,15 +6245,14 @@ class CountNegative
 	}
 }
 
-/*Mr. Ram is working in a manufacturing industry where items with different weights are manufactured.
+140th Problem
+/* Mr. Ram is working in a manufacturing industry where items with different weights are manufactured.
 His duty is to pick pairs of items whose weight difference is equal to 'k'. 
 Can you help him with a program? The condition is not to use extra space.
-
 input format:an integer number n
 			 n number of positive integers
 			 an integer number k
 output format : pairs of integers
-
 Example 1:
 input = 8
 1 2 3 4 5 6 7 8
@@ -6282,8 +6275,7 @@ output =5 10
 30 35
 35 40
 40 45
-45 50
-*/
+45 50 */
 
 import java.util.*;
 public class FindPairsWithDifference 
@@ -6328,26 +6320,21 @@ public class FindPairsWithDifference
     }
 }
 
+141st Problem
 Mr Ravi is a business man, he does business weekly Q times, 
 and records his PROFIT or LOSS every time in to data[][] array. 
 He records the LOSS as a negative value and PROFIT as a positive value.
-
 Your task is to help Mr Ravi to know that how many total number of times,
 he was in LOSS after P weeks.
-
 NOTE: The values in data[][] are in descending order both row-wise and 
 column-wise as given in sample testcases.
-
 Input Format:
 -------------
 Line-1: Two space separated integers, P and Q
 Next P lines: Q space separated integers, data[][].   
-
 Output Format:
 --------------
 Print an integer result.
-
-
 Sample Input-1:
 ---------------
 4 4
@@ -6355,15 +6342,12 @@ Sample Input-1:
 4 3 1 -2
 2 2 -1 -3
 -1 -1 -2 -4
-
 Sample Output-1: 
 ----------------
 8
-
 Explanation: 
 ------------
 8 days in LOSS,since there are 8 negative values.
-
 Sample Input-2:
 ---------------
 4 4
@@ -6371,21 +6355,17 @@ Sample Input-2:
 7 6 2 -3
 3 -1 -2 -4
 -2 -3 -4 -7
-	 
 Sample Output-2:
 ----------------
 9
-
 Explanation:
 ------------
 9 days in LOSS,since there are 8 negative values.
-
 Sample Input-3:
 ---------------
 2 2
 9 3
 5 0
-
 Sample Output-3:
 ----------------
 0
