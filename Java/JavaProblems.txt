@@ -5283,39 +5283,27 @@ class test
     }
 }
 
-
+121st Problem
 You are provided with a string composed of binary digits, and 
 your task is to write a method that calculates the count of set bits within it. 
-
 Input Format:
 -------------------
 A string, consists of 0's and 1's.
-
 Output Format:
 -------------------
 Print an integer result.
-
-
 Sample Input:
 --------------
 01001100001111101101010101111000
-
 Sample Output:
 ---------------
 17
-
-
 Sample Input:
 --------------
 11110010111011011011011111100110
-
 Sample Output:
 --------------
 22
-
-
-
-
 
 import java.util.*;
 class test
@@ -5342,29 +5330,22 @@ class test
     }
 }
 
-
-
+122nd Problem
 Keshav Memorial University has the following grading policy:
-
 Every student receives a  in the inclusive range from  0 to 100.
 Any grade less than 40 is a failing grade.
 Sam is a professor at the university and likes to round each student's grade according to these rules:
-
 If the difference between the grade and the next multiple of  5 is less than 3, round grade up to the next multiple of 5.
 If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade.
-
 Examples
 grade = 84 round to 85 (85 - 84 is less than 3)
 grade = 29 do not round (result is less than 40)
 grade = 57 do not round (60 - 57 is 3 or higher)
-
 Given the initial value of  for each of Sam's  students, write code to automate the rounding process.
-
 Input Format:
 -------------
 Line 1: The number of students.
 Line 2: Each line  of the  subsequent lines contains a single integer, grades[i].
-
 Sample Input:
 -------------
 4
@@ -5372,14 +5353,12 @@ Sample Input:
 67
 38
 33
-
 Sample Output:
 --------------
 75
 67
 40
 33
-
 
 import java.util.*;
 class test
@@ -5414,63 +5393,46 @@ class test
     }
 }
 
-
-
+123rd Problem
 A space explorer's ship crashed on Mars! They send a series of SOS messages to Earth for help.
-
 Letters in some of the SOS messages are altered by cosmic radiation during transmission. 
 Given the signal received by Earth as a string, S , determine how many letters of the SOS message have been changed by radiation.
-
 Example
 S = SOSTOT
 The original message was SOSSOS. Two of the message's characters were changed in transit.
-
 Input Format:
 -------------
 Line 1: A single string, S.
-
 Output Format:
 -------------
 Line 1: An integer.
-
 Sample Input 1:
 ---------------
 SOSSPSSQSSOR
-
 Sample Output 1:
 ---------------
 3
-
 Explanation:
 ------------
 S = SOSSPSSQSSOR, and signal length is 12. They sent 4 SOS messages (i.e.:12/3 = 4).
-
 Expected signal: SOSSOSSOSSOS
 Recieved signal: SOSSPSSQSSOR
 Difference:          X  X   X
-
 Sample Input 2:
 ---------------
 SOSSOT
-
 Sample Output 2:
 ----------------
 1
-
-
 Sample Input 3:
 ---------------
 SOSSOSSOS
-
 Sample Output 3:
 ---------------
 0
-
 Explanation:
 -------------
 Since no character is altered, return 0.
-
-
 
 import java.util.*;
 class test
@@ -5493,42 +5455,33 @@ class test
     }
 }
 
-
+124th Problem
 In a shopping mall, there is a Lift with a capacity of 500kgs only.
 There are N persons waiting for the lift, and their weights (weights[]) are given.
 If The Lift is overloaded, it will not move.
- 
 Your task is to find out the maximum number of persons can use the Lift,
-without any overloading issue.
-
+without any overloading issue
 Input Format:
 -------------
 Line-1: An integer N, number of persons
 Line-2: N space separated integers, weights of the persons.
-
 Output Format:
 --------------
 Print an integer, max num of persons canuse the lift.
-
 Sample Input-1:
 ---------------
 6
 98 121 76 135 142 65
-
 Sample Output-1:
 ----------------
 5
-
 Sample Input-2:
 ---------------
 7
 85 67 69 83 54 61 50
-
 Sample Output-2:
 ----------------
 7
-
-
 
 import java.util.*;
 class test
