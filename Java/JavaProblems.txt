@@ -6932,39 +6932,29 @@ public class Solution{
 Vihan is given a number N and He wants to check whether N is a converse number
 or not. The binary form of number N is said to be converse number, if it obeys 
 the following property: "every pair of adjacent digits are different". 
-
 Your task is to help Vihan to find N is a converse number or not.
 If yes, print 'true', otherwise print 'false'.
-
 Input Format:
 -------------
 An integer N, the positive number.
-
 Output Format:
 --------------
 Print a boolean result.
-
 Sample Input-1:
 ---------------
 85
-
 Sample Output-1:
 ----------------
 true
-
 Explanation:
 ------------
 Binary Rep of 85 is 1010101 
-
-
 Sample Input-2:
 ---------------
 87
-
 Sample Output-2:
 ----------------
 false
-
 Explanation:
 ------------
 Binary Rep of 87 is 1010111
@@ -6986,11 +6976,85 @@ public class Solution {
     }
 }
 
+Ramu has been given two different sets of students marks.
+His teacher has been surprised to see that few of these marks of two sets seems to be similar.
+If they are equal the teacher gives Grade 'Equal' to both the sets
+If they are not equal the teacher gives Grade 'Not Equal' to both the sets
+Input 
+The first line of input contains the size of set1 followed by set1 elements followed by set2 size followed by set2 elements
+Input = 
+5
+1 2 3 4 5
+5
+4 3 2 1 5
+Output = Equal
+Input =
+6
+1 2 3 2 1 4
+6
+1 2 3 2 4 4
+Output = Not Equal
+Help Ramu to fix the problem. 
+
+import java.util.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        HashSet<Integer> set1 = new HashSet<>();
+        for (int i = 0; i < n1; i++) {
+            set1.add(sc.nextInt());
+        }
+        int n2 = sc.nextInt();
+        HashSet<Integer> set2 = new HashSet<>();
+        for (int i = 0; i < n2; i++) {
+            set2.add(sc.nextInt());
+        }A
+        boolean result = set1.equals(set2);
+        if (result) {
+            System.out.println("Equal");
+        } else {
+            System.out.println("Not Equal");
+        }
+    }
+}
 
 
+In a Militarty Organization, the Army chief wants to write the names of the soldiers in the reverse order and 
+check the names(reversed) with the orginal names.
+Help the chief to check how many such names are equal. 
+Print the names which are equal. 
+If they are not equal print -1
+Note - Use Recursion Only
+input = thomas hah abcddcba
+output = hah abcddcba
+input = a b c d
+output = a b c d
+input = shiva gopi hari
+output = -1
 
-
-
-
-
-
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String names = sc.nextLine();
+        String[] arr = names.split(" ");
+        int count = 0;
+        for (String name : arr) {
+            String reversed = reverse(name);
+            if (name.equals(reversed)) {
+                count++;
+                System.out.print(name + " ");
+            }
+        }
+        if (count == 0) {
+            System.out.println(-1);
+        }
+    }
+    public static String reverse(String str) {
+        if (str.isEmpty() || str.length() == 1) {
+            return str;
+        }
+        return str.charAt(str.length() - 1) + reverse(str.substring(0, str.length() - 1));
+    }
+}
