@@ -5748,63 +5748,40 @@ class test
     }
 }
 
-
+128th Problem
 John loves shopping. He has some money in his purse and wants to buy few items. 
 He is given a list of prices for the items and the amount to buy the items. The 
 prices are arranged in non-decreasing order. With the amount he has, he can 
 either buy any two items with no money left or no item at all. When he is able 
 to buy two items, he wants to know the index of the selected items. If no items 
 are purchased, return empty list. Your task is to help John in her task.
-
 Sample test case
 case=1
 input=5
 2 5 7 11 15
 9
 output=[0, 2]
-
 case=2
 input=5
 2 5 7 11 15
 14
 output=[]
-
 case=3
 input=10
 1 2 3 4 5 6 7 8 9 10
 11
 output=[0, 9]
-
 case=4
 input=6
 2 3 4 4 5 6
 8
 output=[0, 5]
 
-
-
-
 import java.util.*;
 class test
 {
     public static String sum(int arr[],int n,int target)
     {
-        // HashMap<Integer,Integer> hm=new HashMap<>();
-        ArrayList<Integer> res=new ArrayList<>();
-        // for(int i=n-1;i>=0;i--)
-        // {
-        //     if(!hm.containsKey(target-arr[i]))
-        //     {
-        //         hm.put(arr[i],i);
-        //     }
-        //     else
-        //     {
-        //         res.add(0,i);
-        //         res.add(1,hm.get(target-arr[i]));
-        //         return res.toString();
-        //     }
-        // }
-        // return res.toString();
         for(int i=0;i<n;i++)
         {
             for(int j=n-1;j>=0;j--)
@@ -5833,8 +5810,8 @@ class test
     }
 }
 
-/*
-The school management has planned few games for students to improve their 
+129th Problem
+/* The school management has planned few games for students to improve their 
 mathematical skills,one such game is group of students are placed in a row, 
 first student holds a number 0, second student holds a number 1, and 
 the task is remaining students have to hold the number which is equal to 
@@ -5846,8 +5823,7 @@ input:3
 Output: 0 1 1
 Example 2:
 Input:7
-Output: 0 1 1 2 3 5 8
-*/
+Output: 0 1 1 2 3 5 8 */
 
 import java.util.*;
 class Game {
@@ -5874,24 +5850,20 @@ class Game {
     }
 }
 
-/*  
-In a primary school mathematics teacher has given a task to students, i.e multiply all the integers between 1 to n and give the final product.With a pen and paper, this process has taken much more time,and you are thier computer teacher can you help students by giving a program to solve this task.
-
+130th Problem
+/*  In a primary school mathematics teacher has given a task to students, i.e multiply all the integers between 1 to n and give the final product.With a pen and paper, this process has taken much more time,and you are thier computer teacher can you help students by giving a program to solve this task.
 input format = integer
 output format = integer
-    
 	Example 1:
 	input=5
 	output=120
-
 	Example 2:
 	input=6
 	output=720
-	
 	Example 3:
 	input=8
-	output=40320
-*/
+	output=40320 */
+
 import java.util.*;
 class Product {
     public static int fact(int n){
@@ -5912,7 +5884,9 @@ class Product {
         System.out.print(result);
     }
 }
-/*You are attending an interview interviewer asked you to print 1 to n numbers 
+
+131st Problem
+/* You are attending an interview interviewer asked you to print 1 to n numbers 
 without using loops when given an integer N.
 input format : an integer n
 Examples:
@@ -5921,8 +5895,7 @@ Output: 1 2 3 4 5
 Explanation: We have to print numbers from 1 to 5.
 Input: N = 10
 Output: 1 2 3 4 5 6 7 8 9 10
-Explanation: We have to print numbers from 1 to 10.
-*/
+Explanation: We have to print numbers from 1 to 10. */
 
 import java.util.*;
 class PrintNumbers{
@@ -5946,6 +5919,7 @@ class PrintNumbers{
     }
 }
 
+132nd Problem
 /* you are solving a puzzle, which is to find product of two integers without 
 using multiplication operator and without using any loops.
 Using your programming skills can you solve this with a java program.
