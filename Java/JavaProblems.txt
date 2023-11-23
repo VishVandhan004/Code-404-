@@ -6826,3 +6826,52 @@ public class Solution{
         return true;
     }
 }
+
+151st Problem
+Shiva is given an matrix. 
+He has to find the  element of the matrix such that it is the smallest element in its row and greatest in its column.
+The first line of input contains the size of the matrix followed by matrix elements
+Input = 3 3
+3 7 8
+9 11 13 
+15 16 17
+Output = 15
+Explanation: 15 is the since it is the smallest in its row and the greatest in its column
+Note - Print -1 if no such element exists
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] matrix = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        int result = -1;
+        for (int i = 0; i < n; i++) {
+            int minRow = matrix[i][0];
+            int minCol = 0;
+            for (int j = 1; j < m; j++) {
+                if (matrix[i][j] < minRow) {
+                    minRow = matrix[i][j];
+                    minCol = j;
+                }
+            }
+            int maxCol = matrix[0][minCol];
+            for (int k = 1; k < n; k++) {
+                if (matrix[k][minCol] > maxCol) {
+                    maxCol = matrix[k][minCol];
+                }
+            }
+            if (minRow == maxCol) {
+                result = minRow;
+                break;
+            }
+        }
+        System.out.println(result);
+    }
+}
