@@ -6775,3 +6775,54 @@ public class Solution {
         }
     }
 }
+
+150th Problem
+SHyam is working on String S, he was asked to develop a method to return the longest substring in S, which is a palindrome.
+NOTE: Alphabets are case sensitive
+THe lenght of the palindrome should be atleast 2 characters.
+If no palindrome substring print -1.
+input = abbbabbcbbacdb
+output = abbcbba
+input = aaaaa
+output = aaaaa
+
+import java.util.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(longestPalindrome(s));
+    }
+    public static String longestPalindrome(String s) {
+        if (s.isEmpty() || s.length() == 1) {
+            return "-1";
+        }
+        String longest = "";
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j < s.length(); j++) {
+                String substring = s.substring(i, j + 1);
+                if (isPalindrome(substring)) {
+                    if (substring.length() > longest.length()) {
+                        longest = substring;
+                    }
+                }
+            }
+        }
+        if (longest.isEmpty()) {
+            return "-1";
+        }
+        return longest;
+    }
+    public static boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+}
