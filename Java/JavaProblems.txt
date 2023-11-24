@@ -6736,8 +6736,7 @@ public class Solution {
 }
 
 149th Problem
-Steve Jobs is working on Numbers.
-He has found few numbers behvae in a different way.
+Steve Jobs is working on Numbers. He has found few numbers behvae in a different way.
 If a number is divisible by the sum of its individual digits then he wants to name that number has H Number
 Example: Number 200 is a H Number because the sum of digits 2 and 0 and 0 is 2(2+0+0) and 200 is divisible by 2. 
 Number 171 is a Harshad Number because the sum of digits 1 and 7 and 1 is 9(1+7+1) and 171 is divisible by 9.
