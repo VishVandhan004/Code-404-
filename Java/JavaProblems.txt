@@ -6459,10 +6459,8 @@ Given list is [ 1, 2, 4, 5, 7 ]: 1, 2 is continuous range, grouped as 1->2,
 4,5 grouped as 4->5, 7 is left alone.
 Note: List contain no duplicates.
 Input Format:
--------------
 Line-1 -> Space separated integers in sorted order
 Output Format:
---------------
 Print the list of continuous range groups.
 Sample Input-1:
 ---------------
