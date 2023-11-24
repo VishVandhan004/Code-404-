@@ -6828,8 +6828,7 @@ public class Solution{
 }
 
 151st Problem
-Shiva is given an matrix. 
-He has to find the  element of the matrix such that it is the smallest element in its row and greatest in its column.
+Shiva is given an matrix.He has to find the  element of the matrix such that it is the smallest element in its row and greatest in its column.
 The first line of input contains the size of the matrix followed by matrix elements
 Input = 3 3
 3 7 8
