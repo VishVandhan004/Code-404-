@@ -6463,7 +6463,6 @@ Line-1 -> Space separated integers in sorted order
 Output Format:
 Print the list of continuous range groups.
 Sample Input-1:
----------------
 5
 1 2 4 5 7
 Sample Output-1:
