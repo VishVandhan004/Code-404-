@@ -6402,7 +6402,6 @@ Input Format:
 Line-1: An integer, n, size of array
 Line-2: Space separated integers.   
 Output Format:
---------------
 Line-1: Space separated numbers, duplicate and missing number
 Sample Input-1:
 4
