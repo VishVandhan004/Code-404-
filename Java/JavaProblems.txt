@@ -6413,7 +6413,6 @@ Sample Input-2:
 2
 1 1
 Sample Output-2:
----------------
 1 2
 
 import java.util.*;
