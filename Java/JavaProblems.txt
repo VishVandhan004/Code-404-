@@ -6398,7 +6398,6 @@ You are given an integer array nums representing the data status of this set
 after the error.
 Find the number that occurs twice and the number that is missing.
 Input Format:
--------------
 Line-1: An integer, n, size of array
 Line-2: Space separated integers.   
 Output Format:
