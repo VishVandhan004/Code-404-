@@ -4043,38 +4043,29 @@ public class Main{
 100th Problem
 In a bag filled with an assortment of coins, each marked with a unique integer value, you are tasked with finding two distinct coins. 
 The sum of the values on these two coins should equal a specified target value. 
-
 Your goal is to determine the indices (positions) of these two coins within the bag. 
-
 It is guaranteed that there is exactly one solution to this problem, and each coin can only be used once. 
-
 Input Format:
 -------------------
 Line-1: A number, size of the array
 Line-2: N line separated integers, coins[]
 Line-3: A number, target sum
-
 Output Format:
 -------------------
 Line-1: Space separated two numbers, indices
-
 Sample Input:
 --------------
 4
 2 7 11 15
 9
-
 Sample Output:
 ---------------
 0 1
-
-
 Sample Input:
 --------------
 3
 3 2 4
 6
-
 Sample Output:
 --------------
 1 2
