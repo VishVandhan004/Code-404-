@@ -4567,7 +4567,6 @@ Sample Input1:
 bank
 kanb
 Sample Output1: 
---------------
 true
 Explanation: For example, swap the first character with the last character of s2 to make "bank".
 Sample Input2:
