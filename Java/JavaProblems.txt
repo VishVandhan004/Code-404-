@@ -4582,7 +4582,6 @@ Sample Input3:
 kmit
 kmit
 Sample Output3: 
---------------
 true
 Explanation: The two strings are already equal, so no string swap operation is required.
 
