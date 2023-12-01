@@ -4564,7 +4564,6 @@ swap the characters at these indices.
 Return true if it is possible to make both strings equal by performing at most one string swap on exactly one of the strings. 
 Otherwise, return false.
 Sample Input1:
--------------
 bank
 kanb
 Sample Output1: 
