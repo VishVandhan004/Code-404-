@@ -4570,15 +4570,12 @@ Sample Output1:
 true
 Explanation: For example, swap the first character with the last character of s2 to make "bank".
 Sample Input2:
--------------
 hyderabad
 secunderabad
 Sample Output2: 
---------------
 false
 Explanation: It is impossible to make them equal with one string swap.
 Sample Input3:
--------------
 kmit
 kmit
 Sample Output3: 
