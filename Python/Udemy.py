@@ -1,5 +1,5 @@
 # String Slicing, Indexing and Methods
-ch = "ENGINEERING"
+ch = "ENGINEERING" 
 a = 'hello world'
 print(ch[0])
 print(ch[-1])
@@ -17,6 +17,10 @@ name = 'sam'
 ll = name[1:]
 print('p' + ll)
 print(name + '5')
+
+# Dictionaries
+my_dict = {'key1':'value1','key2':'values2'}
+print(my_dict['key1'])
 
 
 
