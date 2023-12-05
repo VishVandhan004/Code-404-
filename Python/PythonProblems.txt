@@ -1,0 +1,35 @@
+''' Input a number N. Display sum of N natural numbers(1+2+3....+N).
+Sample cases
+input :
+5
+output:
+15
+Explanation 1+2+3+4+5=15'''
+
+a = int(input())
+print(int(a*(a+1)/2))
+
+'''Input the circle radius R. Find and Display the area and perimeter of Circle
+Sample cases
+Case =1
+input =3
+output=28.27
+18.85'''
+
+import math
+n = int(input())
+area=math.pi*n*n
+perimeter=2*math.pi*n
+print(round(area,2))
+print(round(perimeter,2))
+
+'''Given a name which contains first and last name,print the output in the following order:
+Last Name,First Name
+Sample Test case:
+input =Ravula Ramesh
+output = Ramesh,Ravula'''
+
+str = input()
+str = str.replace(" ",",")
+index = str.index(",")
+print(str[index+1:],str[0:index],sep=",")
