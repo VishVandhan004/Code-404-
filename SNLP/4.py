@@ -1,4 +1,4 @@
-# Inputting a string
+# Inputing a string
 str = input("Enter a string: ")
 print("CAPATILIZING 1st LETTER")
 # Capitalizes the first letter of the string
