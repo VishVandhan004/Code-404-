@@ -1,15 +1,17 @@
-''' Input a number N. Display sum of N natural numbers(1+2+3....+N).
+1st Problem
+Input a number N. Display sum of N natural numbers(1+2+3....+N).
 Sample cases
 input :
 5
 output:
 15
-Explanation 1+2+3+4+5=15'''
+Explanation 1+2+3+4+5=15
 
 a = int(input())
 print(int(a*(a+1)/2))
 
-'''Input the circle radius R. Find and Display the area and perimeter of Circle
+2nd Problem
+Input the circle radius R. Find and Display the area and perimeter of Circle
 Sample cases
 Case =1
 input =3
@@ -23,13 +25,48 @@ perimeter=2*math.pi*n
 print(round(area,2))
 print(round(perimeter,2))
 
-'''Given a name which contains first and last name,print the output in the following order:
+3rd Problem
+Given a name which contains first and last name,print the output in the following order:
 Last Name,First Name
 Sample Test case:
 input =Ravula Ramesh
-output = Ramesh,Ravula'''
+output = Ramesh,Ravula
 
 str = input()
 str = str.replace(" ",",")
 index = str.index(",")
 print(str[index+1:],str[0:index],sep=",")
+
+4th Problem
+Write a program which accepts a sequence of comma-seperated numbers from user
+and generate a list and a tuple with those numbers.
+Sample test cases
+Example 1:
+input=10,20,30,40,50
+output=[10,20,30,40,50]
+(10,20,30,40,50)
+
+str = input()
+str = str.split(",")
+print(str)
+print(tuple(str))
+
+5th Problem
+Write a program that accepts an integer (n) 
+and computes the value of n+nn+nnn.
+If n is 5 the output should be 5+55+555=615
+Sample Test cases
+case =1
+input =5
+output=615
+Case =2
+input =3
+output=369
+
+n = int(input())
+a = str(n)
+b = a*2
+c = a*3
+print(int(a)+int(b)+int(c))
+
+6th Problem
