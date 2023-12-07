@@ -6932,3 +6932,144 @@ public class Solution {
         System.out.println(remainingSamosas);
     }
 }
+
+154th Problem
+In a cricket match,a batsman can score a maxium of one or zero. 
+The captain hari has been given the scores of the batsman in the match.
+Captain is intrested to write all the scores of the match in an particular order.
+He writes all zeros to the left and all ones to the right. 
+help Captain hari to arrange them accordingly
+He has been given the random scores of the batsman in a match.
+Input = 10
+0 1 0 1 0 0 1 1 1 0
+Output = 0 0 0 0 0 1 1 1 1 1
+input = 2
+0 1
+output = 0 1
+input = 3
+1 1 0
+output = 0 1 1 
+Note - The first line of input contains the number of players followed by player score
+
+import java.util.*;
+public class Solution {
+    public static void sortArray(int[] arr, int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == 0) {
+                count++;
+            }
+        }
+        for (int i = 0; i < count; i++) {
+            arr[i] = 0;
+        }
+        for (int i = count; i < n; i++) {
+            arr[i] = 1;
+        }
+    }
+    public static void printArray(int[] arr, int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sortArray(arr, n);
+        printArray(arr, n);
+    }
+}
+
+155th Problem
+In a Coding Hackathon, each individual is given a score,
+if the scores of any 3 students meet the Target score, they will be given a prize.
+Please hello the Coding Hackathon team regarding the same.
+If you find any 3 students score equal to the target score, print true else false
+Input - The first line of input contains the number of students participating followed by student scores followed by target score. 
+input = 5
+10 20 30 40 50
+100
+output = true
+we have the scores {20,30,50} which meets the target score. 
+input = 5
+50 30 60 20 10
+40
+output = false
+we dont have the scores which meets the targest score (40)
+
+import java.util.*;
+public class Solution {
+    public static boolean findTriplet(int[] arr, int n, int target) {
+        java.util.Arrays.sort(arr);
+        for (int i = 0; i < n - 2; i++) {
+            int left = i + 1;
+            int right = n - 1;
+            while (left < right) {
+                int sum = arr[i] + arr[left] + arr[right];
+                if (sum == target) {
+                    return true;
+                }
+                else if (sum < target) {
+                    left++;
+                }
+                else {
+                    right--;
+                }
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int target = sc.nextInt();
+        boolean result = findTriplet(arr, n, target);
+        System.out.println(result);
+    }
+}
+
+156th Problem
+NOTE- USE RECURSION ONLY.
+DONT SIMPLY WRITE (X*Y)
+Given two numbers x and y find the product using recursion.
+Examples : 
+Input = 5 4
+Output = 20
+Input = 100 20
+Output =2000
+
+import java.util.*;
+public class Solution
+{
+public static int product(int x, int y) 
+{
+  if (x < y) {
+    return product(y, x);
+  }
+  else if (y == 0) {
+    return 0;
+  }
+  else {
+    return x + product(x, y - 1);
+  }
+}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      int x = sc.nextInt();
+      int y = sc.nextInt();
+      System.out.println(product(x, y));
+    }
+}
+
+
+
+

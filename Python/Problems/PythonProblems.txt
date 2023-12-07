@@ -70,3 +70,72 @@ c = a*3
 print(int(a)+int(b)+int(c))
 
 6th Problem
+Input a string.Display all the lowercase characters.
+Example
+input=heLLo123World456kmiT
+output=heooeldmi
+
+s = input()
+output=''
+for c in s:
+    if c.islower():
+        output+=c
+print(output)        
+
+7th Problem
+Input file name with file extension.
+Display only file extension
+Example 1
+input=file1.txt
+output=txt
+Example 2
+input=notes.doc
+output=doc
+
+s=input().split(".")
+print(s[-1])
+
+8th Problem
+Given a list of numbers write a program to calculate the sum of odd and even numbers and print the samme.
+Accept from the user the count of numbers and the actual numbers,
+Example 1
+input=6
+5
+8
+4
+7
+9
+2
+output=14
+21
+
+a=int(input())
+sum=0
+esum=0
+for i in range(a):
+    b=int(input())
+    sum=sum+b
+    if(b%2==0):
+        esum=esum+b
+print(esum)
+print(sum-esum)
+
+9th Problem
+Given time in seconds, prints the time in days:hours:minutes:seconds
+Example
+input=25421
+output=0:7:3:41
+input=95467
+output=1:2:31:7
+input=86400
+output=1:0:0:0
+
+def time(sec):
+    days =sec//86400
+    hr=(sec % 86400)//3600
+    min=((sec % 86400)%3600)//60
+    sec=((sec%86400)%3600)%60
+    print(f"{days} :{hr}: {min}: {sec}")
+    
+n=int(input())
+time(n)
