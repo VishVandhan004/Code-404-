@@ -7049,7 +7049,7 @@ Output =2000
 
 import java.util.*;
 public class Solution{
-public static int product(int x, int y){
+public static int product(int x, int y) {
   if (x < y) {
     return product(y, x);
   }
