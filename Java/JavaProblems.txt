@@ -7048,8 +7048,7 @@ Input = 100 20
 Output =2000
 
 import java.util.*;
-public class Solution
-{
+public class Solution{
 public static int product(int x, int y) 
 {
   if (x < y) {
