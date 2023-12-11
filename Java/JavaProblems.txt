@@ -7068,6 +7068,66 @@ public static int product(int x, int y) {
     }
 }
 
+157th Problem
+In a Military Operation, The Army Chief is given the heights of the Himalayan Mountains. 
+The soldiers can attack if the heights of the mountains are in Z Fashion
+(if either all values are increasing or decreasing or first increasing and then decreasing). 
+
+Soldiers need to find whether the heights which falls in the given range has values in the form of a Z or not
+
+
+if the heights in the given range  [h1, h2, h3 … hN] is said to be in form of a Z if there exist an 
+integer K, 1 <= K <= N such that, 
+h1 <= h2 <= h3 .. <= hK >= h(K+1) >= h(K+2) …. >= hN 
+
+The Army Chief gives the soldiers the heights of the mountains followed by the range of the mountains 
+
+Examples: 
+
+Input = 2 3 2 4 4 6 3 2
+0 2
+Output =  true
+
+Explanation: The output is true , Z Fashion is [2 3 2], 
+heights first increases and then decreases
+
+Input = 2 3 2 4 4 6 3 2
+2 7
+Output = true
+
+Explanation: The output is true , Z fashion is [2 4 4 6 3 2], 
+heights first increases and then decreases
+Input = 2 3 2 4 4 6 3 2
+1 3
+Output = false
+
+Explanation: The output is false, Z fashion  is [3 2 4], 
+heights are  not in the form above stated
+
+import java.util.*;
+public class Solution
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] heights = sc.nextLine().split(" ");
+        int start = sc.nextInt();
+        int end = sc.nextInt();
+        boolean isZ = false;
+        for (int i = start + 1; i < end; i++) 
+        {
+            if (Integer.parseInt(heights[i]) > Integer.parseInt(heights[i - 1]) && Integer.parseInt(heights[i]) > Integer.parseInt(heights[i + 1])) 
+            {
+                isZ = true;
+                break;
+            } else if (Integer.parseInt(heights[i]) < Integer.parseInt(heights[i - 1]) && Integer.parseInt(heights[i]) < Integer.parseInt(heights[i + 1])) {
+                isZ = true;
+                break;
+            }
+        }
+        System.out.println(isZ);
+    }
+}
+
 
 
 
