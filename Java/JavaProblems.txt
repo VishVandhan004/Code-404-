@@ -7128,6 +7128,81 @@ public class Solution
     }
 }
 
+T Strings. 
 
+Shyam reads a line of statement from the English Text Book. He is very fond of the Letter 't'/'T'.
+If a Word contains a Letter 't'/'T' he counts the numbers in the given word.
+
+Help Shyam to display the sum of the numbers in the word.
+
+if no numbers are found print 0
+
+for example:
+
+input = Tw1nkl3 to1 add4
+output =
+Tw1nkl3(4)
+to1(1)
+add4(0)
+
+input = add me
+output =
+add(0)
+me(0)
+
+import java.util.*;
+
+public class SumOfNumbersInWords {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        String[] words = input.split(" ");
+        for (String word : words) {
+            int sum = 0;
+            for (char c : word.toCharArray()) {
+                if (Character.isDigit(c)) {
+                    sum += Character.getNumericValue(c);
+                }
+            }
+            System.out.println(word + "(" + sum + ")");
+        }
+    }
+}
+
+Bob has given a year between 1900 to 1999 
+he has to write the year into words 
+
+
+Note - if any other year is given print INVALID 
+
+Few Examples
+
+input = 1980
+output = ONE NINE EIGHT ZERO
+
+input = 1900
+output = ONE NINE ZERO ZERO 
+
+input = 2003
+output = INVALID 
+
+import java.util.*;
+
+public class YearToWords {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        if (year >= 1900 && year <= 1999) {
+            String[] words = {"ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"};
+            String yearInWords = "";
+            for (char c : String.valueOf(year).toCharArray()) {
+                yearInWords += words[Character.getNumericValue(c)] + " ";
+            }
+            System.out.println(yearInWords.trim());
+        } else {
+            System.out.println("INVALID");
+        }
+    }
+}
 
 
