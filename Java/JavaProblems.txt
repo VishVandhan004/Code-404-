@@ -7183,4 +7183,119 @@ public class YearToWords {
     }
 }
 
+160th Problem
+Mr. Robert has an portrait photo with size M*N pixels, 
+where M is the length of the portrait and N is width of the portrait.
+You are given an integer S in pixels,
+Your task is to help Mr. Robert to find the actual values 
+[M, N] using the following specifications:
+	- The size of portrait should be equal to S. i.e., S = M*N.
+ 	- N is always smaller than in M, i.e., N <= M
+ 	- The diffrence between length and width, (M-N) should be minimum.
+ 	And print the result as a pair M and N.
+NOTE: S is always a positive integer.
+Input Format:
+-------------
+Line-1 -> An integer S, size of the portrait.
+Output Format:
+--------------
+Print the result as a pair of integers.
+Sample Input-1:
+---------------
+24
+Sample Output-1:
+----------------
+6 4
+Sample Input-2:
+---------------
+550
+Sample Output-2:
+----------------
+25 22
 
+import java.util.*;
+public class Solution{
+  public static void findFactors (int S) {
+    int M = 0;
+    int N = 0;
+    for (int i = (int) Math.sqrt (S); i >= 1; i--) {
+      if (S % i == 0) {
+        N = i;
+        M = S / i;
+        break;
+      }
+    }
+    System.out.println (M + " " + N);
+  }
+  public static void main (String[] args) {
+    Scanner sc = new Scanner (System.in);
+    int S = sc.nextInt ();
+    findFactors (S);
+  }
+}
+
+161st Problem
+Write a program to implement knapsack problem using Bruteforce approach.
+Input Format :
+--------------
+Line 1 : N space separated numbers, weigths[]
+Line 2 : N space separated numbers, values[]
+Line 3 : A number, capacity
+Output Format : 
+---------------
+Line 1 : Number, maximum profit / 0 for boundary conditions
+Sample Input 1 :
+----------------
+5 3 4
+20 40 30
+10
+Sample Output 1 :
+-----------------
+70
+Sample Input 2 :
+----------------
+5 3 4
+20 40 30
+0
+Sample Output 2 :
+-----------------
+0
+
+import java.util.*;
+public class Solution{
+  public static int findMaxProfit(int[] weights, int[] values, int capacity) {
+    int maxProfit = 0;
+    int n = weights.length;
+    for (int i = 0; i < (1 << n); i++) {
+      int currentWeight = 0;
+      int currentProfit = 0;
+      for (int j = 0; j < n; j++) {
+        if ((i & (1 << j)) != 0) {
+          currentWeight += weights[j];
+          currentProfit += values[j];
+        }
+      }
+      if (currentWeight <= capacity && currentProfit > maxProfit) {
+        maxProfit = currentProfit;
+      }
+    }
+    return maxProfit;
+  }
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int[] weights = readArray(sc);
+    int[] values = readArray(sc);
+    int capacity = sc.nextInt();
+    int maxProfit = findMaxProfit(weights, values, capacity);
+    System.out.println("The maximum profit is: " + maxProfit);
+  }
+  public static int[] readArray(Scanner sc) {
+    String line = sc.nextLine();
+    String[] parts = line.split(" ");
+    int[] array = new int[parts.length];
+    for (int i = 0; i < parts.length; i++) {
+      array[i] = Integer.parseInt(parts[i]);
+    }
+    return array;
+  }
+}
