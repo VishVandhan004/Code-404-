@@ -7165,7 +7165,6 @@ input = 2003
 output = INVALID 
 
 import java.util.*;
-
 public class YearToWords {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
