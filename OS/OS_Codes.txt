@@ -371,7 +371,6 @@ one writer can write to the shared resource. When a writer is writing data to th
 resource, no other process can access the resource. A writer cannot write to the 
 resource if there are non zero number of readers accessing the resource at that time. 
 */
-/*
 SAMPLE INPUT AND OUTPUT:
 1. Press 1 for writer                                                                                                   
 2. Press 2 for reader                                                                                                   
