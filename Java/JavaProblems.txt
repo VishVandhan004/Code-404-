@@ -7298,3 +7298,48 @@ public class Solution{
     return array;
   }
 }
+
+162nd Problem
+Write a program to perform string matching a.k.a pattern matching.
+Input Format :
+--------------
+Line 1 : A string for main string
+Line 2 : A string for pattern
+Output Format :
+---------------
+Line 1 : A number, index(if pattern found return first occurance) or -1(element not found)
+Sample Input 1 :
+----------------
+hello
+ll
+Sample Output 1 :
+-----------------
+2
+Sample Input 2 :
+----------------
+123456789
+567
+Sample Output 2 :
+-----------------
+4
+Sample Input 3 :
+----------------
+helloworld
+xyz
+Sample Output  :
+-----------------
+-1
+
+import java.util.*;
+public class Solution{
+  public static int stringMatch (String main, String pattern) {
+    return main.indexOf (pattern);
+  }
+  public static void main (String[] args) {
+    Scanner sc = new Scanner (System.in);
+    String main = sc.nextLine ();
+        String pattern = sc.nextLine ();
+    int result = stringMatch (main, pattern);
+    System.out.println (result);
+  }
+}
