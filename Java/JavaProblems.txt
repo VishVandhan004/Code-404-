@@ -7343,3 +7343,76 @@ public class Solution{
     System.out.println (result);
   }
 }
+
+163rd Problem
+You are Given an array of length of n , find the majority element.
+The majority element is the element that appears more than [n / 2] times.
+You may assume that the majority element always exists in the array.
+Note: Solve it using divide and conquer technique
+Input Format :
+--------------
+Line-1 : N space separated numbers, list[]
+Output Format :
+---------------
+Line-1 : A number, largest element in array
+Sample Input :
+--------------
+1 2 4 5 1 1 1
+Sample Output :
+---------------
+1
+Sample Input :
+--------------
+6 2 6
+Sample Output :
+---------------
+6
+Hint : creating more functions will make the solution more simpler
+
+import java.util.*;
+public class Solution {
+  public static int findMajorityElement(int[] arr, int low, int high) {
+    if (low == high) {
+      return arr[low];
+    }
+    int mid = low + (high - low) / 2;
+    int leftMajority = findMajorityElement(arr, low, mid);
+    int rightMajority = findMajorityElement(arr, mid + 1, high);
+    if (leftMajority == rightMajority) {
+      return leftMajority;
+    }
+    int leftCount = countFrequency(arr, low, high, leftMajority);
+    int rightCount = countFrequency(arr, low, high, rightMajority);
+    if (leftCount > rightCount) {
+      return leftMajority;
+    } else if (rightCount > leftCount) {
+      return rightMajority;
+    } else {
+      return -1;
+    }
+  }
+  public static int countFrequency(int[] arr, int low, int high, int element) {
+    int frequency = 0;
+    for (int i = low; i <= high; i++) {
+      if (arr[i] == element) {
+        frequency++;
+      }
+    }
+    return frequency;
+  }
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int[] arr = readArray(sc);
+    int result = findMajorityElement(arr, 0, arr.length - 1);
+    System.out.println(result);
+  }
+  public static int[] readArray(Scanner sc) {
+    String line = sc.nextLine();
+    String[] parts = line.split(" ");
+    int[] array = new int[parts.length];
+    for (int i = 0; i < parts.length; i++) {
+      array[i] = Integer.parseInt(parts[i]);
+    }
+    return array;
+  }
+}
