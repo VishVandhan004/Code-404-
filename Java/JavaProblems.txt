@@ -7498,3 +7498,84 @@ public class Solution {
     System.out.println(result);
   }
 }
+
+165th Problem
+You are given a positive integer num consisting only of digits 6 and 9.
+Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
+input =9669
+output =9969
+Explanation: 
+Changing the first digit results in 6669.
+Changing the second digit results in 9969.
+Changing the third digit results in 9699.
+Changing the fourth digit results in 9666.
+The maximum number is 9969.
+input =9996
+output =9999
+Explanation: Changing the last digit 6 to 9 results in the maximum number.
+input =9999
+output =9999
+Explanation: It is better not to apply any change.
+
+import java.util.Scanner;
+public class Solution {
+  public static int findMaxNumber(int num) {
+    String str = String.valueOf(num);
+    StringBuilder sb = new StringBuilder();
+    boolean changed = false;
+    for (char ch : str.toCharArray()) {
+      if (ch == '6' && !changed) {
+        sb.append('9');
+        changed = true;
+      } else {
+        sb.append(ch);
+      }
+    }
+    return Integer.parseInt(sb.toString());
+  }
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int result = findMaxNumber(num);
+    System.out.println(result);
+  }
+}
+
+166th Problem
+Given an array of strings words and a string s, determine if s is an acronym of words.
+The string s is considered an acronym of words if it can be formed by concatenating the first character of each string in words in order. 
+For example, "ab" can be formed from ["apple", "banana"], but it can't be formed from ["bear", "aardvark"].
+Return true if s is an acronym of words, and false otherwise.
+input =alice bob charlie
+abc
+output =true
+Explanation: The first character in the words "alice", "bob", and "charlie" are 'a', 'b', and 'c', respectively. Hence, s = "abc" is the acronym. 
+input =an apple
+a
+output =false
+Explanation: The first character in the words "an" and "apple" are 'a' and 'a', respectively. 
+The acronym formed by concatenating these characters is "aa". 
+Hence, s = "a" is not the acronym.
+input =never gonna give up on you
+ngguoy
+output =true
+Explanation: By concatenating the first character of the words in the array, we get the string "ngguoy". 
+Hence, s = "ngguoy" is the acronym.
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] words = scanner.nextLine().split(" ");
+        String s = scanner.nextLine();
+        boolean isAcronym = true;
+        for (int i = 0; i < s.length(); i++) {
+            if (i >= words.length || s.charAt(i) != words[i].charAt(0)) {
+                isAcronym = false;
+                break;
+            }
+        }
+        System.out.println(isAcronym);
+    }
+}
+
