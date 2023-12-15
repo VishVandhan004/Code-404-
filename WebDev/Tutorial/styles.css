@@ -12,7 +12,7 @@ h2 {
     height:50px;
     border-radius: 30%;
 
-}
+} 
 table{
      color: blue;
 }
@@ -52,13 +52,14 @@ flex-basis: 200px;
 }
 .parent{
     display: flex;
-    background:pink;
+    background:rgb(11, 238, 98);
     width:100vw;
     height:50vh;
+    justify-content: center;
+    align-items: center;
 }
 .child{
     background: yellow;
     width:200px;
     height: 200px;
-    justify-content: center;
 }
