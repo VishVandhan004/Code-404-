@@ -33,8 +33,9 @@ print(d1['k1'])
 print(d1['k1'][2])
 
 # Tuples
- 
-
+t = (1,2,3)
+t1 = ('one',2,3)
+print(t[0]) 
 
 
 
