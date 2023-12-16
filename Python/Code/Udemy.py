@@ -32,7 +32,8 @@ d1 = {'k1':['a','b','c']}
 print(d1['k1'])
 print(d1['k1'][2])
 
-
+# Tuples
+ 
 
 
 
