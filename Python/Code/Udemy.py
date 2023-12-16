@@ -12,7 +12,7 @@ print(ch.lower())
 print(a.split())
 print(a.split('o'))
 
-#String Concatenation
+# String Concatenation
 name = 'sam'
 ll = name[1:]
 print('p' + ll)
@@ -27,7 +27,7 @@ print(d['k2'][2])
 print(d['k3'])
 print(d['k3']['inside'])
 d['k4'] = 400 # adding a new element to the dictionary
-print(d)
+print(d) 
 d1 = {'k1':['a','b','c']}
 print(d1['k1'])
 print(d1['k1'][2])
@@ -39,9 +39,21 @@ print(t[0])
 print(t.count(1))
 print(t.index(2))
 
-#Sets
+# Sets
 myset = set()
 myset.add(1)
 myset.add(2)
 myset.add(2)
 print(myset)
+
+# Booleans
+print(type(True))
+print(type(False))
+print(1>2)
+print(2==2)
+
+# Comparison Operators
+print(2==2)
+print(2>1)
+print(2<1)
+print(1<2>3)
