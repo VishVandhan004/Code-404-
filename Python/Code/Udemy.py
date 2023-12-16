@@ -35,7 +35,13 @@ print(d1['k1'][2])
 # Tuples
 t = (1,2,3)
 t1 = ('one',2,3)
-print(t[0]) 
+print(t[0])
+print(t.count(1))
+print(t.index(2))
 
-
-
+#Sets
+myset = set()
+myset.add(1)
+myset.add(2)
+myset.add(2)
+print(myset)
