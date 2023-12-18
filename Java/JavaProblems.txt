@@ -7617,3 +7617,80 @@ public class Solution {
     System.out.println(result);
   }
 }
+
+168th Problem
+Assume you are an awesome parent and want to give your children some cookies. 
+But, you should give each child at most one cookie.
+Each child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with; 
+and each cookie j has a size s[j]. 
+If s[j] >= g[i], we can assign the cookie j to the child i, and the child i will be content. 
+Your goal is to maximize the number of your content children and print the maximum number.
+Example:
+Input: g = [1,2,3], s = [1,1]
+Output: 1
+Explanation: You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3. 
+And even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content.
+You need to output 1.
+Input Format :
+--------------
+Line 1 : An array of N elements, greed factors
+Line 2 : An array of N elements, size of each cookie
+Output Format :
+---------------
+Line 1 : A number, the maximum cookie allocation.
+Sample Input 1 :
+----------------
+1 2 3
+1 1
+Sample Output 1 :
+-----------------
+1
+Sample Input 2 :
+----------------
+1 2
+1 2 3
+Sample Output 2 :
+-----------------
+2
+Sample Input 3 :
+----------------
+7 8 9 10
+5 6 7 8
+Sample Output 3 :
+-----------------
+2
+
+import java.util.*;
+public class Solution {
+    public static int findMaxContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+        int i = 0;
+        int j = 0;
+        int count = 0;
+        while (i < g.length && j < s.length) {
+            if (s[j] >= g[i]) {
+                count++;
+                i++;
+                j++;
+            } else {
+                j++;
+            }
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        String[] gStr = sc.nextLine().split(" "); 
+        String[] sStr = sc.nextLine().split(" ");
+        int[] g = new int[gStr.length]; 
+        int[] s = new int[sStr.length]; 
+        for (int k = 0; k < gStr.length; k++) {
+            g[k] = Integer.parseInt(gStr[k]);
+        }
+        for (int k = 0; k < sStr.length; k++) {
+            s[k] = Integer.parseInt(sStr[k]);
+        }
+        System.out.println(findMaxContentChildren(g, s));
+    }
+}
