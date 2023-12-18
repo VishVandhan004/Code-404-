@@ -442,7 +442,6 @@ on the appropriate semaphores.
 A semaphore S is an integer variable that can be accessed only through two standard operations : wait()	and	
 signal(). The wait() operation reduces the value of semaphore by 1 and the signal() operation increases its 
 value by 1.
-
 Note: 
 1. use enum for declaring the various state of philosopher
 enum{thinking,hungry,eating} state[50]
