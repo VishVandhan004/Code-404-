@@ -421,3 +421,108 @@ int main() {
     }
     return 0;
 }
+
+8th Problem
+/*
+DINING PHILOSOPHER’S PROBLEM
+The dining-philosophers problem is considered a classic synchronization problem because it is an example of 
+a large class of concurrency-control problems. It is a simple representation of the need to allocate several
+resources among several processes in a deadlock-free and starvation-free manner. Consider five philosophers 
+who spend their lives thinking and eating. The philosophers share a circular table surrounded by five chairs,
+each belonging to one philosopher. In the center of the table is a bowl of rice, and the table is laid with 
+five single chopsticks. When a philosopher thinks, she does not interact with her colleagues. From time to time,
+a philosopher gets hungry and tries to pick up the two chopsticks that are closest to her (the chopsticks that
+are between her and her left and right neighbors). A philosopher may pick up only one chopstick at a time. 
+Obviously, she cam1ot pick up a chopstick that is already in the hand of a neighbor. When a hungry philosopher
+has both her chopsticks at the same time, she eats without releasing her chopsticks. When she is finished eating, she puts down both of her chopsticks and starts thinking again. The dining-philosophers problem may lead to a deadlock situation and hence some rules have to be framed to avoid the occurrence of deadlock.
+One simple solution is to represent each chopstick by a semaphore. A philosopher tries to grab the chopstick
+by executing a wait operation on that semaphore, and releases her chopsticks by executing the signal operation
+on the appropriate semaphores.
+
+A semaphore S is an integer variable that can be accessed only through two standard operations : wait()	and	
+signal(). The wait() operation reduces the value of semaphore by 1 and the signal() operation increases its 
+value by 1.
+
+Note: 
+1. use enum for declaring the various state of philosopher
+enum{thinking,hungry,eating} state[50]
+2. user can perform any one operation:
+pickup the chopstick
+putdown the chopstick
+check the status of the philosopher
+exit from the program
+Sample output:
+Enter the number of Philosophers: 5                                                                                                                                                                                                        
+1.Pickup()      2.Putdown()     3.Showstats()   4.Exit                                                                  
+Enter the choice : 2                                                                             
+Enter Philosopher number:   1                                                                                        
+Philosopher 1 went to thinking state                                                                                    
+1.Pickup()      2.Putdown()     3.Showstats()   4.Exit                                                                  
+Enter the choice : 3                                                                                        
+Philosopher 1 is Thinking                                                                                               
+Philosopher 2 is Thinking                                                                                               
+Philosopher 3 is Thinking                                                                                               
+Philosopher 4 is Thinking                                                                                               
+Philosopher 5 is Thinking                                                                                               
+1.Pickup()      2.Putdown()     3.Showstats()   4.Exit                                                                  
+Enter the choice :  1                                                                                                  
+Enter Philosopher number:  1                                                                                           
+Philosopher 1 eating                                                                                                    
+1.Pickup()      2.Putdown()     3.Showstats()   4.Exit                                                                  
+Enter the choice : 4
+*/
+
+#include<stdlib.h>
+#include<stdio.h>
+int a,v=1,c1[100];
+void pickup(){
+   printf("Enter Philosopher number:  ");
+   int c;
+   scanf("%d",&c);
+   printf("Philosopher %d eating \n",c);
+   c1[c]=-1;
+   printf("\n");
+   
+}
+void putdown(){
+     printf("Enter Philosopher number:  ");
+    int c;
+    scanf("%d",&c);
+    printf("Philosopher %d went to thinking state\n \n",c);
+}
+void showstats(){
+    for(int i=1;i<=a;i++){
+        if(c1[i]!=-1){
+        printf("Philosopher %d is Thinking\n",c1[i]);
+        }else{
+            printf("Philosopher %d is Eating\n",i);
+        }
+    }printf("\n");
+} 
+int main(){
+    printf("Enter the number of Philosophers: ");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++){
+        c1[i]=i;
+    }
+    while(1){
+    printf("1.Pickup()\t 2.Putdown()\t 3.Showstats()\t 4.Exit\n");
+    printf("Enter the choice : ");
+    int b;
+    scanf("%d",&b);
+    switch(b){
+        case 1:{
+            pickup();
+            break;
+        }case 2:{
+            putdown();
+            break;
+        }case 3:{
+            showstats();
+            break;
+        }case 4:{
+            exit(1);
+        }
+    }
+   }
+}
