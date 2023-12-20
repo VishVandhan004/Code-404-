@@ -69,7 +69,7 @@ else:
 
 # Looping Statements
 # for-loop
-mylist = [69 ,2,3]
+mylist = [69,2,3]
 for item in mylist:
     print(item)
      
