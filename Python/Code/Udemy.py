@@ -69,7 +69,7 @@ else:
 
 # Looping Statements
 # for-loop
-list = [69 ,2,3]
-for item in list:
+mylist = [69 ,2,3]
+for item in mylist:
     print(item)
-    
+     
