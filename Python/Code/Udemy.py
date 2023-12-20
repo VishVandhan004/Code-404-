@@ -59,8 +59,10 @@ print(2<1)
 print(1<2>3)
 
 # Control statements 
-age = 19
-if age>20:
+age = 17
+if age>=20:
     print('You are a major')
+elif age==19:
+    print('You are about to be a major')    
 else:
     print('you are fucking kiddo')    
