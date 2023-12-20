@@ -66,3 +66,10 @@ elif age==19:
     print('You are about to be a major')    
 else:
     print('you are fucking kiddo')    
+
+# Looping Statements
+# for-loop
+list = [69 ,2,3]
+for item in list:
+    print(item)
+    
