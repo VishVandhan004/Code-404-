@@ -7459,7 +7459,6 @@ Sample Input 3:
 1
 100
 Sample Output 3:
-----------------
 1
 Explanation:  
 There is only one element in the array, which makes it both the minimum and maximum element.
