@@ -7447,7 +7447,6 @@ Sample Input 2:
 8
 0 -4 19 1 8 -2 -3 5
 Sample Output 2:
-----------------
 3
 Explanation: 
 The minimum element in the array is nums[1], which is -4.
