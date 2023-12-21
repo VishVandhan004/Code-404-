@@ -7455,7 +7455,6 @@ The maximum element in the array is nums[2], which is 19.
 We can remove both the minimum and maximum by removing 3 elements from the front.
 This results in only 3 deletions, which is the minimum number possible.
 Sample Input 3:
----------------
 1
 100
 Sample Output 3:
