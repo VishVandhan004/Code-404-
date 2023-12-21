@@ -7434,7 +7434,6 @@ Sample Input 1:
 8
 2 10 7 5 4 1 8 6
 Sample Output 1:
-----------------
 5
 Explanation: 
 The minimum element in the array is nums[5], which is 1.
