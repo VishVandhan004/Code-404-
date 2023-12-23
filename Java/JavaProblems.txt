@@ -7350,7 +7350,6 @@ The majority element is the element that appears more than [n / 2] times.
 You may assume that the majority element always exists in the array.
 Note: Solve it using divide and conquer technique
 Input Format :
---------------
 Line-1 : N space separated numbers, list[]
 Output Format :
 Line-1 : A number, largest element in array
