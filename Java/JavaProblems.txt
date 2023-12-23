@@ -7353,7 +7353,6 @@ Input Format :
 --------------
 Line-1 : N space separated numbers, list[]
 Output Format :
----------------
 Line-1 : A number, largest element in array
 Sample Input :
 --------------
