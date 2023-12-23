@@ -7358,7 +7358,6 @@ Sample Input :
 --------------
 1 2 4 5 1 1 1
 Sample Output :
----------------
 1
 Sample Input :
 6 2 6
