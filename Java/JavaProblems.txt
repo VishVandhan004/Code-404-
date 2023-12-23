@@ -7362,7 +7362,6 @@ Sample Output :
 ---------------
 1
 Sample Input :
---------------
 6 2 6
 Sample Output :
 6
