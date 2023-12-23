@@ -7365,7 +7365,6 @@ Sample Input :
 --------------
 6 2 6
 Sample Output :
----------------
 6
 Hint : creating more functions will make the solution more simpler
 
