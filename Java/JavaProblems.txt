@@ -7306,7 +7306,6 @@ Input Format :
 Line 1 : A string for main string
 Line 2 : A string for pattern
 Output Format :
----------------
 Line 1 : A number, index(if pattern found return first occurance) or -1(element not found)
 Sample Input 1 :
 ----------------
