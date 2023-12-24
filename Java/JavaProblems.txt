@@ -7308,13 +7308,11 @@ Line 2 : A string for pattern
 Output Format :
 Line 1 : A number, index(if pattern found return first occurance) or -1(element not found)
 Sample Input 1 :
-----------------
 hello
 ll
 Sample Output 1 :
 2
 Sample Input 2 :
-----------------
 123456789
 567
 Sample Output 2 :
