@@ -7312,7 +7312,6 @@ Sample Input 1 :
 hello
 ll
 Sample Output 1 :
------------------
 2
 Sample Input 2 :
 ----------------
