@@ -7316,13 +7316,11 @@ Sample Input 2 :
 123456789
 567
 Sample Output 2 :
------------------
 4
 Sample Input 3 :
 helloworld
 xyz
 Sample Output  :
------------------
 -1
 
 import java.util.*;
