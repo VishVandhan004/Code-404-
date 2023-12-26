@@ -7244,7 +7244,6 @@ Output Format :
 ---------------
 Line 1 : Number, maximum profit / 0 for boundary conditions
 Sample Input 1 :
-----------------
 5 3 4
 20 40 30
 10
