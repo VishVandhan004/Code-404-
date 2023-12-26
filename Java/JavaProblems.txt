@@ -7251,12 +7251,10 @@ Sample Output 1 :
 -----------------
 70
 Sample Input 2 :
-----------------
 5 3 4
 20 40 30
 0
 Sample Output 2 :
------------------
 0
 
 import java.util.*;
