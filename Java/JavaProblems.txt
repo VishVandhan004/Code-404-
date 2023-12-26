@@ -7255,7 +7255,7 @@ Sample Output 2 :
 0
 
 import java.util.*;
-public class Solution{
+public class Solution {
   public static int findMaxProfit(int[] weights, int[] values, int capacity) {
     int maxProfit = 0;
     int n = weights.length;
