@@ -7302,7 +7302,6 @@ public class Solution{
 162nd Problem
 Write a program to perform string matching a.k.a pattern matching.
 Input Format :
---------------
 Line 1 : A string for main string
 Line 2 : A string for pattern
 Output Format :
