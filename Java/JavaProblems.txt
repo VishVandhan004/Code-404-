@@ -7236,12 +7236,10 @@ public class Solution{
 161st Problem
 Write a program to implement knapsack problem using Bruteforce approach.
 Input Format :
---------------
 Line 1 : N space separated numbers, weigths[]
 Line 2 : N space separated numbers, values[]
 Line 3 : A number, capacity
 Output Format : 
----------------
 Line 1 : Number, maximum profit / 0 for boundary conditions
 Sample Input 1 :
 5 3 4
