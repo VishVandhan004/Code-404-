@@ -7200,10 +7200,8 @@ Print the result as a pair of integers.
 Sample Input-1:
 24
 Sample Output-1:
-----------------
 6 4
 Sample Input-2:
----------------
 550
 Sample Output-2:
 25 22
