@@ -7194,7 +7194,6 @@ Your task is to help Mr. Robert to find the actual values
  	And print the result as a pair M and N.
 NOTE: S is always a positive integer.
 Input Format:
--------------
 Line-1 -> An integer S, size of the portrait.
 Output Format:
 Print the result as a pair of integers.
