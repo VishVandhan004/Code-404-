@@ -7209,7 +7209,6 @@ Sample Input-2:
 ---------------
 550
 Sample Output-2:
-----------------
 25 22
 
 import java.util.*;
