@@ -7198,7 +7198,6 @@ Line-1 -> An integer S, size of the portrait.
 Output Format:
 Print the result as a pair of integers.
 Sample Input-1:
----------------
 24
 Sample Output-1:
 ----------------
