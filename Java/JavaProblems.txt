@@ -6582,10 +6582,8 @@ true
 Explanation:
 Binary Rep of 85 is 1010101 
 Sample Input-2:
----------------
 87
 Sample Output-2:
-----------------
 false
 Explanation:
 Binary Rep of 87 is 1010111
