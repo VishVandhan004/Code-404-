@@ -6572,7 +6572,6 @@ the following property: "every pair of adjacent digits are different".
 Your task is to help Vihan to find N is a converse number or not.
 If yes, print 'true', otherwise print 'false'.
 Input Format:
--------------
 An integer N, the positive number.
 Output Format:
 Print a boolean result.
