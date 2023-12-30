@@ -6308,7 +6308,6 @@ Next P lines: Q space separated integers, data[][].
 Output Format:
 Print an integer result.
 Sample Input-1:
----------------
 4 4
 5 4 2 -2
 4 3 1 -2
@@ -6321,14 +6320,12 @@ Explanation:
 ------------
 8 days in LOSS,since there are 8 negative values.
 Sample Input-2:
----------------
 4 4
 8 7 1 -2
 7 6 2 -3
 3 -1 -2 -4
 -2 -3 -4 -7
 Sample Output-2:
-----------------
 9
 Explanation:
 ------------
