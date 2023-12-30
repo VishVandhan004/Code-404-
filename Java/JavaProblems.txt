@@ -6303,11 +6303,9 @@ he was in LOSS after P weeks.
 NOTE: The values in data[][] are in descending order both row-wise and 
 column-wise as given in sample testcases.
 Input Format:
--------------
 Line-1: Two space separated integers, P and Q
 Next P lines: Q space separated integers, data[][].   
 Output Format:
---------------
 Print an integer result.
 Sample Input-1:
 ---------------
