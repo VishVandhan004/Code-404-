@@ -7673,3 +7673,107 @@ class Solution {
         System.out.println(maxsum);
     }
 }
+
+170th Problem
+Given an group of numbers check if the target sum can be achieved by adding the given elements of the array in 
+order to achieve the target sum.
+Note : You can use any number element of the array any number of times
+Print true if it possible else false
+The first line of input contains the size of array followed by array elements followed by target sum
+INPUT
+5
+3 7 0 9 1
+15
+OUTPUT 
+true
+Explanation-
+=> arr[1] + arr[1] + arr[4]
+=>   7    +   7    +   1
+=> 15
+OR
+=> arr[0] + arr[0] + arr[0] + arr[0] + arr[0]
+=>   3    +   3    +   3    +   3    +   3
+=> 15
+Although there are more possibilities for this target sum problem, 
+we will print true based on the above situation.
+
+import java.util.*;
+class Solution {
+    public static boolean sum(int len,int arr[],int target) {
+        int rem;
+        for(int i=0;i<len;i++) {
+            try {
+                rem=target%arr[i];
+                if(rem==0)
+                {
+                    return true;
+                }
+                else
+                {
+                    for(int j=0;j<len;j++)
+                    {
+                        if(rem%arr[j]==0)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
+        }
+        return false;
+    }
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int sum=sc.nextInt();
+        System.out.println(sum(n,arr,sum));
+    }
+}
+
+171st Problem
+# 0 to n prime numbers
+A **prime number** is a positive integer greater than 1 that is only divisible by 1 and itself.
+*For example*: 2, 3, 5, 7, 11 are the first five prime numbers.
+## Problem Statement
+Print all Prime numbers between 1 to <n>
+### Input Format
+*Line #1*: An **integer** <n>        { $-10^4 < n < 10^7$ }
+### Output Format
+For each test case, print the **prime numbers**<number> separated by space in between, 
+from **0** to given number **n**.
+input = 100
+output = 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+import java.util.*;
+class Solution {
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print("2 ");
+        for(int i=3;i<=n;i=i+2)
+        {
+            boolean prime=true;
+            for(int j=3;j*j<=i;j=j+2)
+            {
+                if(i%j==0)
+                {
+                    prime=false;
+                    break;
+                }
+            }
+            if(prime)
+            {
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
