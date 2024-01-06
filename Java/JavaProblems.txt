@@ -7741,8 +7741,6 @@ class Solution {
 
 171st Problem
 # 0 to n prime numbers
-A **prime number** is a positive integer greater than 1 that is only divisible by 1 and itself.
-*For example*: 2, 3, 5, 7, 11 are the first five prime numbers.
 ## Problem Statement
 Print all Prime numbers between 1 to <n>
 ### Input Format
