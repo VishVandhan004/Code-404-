@@ -5588,8 +5588,7 @@ output=21
 
 import java.util.*;
 class test {
-    public static int triangle(int arr[],int n)
-    {
+    public static int triangle(int arr[],int n) {
         Arrays.sort(arr);
         if(n<3)
         {
