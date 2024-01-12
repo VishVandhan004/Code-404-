@@ -5587,8 +5587,7 @@ input=7
 output=21
 
 import java.util.*;
-class test
-{
+class test {
     public static int triangle(int arr[],int n)
     {
         Arrays.sort(arr);
