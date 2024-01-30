@@ -8101,3 +8101,180 @@ input = 6333
 output = IDEE
 Help Shyam to print the sequce for all the numbers
 
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String numbers = input.next();
+        String sequence = getSequence(numbers);
+        System.out.println(sequence);
+    }
+    public static String getSequence(String numbers) {
+        StringBuilder sequence = new StringBuilder("I");
+        for (int i = 1; i < numbers.length(); i++) {
+            if (numbers.charAt(i) > numbers.charAt(i - 1)) {
+                sequence.append("I");
+            } else if (numbers.charAt(i) < numbers.charAt(i - 1)) {
+                sequence.append("D");
+            } else {
+                sequence.append("E");
+            }
+        }
+        return sequence.toString();
+    }
+}
+
+179th Problem
+Manoj is working on the Invoice Billing System.
+He is able to do the Billing as per the goods ordered by the customers.
+The customer requested the Manoj to print the Amount in the Invoice in words. 
+Help Manoj to solve the problem 
+Note - The input number is between 0 to 9999
+input = 567
+output = Five Hundred Sixty Seven
+input = 9999
+output = Nine Thousand Nine Hundred Ninty Nine
+input = 2000
+output = Two Thousand
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        String result = numberToWords(number);
+        System.out.println(result);
+    }
+    public static String numberToWords(int num) {
+        if (num == 0) {
+            return "Zero";
+        }
+        String[] lessThan20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+                "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        String[] tens = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        String[] thousands = {"", "Thousand", "Million", "Billion"};
+        int i = 0;
+        String words = "";
+        while (num > 0) {
+            if (num % 1000 != 0) {
+                words = helper(num % 1000, lessThan20, tens) + thousands[i] + " " + words;
+            }
+            num /= 1000;
+            i++;
+        }
+        return words.trim();
+    }
+    public static String helper(int num, String[] lessThan20, String[] tens) {
+        if (num == 0) {
+            return "";
+        } else if (num < 20) {
+            return lessThan20[num] + " ";
+        } else if (num < 100) {
+            return tens[num / 10] + " " + helper(num % 10, lessThan20, tens);
+        } else {
+            return lessThan20[num / 100] + " Hundred " + helper(num % 100, lessThan20, tens);
+        }
+    }
+}
+
+180th Problem
+Vishal has given a task to find the successor of a given alphabet 'alp' in a given string str[].
+The alphabets in the given string str[] are all lowercase letters and always in non-decreasing order.
+A successor of 'alp' is the next smallest alphabet exist in the string str[] which is greater than 'alp'.
+Assume that alphabets can be considered in cyclic fashion.
+For example: Successor for alp='z' in str[]="bcd" is 'b'.
+Input Format:
+-------------
+Line-1:A string str[]
+Line-2: a character represents an alphabet.
+Output Format:
+--------------
+Print a character which is the successor. 
+Sample Input-1:
+---------------
+adghijl
+f 
+Sample Output-1:
+----------------
+g
+Sample Input-2:
+---------------
+abcdefghi
+j
+Sample Output-2:
+----------------
+a
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String str = input.next();
+        char alp = input.next().charAt(0);
+        char successor = findSuccessor(str, alp);
+        System.out.println(successor);
+    }
+
+    public static char findSuccessor(String str, char alp) {
+        for (char c : str.toCharArray()) {
+            if (c > alp) {
+                return c;
+            }
+        }
+        return str.charAt(0);
+    }
+}
+
+181st Problem
+We define a harmonious array as an array where the difference between its maximum value and its minimum
+value is exactly 1 .
+Given an integer array nums , return the length of its longest harmonious subsequence among all its possible
+subsequences.
+A subsequence of array is a sequence that can be derived from the array by deleting some or no elements
+without changing the order of the remaining elements.
+Input Format:
+-------------
+Line-1:A space seperated numbers, arr[]
+Output Format:
+--------------
+A number 
+Sample Input-1:
+---------------
+1 3 2 2 5 2 3 7 
+Sample Output-1:
+----------------
+5
+Explanation:
+-------------
+The longest harmonious subsequence is [3,2,2,2,3].
+Sample Input-2:
+---------------
+1 2 3 4
+Sample Output-2:
+----------------
+2
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String[] arr = input.nextLine().split(" ");
+        int[] nums = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
+        int result = findLHS(nums);
+        System.out.println(result);
+        input.close();
+    }
+    public static int findLHS(int[] nums) {
+        Map<Integer, Integer> counts = new HashMap<>();
+        for (int num : nums) {
+            counts.put(num, counts.getOrDefault(num, 0) + 1);
+        }
+        int result = 0;
+        for (int num : counts.keySet()) {
+            if (counts.containsKey(num + 1)) {
+                result = Math.max(result, counts.get(num) + counts.get(num + 1));
+            }
+        }
+        return result;
+    }
+}
