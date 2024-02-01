@@ -8278,3 +8278,124 @@ public class Solution {
         return result;
     }
 }
+
+182nd Problem
+Given a 0-indexed integer array nums, 
+return the smallest index i of nums such that i mod 10 == nums[i], 
+or -1 if such index does not exist.
+Input Format:
+-------------
+Line-1:Space separeted numbers
+Output Format:
+--------------
+Print a number, index or -1
+Sample Input-1:
+---------------
+4 3 2 1
+Sample Output-1:
+----------------
+2
+Sample Input-2:
+---------------
+1 2 3 4 5 6 7 8 9
+Sample Output-2:
+----------------
+-1
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] input = scanner.nextLine().split(" ");
+        int[] nums = new int[input.length];
+        for (int i = 0; i < input.length; i++) {
+            nums[i] = Integer.parseInt(input[i]);
+        }
+        int result = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 10 == nums[i]) {
+                result = i;
+                break;
+            }
+        }
+        System.out.println(result);
+    }
+}
+
+183rd Problem
+You have n coins and you want to build a staircase with these coins. 
+The staircase consists of k rows where the i row has exactly i coins. 
+The last row of the staircase may be incomplete.
+Given the integer n , return the number of complete rows of the staircase you will build.
+Input Format:
+-------------
+A number
+Output Format:
+--------------
+A number
+Sample Input-1:
+---------------
+5
+Sample Output-1:
+----------------
+2
+Sample Input-2:
+---------------
+8
+Sample Output-2:
+----------------
+3
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int rows = (int) (Math.sqrt(2 * (long) n + 0.25) - 0.5);
+        System.out.println(rows);
+    }
+}
+
+184th Problem
+Nagesh has given two words to check whether the first word 'source' is a sub-series of second word 'target'.
+A sub-series from a word can be formed by removing 0 or more characters without changing the relative order of other characters in the word.
+For example, 'nest' is a subseries of a word 'interst' , where as 'rest' is not.
+Help Nagesh to return true if source is a subseries of target, otherwise false.
+Input Format:
+-------------
+Line-1:Two space separeted strings
+Output Format:
+--------------
+Print a boolean result.
+Sample Input-1:
+---------------
+pqsv pqrstuv
+Sample Output-1:
+----------------
+true
+Sample Input-2:
+---------------
+psr pqrst
+Sample Output-2:
+----------------
+false
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String source = scanner.next();
+        String target = scanner.next();
+        boolean result = isSubSeries(source, target);
+        System.out.println(result);
+    }
+    public static boolean isSubSeries(String source, String target) {
+        int i = 0;
+        for (int j = 0; j < target.length() && i < source.length(); j++) {
+            if (source.charAt(i) == target.charAt(j)) {
+                i++;
+            }
+        }
+        return i == source.length();
+    }
+}
