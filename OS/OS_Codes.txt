@@ -524,3 +524,90 @@ int main(){
     }
    }
 }
+
+9th Problem
+/*Write Program for Deadlock Detection ( Banker’s Algorithm)
+sample output for bankers deadlock detection
+ enter number of processes and number of resources :4 5                                                                  
+enter claim matrix:                                                                                                     
+0 1 0 0 1                                                                                                               
+0 0 1 0 1                                                                                                               
+0 0 0 0 1                                                                                                               
+1 0 1 0 1                                                                                                               
+enter allocation matrix:                                                                                                
+1 0 1 1 0                                                                                                               
+1 1 0 0 0                                                                                                               
+0 0 0 1 0                                                                                                               
+0 0 0 0 0                                                                                                               
+enter resource vector:                                                                                                  
+2 1 1 2 1                                                                                                               
+enter availability vector:                                                                                              
+0 0 0 0 1                                                                                                               
+dead lock causing process are:1 2   */
+
+#include<stdio.h>
+void main() {
+    int n, m, i, j, k;
+    printf("enter number of processes and number of resources:");
+    scanf("%d %d", &n, &m);
+    int alloc[n][m], max[n][m], avail[m], need[n][m], completed[n];
+        printf("enter claim matrix:\n");
+    for(i = 0; i < n; i++)
+        for(j = 0; j < m; j++)
+            scanf("%d", &max[i][j]);
+    printf("enter allocation matrix:\n");
+    for(i = 0; i < n; i++)
+        for(j = 0; j < m; j++)
+            scanf("%d", &alloc[i][j]);
+    printf("enter resource vector:\n");
+    for(i = 0; i < m; i++)
+        scanf("%d", &avail[i]);
+        printf("enter availability vector:\n");
+    for(i = 0; i < m; i++)
+        scanf("%d", &avail[i]);
+        for(i = 0; i < n; i++)
+        completed[i] = 0;
+        for(i = 0; i < n; i++)
+        for(j = 0; j < m; j++)
+            need[i][j] = max[i][j] - alloc[i][j];
+    int count = 0;
+    int safeSeq[n];
+    int finish;
+    while(count < n) {
+        finish = 1;
+        for(i = 0; i < n; i++) {
+            if(!completed[i]) {
+                int canFinish = 1;
+                for(j = 0; j < m; j++) {
+                    if(need[i][j] > avail[j]) {
+                        canFinish = 0;
+                        break;
+                    }
+                }
+                if(canFinish) {
+                    for(k = 0; k < m; k++)
+                        avail[k] += alloc[i][k];
+                    safeSeq[count++] = i;
+                    completed[i] = 1;
+                    finish = 0;
+                }
+            }
+        }
+        if(finish)
+            break;
+    }
+    if(count < n) {
+        printf("dead lock causing process are:");
+        for(i = 0; i < n-1; i++) {
+            if(!completed[i])
+                printf(" %d", i+1);
+        }
+        printf("\n");
+    } else {
+        printf("No deadlock detected\n");
+        printf("Safe sequence:");
+        for(i = 0; i < n; i++)
+            printf(" %d", safeSeq[i]+1);
+        printf("\n");
+    }
+}
