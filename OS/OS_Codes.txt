@@ -611,3 +611,118 @@ void main() {
         printf("\n");
     }
 }
+
+10th Problem
+/* FCFS: FCFS is the simplest of all the Disk Scheduling Algorithms.
+In FCFS, the requests are addressed in the order they arrive in the disk queue. 
+Let us understand this with the help of an example.
+Example:
+Suppose the order of request is- (82,170,43,140,24,16,190)
+And current position of Read/Write head is : 50
+So, total seek time:=(82-50)+(170-82)+(170-43)+(140-43)+(140-24)+(24-16)+(190-16)=642
+sample input and output:
+Enter the number of Requests                                                                                            
+7                                                                                                                       
+Enter the Requests sequence                                                                                             
+82                                                                                                                      
+170                                                                                                                     
+43                                                                                                                      
+140                                                                                                                     
+24                                                                                                                      
+16                                                                                                                      
+190                                                                                                                     
+Enter initial head position                                                                                             
+50                                                                                                                      
+Total head moment is 642     */                                                                                           
+
+#include <stdio.h>
+#include <stdlib.h> 
+int main() {
+    printf("Enter the number of Requests\n");
+    int a;
+    scanf("%d", &a);
+    printf("Enter the Requests sequence\n");
+    int ar[a];
+    for(int i = 0; i < a; i++) {
+        scanf("%d", &ar[i]);
+    }
+    printf("Enter initial head position\n");
+    int initial_head;
+    scanf("%d", &initial_head);
+
+    int total_seek_time = 0;
+    int current_head = initial_head;
+    for(int i = 0; i < a; i++) {
+        total_seek_time += abs(ar[i] - current_head);
+        current_head = ar[i];
+    }
+    printf("Total head moment is %d\n", total_seek_time);
+    return 0;
+}
+
+11th Problem
+/*SSTF: In SSTF (Shortest Seek Time First), requests having shortest seek time are executed first. 
+So, the seek time of every request is calculated in advance in the queue and then they are scheduled 
+according to their calculated seek time. As a result, the request near the disk arm will get executed first.
+SSTF is certainly an improvement over FCFS as it decreases the average response time and increases the throughput of system.Let us understand this with the help of an example.
+Example:
+Suppose the order of request is- (82,170,43,140,24,16,190)
+And current position of Read/Write head is : 50
+So, total seek time:
+=(50-43)+(43-24)+(24-16)+(82-16)+(140-82)+(170-40)+(190-170)
+=208 
+Sample output
+Enter the number of Requests                                                                                            
+5                                                                                                                       
+Enter the Requests sequence                                                                                             
+34                                                                                                                      
+12                                                                                                                      
+56                                                                                                                      
+87                                                                                                                      
+32                                                                                                                      
+Enter initial head position                                                                                             
+46                                                                                                                      
+Total head movement is 129              */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+int abs_diff(int a, int b) {
+    return abs(a - b);
+}
+int findClosestRequest(int requests[], int n, int head) {
+    int min_diff = INT_MAX;
+    int closest_index = -1;
+    for(int i = 0; i < n; i++) {
+        if (!requests[i])
+            continue;
+        int diff = abs_diff(head, requests[i]);
+        if(diff < min_diff) {
+            min_diff = diff;
+            closest_index = i;
+        }
+    }
+    return closest_index;
+}
+int main() {
+    int n, head, total_seek_time = 0;
+    printf("Enter the number of requests \n");
+    scanf("%d", &n);
+    int requests[n];
+    int completed_requests = 0;
+    printf("Enter the requests sequence \n");
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &requests[i]);
+    }
+    printf("Enter initial head position\n");
+    scanf("%d", &head);
+    while(completed_requests < n) {
+        int closest_index = findClosestRequest(requests, n, head);
+        total_seek_time += abs_diff(head, requests[closest_index]);
+        head = requests[closest_index];
+        requests[closest_index] = 0; 
+        completed_requests++;
+    }
+    printf("Total head movement is %d\n", total_seek_time);
+    return 0;
+}
