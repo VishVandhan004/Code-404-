@@ -1,52 +1,4 @@
 1st Problem
-/* write a programme to print the reverse of a number
-sample input 
-Enter an integer: 123                                                                                                   
-Reversed number = 321   */      
-
-#include <stdio.h>
-int main() {
-  int n;
-  printf("Enter an integer: ");
-  scanf("%d",&n);
-  int rev=0;
-  while(n>0)
-  {
-      int temp=n%10;
-      rev=(rev*10)+temp;
-      n=n/10;
-  }
-  printf("Reversed number = %d",rev);
-}
-
-2nd Problem
-/* wrire a program to find factorial of a given number
-input=
-Enter an integer: 5    
-output=
-Factorial of 5 = 120 */
-
-#include<stdio.h>
-int fact(int n)
-{
-    if(n==1 || n==0)
-    {
-        return 1;
-    }
-    else
-    {
-        return n*fact(n-1);
-    }
-}
-int main()
-{
-    int n;
-    printf("Enter an integer: ");
-    scanf("%d",&n);
-    printf("Factorial of %d = %d",n,fact(n));
-}
-
-3rd Problem
 /* Assume all the processes arrive at the same time.
 FCFS CPU SCHEDULING ALGORITHM
 Read the number of processes/jobs in the system, their CPU burst times.
@@ -121,7 +73,7 @@ int main()
     printf("Average Turnaround Time -- %f",avg(turnaroundtime,n));
 }
 
-4th Problem
+2nd Problem
 /*Write a C Program to Simulate Shortest Job First CPU Scheduling Algorithm
  Consider Process name, arriavl time and execution time as an Input.
  Sample Input and Output
@@ -196,7 +148,7 @@ int main()
     return 0;
 }
 
-5th Problem
+3rd Problem
 /* Program for Round Robin CPU Scheduling With Waiting Time 
      /* IMPLEMENTATION OF ROUND ROBIN SCHEDULING
      DESCRIPTION Each process gets a small unit of CPU time (time quantum), 
@@ -283,7 +235,7 @@ int main() {
     return 0;
 }
 
-6th Problem
+4th Problem
 /*
 Implement Producer &Consumer problem using semaphore.
 Producer consumer problem is also known as bounded buffer problem. In this problem we have two processes,4
@@ -361,7 +313,7 @@ int main() {
     return 0;
 }
 
-7th Problem
+5th Problem
 /* 	Implement reader writer problem
 The Problem Statement
 There is a shared resource which should be accessed by multiple processes. 
@@ -422,7 +374,7 @@ int main() {
     return 0;
 }
 
-8th Problem
+6th Problem
 /*
 DINING PHILOSOPHER’S PROBLEM
 The dining-philosophers problem is considered a classic synchronization problem because it is an example of 
@@ -525,7 +477,7 @@ int main(){
    }
 }
 
-9th Problem
+7th Problem
 /*Write Program for Deadlock Detection ( Banker’s Algorithm)
 sample output for bankers deadlock detection
  enter number of processes and number of resources :4 5                                                                  
@@ -612,7 +564,7 @@ void main() {
     }
 }
 
-10th Problem
+8th Problem
 /* FCFS: FCFS is the simplest of all the Disk Scheduling Algorithms.
 In FCFS, the requests are addressed in the order they arrive in the disk queue. 
 Let us understand this with the help of an example.
@@ -660,7 +612,7 @@ int main() {
     return 0;
 }
 
-11th Problem
+9th Problem
 /*SSTF: In SSTF (Shortest Seek Time First), requests having shortest seek time are executed first. 
 So, the seek time of every request is calculated in advance in the queue and then they are scheduled 
 according to their calculated seek time. As a result, the request near the disk arm will get executed first.
@@ -724,5 +676,152 @@ int main() {
         completed_requests++;
     }
     printf("Total head movement is %d\n", total_seek_time);
+    return 0;
+}
+
+10th Problem
+LRU Page Replacement
+
+#include <stdio.h>
+#define MAX_FRAMES 10
+int main() {
+    int frames[MAX_FRAMES], pages[MAX_FRAMES], temp[MAX_FRAMES];
+    int numOfFrames, numOfPages, pageFaults = 0;
+    printf("Enter number of frames: ");
+    scanf("%d", &numOfFrames);
+    printf("Enter number of pages: ");
+    scanf("%d", &numOfPages);
+    printf("Enter the reference string: ");
+    for (int i = 0; i < numOfPages; i++)
+        scanf("%d", &pages[i]);
+    for (int i = 0; i < numOfFrames; i++)
+        frames[i] = -1;
+    int counter = 0;
+    for (int i = 0; i < numOfPages; i++) {
+        int page = pages[i];
+        int found = 0;
+        for (int j = 0; j < numOfFrames; j++) {
+            if (frames[j] == page) {
+                found = 1;
+                break;
+            }
+        }
+        if (!found) {
+            if (counter < numOfFrames) {
+                frames[counter++] = page;
+            } else {
+                int minIndex = 0;
+                for (int j = 1; j < numOfFrames; j++) {
+                    if (temp[j] < temp[minIndex])
+                        minIndex = j;
+                }
+                frames[minIndex] = page;
+            }
+            pageFaults++;
+        }
+        for (int j = 0; j < numOfFrames; j++) {
+            if (frames[j] != -1)
+                temp[j]++;
+        }
+    }
+    printf("Total page faults: %d\n", pageFaults);
+    return 0;
+}
+
+11th Problem
+Optimal Page Replacement
+
+#include <stdio.h>
+#define MAX_FRAMES 10
+#define MAX_PAGES 100
+int main() {
+    int frames[MAX_FRAMES], pages[MAX_PAGES];
+    int numOfFrames, numOfPages, pageFaults = 0;
+    
+    printf("Enter the number of frames: ");
+    scanf("%d", &numOfFrames);
+    
+    printf("Enter the number of pages: ");
+    scanf("%d", &numOfPages);
+    
+    printf("Enter the reference string: ");
+    for (int i = 0; i < numOfPages; i++)
+        scanf("%d", &pages[i]);
+    
+    for (int i = 0; i < numOfFrames; i++)
+        frames[i] = -1; // Initialize frames to -1 (indicating empty)
+    
+    for (int i = 0; i < numOfPages; i++) {
+        int page = pages[i];
+        int found = 0;
+        for (int j = 0; j < numOfFrames; j++) {
+            if (frames[j] == page) {
+                found = 1;
+                break;
+            }
+        }
+        if (!found) {
+            int farthest = i + 1;
+            int replaceIndex = -1;
+            for (int j = 0; j < numOfFrames; j++) {
+                int k;
+                for (k = i + 1; k < numOfPages; k++) {
+                    if (frames[j] == pages[k]) {
+                        if (k > farthest) {
+                            farthest = k;
+                            replaceIndex = j;
+                        }
+                        break;
+                    }
+                }
+                if (k == numOfPages) {
+                    replaceIndex = j;
+                    break;
+                }
+            }
+            frames[replaceIndex] = page;
+            pageFaults++;
+        }
+    }
+    printf("Total page faults: %d\n", pageFaults);
+    return 0;
+}
+
+12th Problem
+FIFO Page Replacement
+
+#include <stdio.h>
+#define MAX_FRAMES 10
+int main() {
+    int frames[MAX_FRAMES], pages[MAX_FRAMES];
+    int numOfFrames, numOfPages, pageFaults = 0;
+    printf("Enter the number of frames: ");
+    scanf("%d", &numOfFrames);
+    printf("Enter the number of pages: ");
+    scanf("%d", &numOfPages);
+    printf("Enter the reference string: ");
+    for (int i = 0; i < numOfPages; i++)
+        scanf("%d", &pages[i]);
+    for (int i = 0; i < numOfFrames; i++)
+        frames[i] = -1; // Initialize frames to -1 (indicating empty)
+    int currentIndex = 0; // Current index in the frames array
+    for (int i = 0; i < numOfPages; i++) {
+        int page = pages[i];
+        int found = 0;
+        // Check if page is already in frames
+        for (int j = 0; j < numOfFrames; j++) {
+            if (frames[j] == page) {
+                found = 1;
+                break;
+            }
+        }
+        // If page is not found, replace the oldest page
+        if (!found) {
+            frames[currentIndex] = page;
+            currentIndex = (currentIndex + 1) % numOfFrames; // Update index circularly
+            pageFaults++;
+        }
+    }
+    printf("Total page faults: %d\n", pageFaults);
     return 0;
 }
