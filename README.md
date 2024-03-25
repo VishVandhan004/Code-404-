@@ -1,4 +1,4 @@
-## Welcome to Coding 404!!!
+## Welcome to Code 404!!
 Hey there! 👋 Welcome to my GitHub repository where I store all my cool AI, ML codes, and college projects. 🚀
 
 ### About Me
