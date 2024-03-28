@@ -5,7 +5,6 @@ def remove_numbers(sentence):
 # Example usage
 original_sentence ="HI 1234,  I am Studying in ngit btech 3rd year 5th sem."
 sentence_without_numbers = remove_numbers(original_sentence)
-
 print("Original Sentence: ", original_sentence)
 print()
 print("Sentence without Numbers: ", sentence_without_numbers)
